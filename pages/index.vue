@@ -176,6 +176,8 @@ button {
 </style>
 
 <script setup>
+import { useHead } from '@nuxtjs/head'
+
 useHead({
   title: "Taxi Opatija | 0 - 24 | Naručite taksi",
   meta: [
@@ -196,13 +198,29 @@ useHead({
       property: "og:image",
       content: "https://taxiopatija.hr/opatija.jpeg",
     },
+    // Structured Data Markup
+    {
+      hid: "structured-data",
+      type: "application/ld+json",
+      innerHTML: JSON.stringify({
+        "@context": "http://schema.org",
+        "@type": "Organization",
+        "name": "Taxi Opatija",
+        "url": "https://taxiopatija.hr",
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": "+38598491369",
+          "contactType": "customer service"
+        }
+      })
+    }
   ],
-
   bodyAttrs: {
     class: "",
   },
   script: [],
 });
+
 
 useSeoMeta({
   title: "Taxi Opatija | 0 - 24 | Naručite taksi",

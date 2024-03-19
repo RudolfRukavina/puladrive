@@ -10,6 +10,7 @@ export default defineNuxtConfig({
     modules: [
     '@nuxtjs/tailwindcss',
       'nuxt-swiper',
+      '@nuxtjs/head',
   ],
     tailwindcss: {
         cssPath: '~/assets/css/input.css'
