@@ -1,292 +1,219 @@
 <template>
+
   <Head>
-    <Title>Naslovnica | Poduke Parallel</Title>
-    <Meta name="description"
-      content="Unaprijedite svoje učenje kroz naše iskustvo, poticaj i konstantnu podršku. Održavamo instrukcije iz svih obaveznih i velikog broja stručnih predmeta. Uspješno savladajte gradivo neophodno za polaganje državne mature uz Parallel poduke!" />
-    <Style type="text/css" />
+    <Title>Taxi Opatija</Title>
+    <Meta name="description" content="Brza i pouzdana Opatijska taxi služba." />
   </Head>
-  <!--Hero-->
-  <ClientOnly>
 
-    <body class="leading-normal tracking-normal text-white gradient" style="font-family: 'Source Sans Pro', sans-serif;">
-
-      <div class="pt-10 py-2 mx-1" id='naslovnica'>
-        <div class="container px-3 mx-auto flex flex-wrap flex-col md:flex-row items-center">
-          <!--Left Col-->
-          <div class="flex flex-col w-full md:w-2/5 justify-center items-start text-center md:text-left">
-            <p class=" tracking-loose w-full">Dobrodošli na službenu stranicu</p>
-            <h2 class="mb-4  text-5xl font-bold leading-tight w-full">
-              Poduke Parallel
+  <header>
+    <img class="hero-photo h-56 md:h-96" src="../assets/imgs/opatijamainphoto.jpeg" alt="" />
+    <div class="flex justify-center -mt-5">
+      <div class="hero-hours">
+        <p class="m-0 mx-1 p-1 px-12 text-xl fw-bold">0 - 24</p>
+      </div>
+    </div>
+  </header>
+  <main>
+    <div>
+      <div class="relative isolate px-6 lg:px-8">
+        <div class="mx-auto max-w-2xl pt-10">
+          <div class="flex justify-center">
+            <img src="../assets/imgs/grbopatije.png" alt="" class="-mt-5 object-cover w-3/12 sm:w-24" />
+          </div>
+          <div class="text-center">
+            <h1 class="text-6xl font-bold tracking-tight text-gray-900">
+              Taxi Opatija
+            </h1>
+            <h2 class="text-xl font-bold tracking-tight text-gray-900">
+              Brza i pouzdana <span class="text-amber-600">taxi služba.</span>
             </h2>
-            <p class="leading-normal text-xl mb-8">
-              Unaprijedite svoje učenje kroz naše iskustvo, poticaj i konstantnu podršku.
-            </p>
-            <NuxtLink to="#usluge"
-              class="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
-              Usluge
-            </NuxtLink>
-          </div>
-          <!--Right Col-->
-          <div class="w-full md:w-3/5 py-6 text-center">
-            <img class="w-full md:w-4/5 z-50" src="../assets/hero.png" />
-
-          </div>
-        </div>
-      </div>
-      <div class="relative -mt-12 lg:-mt-24">
-        <svg viewBox="0 0 1428 174" version="1.1" xmlns="http://www.w3.org/2000/svg"
-          xmlns:xlink="http://www.w3.org/1999/xlink">
-          <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-            <g transform="translate(-2.000000, 44.000000)" fill="#FFFFFF" fill-rule="nonzero">
-              <path
-                d="M0,0 C90.7283404,0.927527913 147.912752,27.187927 291.910178,59.9119003 C387.908462,81.7278826 543.605069,89.334785 759,82.7326078 C469.336065,156.254352 216.336065,153.6679 0,74.9732496"
-                opacity="0.100000001"></path>
-              <path
-                d="M100,104.708498 C277.413333,72.2345949 426.147877,52.5246657 546.203633,45.5787101 C666.259389,38.6327546 810.524845,41.7979068 979,55.0741668 C931.069965,56.122511 810.303266,74.8455141 616.699903,111.243176 C423.096539,147.640838 250.863238,145.462612 100,104.708498 Z"
-                opacity="0.100000001"></path>
-              <path
-                d="M1046,51.6521276 C1130.83045,29.328812 1279.08318,17.607883 1439,40.1656806 L1439,120 C1271.17211,77.9435312 1140.17211,55.1609071 1046,51.6521276 Z"
-                id="Path-4" opacity="0.200000003"></path>
-            </g>
-            <g transform="translate(-4.000000, 76.000000)" fill="#FFFFFF" fill-rule="nonzero">
-              <path
-                d="M0.457,34.035 C57.086,53.198 98.208,65.809 123.822,71.865 C181.454,85.495 234.295,90.29 272.033,93.459 C311.355,96.759 396.635,95.801 461.025,91.663 C486.76,90.01 518.727,86.372 556.926,80.752 C595.747,74.596 622.372,70.008 636.799,66.991 C663.913,61.324 712.501,49.503 727.605,46.128 C780.47,34.317 818.839,22.532 856.324,15.904 C922.689,4.169 955.676,2.522 1011.185,0.432 C1060.705,1.477 1097.39,3.129 1121.236,5.387 C1161.703,9.219 1208.621,17.821 1235.4,22.304 C1285.855,30.748 1354.351,47.432 1440.886,72.354 L1441.191,104.352 L1.121,104.031 L0.457,34.035 Z">
-              </path>
-            </g>
-          </g>
-        </svg>
-      </div>
-      <section class="content-section  bg-white py-16 -my-[1px]" id="usluge">
-        <div class="container mx-auto px-4 lg:px-5">
-          <h2 class="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800">
-            Usluge
-          </h2>
-          <div class="w-full mb-4">
-            <div class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
-          </div>
-          <div class="grid grid-cols-1 lg:grid-cols-3 gap-4">
-            <div class="col-span-1 lg:col-span-1">
-              <NuxtLink class="portfolio-item block relative" to="/pripreme">
-                <div class="absolute inset-0 bg-black bg-opacity-50 transition-opacity lg:opacity-0 hover:opacity-100">
-                  <div class="caption absolute inset-0 flex items-center justify-center">
-                    <div class="text-white text-center">
-                      <h3 class="text-2xl">Pripreme za državnu maturu</h3>
-                    </div>
-                  </div>
-                </div>
-                <img class="object-cover w-full h-full" src="../assets/img/portfolio-2.jpg" alt="..." />
-              </NuxtLink>
-            </div>
-            <div class="col-span-1 lg:col-span-1">
-              <NuxtLink class="portfolio-item block relative" to="/instrukcije">
-                <div class="absolute inset-0 bg-black bg-opacity-50 transition-opacity lg:opacity-0 hover:opacity-100">
-                  <div class="caption absolute inset-0 flex items-center justify-center">
-                    <div class="text-white text-center">
-                      <h3 class="text-2xl">Instrukcije</h3>
-                    </div>
-                  </div>
-                </div>
-                <img class="object-cover w-full h-full" src="../assets/img/portfolio-1.jpg" alt="..." />
-              </NuxtLink>
-            </div>
-
-            <!-- <div class="col-span-1 lg:col-span-1">
-            <NuxtLink class="portfolio-item block relative" to="/ostalo">
-              <div class="absolute inset-0 bg-black bg-opacity-50 transition-opacity lg:opacity-0 hover:opacity-100">
-                <div class="caption absolute inset-0 flex items-center justify-center">
-                  <div class="text-white text-center">
-                    <div class="text-2xl">Tečajevi</div>
-                  </div>
-                </div>
-              </div>
-              <img class="object-cover w-full h-full" src="../assets/img/portfolio-3.jpg" alt="..." />
-            </NuxtLink>
-          </div> -->
-            <div class="col-span-1 lg:col-span-1">
-              <NuxtLink class="portfolio-item block relative" to="/ostalo">
-                <div class=" absolute inset-0 bg-black bg-opacity-50 transition-opacity lg:opacity-0 hover:opacity-100">
-                  <div class="caption absolute inset-0 flex items-center justify-center">
-                    <div class="text-white text-center">
-                      <h3 class="text-2xl">Ostale usluge</h3>
-                    </div>
-                  </div>
-                </div>
-                <img class="object-cover w-full h-full" src="../assets/img/portfolio-4.jpg" alt="..." />
-              </NuxtLink>
+            <div class="mt-10 flex items-center justify-center gap-x-6">
+              <a id="callLink" href="tel:+38598491369" class="inline-block w-50">
+                <button class="bg-blue-700 hover:bg-blue-800 text-white font-bold py-3 px-8 rounded-lg text-lg">
+                  Pozovi prijevoz
+                </button>
+              </a>
             </div>
           </div>
         </div>
-
-      </section>
-
-
-
-      <!-- Change the colour #f8fafc to match the previous section colour -->
-      <div class="relative">
-        <svg class="wave-top" viewBox="0 0 1439 147" version="1.1" xmlns="http://www.w3.org/2000/svg"
-          xmlns:xlink="http://www.w3.org/1999/xlink">
-          <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-            <g transform="translate(-1.000000, -14.000000)" fill-rule="nonzero">
-              <g class="wave" fill="#ffffff">
-                <path
-                  d="M1440,84 C1383.555,64.3 1342.555,51.3 1317,45 C1259.5,30.824 1206.707,25.526 1169,22 C1129.711,18.326 1044.426,18.475 980,22 C954.25,23.409 922.25,26.742 884,32 C845.122,37.787 818.455,42.121 804,45 C776.833,50.41 728.136,61.77 713,65 C660.023,76.309 621.544,87.729 584,94 C517.525,105.104 484.525,106.438 429,108 C379.49,106.484 342.823,104.484 319,102 C278.571,97.783 231.737,88.736 205,84 C154.629,75.076 86.296,57.743 0,32 L0,0 L1440,0 L1440,84 Z">
-                </path>
-              </g>
-              <g transform="translate(1.000000, 15.000000)" fill="#FFFFFF">
-                <g transform="translate(719.500000, 68.500000) rotate(-180.000000) translate(-719.500000, -68.500000) ">
-                  <path
-                    d="M0,0 C90.7283404,0.927527913 147.912752,27.187927 291.910178,59.9119003 C387.908462,81.7278826 543.605069,89.334785 759,82.7326078 C469.336065,156.254352 216.336065,153.6679 0,74.9732496"
-                    opacity="0.100000001"></path>
-                  <path
-                    d="M100,104.708498 C277.413333,72.2345949 426.147877,52.5246657 546.203633,45.5787101 C666.259389,38.6327546 810.524845,41.7979068 979,55.0741668 C931.069965,56.122511 810.303266,74.8455141 616.699903,111.243176 C423.096539,147.640838 250.863238,145.462612 100,104.708498 Z"
-                    opacity="0.100000001"></path>
-                  <path
-                    d="M1046,51.6521276 C1130.83045,29.328812 1279.08318,17.607883 1439,40.1656806 L1439,120 C1271.17211,77.9435312 1140.17211,55.1609071 1046,51.6521276 Z"
-                    opacity="0.200000003"></path>
-                </g>
-              </g>
-            </g>
-          </g>
-        </svg>
       </div>
-      <section class="container mx-auto text-center py-1 pb-10 " id='radnovrijeme'>
-        <h3 class="w-full my-2 text-5xl font-bold leading-tight text-center text-white">
-          Radno vrijeme
-        </h3>
-        <div class="w-full mb-4">
-          <div class="h-1 mx-auto bg-white w-1/6 opacity-25 my-0 py-0 rounded-t"></div>
-        </div>
-        <h3 class="my-4 text-3xl leading-tight">
-          10:00 - 21:00
-        </h3>
-        <h3 class="my-4 text-3xl leading-tight">
-          Otvoreni smo svaki dan!
-        </h3>
-        <a href="tel:+385917865619">
-          <button
-            class="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
-            Nazovite nas!
-          </button>
+    </div>
+  </main>
+
+  <footer class="bg-white rounded-lg shadow-2xl dark:bg-gray-900 w-full fixed bottom-0">
+    <div class="w-full max-w-screen-xl mx-auto p-4 pb-0 md:py-4">
+      <div class="sm:flex sm:items-center sm:justify-between">
+        <a href="tel:+38598491369" class="flex justify-between items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse">
+          <div class="flex justify-center">
+            <img src="../assets/imgs/grbopatije.png" class="h-6" alt="Taxi Opatija Logo" />
+            <span class="self-center text-md font-semibold whitespace-nowrap dark:text-white">Taxi Opatija</span>
+          </div>
+
+          <span class="self-center text-sm font-semibold whitespace-nowrap dark:text-white">+385 98 491 369</span>
         </a>
-      </section>
-      <div class="relative -mt-12 lg:-mt-24 -my-[1px]">
-        <svg viewBox="0 0 1428 174" version="1.1" xmlns="http://www.w3.org/2000/svg"
-          xmlns:xlink="http://www.w3.org/1999/xlink">
-          <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-            <g transform="translate(-2.000000, 44.000000)" fill="#FFFFFF" fill-rule="nonzero">
-              <path
-                d="M0,0 C90.7283404,0.927527913 147.912752,27.187927 291.910178,59.9119003 C387.908462,81.7278826 543.605069,89.334785 759,82.7326078 C469.336065,156.254352 216.336065,153.6679 0,74.9732496"
-                opacity="0.100000001"></path>
-              <path
-                d="M100,104.708498 C277.413333,72.2345949 426.147877,52.5246657 546.203633,45.5787101 C666.259389,38.6327546 810.524845,41.7979068 979,55.0741668 C931.069965,56.122511 810.303266,74.8455141 616.699903,111.243176 C423.096539,147.640838 250.863238,145.462612 100,104.708498 Z"
-                opacity="0.100000001"></path>
-              <path
-                d="M1046,51.6521276 C1130.83045,29.328812 1279.08318,17.607883 1439,40.1656806 L1439,120 C1271.17211,77.9435312 1140.17211,55.1609071 1046,51.6521276 Z"
-                id="Path-4" opacity="0.200000003"></path>
-            </g>
-            <g transform="translate(-4.000000, 76.000000)" fill="#FFFFFF" fill-rule="nonzero">
-              <path
-                d="M0.457,34.035 C57.086,53.198 98.208,65.809 123.822,71.865 C181.454,85.495 234.295,90.29 272.033,93.459 C311.355,96.759 396.635,95.801 461.025,91.663 C486.76,90.01 518.727,86.372 556.926,80.752 C595.747,74.596 622.372,70.008 636.799,66.991 C663.913,61.324 712.501,49.503 727.605,46.128 C780.47,34.317 818.839,22.532 856.324,15.904 C922.689,4.169 955.676,2.522 1011.185,0.432 C1060.705,1.477 1097.39,3.129 1121.236,5.387 C1161.703,9.219 1208.621,17.821 1235.4,22.304 C1285.855,30.748 1354.351,47.432 1440.886,72.354 L1441.191,104.352 L1.121,104.031 L0.457,34.035 Z">
-              </path>
-            </g>
-          </g>
-        </svg>
+        <ul class="flex flex-wrap items-center mb-6 text-xs font-medium text-gray-500 sm:mb-0 dark:text-gray-400">
+          <li>
+            <a href="#" class="hover:underline me-4 md:me-6">Uvjeti korištenja</a>
+          </li>
+
+          <li>
+            <a href="#" class="hover:underline me-4 md:me-6">Privatnost</a>
+          </li>
+
+          <li>
+            <a href="https://www.facebook.com/taxiopatija" target="_blank" class="block px-4 text-sm text-blue-500"><i
+                class="fa fa-facebook"></i></a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/taxiopatija.hr/" target="_blank"
+              class="block px-4 text-sm text-purple-500"><i class="fa fa-instagram"></i></a>
+          </li>
+
+
+          <span class="absolute bottom-4 lg:bottom-3 rounded-3 right-0 mx-1 cursor-pointer" v-show="!showLegal"
+            @click="showLegal = !showLegal">
+            <svg class="w-8" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+              <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+              <g id="SVGRepo_iconCarrier">
+                <path d="M18 15L12.2278 8.26574C12.108 8.12606 11.892 8.12606 11.7722 8.26574L6 15" stroke="#000000"
+                  stroke-width="2" stroke-linecap="round"></path>
+              </g>
+            </svg>
+          </span>
+          <span
+            class="absolute top-15 border rounded-2xl lg:top-0 -m-4 mx-4 bg-red-200 border-red-100 shadow-sm right-0 z-50 cursor-pointer"
+            v-show="showLegal" @click="showLegal = !showLegal">
+            <svg class="w-8" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+              <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+              <g id="SVGRepo_iconCarrier">
+                <path d="M6 9L12 15L18 9" stroke="#000000" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round"></path>
+              </g>
+            </svg></span>
+        </ul>
       </div>
-    </body>
-  </ClientOnly>
+
+      <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" v-show="showLegal" />
+
+      <p class="text-center text-[17px] my-3 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-4"
+        v-show="showLegal">
+        <sub>
+          <span class="font-bold">Naziv tvrtke:</span>
+          Taxi Opatija - Obrt za usluge <br />
+          <span class="font-bold"> Adresa (sjedište) tvrtke:</span> Dr. Ante Mandića 2<br />
+          <span class="font-bold">E-mail:</span> anterukavina@yahoo.com.hr <br />
+          <span class="font-bold">Broj telefona:</span> 098491369 <br />
+          <span class="font-bold">Bankovni račun (IBAN):</span> HR4624020061100735606
+          <br />
+          <span class="font-bold">Poslovna banka:</span> ERSTE & STEIERMÄRKISCHE BANK d.d.<br />
+          <span class="font-bold">OIB:</span> 66045096237 <br />
+          <!-- <span class="font-bold">Matični broj:</span> 32546357465352 <br /> -->
+          <span class="font-bold">MBS:</span> 98527584</sub>
+      </p>
+      <hr v-show="showLegal" class="border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+      <span v-show="showLegal" class="block py-4 text-sm text-gray-500 sm:text-center dark:text-gray-400 relative">©
+        2024
+        <a href="tel:+38598491369" class="hover:underline">Taxi Opatija</a>
+      </span>
+    </div>
+  </footer>
 </template>
+
+
+
+<style>
+@import url("//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css");
+
+.hero-photo {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 0 0 1000em 1000em / 0 0 100em 100em;
+}
+
+.footer-border {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 1000em 1000em 0 0 / 20em 20em 0 0;
+  border-top: 0.1px dotted rgba(0, 30, 180, 0.347);
+  background: rgb(0, 29, 180);
+  background: linear-gradient(0deg,
+      rgba(0, 29, 180, 0.0970982142857143) 0%,
+      rgba(0, 159, 180, 0.09429709383753504) 100%);
+}
+
+.hero-hours {
+  font-weight: 600;
+  color: white;
+  background: rgb(0, 153, 180);
+  background: linear-gradient(0deg,
+      rgba(0, 153, 180, 0.9990589985994398) 0%,
+      rgba(0, 114, 180, 1) 100%);
+  border-radius: 23px;
+  box-shadow:
+    rgba(6, 24, 44, 0.4) 0px 0px 0px 2px,
+    rgba(6, 24, 44, 0.65) 0px 4px 6px -1px,
+    rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+}
+
+body {
+  overflow-y: hidden;
+  background: rgb(58, 59, 180);
+  background: linear-gradient(0deg,
+      rgba(58, 59, 180, 0) 0%,
+      rgba(29, 208, 253, 0.0746892507002801) 75%,
+      rgba(147, 69, 252, 0) 100%);
+}
+
+button {
+  box-shadow:
+    rgba(0, 0, 0, 0.4) 0px 1px 3px,
+    rgba(0, 0, 0, 0.3) 0px 4px 8px -2px,
+    rgba(0, 0, 0, 0.2) 0px -2px 0px inset;
+}
+</style>
+
 <script setup>
-  import { ref } from "vue"
-  import { onMounted } from 'vue'
-  import {
-    initAccordions,
-    initCarousels,
-    initCollapses,
-    initDials,
-    initDismisses,
-    initDrawers,
-    initDropdowns,
-    initModals,
-    initPopovers,
-    initTabs,
-    initTooltips
-  } from 'flowbite'
-
-  // initialize components based on data attribute selectors
-  onMounted(() => {
-    initAccordions();
-    initCarousels();
-    initCollapses();
-    initDials();
-    initDismisses();
-    initDrawers();
-    initDropdowns();
-    initModals();
-    initPopovers();
-    initTabs();
-    initTooltips();
-  })
-
-
-  useHead({
-    title: 'Poduke Parallel',
-    meta: [
-      { name: 'description', content: 'Učenje bez muke, uz Parallel poduke! Unaprijedite svoje učenje kroz naše iskustvo, poticaj i konstantnu podršku. Održavamo instrukcije iz svih obaveznih i velikog broja stručnih predmeta. Uspješno savladajte gradivo neophodno za polaganje državne mature uz Parallel poduke!' },
-      { hid: 'og:url', property: 'og:url', content: 'https://poduke.vercel.app' },
-      { hid: 'og:type', property: 'og:type', content: 'website' },
-      { hid: 'og:title', property: 'og:title', content: 'Poduke Parallel' },
-      { hid: 'og:description', property: 'og:description', content: 'Učenje bez muke, uz Parallel poduke! Unaprijedite svoje učenje kroz naše iskustvo, poticaj i konstantnu podršku. Održavamo instrukcije iz svih obaveznih i velikog broja stručnih predmeta. Uspješno savladajte gradivo neophodno za polaganje državne mature uz Parallel poduke!' },
-      { hid: 'og:image', property: 'og:image', content: 'https://scontent.fzag3-1.fna.fbcdn.net/v/t39.30808-6/272268092_113057891271813_5228490678392803109_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=c83dfd&_nc_ohc=tE_wpawNL4kAX9GyzDx&_nc_ht=scontent.fzag3-1.fna&oh=00_AfBkGnVM38X-D7-m6IuBugqorWq_5Q3J1VTUH1gAQ4Q_qQ&oe=65C3BB15' }
-    ],
-
-    bodyAttrs: {
-      class: ''
+useHead({
+  title: "Taxi Opatija",
+  meta: [
+    {
+      name: "description",
+      content: "Brza i pouzdana Opatijska taxi služba.",
     },
-    script: []
-  })
+    { hid: "og:url", property: "og:url", content: "https://taxiopatija.hr" },
+    { hid: "og:type", property: "og:type", content: "website" },
+    { hid: "og:title", property: "og:title", content: "Taxi Opatija" },
+    {
+      hid: "og:description",
+      property: "og:description",
+      content: "Brza i pouzdana Opatijska taxi služba.",
+    },
+    {
+      hid: "og:image",
+      property: "og:image",
+      content: "https://taxiopatija.hr/opatija.jpeg",
+    },
+  ],
 
-  useSeoMeta({
-    title: 'Poduke Parallel',
-    ogTitle: 'Poduke Parallel',
-    description: 'Učenje bez muke, uz Parallel poduke! Unaprijedite svoje učenje kroz naše iskustvo, poticaj i konstantnu podršku. Održavamo instrukcije iz svih obaveznih i velikog broja stručnih predmeta. Uspješno savladajte gradivo neophodno za polaganje državne mature uz Parallel poduke!',
-    ogDescription: 'Učenje bez muke, uz Parallel poduke! Unaprijedite svoje učenje kroz naše iskustvo, poticaj i konstantnu podršku. Održavamo instrukcije iz svih obaveznih i velikog broja stručnih predmeta. Uspješno savladajte gradivo neophodno za polaganje državne mature uz Parallel poduke!',
-    ogImage: 'https://scontent.fzag3-1.fna.fbcdn.net/v/t39.30808-6/272268092_113057891271813_5228490678392803109_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=c83dfd&_nc_ohc=tE_wpawNL4kAX9GyzDx&_nc_ht=scontent.fzag3-1.fna&oh=00_AfBkGnVM38X-D7-m6IuBugqorWq_5Q3J1VTUH1gAQ4Q_qQ&oe=65C3BB15',
-    twitterCard: 'https://scontent.fzag3-1.fna.fbcdn.net/v/t39.30808-6/272268092_113057891271813_5228490678392803109_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=c83dfd&_nc_ohc=tE_wpawNL4kAX9GyzDx&_nc_ht=scontent.fzag3-1.fna&oh=00_AfBkGnVM38X-D7-m6IuBugqorWq_5Q3J1VTUH1gAQ4Q_qQ&oe=65C3BB15',
-  })
+  bodyAttrs: {
+    class: "",
+  },
+  script: [],
+});
 
-  // initialize components based on data attribute selectors
-  onMounted(() => {
-    initAccordions();
-    initCarousels();
-    initCollapses();
-    initDials();
-    initDismisses();
-    initDrawers();
-    initDropdowns();
-    initModals();
-    initPopovers();
-    initTabs();
-    initTooltips();
-  })
+useSeoMeta({
+  title: "Taxi Opatija",
+  ogTitle: "Taxi Opatija",
+  description: "Brza i pouzdana Opatijska taxi služba.",
+  ogDescription: "Brza i pouzdana Opatijska taxi služba.",
+  ogImage: "https://taxiopatija.hr/opatija.jpeg",
+  twitterCard: "https://taxiopatija.hr/opatija.jpeg",
+});
 
-
-
+import { ref } from "vue";
+const showLegal = ref(false);
 
 
 </script>
-
-<style scoped>
-@import url("//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css");
-
-
-
-.gradient {
-  background: #00B4DB;
-  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #0083B0, #00B4DB);
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #0083B0, #00B4DB);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-}
-</style>

@@ -7,10 +7,6 @@ export default defineNuxtConfig({
       link: [{ rel: 'icon', type: 'image/x-con', href: './public/favicon.ico'}],
     },
   },
-    robots: {
-    mergeWithRobotsTxtPath: './public/_robots.txt'
-  },
-
     modules: [
     '@nuxtjs/tailwindcss',
       'nuxt-swiper',
