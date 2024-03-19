@@ -185,7 +185,7 @@ useHead({
     },
     { hid: "og:url", property: "og:url", content: "https://taxiopatija.hr" },
     { hid: "og:type", property: "og:type", content: "website" },
-    { hid: "og:title", property: "og:title", content: "Taxi Opatija" },
+    { hid: "og:title", property: "og:title", content: "Taxi Opatija | 0 - 24 | Naručite taksi" },
     {
       hid: "og:description",
       property: "og:description",
@@ -205,8 +205,8 @@ useHead({
 });
 
 useSeoMeta({
-  title: "Taxi Opatija",
-  ogTitle: "Taxi Opatija",
+  title: "Taxi Opatija | 0 - 24 | Naručite taksi",
+  ogTitle: "Taxi Opatija | 0 - 24 | Naručite taksi",
   description: "Brza i pouzdana Opatijska taxi služba.",
   ogDescription: "Brza i pouzdana Opatijska taxi služba.",
   ogImage: "https://taxiopatija.hr/opatija.jpeg",
