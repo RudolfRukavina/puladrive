@@ -176,26 +176,26 @@ button {
 
 <script setup>
 useHead({
-  title: "Taxi Opatija | 0 - 24 | Naručite taksi",
+  title: "#1 | Taxi Opatija | 0 - 24",
   htmlAttrs: {
     lang: "hr",
   },
   meta: [
     {
       name: "description",
-      content: "Brza i pouzdana Opatijska taxi služba.",
+      content: "Opatija taxi service #1 - Best service at the best price - Available 24 hours every day.",
     },
     { hid: "og:url", property: "og:url", content: "https://taxiopatija.hr" },
     { hid: "og:type", property: "og:type", content: "website" },
     {
       hid: "og:title",
       property: "og:title",
-      content: "Taxi Opatija | 0 - 24 | Naručite taksi",
+      content: "#1 | Taxi Opatija | 0 - 24",
     },
     {
       hid: "og:description",
       property: "og:description",
-      content: "Brza i pouzdana Opatijska taxi služba.",
+      content: "Opatija taxi service #1 - Best service at the best price - Available 24 hours every day.",
     },
     {
       hid: "og:image",
@@ -226,10 +226,10 @@ useHead({
 });
 
 useSeoMeta({
-  title: "Taxi Opatija | 0 - 24 | Naručite taksi",
-  ogTitle: "Taxi Opatija | 0 - 24 | Naručite taksi",
-  description: "Brza i pouzdana Opatijska taxi služba.",
-  ogDescription: "Brza i pouzdana Opatijska taxi služba.",
+  title: "#1 | Taxi Opatija | 0 - 24",
+  ogTitle: "#1 | Taxi Opatija | 0 - 24",
+  description: "Opatija taxi service #1 - Best service at the best price - Available 24 hours every day.",
+  ogDescription: "Opatija taxi service #1 - Best service at the best price - Available 24 hours every day.",
   ogImage: "https://taxiopatija.hr/opatija.jpeg",
   twitterCard: "https://taxiopatija.hr/opatija.jpeg",
 });
