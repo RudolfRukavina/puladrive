@@ -1,12 +1,12 @@
 <template>
 
   <Head>
-    <Title>Taxi Opatija</Title>
+    <Title>Taxi Opatija | 0 - 24 | Naručite taksi</Title>
     <Meta name="description" content="Brza i pouzdana Opatijska taxi služba." />
   </Head>
 
   <header>
-    <img class="hero-photo h-56 md:h-96" src="../assets/imgs/opatijamainphoto.jpeg" alt="" />
+    <img class="hero-photo h-56 md:h-96" src="../assets/imgs/opatijamainphoto.jpeg" alt="Opatija Taxi" />
     <div class="flex justify-center -mt-5">
       <div class="hero-hours">
         <p class="m-0 mx-1 p-1 px-12 text-xl fw-bold">0 - 24</p>
@@ -18,7 +18,8 @@
       <div class="relative isolate px-6 lg:px-8">
         <div class="mx-auto max-w-2xl pt-10">
           <div class="flex justify-center">
-            <img src="../assets/imgs/grbopatije.png" alt="" class="-mt-5 object-cover w-3/12 sm:w-24" />
+            <img src="../assets/imgs/grbopatije.png" alt="Logo Taxi Opatija"
+              class="-mt-5 object-cover w-3/12 sm:w-24" />
           </div>
           <div class="text-center">
             <h1 class="text-6xl font-bold tracking-tight text-gray-900">
