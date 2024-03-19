@@ -9,8 +9,7 @@ export default defineNuxtConfig({
   },
     modules: [
     '@nuxtjs/tailwindcss',
-      'nuxt-swiper',
-      '@nuxtjs/head',
+      'nuxt-swiper'
   ],
     tailwindcss: {
         cssPath: '~/assets/css/input.css'

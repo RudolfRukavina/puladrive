@@ -176,7 +176,6 @@ button {
 </style>
 
 <script setup>
-import { useHead } from '@nuxtjs/head'
 
 useHead({
   title: "Taxi Opatija | 0 - 24 | Naručite taksi",
