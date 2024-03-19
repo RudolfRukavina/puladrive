@@ -7,7 +7,7 @@
   </Head>
 
   <header>
-    <img class="hero-photo h-56 md:h-96" src="../assets/imgs/opatijamainphoto.jpeg" alt="Opatija Taxi" />
+    <img class="hero-photo h-56 md:h-96" src="../assets/imgs/opatijamainphoto.webp" alt="Opatija Taxi" />
     <div class="flex justify-center -mt-5">
       <div class="hero-hours">
         <p class="m-0 mx-1 p-1 px-12 text-xl fw-bold">0 - 24</p>
@@ -19,8 +19,7 @@
       <div class="relative isolate px-6 lg:px-8">
         <div class="mx-auto max-w-2xl pt-10">
           <div class="flex justify-center">
-            <img src="../assets/imgs/grbopatije.png" alt="Logo Taxi Opatija"
-              class="-mt-5 object-cover w-3/12 sm:w-24" />
+            <img src="../assets/imgs/logo.webp" alt="Logo Taxi Opatija" class="-mt-5 object-cover w-3/12 sm:w-24" />
           </div>
           <div class="text-center">
             <h1 class="text-6xl font-bold tracking-tight text-gray-900">
@@ -47,7 +46,7 @@
       <div class="sm:flex sm:items-center sm:justify-between">
         <a href="tel:+38598491369" class="flex justify-between items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse">
           <div class="flex justify-center">
-            <img src="../assets/imgs/grbopatije.png" class="h-6" alt="Taxi Opatija Logo" />
+            <img src="../assets/imgs/logo.webp" class="h-6" alt="Taxi Opatija Logo" />
             <span class="self-center text-md font-semibold whitespace-nowrap dark:text-white">Taxi Opatija</span>
           </div>
 
