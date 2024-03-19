@@ -1,8 +1,9 @@
 <template>
 
   <Head>
-    <Title>Taxi Opatija | 0 - 24 | Naručite taksi</Title>
-    <Meta name="description" content="Brza i pouzdana Opatijska taxi služba." />
+    <Title>#1 | Taxi Opatija | 0 - 24</Title>
+    <Meta name="description"
+      content="Opatija taxi service #1 | Best service at the best price | Available 24 hours every day." />
   </Head>
 
   <header>
