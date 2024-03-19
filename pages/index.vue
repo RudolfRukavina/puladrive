@@ -177,7 +177,7 @@ button {
 
 <script setup>
 useHead({
-  title: "Taxi Opatija",
+  title: "Taxi Opatija | 0 - 24 | Naručite taksi",
   meta: [
     {
       name: "description",
