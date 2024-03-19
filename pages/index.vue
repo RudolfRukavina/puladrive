@@ -52,7 +52,19 @@
 
           <span class="self-center text-sm font-semibold whitespace-nowrap dark:text-white">+385 98 491 369</span>
         </a>
-        <ul class="flex flex-wrap items-center mb-6 text-xs font-medium text-gray-500 sm:mb-0 dark:text-gray-400">
+        <ul class="flex flex-wrap items-center mb-3 text-xs font-medium text-gray-500 sm:mb-0 dark:text-gray-400">
+
+
+          <li>
+            <a href="https://www.facebook.com/taxiopatija" target="_blank"
+              class="block me-4 md:me-6 text-sm text-blue-800">Facebook</a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/taxiopatija.hr/" target="_blank"
+              class="block me-4 md:me-6 text-sm text-purple-800">Instagram</a>
+          </li>
+        </ul>
+        <ul class="flex flex-wrap items-center mb-3 text-xs font-medium text-gray-500 sm:mb-0 dark:text-gray-400">
           <li>
             <a href="#" class="hover:underline me-4 md:me-6">Uvjeti korištenja</a>
           </li>
@@ -61,16 +73,8 @@
             <a href="#" class="hover:underline me-4 md:me-6">Privatnost</a>
           </li>
 
-          <li>
-            <a href="https://www.facebook.com/taxiopatija" target="_blank"
-              class="block px-4 text-sm text-blue-800">Facebook</a>
-          </li>
-          <li>
-            <a href="https://www.instagram.com/taxiopatija.hr/" target="_blank"
-              class="block px-0 text-sm text-purple-800">Instagram</a>
-          </li>
         </ul>
-        <span class="absolute bottom-4 lg:bottom-3 rounded-3 right-0 mx-1 cursor-pointer" v-show="!showLegal"
+        <span class="absolute bottom-3 lg:bottom-4 rounded-3 mx-2 right-0 cursor-pointer" v-show="!showLegal"
           @click="showLegal = !showLegal">
           <svg class="w-8" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
@@ -82,7 +86,7 @@
           </svg>
         </span>
         <span
-          class="absolute top-15 border rounded-2xl lg:top-0 -m-4 mx-4 bg-red-200 border-red-100 shadow-sm right-0 z-50 cursor-pointer"
+          class="absolute top-15 border rounded-2xl lg:top-0 -m-1 lg:-my-3  mx-2  bg-red-200 border-red-100 shadow-sm right-0 z-50 cursor-pointer"
           v-show="showLegal" @click="showLegal = !showLegal">
           <svg class="w-8" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g id="SVGRepo_bgCarrie" stroke-width="0"></g>
@@ -116,7 +120,7 @@
           <span class="font-bold">MBS:</span> 98527584</sub>
       </p>
       <hr v-show="showLegal" class="border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
-      <span v-show="showLegal" class="block py-4 text-sm text-gray-500 sm:text-center dark:text-gray-400 relative">©
+      <span v-show="showLegal" class="block py-4 text-sm text-gray-500 text-center dark:text-gray-400 relative">©
         2024
         <a href="tel:+38598491369" class="hover:underline">Taxi Opatija</a>
       </span>
