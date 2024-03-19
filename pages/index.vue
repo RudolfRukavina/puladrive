@@ -62,12 +62,12 @@
           </li>
 
           <li>
-            <a href="https://www.facebook.com/taxiopatija" target="_blank" class="block px-4 text-sm text-blue-500"><i
+            <a href="https://www.facebook.com/taxiopatija" target="_blank" class="block px-4 text-sm text-blue-800"><i
                 class="fa fa-facebook">acebook</i></a>
           </li>
           <li>
             <a href="https://www.instagram.com/taxiopatija.hr/" target="_blank"
-              class="block px-0 text-sm text-purple-500"><i class="fa fa-instagram"> Instagram</i></a>
+              class="block px-0 text-sm text-purple-800"><i class="fa fa-instagram"> Instagram</i></a>
           </li>
 
 
