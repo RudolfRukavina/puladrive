@@ -62,38 +62,36 @@
           </li>
 
           <li>
-            <a href="https://www.facebook.com/taxiopatija" target="_blank" class="block px-4 text-sm text-blue-800"><i
-                class="fa fa-facebook">acebook</i></a>
+            <a href="https://www.facebook.com/taxiopatija" target="_blank"
+              class="block px-4 text-sm text-blue-800">Facebook</a>
           </li>
           <li>
             <a href="https://www.instagram.com/taxiopatija.hr/" target="_blank"
-              class="block px-0 text-sm text-purple-800"><i class="fa fa-instagram"> Instagram</i></a>
+              class="block px-0 text-sm text-purple-800">Instagram</a>
           </li>
-
-
-          <span class="absolute bottom-4 lg:bottom-3 rounded-3 right-0 mx-1 cursor-pointer" v-show="!showLegal"
-            @click="showLegal = !showLegal">
-            <svg class="w-8" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-              <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-              <g id="SVGRepo_iconCarrier">
-                <path d="M18 15L12.2278 8.26574C12.108 8.12606 11.892 8.12606 11.7722 8.26574L6 15" stroke="#000000"
-                  stroke-width="2" stroke-linecap="round"></path>
-              </g>
-            </svg>
-          </span>
-          <span
-            class="absolute top-15 border rounded-2xl lg:top-0 -m-4 mx-4 bg-red-200 border-red-100 shadow-sm right-0 z-50 cursor-pointer"
-            v-show="showLegal" @click="showLegal = !showLegal">
-            <svg class="w-8" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-              <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-              <g id="SVGRepo_iconCarrier">
-                <path d="M6 9L12 15L18 9" stroke="#000000" stroke-width="2" stroke-linecap="round"
-                  stroke-linejoin="round"></path>
-              </g>
-            </svg></span>
         </ul>
+        <span class="absolute bottom-4 lg:bottom-3 rounded-3 right-0 mx-1 cursor-pointer" v-show="!showLegal"
+          @click="showLegal = !showLegal">
+          <svg class="w-8" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+            <g id="SVGRepo_iconCarrier">
+              <path d="M18 15L12.2278 8.26574C12.108 8.12606 11.892 8.12606 11.7722 8.26574L6 15" stroke="#000000"
+                stroke-width="2" stroke-linecap="round"></path>
+            </g>
+          </svg>
+        </span>
+        <span
+          class="absolute top-15 border rounded-2xl lg:top-0 -m-4 mx-4 bg-red-200 border-red-100 shadow-sm right-0 z-50 cursor-pointer"
+          v-show="showLegal" @click="showLegal = !showLegal">
+          <svg class="w-8" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g id="SVGRepo_bgCarrie" stroke-width="0"></g>
+            <g id="SVGRepo_tracerCarrie" stroke-linecap="round" stroke-linejoin="round"></g>
+            <g id="SVGRepo_iconCarrie">
+              <path d="M6 9L12 15L18 9" stroke="#000000" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round"></path>
+            </g>
+          </svg></span>
       </div>
 
       <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" v-show="showLegal" />
@@ -103,12 +101,16 @@
         <sub>
           <span class="font-bold">Naziv tvrtke:</span>
           Taxi Opatija - Obrt za usluge <br />
-          <span class="font-bold"> Adresa (sjedište) tvrtke:</span> Dr. Ante Mandića 2<br />
-          <span class="font-bold">E-mail:</span> anterukavina@yahoo.com.hr <br />
-          <span class="font-bold">Broj telefona:</span> 098491369 <br />
-          <span class="font-bold">Bankovni račun (IBAN):</span> HR4624020061100735606
+          <span class="font-bold"> Adresa (sjedište) tvrtke:</span> Dr. Ante
+          Mandića 2<br />
+          <span class="font-bold">E-mail:</span> anterukavina@yahoo.com.hr
           <br />
-          <span class="font-bold">Poslovna banka:</span> ERSTE & STEIERMÄRKISCHE BANK d.d.<br />
+          <span class="font-bold">Broj telefona:</span> 098491369 <br />
+          <span class="font-bold">Bankovni račun (IBAN):</span>
+          HR4624020061100735606
+          <br />
+          <span class="font-bold">Poslovna banka:</span> ERSTE & STEIERMÄRKISCHE
+          BANK d.d.<br />
           <span class="font-bold">OIB:</span> 66045096237 <br />
           <!-- <span class="font-bold">Matični broj:</span> 32546357465352 <br /> -->
           <span class="font-bold">MBS:</span> 98527584</sub>
@@ -122,11 +124,7 @@
   </footer>
 </template>
 
-
-
 <style>
-@import url("//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css");
-
 .hero-photo {
   width: 100%;
   object-fit: cover;
@@ -152,8 +150,7 @@
       rgba(0, 153, 180, 0.9990589985994398) 0%,
       rgba(0, 114, 180, 1) 100%);
   border-radius: 23px;
-  box-shadow:
-    rgba(6, 24, 44, 0.4) 0px 0px 0px 2px,
+  box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px,
     rgba(6, 24, 44, 0.65) 0px 4px 6px -1px,
     rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
 }
@@ -168,19 +165,16 @@ body {
 }
 
 button {
-  box-shadow:
-    rgba(0, 0, 0, 0.4) 0px 1px 3px,
-    rgba(0, 0, 0, 0.3) 0px 4px 8px -2px,
-    rgba(0, 0, 0, 0.2) 0px -2px 0px inset;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 1px 3px,
+    rgba(0, 0, 0, 0.3) 0px 4px 8px -2px, rgba(0, 0, 0, 0.2) 0px -2px 0px inset;
 }
 </style>
 
 <script setup>
-
 useHead({
   title: "Taxi Opatija | 0 - 24 | Naručite taksi",
   htmlAttrs: {
-    lang: 'hr',
+    lang: "hr",
   },
   meta: [
     {
@@ -189,7 +183,11 @@ useHead({
     },
     { hid: "og:url", property: "og:url", content: "https://taxiopatija.hr" },
     { hid: "og:type", property: "og:type", content: "website" },
-    { hid: "og:title", property: "og:title", content: "Taxi Opatija | 0 - 24 | Naručite taksi" },
+    {
+      hid: "og:title",
+      property: "og:title",
+      content: "Taxi Opatija | 0 - 24 | Naručite taksi",
+    },
     {
       hid: "og:description",
       property: "og:description",
@@ -207,22 +205,21 @@ useHead({
       innerHTML: JSON.stringify({
         "@context": "http://schema.org",
         "@type": "Organization",
-        "name": "Taxi Opatija",
-        "url": "https://taxiopatija.hr",
-        "contactPoint": {
+        name: "Taxi Opatija",
+        url: "https://taxiopatija.hr",
+        contactPoint: {
           "@type": "ContactPoint",
-          "telephone": "+38598491369",
-          "contactType": "customer service"
-        }
-      })
-    }
+          telephone: "+38598491369",
+          contactType: "customer service",
+        },
+      }),
+    },
   ],
   bodyAttrs: {
     class: "",
   },
   script: [],
 });
-
 
 useSeoMeta({
   title: "Taxi Opatija | 0 - 24 | Naručite taksi",
@@ -235,6 +232,4 @@ useSeoMeta({
 
 import { ref } from "vue";
 const showLegal = ref(false);
-
-
 </script>
