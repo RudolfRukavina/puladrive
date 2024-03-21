@@ -1,7 +1,7 @@
 <template>
 
   <Head>
-    <Title>#1 | Taxi Opatija | 0 - 24</Title>
+    <Title>Best taxi service in Opatija? | 0 - 24</Title>
     <Meta name="description"
       content="Opatija taxi service #1 | Best service at the best price | Available 24 hours every day." />
   </Head>
@@ -53,8 +53,6 @@
           <span class="self-center text-sm font-semibold whitespace-nowrap dark:text-white">+385 98 491 369</span>
         </a>
         <ul class="flex flex-wrap items-center mb-3 text-xs font-medium text-gray-500 sm:mb-0 dark:text-gray-400">
-
-
           <li>
             <a href="https://www.facebook.com/taxiopatija" target="_blank"
               class="block me-4 md:me-6 text-sm text-blue-800">Facebook</a>
@@ -62,6 +60,10 @@
           <li>
             <a href="https://www.instagram.com/taxiopatija.hr/" target="_blank"
               class="block me-4 md:me-6 text-sm text-purple-800">Instagram</a>
+          </li>
+          <li>
+            <a href="tel:+38598491369" class="block me-6 md:me-6 text-sm font-bold underline text-blue-500">Want to rent
+              a vehicle?</a>
           </li>
         </ul>
         <ul class="flex flex-wrap items-center mb-3 text-xs font-medium text-gray-500 sm:mb-0 dark:text-gray-400">
@@ -72,7 +74,6 @@
           <li>
             <a href="#" class="hover:underline me-4 md:me-6">Privatnost</a>
           </li>
-
         </ul>
         <span class="absolute bottom-3 lg:bottom-4 rounded-3 mx-2 right-0 cursor-pointer" v-show="!showLegal"
           @click="showLegal = !showLegal">
@@ -86,7 +87,7 @@
           </svg>
         </span>
         <span
-          class="absolute top-15 border rounded-2xl lg:top-0 -m-1 lg:-my-3  mx-2  bg-red-200 border-red-100 shadow-sm right-0 z-50 cursor-pointer"
+          class="absolute top-15 border rounded-2xl lg:top-0 -m-1 lg:-my-3 mx-2 bg-red-200 border-red-100 shadow-sm right-0 z-50 cursor-pointer"
           v-show="showLegal" @click="showLegal = !showLegal">
           <svg class="w-8" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g id="SVGRepo_bgCarrie" stroke-width="0"></g>
@@ -120,8 +121,7 @@
           <span class="font-bold">MBS:</span> 98527584</sub>
       </p>
       <hr v-show="showLegal" class="border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
-      <span v-show="showLegal" class="block py-4 text-sm text-gray-500 text-center dark:text-gray-400 relative">©
-        2024
+      <span v-show="showLegal" class="block py-4 text-sm text-gray-500 text-center dark:text-gray-400 relative">© 2024
         <a href="tel:+38598491369" class="hover:underline">Taxi Opatija</a>
       </span>
     </div>
@@ -176,14 +176,15 @@ button {
 
 <script setup>
 useHead({
-  title: "#1 | Taxi Opatija | 0 - 24",
+  title: "Trenutno najbolji Taxi u Opatiji",
   htmlAttrs: {
     lang: "hr",
   },
   meta: [
     {
       name: "description",
-      content: "Opatija taxi service #1 - Best service at the best price - Available 24 hours every day.",
+      content:
+        "Opatija taxi service #1 - Best service at the best price - Available 24 hours every day.",
     },
     { hid: "og:url", property: "og:url", content: "https://taxiopatija.hr" },
     { hid: "og:type", property: "og:type", content: "website" },
@@ -195,7 +196,8 @@ useHead({
     {
       hid: "og:description",
       property: "og:description",
-      content: "Opatija taxi service #1 - Best service at the best price - Available 24 hours every day.",
+      content:
+        "Opatija taxi service #1 - Best service at the best price - Available 24 hours every day.",
     },
     {
       hid: "og:image",
@@ -228,8 +230,10 @@ useHead({
 useSeoMeta({
   title: "#1 | Taxi Opatija | 0 - 24",
   ogTitle: "#1 | Taxi Opatija | 0 - 24",
-  description: "Opatija taxi service #1 - Best service at the best price - Available 24 hours every day.",
-  ogDescription: "Opatija taxi service #1 - Best service at the best price - Available 24 hours every day.",
+  description:
+    "Opatija taxi service #1 - Best service at the best price - Available 24 hours every day.",
+  ogDescription:
+    "Opatija taxi service #1 - Best service at the best price - Available 24 hours every day.",
   ogImage: "https://taxiopatija.hr/opatija.jpeg",
   twitterCard: "https://taxiopatija.hr/opatija.jpeg",
 });
