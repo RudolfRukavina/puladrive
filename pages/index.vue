@@ -99,7 +99,7 @@
       <div v-show="showLegal" class='flex justify-center'>
         <img v-show='showLegal' src="../assets/imgs/logo.webp" class="h-14" alt="Taxi Opatija Logo" />
       </div>
-      <h1 class="text-6xl font-bold tracking-tight text-gray-900">
+      <h1 v-show='showLegal' class="text-6xl font-bold tracking-tight text-gray-900">
         Taxi Opatija
       </h1>
       <ul v-show='showLegal'
@@ -151,7 +151,7 @@
         </button>
       </a>
       <hr class="my-3 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" v-show="showLegal" />
-      <p class="text-center text-[8px] my-0 py-0 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-4"
+      <!-- <p class="text-center text-[8px] my-0 py-0 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-4"
         v-show="showLegal">
         <span class="font-bold">Naziv tvrtke:</span>
         Taxi Opatija <br>
@@ -166,10 +166,9 @@
         <span class="font-bold">Poslovna banka:</span> ERSTE & STEIERMÄRKISCHE
         BANK d.d.<br />
         <span class="font-bold">OIB:</span> 66045096237 <br />
-        <!-- <span class="font-bold">Matični broj:</span> 32546357465352 <br /> -->
-        <span class="font-bold">MBS:</span> 98527584
-      </p>
-      <hr class="mt-3 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" v-show="showLegal" />
+         <span class="font-bold">Matični broj:</span> 32546357465352 <br />
+      <span class="font-bold">MBS:</span> 98527584
+      </p> -->
       <span v-show="showLegal" class="block py-4 text-sm text-gray-500 text-center dark:text-gray-400 relative">© 2024
         <a href="tel:+38598491369" class="hover:underline">Taxi Opatija</a>
       </span>
