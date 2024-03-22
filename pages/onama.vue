@@ -45,7 +45,7 @@
               <img src="../assets/imgs/logo.webp" alt="Logo Taxi Opatija" class="-mt-5 object-cover w-3/12 sm:w-24" />
             </div>
             <h1 class="text-6xl font-bold tracking-tight text-gray-900">
-              About us
+              O nama
             </h1>
 
             <section id='onama' class='mb-44'>
@@ -93,7 +93,7 @@
               </p>
 
 
-              <p class='text-xl my-4 mt-20 text-gray-800'>Dobrodošli u <span class='font-bold'>Taxi Opatija</span> - Vaš
+              <p class='text-xl my-4 mt-5 text-gray-800'>Dobrodošli u <span class='font-bold'>Taxi Opatija</span> - Vaš
                 pouzdani partner za
                 prijevoz u srcu
                 Opatije!
