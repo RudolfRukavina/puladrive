@@ -1,8 +1,9 @@
 <template>
 
   <Head>
-    <Title>Taxi Opatija | 0 - 24</Title>
-    <Meta name="description" content="Taxi Opatija | Best service at the best price | Available 24 hours every day." />
+    <Title>Usluge | Taxi Opatija</Title>
+    <Meta name="description"
+      content="Usluge | Taxi Opatija | Best service at the best price | Available 24 hours every day." />
   </Head>
 
   <header>
@@ -99,25 +100,25 @@
                       potrebe u Opatiji i okolici.</p>
                   </li>
 
-                  <li class='font-bold border-b text-sky-800 py-4'> • Transferi
+                  <li class='font-bold border-b text-sky-900 py-4'> • Transferi
                     <p class='text-gray-500 text-sm'>Brzi i udobni transferi do i od zračnih luka: Krk, Pula, Zagreb,
                       Trst, Ljubljana.</p>
                   </li>
-                  <li class='font-bold border-b text-sky-700 py-4'> • Ekskurzije
+                  <li class='font-bold border-b text-sky-900 py-4'> • Ekskurzije
                     <p class='text-gray-500 text-sm'>Organizirane ekskurzije kako biste istražili ljepote Kvarnera i
                       okolnih područja uz udoban prijevoz.</p>
                   </li>
-                  <li class='font-bold border-b text-sky-600 py-4'> • Najam kombi vozila (8+1)
+                  <li class='font-bold border-b text-sky-900 py-4'> • Najam kombi vozila (8+1)
                     <p class='text-gray-500 text-sm'>Fleksibilni najam kombi vozila za grupe ili veće obitelji,
                       prilagođen
                       vašim potrebama.</p>
                   </li>
-                  <li class='font-bold border-b text-sky-500 py-4'> • Najam automobila
+                  <li class='font-bold border-b text-sky-900 py-4'> • Najam automobila
                     <p class='text-gray-500 text-sm'>Najam vozila po povoljnim cijenama kako biste istražili destinacije
                       u
                       vlastitom ritmu.</p>
                   </li>
-                  <li class='font-bold border-b text-sky-500 py-4'> • I mnogo više
+                  <li class='font-bold border-b text-sky-900 py-4'> • I mnogo više
                     <p class='text-gray-500 text-sm'>Pružamo i širok spektar dodatnih usluga kako bismo zadovoljili sve
                       vaše potrebe za prijevozom.</p>
                   </li>
@@ -221,7 +222,7 @@ button {
 
 <script setup>
 useHead({
-  title: "Trenutno najbolji Taxi u Opatiji",
+  title: "Taxi Opatija | 0 - 24",
   htmlAttrs: {
     lang: "hr",
   },
@@ -229,29 +230,29 @@ useHead({
     {
       name: "description",
       content:
-        "Taxi Opatija | Best service at the best price | Available 24 hours every day.",
+        "Taxi Opatija | Best service at the best price | Available 24 hours every day | Transfers | Excursions | Rent a Van | Rent a Car | Jedan je taxiopatija.hr | Visit taxiopatija.hr",
     },
     { hid: "og:url", property: "og:url", content: "https://taxiopatija.hr" },
     { hid: "og:type", property: "og:type", content: "website" },
     {
       hid: "og:title",
       property: "og:title",
-      content: "#1 | Taxi Opatija | 0 - 24",
+      content: "Taxi Opatija | Best service at the best price | Available 24 hours every day | Transfers | Excursions | Rent a Van | Rent a Car | Jedan je taxiopatija.hr | Visit taxiopatija.hr",
     },
     {
       hid: "og:description",
       property: "og:description",
       content:
-        "Taxi Opatija | Best service at the best price | Available 24 hours every day.",
+        "Taxi Opatija | Best service at the best price | Available 24 hours every day | Transfers | Excursions | Rent a Van | Rent a Car | Jedan je taxiopatija.hr | Visit taxiopatija.hr",
     },
     {
       hid: "og:image",
       property: "og:image",
       content: "https://taxiopatija.hr/opatija.jpeg",
     },
-    // Structured Data Markup
+    // Structured Data Markup for Home Page
     {
-      hid: "structured-data",
+      hid: "structured-data-home",
       type: "application/ld+json",
       innerHTML: JSON.stringify({
         "@context": "http://schema.org",
@@ -265,6 +266,30 @@ useHead({
         },
       }),
     },
+    // Structured Data Markup for /onama Page
+    {
+      hid: "structured-data-onama",
+      type: "application/ld+json",
+      innerHTML: JSON.stringify({
+        "@context": "http://schema.org",
+        "@type": "WebPage",
+        name: "O nama | Taxi Opatija",
+        url: "https://taxiopatija.hr/onama",
+        description: "O nama | Saznajte više o nama | Visit taxiopatija.hr/onama",
+      }),
+    },
+    // Structured Data Markup for /usluge Page
+    {
+      hid: "structured-data-usluge",
+      type: "application/ld+json",
+      innerHTML: JSON.stringify({
+        "@context": "http://schema.org",
+        "@type": "WebPage",
+        name: "Usluge | Taxi Opatija",
+        url: "https://taxiopatija.hr/usluge",
+        description: "Usluge | Pregledajte naše usluge | Taxi | Transfers | Excursions | Rent a Van | Rent a Car | Visit taxiopatija.hr/usluge",
+      }),
+    },
   ],
   bodyAttrs: {
     class: "",
@@ -273,16 +298,14 @@ useHead({
 });
 
 useSeoMeta({
-  title: "#1 | Taxi Opatija | 0 - 24",
-  ogTitle: "#1 | Taxi Opatija | 0 - 24",
+  title: "Taxi Opatija | Best service at the best price | Available 24 hours every day | Transfers | Excursions | Rent a Van | Rent a Car | Jedan je taxiopatija.hr | Visit taxiopatija.hr",
+  ogTitle: "Taxi Opatija | Best service at the best price | Available 24 hours every day | Transfers | Excursions | Rent a Van | Rent a Car | Jedan je taxiopatija.hr | Visit taxiopatija.hr",
   description:
-    "Taxi Opatija | Best service at the best price | Available 24 hours every day.",
+    "Taxi Opatija | Best service at the best price | Available 24 hours every day | Transfers | Excursions | Rent a Van | Rent a Car | Jedan je taxiopatija.hr | Visit taxiopatija.hr",
   ogDescription:
-    "Taxi Opatija | Best service at the best price | Available 24 hours every day.",
+    "Taxi Opatija | Best service at the best price | Available 24 hours every day | Transfers | Excursions | Rent a Van | Rent a Car | Jedan je taxiopatija.hr | Visit taxiopatija.hr",
   ogImage: "https://taxiopatija.hr/opatija.jpeg",
   twitterCard: "https://taxiopatija.hr/opatija.jpeg",
 });
 
-import { ref } from "vue";
-const showLegal = ref(false);
 </script>
