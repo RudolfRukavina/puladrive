@@ -6,7 +6,7 @@
   </Head>
 
   <header>
-    <img class="hero-photo h-[27vh] md:h-96" src="../assets/imgs/cars.jpg" alt="Naša vozila" />
+    <img class="hero-photo h-[27vh] md:h-96" src="../assets/imgs/taxiopatijacentar.jpeg" alt="Slika Centra Opatije" />
     <div class="flex justify-center -mt-5">
       <div class="hero-hours">
         <p class="m-0 mx-1 p-1 px-12 text-xl fw-bold">0 - 24</p>
