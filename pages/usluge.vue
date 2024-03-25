@@ -62,7 +62,7 @@
 -->
 
               <article
-                class="hover:animate-background rounded-xl bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 p-0.5 shadow-xl transition hover:bg-[length:400%_400%] hover:shadow-sm hover:[animation-duration:_4s]">
+                class="hover:animate-background rounded-xl bg-gradient-to-r from-gray-600 via-slate-500 to-gray-600 p-0.5 shadow-xl transition hover:bg-[length:400%_400%] hover:shadow-sm hover:[animation-duration:_4s]">
                 <NuxtLink to="/taxi-opatija-cijena">
                   <div class="rounded-[10px] bg-white p-4 sm:p-6">
                     <div class="flex justify-between mt-1">
@@ -85,13 +85,13 @@
                       prijevozne potrebe u Opatiji i okolici.
                     </p>
                     <div class="mt-4 flex flex-wrap gap-1">
-                      <span class="whitespace-nowrap rounded-full bg-purple-100 px-2.5 py-0.5 text-xs text-purple-600">
+                      <span class="whitespace-nowrap rounded-full bg-sky-100 px-2.5 py-0.5 text-xs text-blue-600">
                         Profesionalni vozači
                       </span>
-                      <span class="whitespace-nowrap rounded-full bg-purple-100 px-2.5 py-0.5 text-xs text-purple-600">
+                      <span class="whitespace-nowrap rounded-full bg-sky-100 px-2.5 py-0.5 text-xs text-blue-600">
                         0 - 24
                       </span>
-                      <span class="whitespace-nowrap rounded-full bg-purple-100 px-2.5 py-0.5 text-xs text-purple-600">
+                      <span class="whitespace-nowrap rounded-full bg-sky-100 px-2.5 py-0.5 text-xs text-blue-600">
                         24/7
                       </span>
                     </div>
@@ -100,7 +100,7 @@
               </article>
 
               <article
-                class="my-3 hover:animate-background rounded-xl bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 p-0.5 shadow-xl transition hover:bg-[length:400%_400%] hover:shadow-sm hover:[animation-duration:_4s]">
+                class="my-3 hover:animate-background rounded-xl bg-gradient-to-r from-gray-600 via-slate-500 to-gray-600 p-0.5 shadow-xl transition hover:bg-[length:400%_400%] hover:shadow-sm hover:[animation-duration:_4s]">
                 <NuxtLink to="/taxi-opatija-transferi-cijena">
                   <div class="rounded-[10px] bg-white p-4 sm:p-6">
                     <div class="flex justify-between mt-1">
@@ -123,19 +123,19 @@
                       Zagreb, Trst, Ljubljana.
                     </p>
                     <div class="mt-4 flex flex-wrap gap-1">
-                      <span class="whitespace-nowrap rounded-full bg-purple-100 px-2.5 py-0.5 text-xs text-purple-600">
+                      <span class="whitespace-nowrap rounded-full bg-sky-100 px-2.5 py-0.5 text-xs text-blue-600">
                         Krk
                       </span>
-                      <span class="whitespace-nowrap rounded-full bg-purple-100 px-2.5 py-0.5 text-xs text-purple-600">
+                      <span class="whitespace-nowrap rounded-full bg-sky-100 px-2.5 py-0.5 text-xs text-blue-600">
                         Pula
                       </span>
-                      <span class="whitespace-nowrap rounded-full bg-purple-100 px-2.5 py-0.5 text-xs text-purple-600">
+                      <span class="whitespace-nowrap rounded-full bg-sky-100 px-2.5 py-0.5 text-xs text-blue-600">
                         Zagreb
                       </span>
-                      <span class="whitespace-nowrap rounded-full bg-purple-100 px-2.5 py-0.5 text-xs text-purple-600">
+                      <span class="whitespace-nowrap rounded-full bg-sky-100 px-2.5 py-0.5 text-xs text-blue-600">
                         Trst
                       </span>
-                      <span class="whitespace-nowrap rounded-full bg-purple-100 px-2.5 py-0.5 text-xs text-purple-600">
+                      <span class="whitespace-nowrap rounded-full bg-sky-100 px-2.5 py-0.5 text-xs text-blue-600">
                         Ljubljana
                       </span>
                     </div>
@@ -144,7 +144,7 @@
               </article>
 
               <article
-                class="my-3 hover:animate-background rounded-xl bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 p-0.5 shadow-xl transition hover:bg-[length:400%_400%] hover:shadow-sm hover:[animation-duration:_4s]">
+                class="my-3 hover:animate-background rounded-xl bg-gradient-to-r from-gray-600 via-slate-500 to-gray-600 p-0.5 shadow-xl transition hover:bg-[length:400%_400%] hover:shadow-sm hover:[animation-duration:_4s]">
                 <NuxtLink to="/taxi-opatija-organizirana-putovanja-cijena">
                   <div class="rounded-[10px] bg-white p-4 sm:p-6">
                     <div class="flex justify-between mt-1">
@@ -167,22 +167,22 @@
                       Kvarnera i okolnih područja uz udoban prijevoz.
                     </p>
                     <div class="mt-4 flex flex-wrap gap-1">
-                      <span class="whitespace-nowrap rounded-full bg-purple-100 px-2.5 py-0.5 text-xs text-purple-600">
+                      <span class="whitespace-nowrap rounded-full bg-sky-100 px-2.5 py-0.5 text-xs text-blue-600">
                         Ekskurzije
                       </span>
-                      <span class="whitespace-nowrap rounded-full bg-purple-100 px-2.5 py-0.5 text-xs text-purple-600">
+                      <span class="whitespace-nowrap rounded-full bg-sky-100 px-2.5 py-0.5 text-xs text-blue-600">
                         Izleti
                       </span>
-                      <span class="whitespace-nowrap rounded-full bg-purple-100 px-2.5 py-0.5 text-xs text-purple-600">
+                      <span class="whitespace-nowrap rounded-full bg-sky-100 px-2.5 py-0.5 text-xs text-blue-600">
                         Turističke rute
                       </span>
-                      <span class="whitespace-nowrap rounded-full bg-purple-100 px-2.5 py-0.5 text-xs text-purple-600">
+                      <span class="whitespace-nowrap rounded-full bg-sky-100 px-2.5 py-0.5 text-xs text-blue-600">
                         Kultni događaji
                       </span>
-                      <span class="whitespace-nowrap rounded-full bg-purple-100 px-2.5 py-0.5 text-xs text-purple-600">
+                      <span class="whitespace-nowrap rounded-full bg-sky-100 px-2.5 py-0.5 text-xs text-blue-600">
                         Sportski Događaji
                       </span>
-                      <span class="whitespace-nowrap rounded-full bg-purple-100 px-2.5 py-0.5 text-xs text-purple-600">
+                      <span class="whitespace-nowrap rounded-full bg-sky-100 px-2.5 py-0.5 text-xs text-blue-600">
                         Kreirajte svoj izlet!
                       </span>
                     </div>
@@ -191,7 +191,7 @@
               </article>
 
               <article
-                class="my-3 hover:animate-background rounded-xl bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 p-0.5 shadow-xl transition hover:bg-[length:400%_400%] hover:shadow-sm hover:[animation-duration:_4s]">
+                class="my-3 hover:animate-background rounded-xl bg-gradient-to-r from-gray-600 via-slate-500 to-gray-600 p-0.5 shadow-xl transition hover:bg-[length:400%_400%] hover:shadow-sm hover:[animation-duration:_4s]">
                 <NuxtLink to="/taxi-opatija-najam-kombi-vozila-cijena">
                   <div class="rounded-[10px] bg-white p-4 sm:p-6">
                     <div class="flex justify-between mt-1">
@@ -214,22 +214,22 @@
                       prilagođen vašim potrebama.
                     </p>
                     <div class="mt-4 flex flex-wrap gap-1">
-                      <span class="whitespace-nowrap rounded-full bg-purple-100 px-2.5 py-0.5 text-xs text-purple-600">
+                      <span class="whitespace-nowrap rounded-full bg-sky-100 px-2.5 py-0.5 text-xs text-blue-600">
                         S vozačem
                       </span>
-                      <span class="whitespace-nowrap rounded-full bg-purple-100 px-2.5 py-0.5 text-xs text-purple-600">
+                      <span class="whitespace-nowrap rounded-full bg-sky-100 px-2.5 py-0.5 text-xs text-blue-600">
                         Bez vozača
                       </span>
-                      <span class="whitespace-nowrap rounded-full bg-purple-100 px-2.5 py-0.5 text-xs text-purple-600">
+                      <span class="whitespace-nowrap rounded-full bg-sky-100 px-2.5 py-0.5 text-xs text-blue-600">
                         Jednodnevno
                       </span>
-                      <span class="whitespace-nowrap rounded-full bg-purple-100 px-2.5 py-0.5 text-xs text-purple-600">
+                      <span class="whitespace-nowrap rounded-full bg-sky-100 px-2.5 py-0.5 text-xs text-blue-600">
                         Višednevno
                       </span>
-                      <span class="whitespace-nowrap rounded-full bg-purple-100 px-2.5 py-0.5 text-xs text-purple-600">
+                      <span class="whitespace-nowrap rounded-full bg-sky-100 px-2.5 py-0.5 text-xs text-blue-600">
                         Lokalno
                       </span>
-                      <span class="whitespace-nowrap rounded-full bg-purple-100 px-2.5 py-0.5 text-xs text-purple-600">
+                      <span class="whitespace-nowrap rounded-full bg-sky-100 px-2.5 py-0.5 text-xs text-blue-600">
                         Međunarodno
                       </span>
                     </div>
@@ -238,7 +238,7 @@
               </article>
 
               <article
-                class="my-3 hover:animate-background rounded-xl bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 p-0.5 shadow-xl transition hover:bg-[length:400%_400%] hover:shadow-sm hover:[animation-duration:_4s]">
+                class="my-3 hover:animate-background rounded-xl bg-gradient-to-r from-gray-600 via-slate-500 to-gray-600 p-0.5 shadow-xl transition hover:bg-[length:400%_400%] hover:shadow-sm hover:[animation-duration:_4s]">
                 <NuxtLink to="/taxi-opatija-najam-automobila-cijena">
                   <div class="rounded-[10px] bg-white p-4 sm:p-6">
                     <div class="flex justify-between mt-1">
@@ -261,22 +261,22 @@
                       destinacije u vlastitom ritmu.
                     </p>
                     <div class="mt-4 flex flex-wrap gap-1">
-                      <span class="whitespace-nowrap rounded-full bg-purple-100 px-2.5 py-0.5 text-xs text-purple-600">
+                      <span class="whitespace-nowrap rounded-full bg-sky-100 px-2.5 py-0.5 text-xs text-blue-600">
                         S vozačem
                       </span>
-                      <span class="whitespace-nowrap rounded-full bg-purple-100 px-2.5 py-0.5 text-xs text-purple-600">
+                      <span class="whitespace-nowrap rounded-full bg-sky-100 px-2.5 py-0.5 text-xs text-blue-600">
                         Bez vozača
                       </span>
-                      <span class="whitespace-nowrap rounded-full bg-purple-100 px-2.5 py-0.5 text-xs text-purple-600">
+                      <span class="whitespace-nowrap rounded-full bg-sky-100 px-2.5 py-0.5 text-xs text-blue-600">
                         Jednodnevno
                       </span>
-                      <span class="whitespace-nowrap rounded-full bg-purple-100 px-2.5 py-0.5 text-xs text-purple-600">
+                      <span class="whitespace-nowrap rounded-full bg-sky-100 px-2.5 py-0.5 text-xs text-blue-600">
                         Višednevno
                       </span>
-                      <span class="whitespace-nowrap rounded-full bg-purple-100 px-2.5 py-0.5 text-xs text-purple-600">
+                      <span class="whitespace-nowrap rounded-full bg-sky-100 px-2.5 py-0.5 text-xs text-blue-600">
                         Lokalno
                       </span>
-                      <span class="whitespace-nowrap rounded-full bg-purple-100 px-2.5 py-0.5 text-xs text-purple-600">
+                      <span class="whitespace-nowrap rounded-full bg-sky-100 px-2.5 py-0.5 text-xs text-blue-600">
                         Međunarodno
                       </span>
                     </div>
@@ -285,7 +285,7 @@
               </article>
 
               <article
-                class="my-3 hover:animate-background rounded-xl bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 p-0.5 shadow-xl transition hover:bg-[length:400%_400%] hover:shadow-sm hover:[animation-duration:_4s]">
+                class="my-3 hover:animate-background rounded-xl bg-gradient-to-r from-gray-600 via-slate-500 to-gray-600 p-0.5 shadow-xl transition hover:bg-[length:400%_400%] hover:shadow-sm hover:[animation-duration:_4s]">
                 <a href="tel:+38598491369">
                   <div class="rounded-[10px] bg-white p-4 sm:p-6">
                     <div class="flex justify-between mt-1">
@@ -309,19 +309,19 @@
                       zadovoljili sve vaše potrebe za prijevozom.
                     </p>
                     <div class="mt-4 flex flex-wrap gap-1">
-                      <span class="whitespace-nowrap rounded-full bg-purple-100 px-2.5 py-0.5 text-xs text-purple-600">
+                      <span class="whitespace-nowrap rounded-full bg-sky-100 px-2.5 py-0.5 text-xs text-blue-600">
                         Prijevoz na poslovne sastanke
                       </span>
-                      <span class="whitespace-nowrap rounded-full bg-purple-100 px-2.5 py-0.5 text-xs text-purple-600">
+                      <span class="whitespace-nowrap rounded-full bg-sky-100 px-2.5 py-0.5 text-xs text-blue-600">
                         Prijevoz na kongrese
                       </span>
-                      <span class="whitespace-nowrap rounded-full bg-purple-100 px-2.5 py-0.5 text-xs text-purple-600">
+                      <span class="whitespace-nowrap rounded-full bg-sky-100 px-2.5 py-0.5 text-xs text-blue-600">
                         Prijevoz na seminare
                       </span>
-                      <span class="whitespace-nowrap rounded-full bg-purple-100 px-2.5 py-0.5 text-xs text-purple-600">
+                      <span class="whitespace-nowrap rounded-full bg-sky-100 px-2.5 py-0.5 text-xs text-blue-600">
                         Prijevoz na sajmove
                       </span>
-                      <span class="whitespace-nowrap rounded-full bg-purple-100 px-2.5 py-0.5 text-xs text-purple-600">
+                      <span class="whitespace-nowrap rounded-full bg-sky-100 px-2.5 py-0.5 text-xs text-blue-600">
                         Prijevoz na krstarenja
                       </span>
                     </div>
@@ -360,7 +360,7 @@
           </li>
           <li>
             <a href="https://www.instagram.com/taxiopatija.hr/" target="_blank"
-              class="block me-4 md:me-6 text-sm underline underline-offset-2 hover:text-purple-900 text-purple-800">Instagram</a>
+              class="block me-4 md:me-6 text-sm underline underline-offset-2 hover:text-sky-900 text-sky-800">Instagram</a>
           </li>
         </ul>
       </div>
