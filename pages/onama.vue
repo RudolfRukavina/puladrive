@@ -50,7 +50,7 @@
             </h1>
 
             <section id="onama" class="mb-44">
-              <div class="flex items-center mt-2.5 mb-5 justify-center">
+              <a href="https://g.co/kgs/WPGpCp3" target="_blank" class="flex items-center mt-2.5 mb-5 justify-center">
                 <div class="flex items-center space-x-1 rtl:space-x-reverse">
                   <svg class="w-4 h-4 text-yellow-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
                     fill="currentColor" viewBox="0 0 22 20">
@@ -80,7 +80,7 @@
                 </div>
                 <span
                   class="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800 ms-3">5.0</span>
-              </div>
+              </a>
               <span class="flex items-center">
                 <span class="h-px flex-1 bg-black"></span>
                 <span class="shrink-0 px-6 font-thin">Dobrodošli</span>
