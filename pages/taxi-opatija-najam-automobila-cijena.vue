@@ -1,14 +1,15 @@
 <template>
 
   <Head>
-    <Title>Naslovnica | Taxi Opatija | 0 - 24 | Taxi | Rent a car | Rent a Van | Transfers | Excursions
+    <Title>Cijene najma automobila | Cjenik 2024. | Taxi Opatija | 0 - 24 | Taxi | Rent a car | Rent a Van | Transfers |
+      Excursions
     </Title>
     <Meta name="description"
-      content="Naslovnica | Pozovi taxi | Taxi Opatija | Best service at the best price | Available 24 hours every day | Taxi | Rent a car | Rent a Van | Transfers | Excursions & more" />
+      content="Cijene najma automobila | Cjenik 2024 | Pozovi taxi | Taxi Opatija | Best service at the best price | Available 24 hours every day | Taxi | Rent a car | Rent a Van | Transfers | Excursions & more" />
   </Head>
 
   <header>
-    <img class="hero-photo h-[27vh] md:h-96" src="../assets/imgs/opatijamainphoto.webp" alt="Opatija Taxi" />
+    <img class="hero-photo h-[27vh] md:h-96" src="../assets/imgs/underconstruction.jpeg" alt="Opatija Taxi" />
     <div class="flex justify-center -mt-5">
       <div class="hero-hours">
         <p class="m-0 mx-1 p-1 px-12 text-xl fw-bold">0 - 24</p>
@@ -50,45 +51,19 @@
               Taxi Opatija
             </h1>
             <h2 class="text-base font-bold tracking-tight text-gray-900">
-              Jednostavno, brzo, pouzdano.
+              Cjenik 2024. - Cijene najma automobila
             </h2>
-            <div class="flex items-center mt-2.5 mb-5 justify-center">
-              <div class="flex items-center space-x-1 rtl:space-x-reverse">
-                <svg class="w-4 h-4 text-yellow-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-                  fill="currentColor" viewBox="0 0 22 20">
-                  <path
-                    d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
-                </svg>
-                <svg class="w-4 h-4 text-yellow-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-                  fill="currentColor" viewBox="0 0 22 20">
-                  <path
-                    d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
-                </svg>
-                <svg class="w-4 h-4 text-yellow-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-                  fill="currentColor" viewBox="0 0 22 20">
-                  <path
-                    d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
-                </svg>
-                <svg class="w-4 h-4 text-yellow-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-                  fill="currentColor" viewBox="0 0 22 20">
-                  <path
-                    d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
-                </svg>
-                <svg class="w-4 h-4 text-yellow-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-                  fill="currentColor" viewBox="0 0 22 20">
-                  <path
-                    d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
-                </svg>
-              </div>
-              <span
-                class="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800 ms-3">5.0</span>
-            </div>
+            <p class='my-5 text-lg  font-bold'>Ispričavamo se, web stranica je još uvijek u
+              izradi. </p>
+
+            <NuxtLink to='/' class='my-5 text-lg underline underline-offset-4 font-bold'>Natrag na naslovnu stranicu
+            </NuxtLink>
 
             <div class="mt-10 flex items-center justify-center gap-x-6">
               <a id="callLink2" href="tel:+38598491369" class="inline-block w-50">
                 <button
                   class="bg-blue-700 border-2 border-lime-50 hover:bg-blue-800 text-white font-bold py-3 px-8 rounded-lg text-lg">
-                  Pozovi prijevoz
+                  Taxi Opatija | +385 98 491 369
                 </button>
               </a>
             </div>

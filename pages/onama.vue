@@ -1,9 +1,10 @@
 <template>
 
   <Head>
-    <Title>O nama | Taxi Opatija</Title>
+    <Title>O nama | Taxi Opatija | 0 - 24 | Taxi | Rent a car | Rent a Van |
+      Transfers | Excursions</Title>
     <Meta name="description"
-      content="O nama | Taxi Opatija | Best service at the best price | Available 24 hours every day." />
+      content="O nama | Taxi Opatija | Best service at the best price | Available 24 hours every day | Taxi | Rent a car | Rent a Van | Transfers | Excursions & more" />
   </Head>
 
   <header>
@@ -15,9 +16,9 @@
     </div>
   </header>
   <main>
-    <NuxtLink to='/' class='absolute right-2 font-bold cursor-pointer z-50'>
-      <span class='text-sm underline underline-offset-2 font-thin inline-block'>Naslovnica</span>
-      <svg class='w-9 inline-block' viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <NuxtLink to="/" class="absolute right-2 font-bold cursor-pointer z-50">
+      <span class="text-sm underline underline-offset-2 font-thin inline-block">Naslovnica</span>
+      <svg class="w-9 inline-block" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
         <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
         <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
         <g id="SVGRepo_iconCarrier">
@@ -26,8 +27,8 @@
         </g>
       </svg>
     </NuxtLink>
-    <NuxtLink to='/usluge' class='absolute left-2 font-bold cursor-pointer z-50'>
-      <svg class='w-9 inline-block' viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <NuxtLink to="/usluge" class="absolute left-2 font-bold cursor-pointer z-50">
+      <svg class="w-9 inline-block" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
         <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
         <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
         <g id="SVGRepo_iconCarrier">
@@ -35,31 +36,20 @@
           </path>
         </g>
       </svg>
-      <span class='text-sm underline underline-offset-2 inline-block font-thin'>Usluge</span>
+      <span class="text-sm underline underline-offset-2 inline-block font-thin">Usluge</span>
     </NuxtLink>
     <div>
       <div class="relative isolate px-6 lg:px-8">
         <div class="mx-auto max-w-2xl pt-10">
-
           <div class="text-center">
             <div class="flex justify-center">
               <img src="../assets/imgs/logo.webp" alt="Logo Taxi Opatija" class="-mt-5 object-cover w-3/12 sm:w-24" />
             </div>
-            <h1 class="text-6xl font-bold tracking-tight text-gray-900">
+            <h1 class="text-[56px] leading-none font-bold tracking-tight text-gray-900">
               O nama
             </h1>
 
-            <section id='onama' class='mb-44'>
-              <hr class="my-3 border-gray-200 sm:mx-auto dark:border-gray-700 " />
-              <p class="text-center text-[17px] my-3 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-4">
-              <ul
-                class="flex flex-wrap justify-center items-center mb-3 text-xs font-medium text-gray-500 sm:mb-0 dark:text-gray-400">
-                <li>
-                  <a href="#" class="hover:underline me-4 md:me-6 text-base">Taxi | Transfers | Excursions | Rent a Van
-                    | Rent a Car | & more</a>
-                </li>
-              </ul>
-
+            <section id="onama" class="mb-44">
               <div class="flex items-center mt-2.5 mb-5 justify-center">
                 <div class="flex items-center space-x-1 rtl:space-x-reverse">
                   <svg class="w-4 h-4 text-yellow-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
@@ -91,103 +81,120 @@
                 <span
                   class="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800 ms-3">5.0</span>
               </div>
-              </p>
+              <span class="flex items-center">
+                <span class="h-px flex-1 bg-black"></span>
+                <span class="shrink-0 px-6 font-thin">Dobrodošli</span>
+                <span class="h-px flex-1 bg-black"></span>
+              </span>
 
-
-              <p class='text-xl my-4 mt-5 text-gray-800'>Dobrodošli u <span class='font-bold'>Taxi Opatija</span> - Vaš
-                pouzdani partner za
-                prijevoz u srcu
-                Opatije!
+              <p class="text-xl my-4 mt-5 text-gray-800">
+                Dobrodošli u <span class="font-bold">Taxi Opatija</span> - Vaš
+                pouzdani partner za prijevoz u srcu Opatije!
               </p>
-              <hr class="my-3 border-gray-200 sm:mx-auto dark:border-gray-700 " />
-              <p class='text-lg my-4 text-gray-800'>
-                <span class='font-bold'>Osnovani smo s jednim jednostavnim ciljem</span> - pružiti brz, pouzdan i udoban
-                prijevoz našim
-                cijenjenim
-                putnicima
-                diljem prekrasnog područja Opatije. S ponosom smo otvorili naš obrt 2023. godine, i od tada smo
-                posvećeni
+              <span class="flex items-center">
+                <span class="h-px flex-1 bg-black"></span>
+                <span class="shrink-0 px-6 font-thin">Naš cilj</span>
+                <span class="h-px flex-1 bg-black"></span>
+              </span>
+              <p class="text-lg my-4 text-gray-800">
+                <span class="font-bold">Osnovani smo s jednim jednostavnim ciljem</span>
+                - pružiti brz, pouzdan i udoban prijevoz našim cijenjenim
+                putnicima diljem prekrasnog područja Opatije, Kvarnera i dalje.
+                S ponosom smo otvorili 2023. godine, i od tada smo posvećeni
                 pružanju vrhunske usluge našim klijentima.
               </p>
-              <hr class="my-3 border-gray-200 sm:mx-auto dark:border-gray-700 " />
-              <p class='text-lg my-4 text-gray-800'>
-                <span class='font-bold'>U Taxi Opatija, jednostavnost je ključ. </span>Znamo da vam je vaše vrijeme
+              <span class="flex items-center">
+                <span class="h-px flex-1 bg-black"></span>
+                <span class="shrink-0 px-6 font-thin">Naše vrijednosti</span>
+                <span class="h-px flex-1 bg-black"></span>
+              </span>
+              <p class="text-lg my-4 text-gray-800">
+                <span class="font-bold">U Taxi Opatija, jednostavnost je ključ. </span>Znamo da vam je vaše vrijeme
                 dragocjeno, stoga smo oblikovali
-                našu
-                uslugu tako da bude intuitivna i brza. Naša moderna flota vozila i iskusni vozači osiguravaju da vaša
-                vožnja
-                bude ugodna i sigurna.
+                našu uslugu tako da bude intuitivna i brza. Naša moderna flota
+                vozila i iskusni vozači osiguravaju da vaša vožnja bude ugodna i
+                sigurna.
               </p>
-              <hr class="my-3 border-gray-200 sm:mx-auto dark:border-gray-700 " />
-              <p class='text-lg my-4 text-gray-800'>
-                Naša posvećenost pouzdanosti ogleda se u svakom aspectu naše usluge. Bez obzira trebate li prijevoz do
-                vaše
-                omiljene destinacije u Opatiji, transfer do zračne luke ili jednostavno želite istražiti okolicu, možete
-                računati na nas da ćemo vas dovesti tamo na vrijeme i sigurno.
-
+              <span class="flex items-center">
+                <span class="h-px flex-1 bg-black"></span>
+                <span class="shrink-0 px-6 font-thin">Sigurnost i pouzdanost</span>
+                <span class="h-px flex-1 bg-black"></span>
+              </span>
+              <p class="text-lg my-4 text-gray-800">
+                Naša
+                <span class="font-bold">posvećenost pouzdanosti</span> ogleda se
+                u svakom aspektu naše usluge. Bez obzira trebate li prijevoz do
+                vaše omiljene destinacije u Opatiji, transfer do zračne luke ili
+                jednostavno želite istražiti okolicu,
+                <span class="font-bold">možete računati da ćemo vas dovesti na vrijeme i
+                  sigurno.</span>
               </p>
-              <hr class="my-3 border-gray-200 sm:mx-auto dark:border-gray-700 " />
-              <p class='text-lg my-4 text-gray-800'>
-                S našom stranicom <span class='font-bold'>taxiopatija.hr</span>, rezervacija je brza i jednostavna.
-                Jednim klikom do poziva i vaša vožnja
-                je
-                rezervirana. <span class='font-bold'>Naš tim je uvijek dostupan kako bi odgovorio na sva vaša pitanja i
-                  osigurao da vaša
-                  iskustva
-                  s nama
-                  budu besprijekorna.
+              <span class="flex items-center">
+                <span class="h-px flex-1 bg-black"></span>
+                <span class="shrink-0 px-6 font-thin">taxiopatija.hr</span>
+                <span class="h-px flex-1 bg-black"></span>
+              </span>
+              <p class="text-lg my-4 text-gray-800">
+                Na našoj stranici <span class="font-bold">taxiopatija.hr</span>,
+                rezervacija prijevoza je brza i jednostavna. Jednim klikom
+                pozivate
+                <span class="font-bold">naš tim koji je uvijek dostupan kako bi odgovorio na sva vaša
+                  pitanja i osigurao da vaša iskustva s nama budu besprijekorna.
                 </span>
               </p>
-              <hr class="my-3 border-gray-200 sm:mx-auto dark:border-gray-700 " />
-              <p class='text-lg my-4 text-gray-800'>
-                <span class='font-bold text-fuchsia-800'>Hvala vam što ste odabrali Taxi Opatija za vaše prijevozne
-                  potrebe.
-                </span>Radujemo se što ćemo
-                vam pružiti
-                vrhunsku
-                uslugu i biti vaš pouzdani partner u putovanjima kroz prekrasnu Opatiju.
+              <span class="flex items-center">
+                <span class="h-px flex-1 bg-black"></span>
+                <span class="shrink-0 px-6 font-thin">Tu smo za Vas!</span>
+                <span class="h-px flex-1 bg-black"></span>
+              </span>
+              <p class="text-lg my-4 text-gray-800">
+                <span class="font-bold text-fuchsia-800">Hvala vam što ste odabrali Taxi Opatija za vaše prijevozne
+                  potrebe. </span>Radujemo se što ćemo vam pružiti vrhunsku uslugu i biti vaš
+                pouzdani partner u putovanjima kroz prekrasnu Opatiju.
               </p>
-              <hr class="my-3 border-gray-200 sm:mx-auto dark:border-gray-700 " />
-              <a id="callLink3" href="tel:+38598491369" class=" my-6 w-50 flex justify-center">
-
+              <span class="flex items-center">
+                <span class="h-px flex-1 bg-black"></span>
+                <span class="shrink-0 px-6 font-thin">Nazovite nas</span>
+                <span class="h-px flex-1 bg-black"></span>
+              </span>
+              <a id="callLink3" href="tel:+38598491369" class="my-6 w-50 flex justify-center">
                 <button
                   class="bg-blue-700 border-2 border-blue-50 hover:bg-blue-800 text-white font-bold py-3 px-8 rounded-lg text-lg">
-                  Call +38598491369
+                  Pozovi +38598491369
                 </button>
               </a>
-              <hr class="my-3 border-gray-200 sm:mx-auto dark:border-gray-700 " />
+              <span class="flex items-center">
+                <span class="h-px flex-1 bg-black"></span>
+                <span class="shrink-0 px-6 font-thin">Taxi Opatija</span>
+                <span class="h-px flex-1 bg-black"></span>
+              </span>
               <p class="text-center text-xs mt-20 py-0 border-gray-200 sm:mx-auto dark:border-gray-700">
-                <span class="font-bold">Naziv tvrtke:</span>
-                Taxi Opatija <br>
-                <span class="font-bold"> Adresa (sjedište) tvrtke:</span> Ul. Dr. Ante
+                <span class="font-bold"> Adresa (sjedište):</span> Ul. Dr. Ante
                 Mandića 2<br />
                 <span class="font-bold">E-mail:</span> anterukavina@yahoo.com.hr
                 <br />
-                <span class="font-bold">Broj telefona:</span> 098491369 <br />
+                <span class="font-bold">Broj telefona:</span> +38598491369
+                <br />
                 <span class="font-bold">Bankovni račun (IBAN):</span>
                 HR4624020061100735606
                 <br />
-                <span class="font-bold">Poslovna banka:</span> ERSTE & STEIERMÄRKISCHE
-                BANK d.d.<br />
+                <span class="font-bold">Poslovna banka:</span> ERSTE &
+                STEIERMÄRKISCHE BANK d.d.<br />
                 <span class="font-bold">OIB:</span> 66045096237 <br />
                 <!-- <span class="font-bold">Matični broj:</span> 32546357465352 <br /> -->
                 <span class="font-bold">MBS:</span> 98527584
               </p>
             </section>
-
-
-
           </div>
         </div>
       </div>
     </div>
-
   </main>
 
   <footer class="bg-white rounded-lg custom-shadow dark:bg-gray-900 w-full fixed bottom-0">
     <div class="w-full max-w-screen-xl mx-auto p-4 pb-0 md:py-4">
       <div class="sm:flex sm:items-center sm:justify-between">
-        <a href="tel:+38598491369" class="flex justify-between items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse">
+        <a href="tel:+38598491369" class="flex justify-between items-center mb-1 sm:mb-0 space-x-3 rtl:space-x-reverse">
           <div class="flex justify-center">
             <img src="../assets/imgs/logo.webp" class="h-6" alt="Taxi Opatija Logo" />
             <span class="self-center text-md font-semibold whitespace-nowrap dark:text-white">Taxi Opatija</span>
@@ -199,15 +206,13 @@
         <ul class="flex flex-wrap items-center mb-3 text-xs font-medium text-gray-500 sm:mb-0 dark:text-gray-400">
           <li>
             <a href="https://www.facebook.com/taxiopatija" target="_blank"
-              class="block me-4 md:me-6 text-sm text-blue-800">Facebook</a>
+              class="block me-4 md:me-6 text-sm underline underline-offset-2 hover:text-blue-900 text-blue-800">Facebook</a>
           </li>
           <li>
             <a href="https://www.instagram.com/taxiopatija.hr/" target="_blank"
-              class="block me-4 md:me-6 text-sm text-purple-800">Instagram</a>
+              class="block me-4 md:me-6 text-sm underline underline-offset-2 hover:text-purple-900 text-purple-800">Instagram</a>
           </li>
         </ul>
-
-
       </div>
     </div>
   </footer>
@@ -253,17 +258,20 @@ body {
 }
 
 button {
-  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+    rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
 }
 
 .custom-shadow {
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
 </style>
 
 <script setup>
 useHead({
-  title: "Taxi Opatija | 0 - 24",
+  title:
+    "O nama | Taxi Opatija | 0 - 24 | Taxi | Rent a car | Rent a Van | Transfers | Excursions",
   htmlAttrs: {
     lang: "hr",
   },
@@ -278,7 +286,8 @@ useHead({
     {
       hid: "og:title",
       property: "og:title",
-      content: "Taxi Opatija | Best service at the best price | Available 24 hours every day | Transfers | Excursions | Rent a Van | Rent a Car | Jedan je taxiopatija.hr | Visit taxiopatija.hr",
+      content:
+        "Taxi Opatija | Best service at the best price | Available 24 hours every day | Transfers | Excursions | Rent a Van | Rent a Car | Jedan je taxiopatija.hr | Visit taxiopatija.hr",
     },
     {
       hid: "og:description",
@@ -316,7 +325,8 @@ useHead({
         "@type": "WebPage",
         name: "O nama | Taxi Opatija",
         url: "https://taxiopatija.hr/onama",
-        description: "O nama | Saznajte više o nama | Visit taxiopatija.hr/onama",
+        description:
+          "O nama | Saznajte više o nama | Visit taxiopatija.hr/onama",
       }),
     },
     // Structured Data Markup for /usluge Page
@@ -328,7 +338,8 @@ useHead({
         "@type": "WebPage",
         name: "Usluge | Taxi Opatija",
         url: "https://taxiopatija.hr/usluge",
-        description: "Usluge | Pregledajte naše usluge | Taxi | Transfers | Excursions | Rent a Van | Rent a Car | Visit taxiopatija.hr/usluge",
+        description:
+          "Usluge | Pregledajte naše usluge | Taxi | Transfers | Excursions | Rent a Van | Rent a Car | Visit taxiopatija.hr/usluge",
       }),
     },
   ],
@@ -339,8 +350,10 @@ useHead({
 });
 
 useSeoMeta({
-  title: "Taxi Opatija | Best service at the best price | Available 24 hours every day | Transfers | Excursions | Rent a Van | Rent a Car | Jedan je taxiopatija.hr | Visit taxiopatija.hr",
-  ogTitle: "Taxi Opatija | Best service at the best price | Available 24 hours every day | Transfers | Excursions | Rent a Van | Rent a Car | Jedan je taxiopatija.hr | Visit taxiopatija.hr",
+  title:
+    "Taxi Opatija | Best service at the best price | Available 24 hours every day | Transfers | Excursions | Rent a Van | Rent a Car | Jedan je taxiopatija.hr | Visit taxiopatija.hr",
+  ogTitle:
+    "Taxi Opatija | Best service at the best price | Available 24 hours every day | Transfers | Excursions | Rent a Van | Rent a Car | Jedan je taxiopatija.hr | Visit taxiopatija.hr",
   description:
     "Taxi Opatija | Best service at the best price | Available 24 hours every day | Transfers | Excursions | Rent a Van | Rent a Car | Jedan je taxiopatija.hr | Visit taxiopatija.hr",
   ogDescription:
@@ -348,5 +361,4 @@ useSeoMeta({
   ogImage: "https://taxiopatija.hr/opatija.jpeg",
   twitterCard: "https://taxiopatija.hr/opatija.jpeg",
 });
-
 </script>
