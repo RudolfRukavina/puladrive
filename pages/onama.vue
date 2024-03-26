@@ -313,7 +313,7 @@
               <a id="callLink3" href="tel:+38598491369" class="my-6 w-50 flex justify-center">
                 <button
                   class="bg-blue-700 border-2 border-blue-50 hover:bg-blue-800 text-white font-bold py-3 px-8 rounded-lg text-lg">
-                  Pozovi +38598491369
+                  Nazovite nas!
                 </button>
               </a>
               <span class="flex items-center mt-32">
