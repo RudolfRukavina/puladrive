@@ -45,7 +45,7 @@
             <div class="flex justify-center">
               <img src="../assets/imgs/logo.webp" alt="Logo Taxi Opatija" class="-mt-5 object-cover w-3/12 sm:w-24" />
             </div>
-            <h1 class="text-[52px] leading-none font-bold tracking-tight text-gray-900">
+            <h1 class="text-[52px] leading-none font-bold tracking-tight text-gray-900 drop-shadow-md">
               Usluge
             </h1>
             <h2 class="text-xl font-bold tracking-tight text-gray-900">
