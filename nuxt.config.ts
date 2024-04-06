@@ -27,7 +27,14 @@ export default defineNuxtConfig({
       ],
     },
   },
-  modules: ["@nuxtjs/tailwindcss", "nuxt-swiper"],
+
+  modules: ["@nuxtjs/tailwindcss", "nuxt-swiper", "dayjs-nuxt"],
+  dayjs: {
+    locales: ['hr'], // Croatian locale
+    defaultLocale: 'hr', // Set Croatian as the default locale
+    defaultTimezone: 'Europe/Zagreb', // Set the default timezone for Croatia
+    plugins: ['relativeTime', 'utc', 'timezone'] // Use desired plugins
+  },
   tailwindcss: {
     cssPath: "~/assets/css/input.css",
   },

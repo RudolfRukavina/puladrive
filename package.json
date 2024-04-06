@@ -11,6 +11,7 @@
   },
   "devDependencies": {
     "@nuxtjs/tailwindcss": "^6.11.1",
+    "dayjs-nuxt": "^2.1.9",
     "nuxt": "^3.10.0",
     "nuxt-simple-robots": "^4.0.0-rc.14",
     "vue": "^3.4.14",
