@@ -143,26 +143,26 @@
                 </svg>
               </a>
             </div>
+
           </div>
         </div>
       </div>
     </div>
-    <section class='mt-36'>
+    <section class='my-24 bg-gray-200 p-2 mx-[1px] rounded-xl'>
       <hr>
       <div class="flex justify-center -mt-5">
         <div class="hero-hours">
-          <h2 class="m-0 mx-1 p-1 px-14 text-xl fw-bold drop-shadow-md">Cijena taxi usluge</h2>
+          <h2 class="m-0 mx-1 p-1 px-24 text-xl fw-bold drop-shadow-md">Cijena taxi usluge</h2>
         </div>
       </div>
-    </section>
-    <section class='mb-44'>
 
-      <div class="relative isolate px-6 lg:px-8">
+
+      <div class="relative isolate px-6 lg:px-8 pb-10">
         <div class="mx-auto max-w-2xl pt-5">
-          <div class="max-w-lg mx-auto bg-white rounded-lg p-8">
+          <div class="max-w-lg mx-auto bg-white rounded-lg">
 
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 ">
-              <div class="border border-black custom-shadow rounded-lg p-6 relative">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 bg-gray-200">
+              <div class="border border-black custom-shadow rounded-lg p-6 relative bg-white">
                 <p class='absolute top-0 right-0 p-2'> <span
                     class="whitespace-nowrap rounded-full bg-green-400 px-2.5 py-0.5 text-xs text-black">
                     {{ currentTime }}
@@ -176,7 +176,7 @@
                   <li>Čekanje: 13.30€ po satu</li>
                 </ul>
               </div>
-              <div class="border border-gray-200 rounded-lg p-6">
+              <div class="border border-gray-500 rounded-lg p-6 bg-white">
                 <h3 class="text-xl text-gray-900 mb-4">Noćna vožnja <br> <span class="font-bold">22:00 -
                     05:00</span></h3>
                 <ul class="list-disc list-inside text-gray-700">
@@ -280,11 +280,11 @@ button {
 import { ref } from "vue"
 import dayjs from 'dayjs'
 
-const currentTime = ref(dayjs().format('HH:mm:ss'))
+const currentTime = ref(dayjs().format('HH:mm'))
 
 onMounted(() => {
   setInterval(() => {
-    currentTime.value = dayjs().format('HH:mm:ss')
+    currentTime.value = dayjs().format('HH:mm')
   }, 1000)
 })
 
