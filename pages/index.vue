@@ -148,8 +148,9 @@
         </div>
       </div>
     </div>
-    <div class="flex justify-center w-full">
-      <div class="border w-full mx-5 max-w-lg mt-10 border-black custom-shadow rounded-lg p-6 relative bg-white">
+    <div class="flex justify-center w-full overflow-x-auto">
+      <div
+        class="border ms-[90vw] sm:ms-0 mx-5 min-w-[320px] max-w-lg mt-10 border-black custom-shadow rounded-lg p-6 relative bg-white pl-10">
         <p class='absolute top-0 right-0 p-2'> <span
             class="whitespace-nowrap rounded-full bg-green-400 px-2.5 py-0.5 text-xs text-black">
             {{ currentTime }}
@@ -160,10 +161,23 @@
         <ul class="list-disc list-inside text-gray-700">
           <li class="mb-2">Početna naknada: 4.00€</li>
           <li class="mb-2">Po kilometru: 1.60€</li>
-          <li>Čekanje: 13.30€ po satu</li>
+        </ul>
+      </div>
+      <div class="border mx-5 min-w-[320px] max-w-lg mt-10 border-black custom-shadow rounded-lg p-6 relative bg-white">
+        <p class='absolute top-0 right-0 p-2'> <span
+            class="whitespace-nowrap rounded-full bg-red-400 px-2.5 py-0.5 text-xs text-black">
+            {{ currentTime }}
+          </span></p>
+
+        <h3 class="text-xl text-gray-900 mb-4">Noćna vožnja <br> <span class="font-bold">22:00 -
+            05:00</span></h3>
+        <ul class="list-disc list-inside text-gray-700">
+          <li class="mb-2">Početna naknada: 4.00€</li>
+          <li class="mb-2">Po kilometru: 2.00€</li>
         </ul>
       </div>
     </div>
+
     <!-- <section class='mt-24 bg-gray-200 p-2 rounded-xl'>
       <hr>
       <div class="flex justify-center -mt-5">
