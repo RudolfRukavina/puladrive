@@ -148,11 +148,27 @@
         </div>
       </div>
     </div>
-    <section class='my-24 bg-gray-200 p-2 mx-[1px] rounded-xl'>
+    <div class="flex justify-center w-full">
+      <div class="border w-full mx-5 max-w-lg mt-10 border-black custom-shadow rounded-lg p-6 relative bg-white">
+        <p class='absolute top-0 right-0 p-2'> <span
+            class="whitespace-nowrap rounded-full bg-green-400 px-2.5 py-0.5 text-xs text-black">
+            {{ currentTime }}
+          </span></p>
+
+        <h3 class="text-xl text-gray-900 mb-4">Dnevna vožnja <br> <span class="font-bold">05:00 -
+            22:00</span></h3>
+        <ul class="list-disc list-inside text-gray-700">
+          <li class="mb-2">Početna naknada: 4.00€</li>
+          <li class="mb-2">Po kilometru: 1.60€</li>
+          <li>Čekanje: 13.30€ po satu</li>
+        </ul>
+      </div>
+    </div>
+    <!-- <section class='mt-24 bg-gray-200 p-2 rounded-xl'>
       <hr>
       <div class="flex justify-center -mt-5">
-        <div class="hero-hours">
-          <h2 class="m-0 mx-1 p-1 px-24 text-xl fw-bold drop-shadow-md">Cijena taxi usluge</h2>
+        <div class="hero-hours rounded-sm">
+          <h2 class="m-0 mx-1 p-1 px-8 text-xl drop-shadow-md">Cijena taxi usluge</h2>
         </div>
       </div>
 
@@ -189,8 +205,159 @@
 
           </div>
         </div>
+
+      </div>
+    </section> -->
+    <section class="">
+      <div class="relative isolate px-6 lg:px-8">
+        <div class="mx-auto max-w-2xl mt-10">
+          <div class="text-center">
+
+            <section id="usluge" class="mb-44">
+              <div class="flex items-center mt-2.5 mb-5 justify-center border-b"></div>
+
+              <article
+                class="my-3 hover:animate-background rounded-xl bg-gradient-to-r from-gray-600 via-slate-500 to-gray-600 p-0.5 shadow-xl transition hover:bg-[length:400%_400%] hover:shadow-sm hover:[animation-duration:_4s]">
+                <NuxtLink to="/taxi-opatija-transferi-cijena">
+                  <div class="rounded-[10px] bg-white p-4 sm:p-6">
+                    <div class="flex justify-between mt-1">
+                      <span class="text-sm ms-8 w-full text-blue-800 text-center font-medium">Cjenik 2024. - Cijene
+                        transfera</span>
+                      <svg class="w-6 inline-block" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                        <g id="SVGRepo_iconCarrier">
+                          <path d="M9 6L15 12L9 18" stroke="#000000" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round"></path>
+                        </g>
+                      </svg>
+                    </div>
+                    <h3 class="mt-0 text-3xl font-bold text-gray-800 drop-shadow-md py-1">
+                      Transferi
+                    </h3>
+                    <p class="text-gray-500 text-sm border-b pb-3">
+                      Brzi i udobni transferi do i od zračnih luka: Krk, Pula,
+                      Zagreb, Trst, Ljubljana, Split, Zadar, Venecija.
+                    </p>
+                    <div class="mt-4 flex flex-wrap gap-1">
+                      <span class="whitespace-nowrap rounded-full bg-sky-100 px-2.5 py-0.5 text-xs text-blue-600">
+                        Krk
+                      </span>
+                      <span class="whitespace-nowrap rounded-full bg-sky-100 px-2.5 py-0.5 text-xs text-blue-600">
+                        Pula
+                      </span>
+                      <span class="whitespace-nowrap rounded-full bg-sky-100 px-2.5 py-0.5 text-xs text-blue-600">
+                        Zagreb
+                      </span>
+                      <span class="whitespace-nowrap rounded-full bg-sky-100 px-2.5 py-0.5 text-xs text-blue-600">
+                        Trst
+                      </span>
+                      <span class="whitespace-nowrap rounded-full bg-sky-100 px-2.5 py-0.5 text-xs text-blue-600">
+                        Ljubljana
+                      </span>
+                      <span class="whitespace-nowrap rounded-full bg-sky-100 px-2.5 py-0.5 text-xs text-blue-600">
+                        Split
+                      </span>
+                      <span class="whitespace-nowrap rounded-full bg-sky-100 px-2.5 py-0.5 text-xs text-blue-600">
+                        Zadar
+                      </span>
+                      <span class="whitespace-nowrap rounded-full bg-sky-100 px-2.5 py-0.5 text-xs text-blue-600">
+                        Venecija
+                      </span>
+                    </div>
+                  </div>
+                </NuxtLink>
+              </article>
+
+              <article
+                class="my-3 hover:animate-background rounded-xl bg-gradient-to-r from-gray-600 via-slate-500 to-gray-600 p-0.5 shadow-xl transition hover:bg-[length:400%_400%] hover:shadow-sm hover:[animation-duration:_4s]">
+                <NuxtLink to="/taxi-opatija-najam-kombi-vozila-cijena">
+                  <div class="rounded-[10px] bg-white p-4 sm:p-6">
+                    <div class="flex justify-between mt-1">
+                      <span class="text-sm ms-8 w-full text-blue-800 text-center font-medium">Cjenik 2024. - Cijene
+                        najma kombi vozila</span>
+                      <svg class="w-6 inline-block" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                        <g id="SVGRepo_iconCarrier">
+                          <path d="M9 6L15 12L9 18" stroke="#000000" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round"></path>
+                        </g>
+                      </svg>
+                    </div>
+                    <h3 class="mt-0 text-[26px] font-bold text-gray-800 drop-shadow-md py-1">
+                      Najam kombi vozila (8+1)
+                    </h3>
+                    <p class="text-gray-500 text-sm border-b pb-3">
+                      Fleksibilni najam kombi vozila za grupe ili veće obitelji,
+                      prilagođen vašim potrebama.
+                    </p>
+                    <div class="mt-4 flex flex-wrap gap-1">
+
+                      <span class="whitespace-nowrap rounded-full bg-sky-100 px-2.5 py-0.5 text-xs text-blue-600">
+                        Lokalno
+                      </span>
+                      <span class="whitespace-nowrap rounded-full bg-sky-100 px-2.5 py-0.5 text-xs text-blue-600">
+                        Međunarodno
+                      </span>
+                    </div>
+                  </div>
+                </NuxtLink>
+              </article>
+
+              <article
+                class="my-3 hover:animate-background rounded-xl bg-gradient-to-r from-gray-600 via-slate-500 to-gray-600 p-0.5 shadow-xl transition hover:bg-[length:400%_400%] hover:shadow-sm hover:[animation-duration:_4s]">
+                <NuxtLink to="/taxi-opatija-najam-automobila-cijena">
+                  <div class="rounded-[10px] bg-white p-4 sm:p-6">
+                    <div class="flex justify-between mt-1">
+                      <span class="text-sm ms-8 w-full text-blue-800 text-center font-medium">Cjenik 2024. - Cijene
+                        najma automobila</span>
+                      <svg class="w-6 inline-block" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                        <g id="SVGRepo_iconCarrier">
+                          <path d="M9 6L15 12L9 18" stroke="#000000" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round"></path>
+                        </g>
+                      </svg>
+                    </div>
+                    <h3 class="mt-0 text-3xl font-bold text-gray-800 drop-shadow-md py-1">
+                      Najam automobila
+                    </h3>
+                    <p class="text-gray-500 text-sm border-b pb-3">
+                      Najam vozila po povoljnim cijenama kako biste istražili
+                      destinacije u vlastitom ritmu.
+                    </p>
+                    <div class="mt-4 flex flex-wrap gap-1">
+                      <span class="whitespace-nowrap rounded-full bg-sky-100 px-2.5 py-0.5 text-xs text-blue-600">
+                        S vozačem
+                      </span>
+                      <span class="whitespace-nowrap rounded-full bg-sky-100 px-2.5 py-0.5 text-xs text-blue-600">
+                        Bez vozača
+                      </span>
+                      <span class="whitespace-nowrap rounded-full bg-sky-100 px-2.5 py-0.5 text-xs text-blue-600">
+                        Jednodnevno
+                      </span>
+                      <span class="whitespace-nowrap rounded-full bg-sky-100 px-2.5 py-0.5 text-xs text-blue-600">
+                        Višednevno
+                      </span>
+                      <span class="whitespace-nowrap rounded-full bg-sky-100 px-2.5 py-0.5 text-xs text-blue-600">
+                        Lokalno
+                      </span>
+                      <span class="whitespace-nowrap rounded-full bg-sky-100 px-2.5 py-0.5 text-xs text-blue-600">
+                        Međunarodno
+                      </span>
+                    </div>
+                  </div>
+                </NuxtLink>
+              </article>
+            </section>
+          </div>
+        </div>
       </div>
     </section>
+
+
   </main>
 
   <!-- <footer class="bg-white rounded-lg custom-shadow dark:bg-gray-900 w-full fixed bottom-0">
