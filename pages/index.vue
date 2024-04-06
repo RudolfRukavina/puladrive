@@ -148,7 +148,7 @@
         </div>
       </div>
     </div>
-    <div class="flex justify-center w-full overflow-x-auto">
+    <div class="flex justify-center w-full overflow-x-auto pb-4">
       <div
         class="border ms-[90vw] sm:ms-0 mx-5 min-w-[320px] max-w-lg mt-10 border-black custom-shadow rounded-lg p-6 relative bg-white pl-10">
         <p class='absolute top-0 right-0 p-2'> <span
