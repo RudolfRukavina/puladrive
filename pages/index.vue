@@ -155,7 +155,7 @@
         <div class="flex justify-center">
           <div class="switch">
             <label for="toggle">
-              <input id="toggle" class="toggle-switch" type="checkbox">
+              <input id="toggle" class="toggle-switch" type="checkbox" v-model="isDay">
               <div class="sun-moon">
                 <div class="dots"></div>
               </div>
@@ -169,13 +169,13 @@
         </div>
 
         <h3 class="text-xl text-center text-gray-900 mb-4 font-bold">
-          <br> Dnevna vožnja <br />
+          <br> {{ isDay ? "Dnevna" : "Noćna" }} vožnja <br />
         </h3>
 
 
         <ul class="list-disc list-inside text-center text-gray-700">
           <li class="mb-2">Početna naknada: 4.00€</li>
-          <li class="mb-2">Po kilometru: 1.60€</li>
+          <li class="mb-2">Po kilometru: {{ isDay ? "1.60" : "2.00" }}€</li>
         </ul>
       </div>
       <div class="relative -mt-12 lg:-mt-24">
@@ -883,6 +883,9 @@ button {
 import { ref } from "vue";
 import dayjs from "dayjs";
 
+
+const isDay = ref(true)
+
 const selectedTransfer = ref("")
 
 
@@ -953,7 +956,16 @@ onMounted(() => {
   setInterval(() => {
     currentTime.value = dayjs().format("HH:mm");
   }, 1000);
+  getPeriodOfDay()
 });
+
+const getPeriodOfDay = () => {
+  if (dayjs().hour() > 5 && dayjs().hour() < 22) {
+    isDay.value = true
+  } else {
+    isDay.value = false
+  }
+}
 
 useHead({
   title:
