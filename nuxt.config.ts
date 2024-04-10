@@ -27,7 +27,7 @@ export default defineNuxtConfig({
       ],
     },
   },
-
+    ssr: false,
   modules: ["@nuxtjs/tailwindcss", "nuxt-swiper", "dayjs-nuxt"],
   dayjs: {
     locales: ['hr'], // Croatian locale
