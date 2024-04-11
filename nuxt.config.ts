@@ -38,4 +38,7 @@ export default defineNuxtConfig({
   tailwindcss: {
     cssPath: "~/assets/css/input.css",
   },
+    build: {
+        transpile: ['@vuepic/vue-datepicker']
+    }
 });

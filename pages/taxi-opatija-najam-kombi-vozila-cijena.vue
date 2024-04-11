@@ -8,12 +8,10 @@
   </Head>
 
   <header>
-
-
-    <div class="bg-transparent backdrop-blur-[1px]  fixed bottom-0 z-50 w-full">
+    <div class="bg-transparent backdrop-blur-[1px] fixed bottom-0 z-50 w-full">
       <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl px-3 pb-2">
         <NuxtLink :to="{ path: '/', hash: '#naslovnica' }" class="flex items-center space-x-3 rtl:space-x-reverse">
-          <img src="../assets/imgs/logo.png" alt="" class="w-14  inline-block rounded-xl">
+          <img src="../assets/imgs/logo.png" alt="" class="w-14 inline-block rounded-xl" />
         </NuxtLink>
         <div class="flex items-center space-x-6 rtl:space-x-reverse">
           <a href="viber://chat?number=38598491369">
@@ -53,8 +51,7 @@
               <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
               <g id="SVGRepo_iconCarrier">
                 <rect width="512" height="512" rx="15%" fill="#25d366"></rect>
-                <path fill="#25d366" stroke="#ffffff" stroke-width="26" d="M123 393l14-65a138 138 0 1150 47z">
-                </path>
+                <path fill="#25d366" stroke="#ffffff" stroke-width="26" d="M123 393l14-65a138 138 0 1150 47z"></path>
                 <path fill="#ffffff"
                   d="M308 273c-3-2-6-3-9 1l-12 16c-3 2-5 3-9 1-15-8-36-17-54-47-1-4 1-6 3-8l9-14c2-2 1-4 0-6l-12-29c-3-8-6-7-9-7h-8c-2 0-6 1-10 5-22 22-13 53 3 73 3 4 23 40 66 59 32 14 39 12 48 10 11-1 22-10 27-19 1-3 6-16 2-18">
                 </path>
@@ -62,33 +59,33 @@
             </svg>
           </a>
           <a href="tel:+38598491369"
-            class="text-[26px] px-2 border border-white hover:bg-blue-800 custom-shadow rounded-lg  text-black bg-blue-600"><i
-              class='fa fa-phone text-white'></i></a>
+            class="text-[26px] px-2 border border-white hover:bg-blue-800 custom-shadow rounded-lg text-black bg-blue-600"><i
+              class="fa fa-phone text-white"></i></a>
         </div>
       </div>
     </div>
   </header>
   <main>
-    <div class=" overflow-x-auto text-nowrap whitespace-nowrap sticky top-0 mt-3 w-full z-50 bg-white">
+    <div class="overflow-x-auto text-nowrap whitespace-nowrap sticky top-0 mt-3 w-full z-50 bg-white">
       <div class="max-w-screen-xl px-4 py-2 mx-auto">
         <div class="flex items-center justify-evenly">
-          <ul class="grid grid-cols-3 font-medium mt-0  text-base">
-            <li class="border-e px-4 w-full text-center  border-gray-300">
+          <ul class="grid grid-cols-3 font-medium mt-0 text-base">
+            <li class="border-e px-4 w-full text-center border-gray-300">
               <NuxtLink :to="{ path: '/', hash: '#naslovnica' }" class="text-gray-900 hover:underline">Naslovnica
               </NuxtLink>
             </li>
-            <li class=" px-4 w-full text-center border-gray-300">
+            <li class="px-4 w-full text-center border-gray-300">
               <NuxtLink :to="{ path: '/', hash: '#usluge' }" class="text-gray-900 hover:underline">Usluge
               </NuxtLink>
             </li>
             <li class="border-s px-4 w-full text-center">
-              <NuxtLink to='/onama' class="text-gray-900 hover:underline">O nama
+              <NuxtLink to="/onama" class="text-gray-900 hover:underline">O nama
               </NuxtLink>
             </li>
           </ul>
         </div>
       </div>
-      <hr>
+      <hr />
     </div>
 
     <div>
@@ -105,17 +102,11 @@
               Cjenik 2024. - Cijene najma kombi vozila
             </h2>
           </div>
-
         </div>
-
       </div>
     </div>
 
-    <div class="leading-normal tracking-normal  gradient" style="font-family: 'Source Sans Pro', sans-serif;">
-
-
-
-
+    <div class="leading-normal tracking-normal gradient" style="font-family: 'Source Sans Pro', sans-serif">
       <!-- Change the colour #f8fafc to match the previous section colour -->
       <div class="relative">
         <svg class="wave-top" viewBox="0 0 1439 147" version="1.1" xmlns="http://www.w3.org/2000/svg"
@@ -144,10 +135,11 @@
           </g>
         </svg>
       </div>
-      <div class="flex mb-14 justify-center w-full">
-        <div class="border mx-5 max-w-lg mt-10 border-black custom-shadow rounded-lg p-6 relative bg-white pl-10">
+      <div class="flex justify-center w-full">
+        <div
+          class="border-t border-l border-r mx-5 min-w-lg w-full max-w-lg border-black custom-shadow rounded-t-lg p-6 relative bg-white">
           <h3 class="text-3xl text-gray-900 mb-4 drop-shadow-md">
-            Najam kombi vozila <span class="font-bold">(8 + 1)</span>
+            Najam kombi vozila
             <p class="text-gray-500 text-sm pb-3">
               Fleksibilno putovanje po EU
             </p>
@@ -159,16 +151,121 @@
             </div>
 
             <div class="bg-gray-100 p-4 rounded-lg">
-              <h3 class="text-lg font-semibold text-gray-900 mb-2">Za 2 dana</h3>
+              <h3 class="text-lg font-semibold text-gray-900 mb-2">
+                Za 2 dana
+              </h3>
               <span class="text-xl font-bold text-gray-900">120€ / dan</span>
             </div>
 
             <div class="bg-gray-100 p-4 rounded-lg">
-              <h3 class="text-lg font-semibold text-gray-900 mb-2">Za 3 ili više dana</h3>
+              <h3 class="text-lg font-semibold text-gray-900 mb-2">
+                Za 3 ili više dana
+              </h3>
               <span class="text-xl font-bold text-gray-900">100€ / dan</span>
             </div>
           </div>
         </div>
+      </div>
+      <div class="flex mb-14 justify-center w-full">
+        <section
+          class="border-b border-l border-r mx-5 min-w-lg w-full max-w-lg border-black custom-shadow rounded-b-lg p-6 relative bg-white">
+          <div class="grid grid-cols-1 w-full">
+            <div class="py-0 px-4">
+              <div class="flex justify-center"> <svg class="w-32 pt-5 inline-block" version="1.1" id="_x35_"
+                  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512"
+                  xml:space="preserve" fill="#000000">
+                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                  <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                  <g id="SVGRepo_iconCarrier">
+                    <g>
+                      <g style="opacity: 0.5">
+                        <path style="opacity: 0.1; fill: #040000"
+                          d="M511.989,176.405c-0.009-3.496-0.038-7.399-0.098-11.602 c-0.077-5.682-0.223-11.944-0.466-18.578c-0.269-7.471-0.657-15.406-1.224-23.562h-0.027l-0.001-0.017 c-1.028-14.769-2.633-30.247-5.138-44.697c-3.34-19.457-7-35.707-12.073-48.036c-3.939-9.605-8.658-16.844-14.596-21.406 L280.613,206.26h73.635c-2.183-5.458-3.403-11.496-3.403-17.789c0-26.458,21.385-47.844,47.844-47.844 c26.458,0,47.843,21.386,47.843,47.844c0,6.293-1.22,12.331-3.404,17.789h54.202c11.431,0,14.642-6.742,14.642-13.164 c0-3.02,0.064-8.862,0-16.691H511.989z">
+                        </path>
+                        <circle style="opacity: 0.1; fill: #040000" cx="398.692" cy="188.477" r="41.261"></circle>
+                      </g>
+                      <g>
+                        <g>
+                          <path style="fill: #fffefb"
+                            d="M511.953,193.11c0,6.422-3.211,13.164-14.642,13.164H443.11 c2.183-5.458,3.403-11.496,3.403-17.789c0-26.458-21.385-47.843-47.844-47.843c-26.459,0-47.844,21.386-47.844,47.843 c0,6.294,1.22,12.331,3.404,17.789H179.294c2.184-5.458,3.404-11.496,3.404-17.789c0-26.458-21.45-47.843-47.844-47.843 c-26.459,0-47.844,21.386-47.844,47.843c0,6.294,1.22,12.331,3.404,17.789H54.065c-7,0-14.835,0.066-22.348-0.257 c-6.936-0.32-13.615-0.898-19.009-2.054c-4.752-1.028-8.541-2.44-10.789-4.559c-0.899-0.836-1.477-3.661-1.734-7.963 c-0.513-8.22,0.064-21.836,1.477-36.414c2.505-25.109,7.578-53.11,14-61.65c9.248-12.265,36.092-34.937,73.917-59.019 C123.744,12.651,161.762,1.156,190.404,0c0,0,236.522,2.89,270.943,2.89c1.734,0,3.404,0.129,4.945,0.386 c12.073,1.991,20.358,11.303,26.651,26.651c5.073,12.33,8.734,28.579,12.073,48.036c2.504,14.449,4.11,29.927,5.137,44.697 c1.477,20.743,1.798,40.203,1.798,53.753C512.018,184.247,511.953,190.09,511.953,193.11z">
+                          </path>
+                          <path style="fill: #cee9e6"
+                            d="M54.119,79.995l-0.016,0.015c-23.477,25.745-9.766,25.882-0.574,25.84 c9.721-0.038,68.502-2.195,94.212-3.6c25.71-1.405,39.083-1.611,45.891-13.542c4.565-7.999,11.635-33.567,14.019-41.447 c3.2-10.576,4.111-19.212-6.761-19.604c-7.89-0.285-52.785-0.168-62.511,0c-9.725,0.168-39.67,11.204-84.276,52.353 L54.119,79.995z">
+                          </path>
+                          <path style="fill: #5c5c5c"
+                            d="M247.783,27.943c-16.332,0-24.642-3.152-20.057,14.266c5.451,20.708,9.169,30.19,11.461,36.825 c2.292,6.635,8.596,20.901,25.788,20.901c17.192,0,194.593,0.995,205.481,0.995c10.888,0,20.63,2.986,17.192-14.266 s-6.602-32.689-8.883-41.138c-2.865-10.616-2.292-16.92-24.642-17.583C431.775,27.279,247.783,27.943,247.783,27.943z">
+                          </path>
+                          <g>
+                            <circle style="fill: #3d3b3d" cx="134.848" cy="188.49" r="41.261"></circle>
+                            <circle style="fill: #c9c9c9" cx="134.848" cy="188.49" r="20.814"></circle>
+                          </g>
+                          <g>
+                            <circle style="fill: #3d3b3d" cx="398.673" cy="188.49" r="41.261"></circle>
+                            <circle style="fill: #c9c9c9" cx="398.673" cy="188.49" r="20.814"></circle>
+                          </g>
+                          <path style="fill: #c9c9c9"
+                            d="M31.717,155.026v50.99c-6.936-0.32-13.615-0.898-19.009-2.054 c-4.752-1.028-8.541-2.44-10.789-4.559c-0.899-0.836-1.477-3.661-1.734-7.963c-0.513-8.22,0.064-21.836,1.477-36.414H31.717z">
+                          </path>
+                          <path style="fill: #da4a62"
+                            d="M511.971,176.418h-8.653c-3.645,0-6.625-2.98-6.625-6.625v-40.493c0-3.645,2.98-6.625,6.625-6.625 h6.865C511.627,143.433,511.937,162.871,511.971,176.418z">
+                          </path>
+                        </g>
+                        <path style="fill: #cececf"
+                          d="M243.746,127.62h-23.547c-3.532,0-6.422-2.89-6.422-6.422v-4.476h25.709 c2.353,0,4.26,1.907,4.26,4.26V127.62z">
+                        </path>
+                      </g>
+                      <g style="opacity: 0.1">
+                        <path style="fill: #231815"
+                          d="M511.953,176.417h0.017c-0.008-3.362-0.034-7.088-0.089-11.105 c-0.077-5.84-0.224-12.314-0.477-19.177c-0.27-7.441-0.657-15.342-1.221-23.458h-0.027l-0.001-0.019 c-1.027-14.769-2.632-30.247-5.137-44.697c-3.34-19.457-7-35.707-12.073-48.036c-4.139-10.094-9.169-17.515-15.542-22.021 L279.034,206.273h75.195c-2.182-5.456-3.403-11.496-3.403-17.789c0-26.456,21.385-47.842,47.844-47.842 c26.458,0,47.843,21.386,47.843,47.842c0,6.293-1.221,12.333-3.404,17.789h54.201c11.431,0,14.642-6.742,14.642-13.164 C511.953,190.091,512.018,184.249,511.953,176.417z">
+                        </path>
+                        <circle style="fill: #231815" cx="398.673" cy="188.49" r="41.26"></circle>
+                      </g>
+                    </g>
+                  </g>
+                </svg></div>
+              <form action="#" class="space-y-6">
+                <VueDatePicker v-model="date" range :enable-time-picker="false" :format="format" :clearable="false">
+                </VueDatePicker>
+                <div class="w-full rounded-lg py-1 custom-shadow bg-gray-100">
+                  <div class="flex justify-evenly items-center">
+                    <h3 class="text-lg font-semibold text-gray-900">
+                      {{ dayNumber }} {{ dayNumber == 1 ? "dan" : "dana" }}
+                    </h3>/
+                    <span class="text-xl font-bold text-gray-900">{{ dayPrice }}</span>
+                  </div>
+                </div>
+                <div>
+                  <label for="name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Vaše
+                    ime i prezime</label>
+                  <input type="text" id="name" v-model="clientName"
+                    class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-[16px] rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
+                    required />
+                </div>
+                <div>
+                  <label for="tel" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Vaš broj
+                    telefona</label>
+                  <input type="tel" id="tel" v-model="phoneNumber"
+                    class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-[16px] rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
+                    required />
+                </div>
+                <div class="sm:col-span-2">
+                  <label for="message" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400">Vaša
+                    poruka</label>
+                  <textarea id="message" rows="10" v-model="selectedItemsText"
+                    class="block p-2.5 w-full text-[16px] text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
+                    placeholder="">
+                  </textarea>
+                </div>
+                <a :href="generateMailtoLink()" v-show="clientName && phoneNumber">
+                  <div
+                    class="text-center max-w-sm hover:underline bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
+                    Pošaljite e-mail
+                  </div>
+                </a>
+              </form>
+            </div>
+          </div>
+        </section>
       </div>
       <div class="relative -mt-12 lg:-mt-24 -my-[1px]">
         <svg viewBox="0 0 1428 174" version="1.1" xmlns="http://www.w3.org/2000/svg"
@@ -197,13 +294,12 @@
   </main>
 
   <footer class="bg-white">
-    <div class=" mx-auto px-8">
+    <div class="mx-auto px-8">
       <div class="w-full flex flex-col md:flex-row py-6">
         <div class="flex-1 mb-6 text-black">
           <a class="text-pink-600 no-underline hover:no-underline font-bold text-2xl lg:text-4xl" href="#">
             <!--Icon from: http://www.potlabicons.com/ -->
-            <img src="../assets/imgs/logo.png" alt="" class="w-20  inline-block me-3 rounded-xl">
-
+            <img src="../assets/imgs/logo.png" alt="" class="w-20 inline-block me-3 rounded-xl" />
           </a>
         </div>
         <div class="flex-1">
@@ -217,7 +313,7 @@
 
             <li class="mt-2 inline-block mr-2 md:block md:mr-0">
               <NuxtLink :to="{ path: '/', hash: '#usluge' }"
-                class=" no-underline hover:underline text-gray-800 hover:text-pink-500">Usluge
+                class="no-underline hover:underline text-gray-800 hover:text-pink-500">Usluge
               </NuxtLink>
             </li>
             <li class="mt-2 inline-block mr-2 md:block md:mr-0">
@@ -256,14 +352,13 @@
           <p class="uppercase text-gray-500 md:mb-6">Mreže</p>
           <ul class="list-reset mb-6">
             <li class="mt-2 inline-block mr-2 md:block md:mr-0">
-              <a href="https://www.facebook.com/taxiopatija" target='_blank'
+              <a href="https://www.facebook.com/taxiopatija" target="_blank"
                 class="no-underline hover:underline text-gray-800 hover:text-pink-500">Facebook</a>
             </li>
             <li class="mt-2 inline-block mr-2 md:block md:mr-0">
-              <a href="https://www.instagram.com/taxiopatija.hr" target='_blank'
+              <a href="https://www.instagram.com/taxiopatija.hr" target="_blank"
                 class="no-underline hover:underline text-gray-800 hover:text-pink-500">Instagram</a>
             </li>
-
           </ul>
         </div>
         <div class="flex-1">
@@ -284,15 +379,12 @@
 
 <style scoped>
 .gradient {
-  background: #E6DADA;
+  background: #e6dada;
   /* fallback for old browsers */
   background: -webkit-linear-gradient(to top, #cecece, #e7e7e7);
   /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to top,
-      #d8d8d8,
-      #e1e1e1);
+  background: linear-gradient(to top, #d8d8d8, #e1e1e1);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
 }
 
 .a {
@@ -360,67 +452,73 @@ button {
 import { ref } from "vue";
 import dayjs from "dayjs";
 
-const baseSubtitle = "Brzi i udobni transferi do i od zračnih luka: Krk, Pula, Zagreb, Trst, Ljubljana, Split, Zadar, Venecija."
-const selectedTransfer = ref("");
+import VueDatePicker from "@vuepic/vue-datepicker";
+import "@vuepic/vue-datepicker/dist/main.css";
 
-const transfersData = ref([
-  {
-    name: "Krk",
-    transferTitle: "Aerodrom Krk (Rijeka)",
-    transferSubtitle: "Brz i udoban transfer do i od zračne luke Krk.",
-    autoCijena: 80,
-    kombiCijena: 130,
-  },
-  {
-    name: "Pula",
-    transferTitle: "Aerodrom Pula",
-    transferSubtitle: "Brz i udoban transfer do i od zračne luke Pula.",
-    autoCijena: 150,
-    kombiCijena: 230,
-  },
-  {
-    name: "Zagreb",
-    transferTitle: "Aerodrom Zagreb",
-    transferSubtitle: "Brz i udoban transfer do i od zračne luke Zagreb.",
-    autoCijena: 230,
-    kombiCijena: 300,
-  },
-  {
-    name: "Trst",
-    transferTitle: "Aerodrom Trst",
-    transferSubtitle: "Brz i udoban transfer do i od zračne luke Trst.",
-    autoCijena: 150,
-    kombiCijena: 200,
-  },
-  {
-    name: "Ljubljana",
-    transferTitle: "Aerodrom Ljubljana",
-    transferSubtitle: "Brz i udoban transfer do i od zračne luke Ljubljana.",
-    autoCijena: 200,
-    kombiCijena: 250,
-  },
-  {
-    name: "Split",
-    transferTitle: "Aerodrom Split",
-    transferSubtitle: "Brz i udoban transfer do i od zračne luke Split.",
-    autoCijena: 550,
-    kombiCijena: 700,
-  },
-  {
-    name: "Zadar",
-    transferTitle: "Aerodrom Zadar",
-    transferSubtitle: "Brz i udoban transfer do i od zračne luke Zadar.",
-    autoCijena: 350,
-    kombiCijena: 500,
-  },
-  {
-    name: "Venecija",
-    transferTitle: "Aerodrom Venecija",
-    transferSubtitle: "Brz i udoban transfer do i od zračne luke Venecija.",
-    autoCijena: 300,
-    kombiCijena: 350,
-  },
-]);
+const dayNumber = ref("");
+const dayPrice = ref("");
+
+const date = ref(new Date());
+
+const format = (date) => {
+  const day1 = dayjs(date[0]).get("date");
+  const month1 = dayjs(date[0]).get("month") + 1;
+  const year1 = dayjs(date[0]).get("year");
+
+  const day2 = dayjs(date[1]).get("date");
+  const month2 = dayjs(date[1]).get("month") + 1;
+  const year2 = dayjs(date[1]).get("year");
+  getPriceInfo();
+  return `${day1}/${month1}/${year1} - ${day2}/${month2}/${year2}`;
+};
+
+onMounted(() => {
+  const startDate = new Date();
+  const endDate = new Date(new Date().setDate(startDate.getDate() + 1));
+  date.value = [startDate, endDate];
+});
+
+const getPriceInfo = () => {
+  const startDate = date.value[0];
+  const endDate = date.value[1];
+  const start = dayjs(startDate);
+  const end = dayjs(endDate);
+  const dayDifference = end.diff(start, "day");
+  console.log(dayDifference + 1);
+  dayNumber.value = dayDifference + 1;
+  if (dayNumber.value === 1) {
+    dayPrice.value = 125 + "€";
+  } else if (dayNumber.value === 2) {
+    dayPrice.value = 240 + "€";
+  } else if (dayNumber.value < 7) {
+    dayPrice.value = 100 * dayNumber.value + "€";
+  } else {
+    dayPrice.value = "po dogovoru"
+  }
+};
+
+const phoneNumber = ref("");
+const clientName = ref("");
+
+const generateMailtoLink = () => {
+  const recipient = "anterukavina@yahoo.com.hr";
+  const subject = "Upit za najam putničkog kombi vozila";
+  const body = selectedItemsText.value;
+
+  const encodedRecipient = encodeURIComponent(recipient);
+  const encodedSubject = encodeURIComponent(subject);
+  const encodedBody = encodeURIComponent(body);
+
+  return `mailto:${encodedRecipient}?subject=${encodedSubject}&body=${encodedBody}`;
+};
+
+const selectedItemsText = computed(() => {
+  const salutation = `Poštovani, zanima me usluga najma kombi vozila u periodu od ${format(
+    date.value
+  )}.\n\nMožete li mi potvrditi dostupnost kombi vozila za to razdoblje?`;
+  return `${salutation}\n\n${phoneNumber.value ? "Moj broj telefona: " + phoneNumber.value : ""
+    }\n${clientName.value ? "Lijep pozdrav, \n" + clientName.value : ""} \n`;
+});
 
 useHead({
   title:
