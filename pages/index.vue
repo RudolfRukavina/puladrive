@@ -77,7 +77,7 @@
         <p class="m-0 mx-1 p-1 px-12 text-xl fw-bold">0 - 24</p>
       </div>
     </div>
-    <div class=" overflow-x-auto text-nowrap whitespace-nowrap sticky top-0 mt-3 w-full z-50 bg-white">
+    <div class=" overflow-x-auto text-nowrap whitespace-nowrap sticky top-0 mt-3 w-full z-50 bg-white" id='start'>
       <div class="max-w-screen-xl px-4 py-2 mx-auto">
         <div class="flex items-center justify-evenly">
           <ul class="grid grid-cols-3 font-medium mt-0  text-base">
@@ -941,6 +941,17 @@ button {
 import { ref } from "vue";
 import dayjs from "dayjs";
 
+
+onMounted(() => {
+  scrollToSection('#start');
+});
+
+function scrollToSection(hash) {
+  const element = document.querySelector(hash);
+  if (element) {
+    element.scrollIntoView({ behavior: 'smooth' });
+  }
+}
 
 const isDay = ref(true)
 
