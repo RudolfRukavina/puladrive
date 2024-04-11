@@ -10,8 +10,8 @@
   <header>
 
 
-    <div class="bg-white border-t fixed bottom-0 z-50 w-full">
-      <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl p-3">
+    <div class="bg-transparent backdrop-blur-[1px]  fixed bottom-0 z-50 w-full">
+      <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl px-3 pb-2">
         <NuxtLink :to="{ path: '/', hash: '#naslovnica' }" class="flex items-center space-x-3 rtl:space-x-reverse">
           <img src="../assets/imgs/logo.png" alt="" class="w-14  inline-block rounded-xl">
         </NuxtLink>
