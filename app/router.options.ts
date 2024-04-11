@@ -18,24 +18,24 @@ export default <RouterConfig>{
     // The remainder is optional but maybe useful as well
 
     // if link is to same page, scroll to top with smooth behavior
-    if (to === from) {
+    // if (to === from) {
       return {
         left: 0,
         top: 0,
         behavior: 'smooth',
         easing: 'ease-in-out'
       };
-    }
+    // }
 
     // this will use saved scroll position on browser forward/back navigation
-    return new Promise((resolve) => {
-      setTimeout(() => {
-        resolve({
-          left: savedPosition?.left || 0,
-          top: savedPosition?.top || 0,
-          behavior: 'smooth',
-        });
-      }, 200);
-    });
+    // return new Promise((resolve) => {
+    //   setTimeout(() => {
+    //     resolve({
+    //       left: savedPosition?.left || 0,
+    //       top: 0,
+    //       behavior: 'smooth',
+    //     });
+    //   }, 200);
+    // });
   },
 };
