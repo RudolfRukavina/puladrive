@@ -4,7 +4,7 @@
     <Title>Rent a van | Pricing 2024. | Taxi Opatija | 0 - 24
     </Title>
     <Meta name="description"
-      content="Rent a van | Pricing 2024 | Taxi Opatija | Best service at the best price | Available 24 hours every day | Rent a van & more" />
+      content="Rent a van | Pricing 2024. | Taxi Opatija | Best service at the best price | Available 24 hours every day | Rent a van & more" />
   </Head>
 
   <header>

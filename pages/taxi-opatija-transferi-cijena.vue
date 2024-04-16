@@ -4,7 +4,7 @@
     <Title>Transfers | Pricing 2024. | Taxi Opatija | 0 - 24
     </Title>
     <Meta name="description"
-      content="Transfers | Pricing 2024 | Taxi Opatija | Best service at the best price | Available 24 hours every day | Transfers & more" />
+      content="Transfers | Pricing 2024. | Taxi Opatija | Best service at the best price | Available 24 hours every day | Transfers & more" />
   </Head>
 
   <header>
