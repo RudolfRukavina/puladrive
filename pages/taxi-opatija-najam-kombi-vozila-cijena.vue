@@ -479,6 +479,8 @@ onMounted(() => {
   const startDate = new Date();
   const endDate = new Date(new Date().setDate(startDate.getDate() + 1));
   date.value = [startDate, endDate];
+
+  i18n.locale.value = navigator.language.split('-')[0]
 });
 
 const getPriceInfo = () => {

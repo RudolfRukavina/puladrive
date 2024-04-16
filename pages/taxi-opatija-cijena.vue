@@ -581,10 +581,12 @@ const isDay = ref(true)
 const currentTime = ref(dayjs().format("HH:mm"));
 
 onMounted(() => {
+  i18n.locale.value = navigator.language.split('-')[0]
   setInterval(() => {
     currentTime.value = dayjs().format("HH:mm");
   }, 1000);
   getPeriodOfDay()
+
 });
 
 const getPeriodOfDay = () => {

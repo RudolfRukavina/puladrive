@@ -884,6 +884,8 @@ import { ref } from "vue";
 import dayjs from "dayjs";
 const { locale, setLocale } = useI18n()
 
+console.log(locale)
+
 const i18n = useI18n();
 
 const isActiveLanguage = (locale) => {
@@ -892,6 +894,7 @@ const isActiveLanguage = (locale) => {
 
 onMounted(() => {
   scrollToSection('#start');
+  i18n.locale.value = navigator.language.split('-')[0]
 });
 
 function scrollToSection(hash) {

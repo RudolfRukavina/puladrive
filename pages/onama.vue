@@ -721,70 +721,12 @@ button {
 </style>
 
 <script setup>
-import { ref } from "vue";
-import dayjs from "dayjs";
+import { ref, onMounted } from "vue";
 
-const baseSubtitle = "Brzi i udobni transferi do i od zračnih luka: Krk, Pula, Zagreb, Trst, Ljubljana, Split, Zadar, Venecija."
-const selectedTransfer = ref("");
 
-const transfersData = ref([
-  {
-    name: "Krk",
-    transferTitle: "Aerodrom Krk (Rijeka)",
-    transferSubtitle: "Brz i udoban transfer do i od zračne luke Krk.",
-    autoCijena: 80,
-    kombiCijena: 130,
-  },
-  {
-    name: "Pula",
-    transferTitle: "Aerodrom Pula",
-    transferSubtitle: "Brz i udoban transfer do i od zračne luke Pula.",
-    autoCijena: 150,
-    kombiCijena: 230,
-  },
-  {
-    name: "Zagreb",
-    transferTitle: "Aerodrom Zagreb",
-    transferSubtitle: "Brz i udoban transfer do i od zračne luke Zagreb.",
-    autoCijena: 230,
-    kombiCijena: 300,
-  },
-  {
-    name: "Trst",
-    transferTitle: "Aerodrom Trst",
-    transferSubtitle: "Brz i udoban transfer do i od zračne luke Trst.",
-    autoCijena: 150,
-    kombiCijena: 200,
-  },
-  {
-    name: "Ljubljana",
-    transferTitle: "Aerodrom Ljubljana",
-    transferSubtitle: "Brz i udoban transfer do i od zračne luke Ljubljana.",
-    autoCijena: 200,
-    kombiCijena: 250,
-  },
-  {
-    name: "Split",
-    transferTitle: "Aerodrom Split",
-    transferSubtitle: "Brz i udoban transfer do i od zračne luke Split.",
-    autoCijena: 550,
-    kombiCijena: 700,
-  },
-  {
-    name: "Zadar",
-    transferTitle: "Aerodrom Zadar",
-    transferSubtitle: "Brz i udoban transfer do i od zračne luke Zadar.",
-    autoCijena: 350,
-    kombiCijena: 500,
-  },
-  {
-    name: "Venecija",
-    transferTitle: "Aerodrom Venecija",
-    transferSubtitle: "Brz i udoban transfer do i od zračne luke Venecija.",
-    autoCijena: 300,
-    kombiCijena: 350,
-  },
-]);
+onMounted(() => {
+  i18n.locale.value = navigator.language.split('-')[0]
+})
 
 useHead({
   title:

@@ -755,8 +755,12 @@ button {
 </style>
 
 <script setup>
-import { ref } from "vue";
-import dayjs from "dayjs";
+import { ref, onMounted } from "vue";
+
+
+onMounted(() => {
+  i18n.locale.value = navigator.language.split('-')[0]
+})
 
 const baseSubtitle = "Brzi i udobni transferi do i od zračnih luka: Krk, Pula, Zagreb, Trst, Ljubljana, Split, Zadar, Venecija."
 

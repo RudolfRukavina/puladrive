@@ -1,6 +1,6 @@
 export default defineI18nConfig(() => ({
   legacy: false,
-  locale: (navigator.language.startsWith('hr') ? 'hr' : 'en'),
+  locale: "en",
   messages: {
     en: {
       welcome: "Welcome",

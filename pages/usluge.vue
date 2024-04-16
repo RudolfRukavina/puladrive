@@ -931,6 +931,7 @@ import dayjs from "dayjs";
 
 onMounted(() => {
   scrollToSection('#usluge');
+  i18n.locale.value = navigator.language.split('-')[0]
 });
 
 function scrollToSection(hash) {
