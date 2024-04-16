@@ -283,7 +283,7 @@
                 <div class="rounded-[10px] bg-gray-50 p-4 sm:p-6 h-full">
                   <div class="flex justify-between mt-1">
                     <span class="text-sm ms-8 w-full text-blue-800 text-center font-medium">{{
-          $t('pricingTaxi') }}</span>
+                      $t('pricingTaxi') }}</span>
                     <svg class="w-6 inline-block" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
                       <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
@@ -310,7 +310,7 @@
                 <div class="rounded-[10px] bg-gray-50 p-4 sm:p-6 h-full">
                   <div class="flex justify-between mt-1">
                     <span class="text-sm ms-8 w-full text-blue-800 text-center font-medium">{{
-          $t('pricingTransfers') }}</span>
+                      $t('pricingTransfers') }}</span>
                     <svg class="w-6 inline-block" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
                       <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
@@ -336,7 +336,7 @@
                 <div class="rounded-[10px] bg-gray-50 p-4 sm:p-6 h-full">
                   <div class="flex justify-between mt-1">
                     <span class="text-sm ms-8 w-full text-blue-800 text-center font-medium">{{
-          $t('pricingRentVan') }}</span>
+                      $t('pricingRentVan') }}</span>
                     <svg class="w-6 inline-block" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
                       <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
@@ -362,7 +362,7 @@
                 <div class="rounded-[10px] bg-gray-50 p-4 sm:p-6 h-full">
                   <div class="flex justify-between mt-1">
                     <span class="text-sm ms-8 w-full text-blue-800 text-center font-medium">{{
-          $t('pricingRentCar') }}</span>
+                      $t('pricingRentCar') }}</span>
                     <svg class="w-6 inline-block" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
                       <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
@@ -509,12 +509,14 @@
               </NuxtLink>
             </li>
             <li class="mt-2 inline-block mr-2 md:block md:mr-0">
-              <NuxtLink to="/najam-kombi-vozila" class="no-underline hover:underline text-gray-800 hover:text-pink-500">
+              <NuxtLink :to="i18n.locale.value === 'en' ? '/en/rent-a-van' : '/najam-kombi-vozila'"
+                class="no-underline hover:underline text-gray-800 hover:text-pink-500">
                 {{ $t('servicesRentVan') }}
               </NuxtLink>
             </li>
             <li class="mt-2 inline-block mr-2 md:block md:mr-0">
-              <NuxtLink to="/najam-automobila" class="no-underline hover:underline text-gray-800 hover:text-pink-500">{{
+              <NuxtLink :to="i18n.locale.value === 'en' ? '/en/rent-a-car' : '/najam-automobila'"
+                class="no-underline hover:underline text-gray-800 hover:text-pink-500">{{
           $t('servicesRentCar') }}
               </NuxtLink>
             </li>

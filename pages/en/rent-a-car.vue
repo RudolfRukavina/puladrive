@@ -383,12 +383,14 @@
               </NuxtLink>
             </li>
             <li class="mt-2 inline-block mr-2 md:block md:mr-0">
-              <NuxtLink to="/najam-kombi-vozila" class="no-underline hover:underline text-gray-800 hover:text-pink-500">
+              <NuxtLink :to="i18n.locale.value === 'en' ? '/en/rent-a-van' : '/najam-kombi-vozila'"
+                class="no-underline hover:underline text-gray-800 hover:text-pink-500">
                 {{ $t('servicesRentVan') }}
               </NuxtLink>
             </li>
             <li class="mt-2 inline-block mr-2 md:block md:mr-0">
-              <NuxtLink to="/najam-automobila" class="no-underline hover:underline text-gray-800 hover:text-pink-500">{{
+              <NuxtLink :to="i18n.locale.value === 'en' ? '/en/rent-a-car' : '/najam-automobila'"
+                class="no-underline hover:underline text-gray-800 hover:text-pink-500">{{
           $t('servicesRentCar') }}
               </NuxtLink>
             </li>
