@@ -723,10 +723,14 @@ button {
 <script setup>
 import { ref, onMounted } from "vue";
 
+const { locale, setLocale } = useI18n()
+
+const i18n = useI18n();
 
 onMounted(() => {
   i18n.locale.value = navigator.language.split('-')[0]
 })
+
 
 useHead({
   title:

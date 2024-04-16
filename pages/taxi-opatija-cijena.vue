@@ -575,6 +575,9 @@ button {
 import { ref } from "vue";
 import dayjs from "dayjs";
 
+const { locale, setLocale } = useI18n()
+
+const i18n = useI18n();
 
 const isDay = ref(true)
 
