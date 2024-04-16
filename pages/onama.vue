@@ -13,7 +13,7 @@
     <div class="bg-transparent backdrop-blur-[1px]  fixed bottom-0 z-50 w-full">
       <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl px-3 pb-2">
         <NuxtLink :to="{ path: '/', hash: '#naslovnica' }" class="flex items-center space-x-3 rtl:space-x-reverse">
-          <img src="../assets/imgs/logo.png" alt="" class="w-14  inline-block rounded-xl">
+          <img src="../assets/imgs/logo.png" alt="" class="w-14 h-[42px]  inline-block rounded-xl">
         </NuxtLink>
         <div class="flex items-center space-x-6 rtl:space-x-reverse">
           <a href="viber://chat?number=38598491369">
@@ -71,11 +71,6 @@
 
   <main>
     <img class="hero-photo h-[20vh] md:hidden rounded-none" src="../assets/imgs/cars.jpg" alt="Opatija Taxi" />
-    <div class="flex justify-center -mt-5">
-      <div class="hero-hours md:mt-20">
-        <p class="m-0 mx-1 p-1 px-12 text-xl fw-bold">0 - 24</p>
-      </div>
-    </div>
     <div class=" overflow-x-auto text-nowrap whitespace-nowrap sticky top-0 mt-3 w-full z-50 bg-white">
       <div class="max-w-screen-xl px-4 py-2 mx-auto">
         <div class="flex items-center justify-evenly">
@@ -561,11 +556,11 @@
     <div class=" mx-auto px-8">
       <div class="w-full flex flex-col md:flex-row py-6">
         <div class="flex-1 mb-6 text-black">
-          <a class="text-pink-600 no-underline hover:no-underline font-bold text-2xl lg:text-4xl" href="#">
+          <NuxtLink class="text-pink-600 no-underline hover:no-underline font-bold text-2xl lg:text-4xl"
+            :to="{ path: '/', hash: '#naslovnica' }">
             <!--Icon from: http://www.potlabicons.com/ -->
-            <img src="../assets/imgs/logo.png" alt="" class="w-20  inline-block me-3 rounded-xl">
-
-          </a>
+            <img src="../assets/imgs/logo.png" alt="" class="w-20 h-[60px]  inline-block me-3 rounded-xl">
+          </NuxtLink>
         </div>
         <div class="flex-1">
           <p class="uppercase text-gray-500 md:mb-6">Taxi Opatija</p>
@@ -649,11 +644,11 @@
   background: #E6DADA;
   /* fallback for old browsers */
   background: -webkit-linear-gradient(to top,
-      #f4fdff,
+      rgb(84, 221, 255),
       #c6eeff);
   /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to top,
-      #f4fdff,
+      rgb(84, 221, 255),
       #c6eeff);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 

@@ -38,7 +38,7 @@ export default defineI18nConfig(() => ({
       rentVanDesc: "Flexible van rental for groups or larger families, tailored to your needs.",
       rentCarDesc: "Car rental at affordable prices to explore destinations at your own pace.",
       aboutUs: "About us",
-      iskustva: "Experiences",
+      iskustva: "Reviews",
       tService: "Taxi transportation service",
     },
     hr: {

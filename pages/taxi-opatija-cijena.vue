@@ -13,7 +13,7 @@
     <div class="bg-transparent backdrop-blur-[1px]  fixed bottom-0 z-50 w-full">
       <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl px-3 pb-2">
         <NuxtLink :to="{ path: '/', hash: '#naslovnica' }" class="flex items-center space-x-3 rtl:space-x-reverse">
-          <img src="../assets/imgs/logo.png" alt="" class="w-14  inline-block rounded-xl">
+          <img src="../assets/imgs/logo.png" alt="" class="w-14 h-[42px]  inline-block rounded-xl">
         </NuxtLink>
         <div class="flex items-center space-x-6 rtl:space-x-reverse">
           <a href="viber://chat?number=38598491369">
@@ -74,7 +74,7 @@
         <div class="flex items-center justify-evenly">
           <ul class="grid grid-cols-3 font-medium mt-0  text-base">
             <li class="border-e px-4 w-full text-center  border-gray-300">
-              <NuxtLink to="{ path: '/', hash: '#naslovnica' }" class="text-gray-900 hover:underline">{{ $t('home') }}
+              <NuxtLink :to="{ path: '/', hash: '#naslovnica' }" class="text-gray-900 hover:underline">{{ $t('home') }}
               </NuxtLink>
             </li>
             <li class=" px-4 w-full text-center border-gray-300">
@@ -216,11 +216,11 @@
     <div class=" mx-auto px-8">
       <div class="w-full flex flex-col md:flex-row py-6">
         <div class="flex-1 mb-6 text-black">
-          <a class="text-pink-600 no-underline hover:no-underline font-bold text-2xl lg:text-4xl" href="#">
+          <NuxtLink class="text-pink-600 no-underline hover:no-underline font-bold text-2xl lg:text-4xl"
+            :to="{ path: '/', hash: '#naslovnica' }">
             <!--Icon from: http://www.potlabicons.com/ -->
-            <img src="../assets/imgs/logo.png" alt="" class="w-20  inline-block me-3 rounded-xl">
-
-          </a>
+            <img src="../assets/imgs/logo.png" alt="" class="w-20 h-[60px]  inline-block me-3 rounded-xl">
+          </NuxtLink>
         </div>
         <div class="flex-1">
           <p class="uppercase text-gray-500 md:mb-6">Taxi Opatija</p>
@@ -303,11 +303,13 @@
 .gradient {
   background: #E6DADA;
   /* fallback for old browsers */
-  background: -webkit-linear-gradient(to top, #cecece, #e7e7e7);
+  background: -webkit-linear-gradient(to top,
+      rgb(84, 221, 255),
+      #c6eeff);
   /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to top,
-      #d8d8d8,
-      #e1e1e1);
+      rgb(84, 221, 255),
+      #c6eeff);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 }

@@ -13,7 +13,7 @@
     <div class="bg-transparent backdrop-blur-[1px]  fixed bottom-0 z-50 w-full">
       <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl px-3 pb-2">
         <NuxtLink :to="{ path: '/', hash: '#naslovnica' }" class="flex items-center space-x-3 rtl:space-x-reverse">
-          <img src="../assets/imgs/logo.png" alt="" class="w-14  inline-block rounded-xl">
+          <img src="../assets/imgs/logo.png" alt="" class="w-14 h-[42px]  inline-block rounded-xl">
         </NuxtLink>
         <div class="flex items-center space-x-6 rtl:space-x-reverse">
           <a href="viber://chat?number=38598491369">
@@ -70,8 +70,8 @@
   </header>
 
   <main id='naslovnica'>
-    <img class="hero-photo h-[20vh] md:hidden rounded-none" src="../assets/imgs/opatijamainphoto.webp"
-      alt="Opatija Taxi" />
+    <!-- <img class="hero-photo h-[20vh] md:hidden rounded-none" src="../assets/imgs/opatijamainphoto.webp"
+      alt="Opatija Taxi" /> -->
     <div class="flex justify-center relative -mt-5">
       <!-- <div class='absolute top-3 right-0'>
         <div class='flex justify-evenly mt-2' id="lang-switch">
@@ -82,9 +82,9 @@
             @click="setLocale('en')" :class="{ 'active-flag': isActiveLanguage('en'), 'en': true }">
         </div>
       </div> -->
-      <div class="hero-hours md:mt-20">
+      <!-- <div class="hero-hours md:mt-20">
         <p class="m-0 mx-1 p-1 px-12 text-xl fw-bold">0 - 24</p>
-      </div>
+      </div> -->
     </div>
     <div class=" overflow-x-auto text-nowrap whitespace-nowrap sticky top-0 mt-3 w-full z-50 bg-white" id='start'>
       <div class="max-w-screen-xl px-4 py-2 mx-auto">
@@ -108,7 +108,7 @@
       <hr>
     </div>
     <div>
-      <div class="relative isolate px-6 lg:px-8">
+      <div class="relative isolate px-6 lg:px-8 mt-5">
         <div class="mx-auto max-w-2xl pt-10">
           <div class="flex justify-center">
             <img src="../assets/imgs/logo.webp" alt="Logo Taxi Opatija" class="-mt-5 object-cover w-3/12 sm:w-24" />
@@ -418,7 +418,7 @@
             </g>
           </svg>
         </div>
-        <section class="container mx-auto text-center py-1 pb-10" id='radnovrijeme'>
+        <section class="container mx-auto text-center py-5 pb-10 " id='radnovrijeme'>
           <h2 class="w-full my-2 text-5xl font-bold leading-tight text-center text-white">
             {{ $t('workhours') }}
           </h2>
@@ -469,11 +469,11 @@
     <div class=" mx-auto px-8">
       <div class="w-full flex flex-col md:flex-row py-6">
         <div class="flex-1 mb-6 text-black">
-          <a class="text-pink-600 no-underline hover:no-underline font-bold text-2xl lg:text-4xl" href="#">
+          <NuxtLink class="text-pink-600 no-underline hover:no-underline font-bold text-2xl lg:text-4xl"
+            :to="{ path: '/', hash: '#naslovnica' }">
             <!--Icon from: http://www.potlabicons.com/ -->
-            <img src="../assets/imgs/logo.png" alt="" class="w-20  inline-block me-3 rounded-xl">
-
-          </a>
+            <img src="../assets/imgs/logo.png" alt="" class="w-20 h-[60px]  inline-block me-3 rounded-xl">
+          </NuxtLink>
         </div>
         <div class="flex-1">
           <p class="uppercase text-gray-500 md:mb-6">Taxi Opatija</p>
