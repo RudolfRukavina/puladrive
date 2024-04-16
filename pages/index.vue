@@ -884,13 +884,7 @@ import { ref } from "vue";
 import dayjs from "dayjs";
 const { locale, setLocale } = useI18n()
 
-console.log(locale)
-
 const i18n = useI18n();
-
-const isActiveLanguage = (locale) => {
-  return i18n.locale.value === locale;
-};
 
 onMounted(() => {
   scrollToSection('#start');
@@ -905,69 +899,6 @@ function scrollToSection(hash) {
 }
 
 const isDay = ref(true)
-
-const selectedTransfer = ref("")
-
-
-
-const transfersData = ref([
-  {
-    name: "Krk",
-    transferTitle: "Aerodrom Krk (Rijeka)",
-    transferSubtitle: "Brz i udoban transfer do i od zračne luke Krk.",
-    autoCijena: 80,
-    kombiCijena: 130
-  },
-  {
-    name: "Pula",
-    transferTitle: "Aerodrom Pula",
-    transferSubtitle: "Brz i udoban transfer do i od zračne luke Pula.",
-    autoCijena: 150,
-    kombiCijena: 230
-  },
-  {
-    name: "Zagreb",
-    transferTitle: "Aerodrom Zagreb",
-    transferSubtitle: "Brz i udoban transfer do i od zračne luke Zagreb.",
-    autoCijena: 230,
-    kombiCijena: 300
-  },
-  {
-    name: "Trst",
-    transferTitle: "Aerodrom Trst",
-    transferSubtitle: "Brz i udoban transfer do i od zračne luke Trst.",
-    autoCijena: 150,
-    kombiCijena: 200
-  },
-  {
-    name: "Ljubljana",
-    transferTitle: "Aerodrom Ljubljana",
-    transferSubtitle: "Brz i udoban transfer do i od zračne luke Ljubljana.",
-    autoCijena: 200,
-    kombiCijena: 250
-  },
-  {
-    name: "Split",
-    transferTitle: "Aerodrom Split",
-    transferSubtitle: "Brz i udoban transfer do i od zračne luke Split.",
-    autoCijena: 550,
-    kombiCijena: 700
-  },
-  {
-    name: "Zadar",
-    transferTitle: "Aerodrom Zadar",
-    transferSubtitle: "Brz i udoban transfer do i od zračne luke Zadar.",
-    autoCijena: 350,
-    kombiCijena: 500
-  },
-  {
-    name: "Venecija",
-    transferTitle: "Aerodrom Venecija",
-    transferSubtitle: "Brz i udoban transfer do i od zračne luke Venecija.",
-    autoCijena: 300,
-    kombiCijena: 350
-  },
-]);
 
 
 const currentTime = ref(dayjs().format("HH:mm"));
@@ -989,15 +920,15 @@ const getPeriodOfDay = () => {
 
 useHead({
   title:
-    "Naslovnica | Taxi Opatija | 0 - 24 | Taxi | Rent a car | Rent a Van | Transfers | Excursions",
+    "Home | Taxi Opatija | 0 - 24 | Taxi & more",
   htmlAttrs: {
-    lang: "hr",
+    lang: "en",
   },
   meta: [
     {
       name: "description",
       content:
-        "Taxi Opatija | Best service at the best price | Available 24 hours every day | Transfers | Excursions | Rent a Van | Rent a Car | Jedan je taxiopatija.hr | Visit taxiopatija.hr",
+        "Taxi Opatija | Best service at the best price | Available 24 hours every day | Taxi & more | taxiopatija.hr",
     },
     { hid: "og:url", property: "og:url", content: "https://taxiopatija.hr" },
     { hid: "og:type", property: "og:type", content: "website" },
@@ -1005,13 +936,13 @@ useHead({
       hid: "og:title",
       property: "og:title",
       content:
-        "Taxi Opatija | Best service at the best price | Available 24 hours every day | Transfers | Excursions | Rent a Van | Rent a Car | Jedan je taxiopatija.hr | Visit taxiopatija.hr",
+        "Taxi Opatija | Best service at the best price | Available 24 hours every day | Taxi & more | taxiopatija.hr",
     },
     {
       hid: "og:description",
       property: "og:description",
       content:
-        "Taxi Opatija | Best service at the best price | Available 24 hours every day | Transfers | Excursions | Rent a Van | Rent a Car | Jedan je taxiopatija.hr | Visit taxiopatija.hr",
+        "Taxi Opatija | Best service at the best price | Available 24 hours every day | Taxi & more | taxiopatija.hr",
     },
     {
       hid: "og:image",
@@ -1069,13 +1000,13 @@ useHead({
 
 useSeoMeta({
   title:
-    "Taxi Opatija | Best service at the best price | Available 24 hours every day | Transfers | Excursions | Rent a Van | Rent a Car | Jedan je taxiopatija.hr | Visit taxiopatija.hr",
+    "Taxi Opatija | Best service at the best price | Available 24 hours every day | Taxi & more | taxiopatija.hr",
   ogTitle:
-    "Taxi Opatija | Best service at the best price | Available 24 hours every day | Transfers | Excursions | Rent a Van | Rent a Car | Jedan je taxiopatija.hr | Visit taxiopatija.hr",
+    "Taxi Opatija | Best service at the best price | Available 24 hours every day | Taxi & more | taxiopatija.hr",
   description:
-    "Taxi Opatija | Best service at the best price | Available 24 hours every day | Transfers | Excursions | Rent a Van | Rent a Car | Jedan je taxiopatija.hr | Visit taxiopatija.hr",
+    "Taxi Opatija | Best service at the best price | Available 24 hours every day | Taxi & more | taxiopatija.hr",
   ogDescription:
-    "Taxi Opatija | Best service at the best price | Available 24 hours every day | Transfers | Excursions | Rent a Van | Rent a Car | Jedan je taxiopatija.hr | Visit taxiopatija.hr",
+    "Taxi Opatija | Best service at the best price | Available 24 hours every day | Taxi & more | taxiopatija.hr",
   ogImage: "https://taxiopatija.hr/opatija.jpeg",
   twitterCard: "https://taxiopatija.hr/opatija.jpeg",
 });
