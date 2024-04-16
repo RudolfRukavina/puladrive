@@ -345,8 +345,7 @@
         <div class="flex-1 mb-6 text-black">
           <NuxtLink class="text-pink-600 no-underline hover:no-underline font-bold text-2xl lg:text-4xl"
             :to="{ path: '/', hash: '#naslovnica' }">
-            <!--Icon from: http://www.potlabicons.com/ -->
-            <img src="../../assets/imgs/logo.png" alt="" class="w-20 h-[60px]  inline-block me-3 rounded-xl">
+            <img src="../assets/imgs/logo.png" alt="" class="w-20 h-[60px]  inline-block me-3 rounded-xl">
           </NuxtLink>
         </div>
         <div class="flex-1">
@@ -384,13 +383,13 @@
               </NuxtLink>
             </li>
             <li class="mt-2 inline-block mr-2 md:block md:mr-0">
-              <NuxtLink to="/taxi-opatija-najam-kombi-vozila-cijena"
-                class="no-underline hover:underline text-gray-800 hover:text-pink-500">{{ $t('servicesRentVan') }}
+              <NuxtLink to="/najam-kombi-vozila" class="no-underline hover:underline text-gray-800 hover:text-pink-500">
+                {{ $t('servicesRentVan') }}
               </NuxtLink>
             </li>
             <li class="mt-2 inline-block mr-2 md:block md:mr-0">
-              <NuxtLink to="/taxi-opatija-najam-automobila-cijena"
-                class="no-underline hover:underline text-gray-800 hover:text-pink-500">{{ $t('servicesRentCar') }}
+              <NuxtLink to="/najam-automobila" class="no-underline hover:underline text-gray-800 hover:text-pink-500">{{
+          $t('servicesRentCar') }}
               </NuxtLink>
             </li>
           </ul>

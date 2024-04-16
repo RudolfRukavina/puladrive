@@ -332,7 +332,7 @@
 
             <article
               class=" hover:animate-background rounded-xl bg-gradient-to-r from-gray-400 via-slate-500 to-gray-400 p-0.5 shadow-md transition hover:bg-[length:400%_400%] hover:shadow-sm hover:[animation-duration:_4s]">
-              <NuxtLink :to="i18n.locale.value === 'en' ? '/en/rent-a-van' : '/taxi-opatija-najam-kombi-vozila-cijena'">
+              <NuxtLink :to="i18n.locale.value === 'en' ? '/en/rent-a-van' : '/najam-kombi-vozila'">
                 <div class="rounded-[10px] bg-gray-50 p-4 sm:p-6 h-full">
                   <div class="flex justify-between mt-1">
                     <span class="text-sm ms-8 w-full text-blue-800 text-center font-medium">{{
@@ -471,7 +471,6 @@
         <div class="flex-1 mb-6 text-black">
           <NuxtLink class="text-pink-600 no-underline hover:no-underline font-bold text-2xl lg:text-4xl"
             :to="{ path: '/', hash: '#naslovnica' }">
-            <!--Icon from: http://www.potlabicons.com/ -->
             <img src="../assets/imgs/logo.png" alt="" class="w-20 h-[60px]  inline-block me-3 rounded-xl">
           </NuxtLink>
         </div>
@@ -510,13 +509,13 @@
               </NuxtLink>
             </li>
             <li class="mt-2 inline-block mr-2 md:block md:mr-0">
-              <NuxtLink to="/taxi-opatija-najam-kombi-vozila-cijena"
-                class="no-underline hover:underline text-gray-800 hover:text-pink-500">{{ $t('servicesRentVan') }}
+              <NuxtLink to="/najam-kombi-vozila" class="no-underline hover:underline text-gray-800 hover:text-pink-500">
+                {{ $t('servicesRentVan') }}
               </NuxtLink>
             </li>
             <li class="mt-2 inline-block mr-2 md:block md:mr-0">
-              <NuxtLink to="/taxi-opatija-najam-automobila-cijena"
-                class="no-underline hover:underline text-gray-800 hover:text-pink-500">{{ $t('servicesRentCar') }}
+              <NuxtLink to="/najam-automobila" class="no-underline hover:underline text-gray-800 hover:text-pink-500">{{
+          $t('servicesRentCar') }}
               </NuxtLink>
             </li>
           </ul>

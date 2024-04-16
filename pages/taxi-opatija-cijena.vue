@@ -161,7 +161,7 @@
       <div class="flex flex-col mx-5 md:flex-row justify-center mb-32 mt-6 md:space-x-6">
         <div class="bg-white custom-shadow  rounded-md p-6" v-if='isDay'>
           <p class="text-green-700 bg-green-200 px-2.5 py-1 rounded-full inline-block mb-2">{{ $t('dayDrive') }} {{
-          $t('drive') }}
+            $t('drive') }}
           </p>
           <h3 class="text-xl text-gray-900 mb-4">
             {{ $t('tService') }}<br>
@@ -175,7 +175,7 @@
 
         <div class="bg-white custom-shadow  rounded-md p-6" v-else>
           <p class="text-red-700 bg-red-200 px-2.5 py-1 rounded-full inline-block mb-2">{{ $t('nightDrive') }} {{
-          $t('drive') }}</p>
+            $t('drive') }}</p>
           <h3 class="text-xl text-gray-900 mb-4">
             {{ $t('tService') }}<br>
             <span class="font-bold text-gray-600 text-sm">22:00 - 05:00</span>
@@ -218,7 +218,6 @@
         <div class="flex-1 mb-6 text-black">
           <NuxtLink class="text-pink-600 no-underline hover:no-underline font-bold text-2xl lg:text-4xl"
             :to="{ path: '/', hash: '#naslovnica' }">
-            <!--Icon from: http://www.potlabicons.com/ -->
             <img src="../assets/imgs/logo.png" alt="" class="w-20 h-[60px]  inline-block me-3 rounded-xl">
           </NuxtLink>
         </div>
@@ -257,13 +256,13 @@
               </NuxtLink>
             </li>
             <li class="mt-2 inline-block mr-2 md:block md:mr-0">
-              <NuxtLink to="/taxi-opatija-najam-kombi-vozila-cijena"
-                class="no-underline hover:underline text-gray-800 hover:text-pink-500">{{ $t('servicesRentVan') }}
+              <NuxtLink to="/najam-kombi-vozila" class="no-underline hover:underline text-gray-800 hover:text-pink-500">
+                {{ $t('servicesRentVan') }}
               </NuxtLink>
             </li>
             <li class="mt-2 inline-block mr-2 md:block md:mr-0">
-              <NuxtLink to="/taxi-opatija-najam-automobila-cijena"
-                class="no-underline hover:underline text-gray-800 hover:text-pink-500">{{ $t('servicesRentCar') }}
+              <NuxtLink to="/najam-automobila" class="no-underline hover:underline text-gray-800 hover:text-pink-500">{{
+          $t('servicesRentCar') }}
               </NuxtLink>
             </li>
           </ul>
