@@ -332,7 +332,7 @@
 
             <article
               class=" hover:animate-background rounded-xl bg-gradient-to-r from-gray-400 via-slate-500 to-gray-400 p-0.5 shadow-md transition hover:bg-[length:400%_400%] hover:shadow-sm hover:[animation-duration:_4s]">
-              <NuxtLink to="/taxi-opatija-najam-kombi-vozila-cijena">
+              <NuxtLink :to="i18n.locale.value === 'en' ? '/en/rent-a-van' : '/taxi-opatija-najam-kombi-vozila-cijena'">
                 <div class="rounded-[10px] bg-gray-50 p-4 sm:p-6 h-full">
                   <div class="flex justify-between mt-1">
                     <span class="text-sm ms-8 w-full text-blue-800 text-center font-medium">{{
@@ -358,7 +358,7 @@
 
             <article
               class=" hover:animate-background rounded-xl bg-gradient-to-r from-gray-400 via-slate-500 to-gray-400 p-0.5 shadow-md transition hover:bg-[length:400%_400%] hover:shadow-sm hover:[animation-duration:_4s]">
-              <NuxtLink to="/taxi-opatija-najam-automobila-cijena">
+              <NuxtLink :to="i18n.locale.value === 'en' ? '/en/rent-a-car' : '/najam-automobila'">
                 <div class="rounded-[10px] bg-gray-50 p-4 sm:p-6 h-full">
                   <div class="flex justify-between mt-1">
                     <span class="text-sm ms-8 w-full text-blue-800 text-center font-medium">{{
