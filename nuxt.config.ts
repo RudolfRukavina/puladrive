@@ -27,7 +27,15 @@ export default defineNuxtConfig({
       ],
     },
   },
-  modules: ["@nuxtjs/tailwindcss", "nuxt-swiper", "dayjs-nuxt"],
+  modules: ["@nuxtjs/tailwindcss", "nuxt-swiper", "dayjs-nuxt", '@nuxtjs/i18n'],
+  i18n: {
+    vueI18n: './i18n.config.ts', // if you are using custom path, default
+       detectBrowserLanguage: {
+      useCookie: true, // Enable to persist the user's choice
+      cookieKey: 'i18n_redirected',
+      alwaysRedirect: true, // Redirect the user to the preferred language
+    },
+  },
   dayjs: {
     locales: ['hr'], // Croatian locale
     defaultLocale: 'hr', // Set Croatian as the default locale

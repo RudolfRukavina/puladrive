@@ -1,10 +1,10 @@
 <template>
 
   <Head>
-    <Title>Usluge | Taxi Opatija | 0 - 24
+    <Title>Services | Taxi Opatija | 0 - 24
     </Title>
     <Meta name="description"
-      content="Usluge | Taxi Opatija | Best service at the best price | Available 24 hours every day | Taxi & more" />
+      content="Services | Taxi Opatija | Best service at the best price | Available 24 hours every day | Taxi & more" />
   </Head>
 
   <header>
@@ -82,15 +82,15 @@
         <div class="flex items-center justify-evenly">
           <ul class="grid grid-cols-3 font-medium mt-0  text-base">
             <li class="border-e px-4 w-full text-center  border-gray-300">
-              <NuxtLink :to="{ path: '/', hash: '#naslovnica' }" class="text-gray-900 hover:underline">Naslovnica
+              <NuxtLink :to="{ path: '/', hash: '#naslovnica' }" class="text-gray-900 hover:underline">{{ $t('home') }}
               </NuxtLink>
             </li>
             <li class=" px-4 w-full text-center border-gray-300">
-              <NuxtLink :to="{ path: '/', hash: '#usluge' }" class="text-gray-900 hover:underline">Usluge
+              <NuxtLink :to="{ path: '/', hash: '#usluge' }" class="text-gray-900 hover:underline">{{ $t('services') }}
               </NuxtLink>
             </li>
             <li class="border-s px-4 w-full text-center">
-              <NuxtLink to='/onama' class="text-gray-900 hover:underline">O nama
+              <NuxtLink to='/onama' class="text-gray-900 hover:underline">{{ $t('aboutus') }}
               </NuxtLink>
             </li>
           </ul>
@@ -554,20 +554,6 @@
     </div>
   </main>
 
-  <!-- <footer class="bg-white rounded-lg custom-shadow dark:bg-gray-900 w-full fixed bottom-0">
-    <div class="w-full max-w-screen-xl mx-auto p-4 pb-0 md:py-4">
-      <div class="sm:flex sm:items-center sm:justify-between">
-        <a href="tel:+38598491369" class="flex justify-between items-center mb-3 sm:mb-0 space-x-3 rtl:space-x-reverse">
-          <div class="flex justify-center">
-            <img src="../assets/imgs/logo.webp" class="h-6" alt="Taxi Opatija Logo" />
-            <span class="self-center text-md font-semibold whitespace-nowrap dark:text-white">Taxi Opatija</span>
-          </div>
-          <ul></ul>
-          <span class="self-center text-sm font-semibold whitespace-nowrap dark:text-white">+385 98 491 369</span>
-        </a>
-      </div>
-    </div>
-  </footer> -->
   <footer class="bg-white mb-10">
     <div class=" mx-auto px-8">
       <div class="w-full flex flex-col md:flex-row py-6">
@@ -583,49 +569,50 @@
           <ul class="list-reset mb-6">
             <li class="mt-2 inline-block mr-2 md:block md:mr-0">
               <NuxtLink to="/" class="no-underline hover:underline text-gray-800 hover:text-pink-500">
-                Naslovnica
+                {{ $t('home') }}
               </NuxtLink>
             </li>
 
             <li class="mt-2 inline-block mr-2 md:block md:mr-0">
               <NuxtLink :to="{ path: '/', hash: '#usluge' }"
-                class=" no-underline hover:underline text-gray-800 hover:text-pink-500">Usluge
+                class=" no-underline hover:underline text-gray-800 hover:text-pink-500">{{ $t('services') }}
               </NuxtLink>
             </li>
             <li class="mt-2 inline-block mr-2 md:block md:mr-0">
-              <NuxtLink to="/onama" class="no-underline hover:underline text-gray-800 hover:text-pink-500">O nama
+              <NuxtLink to="/onama" class="no-underline hover:underline text-gray-800 hover:text-pink-500">{{
+          $t('aboutus') }}
               </NuxtLink>
             </li>
           </ul>
         </div>
         <div class="flex-1">
-          <p class="uppercase text-gray-500 md:mb-6">Usluge</p>
+          <p class="uppercase text-gray-500 md:mb-6">{{ $t('services') }}</p>
           <ul class="list-reset mb-6">
             <li class="mt-2 inline-block mr-2 md:block md:mr-0">
               <NuxtLink to="/taxi-opatija-cijena"
-                class="no-underline hover:underline text-gray-800 hover:text-pink-500">Taxi služba - Cjenik 2024.
+                class="no-underline hover:underline text-gray-800 hover:text-pink-500">{{ $t('servicesTaxi') }}
               </NuxtLink>
             </li>
             <li class="mt-2 inline-block mr-2 md:block md:mr-0">
               <NuxtLink to="/taxi-opatija-transferi-cijena"
-                class="no-underline hover:underline text-gray-800 hover:text-pink-500">Transferi - Cjenik 2024.
+                class="no-underline hover:underline text-gray-800 hover:text-pink-500">{{ $t('servicesTransfers') }}
               </NuxtLink>
             </li>
             <li class="mt-2 inline-block mr-2 md:block md:mr-0">
               <NuxtLink to="/taxi-opatija-najam-kombi-vozila-cijena"
-                class="no-underline hover:underline text-gray-800 hover:text-pink-500">Najam kombi vozila - Cjenik 2024.
+                class="no-underline hover:underline text-gray-800 hover:text-pink-500">{{ $t('servicesRentVan') }}
               </NuxtLink>
             </li>
             <li class="mt-2 inline-block mr-2 md:block md:mr-0">
               <NuxtLink to="/taxi-opatija-najam-automobila-cijena"
-                class="no-underline hover:underline text-gray-800 hover:text-pink-500">Najam automobila - Cjenik 2024.
+                class="no-underline hover:underline text-gray-800 hover:text-pink-500">{{ $t('servicesRentCar') }}
               </NuxtLink>
             </li>
           </ul>
         </div>
 
         <div class="flex-1">
-          <p class="uppercase text-gray-500 md:mb-6">Mreže</p>
+          <p class="uppercase text-gray-500 md:mb-6">{{ $t('network') }}</p>
           <ul class="list-reset mb-6">
             <li class="mt-2 inline-block mr-2 md:block md:mr-0">
               <a href="https://www.facebook.com/taxiopatija" target='_blank'
@@ -639,13 +626,13 @@
           </ul>
         </div>
         <div class="flex-1">
-          <p class="uppercase text-gray-500 md:mb-6">Prava korisnika</p>
+          <p class="uppercase text-gray-500 md:mb-6">{{ $t('privacyPolicy') }}</p>
           <ul class="list-reset mb-6">
             <li class="mt-2 inline-block mr-2 md:block md:mr-0">
-              <a href="#" class="no-underline hover:underline text-gray-800 hover:text-pink-500">Uvjeti korištenja</a>
+              <a href="#" class="no-underline hover:underline text-gray-800 hover:text-pink-500">{{ $t('terms') }}</a>
             </li>
             <li class="mt-2 inline-block mr-2 md:block md:mr-0">
-              <a href="#" class="no-underline hover:underline text-gray-800 hover:text-pink-500">Privatnost</a>
+              <a href="#" class="no-underline hover:underline text-gray-800 hover:text-pink-500">{{ $t('privacy') }}</a>
             </li>
           </ul>
         </div>
