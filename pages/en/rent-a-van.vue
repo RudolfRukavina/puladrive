@@ -171,9 +171,9 @@
           class="border-b border-l border-r mx-5 min-w-lg w-full max-w-lg border-black custom-shadow rounded-b-lg p-6 relative bg-white">
           <div class="grid grid-cols-1 w-full">
             <div class="py-0 px-4">
-              <div class="flex justify-center"> <svg class="w-32 pt-5 inline-block" version="1.1" id="_x35_"
-                  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512"
-                  xml:space="preserve" fill="#000000">
+              <div class="flex justify-center">
+                <svg class="w-32 pt-5 inline-block" version="1.1" id="_x35_" xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" xml:space="preserve" fill="#000000">
                   <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
                   <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
                   <g id="SVGRepo_iconCarrier">
@@ -222,7 +222,8 @@
                       </g>
                     </g>
                   </g>
-                </svg></div>
+                </svg>
+              </div>
               <form action="#" class="space-y-6">
                 <VueDatePicker v-model="date" range :enable-time-picker="false" :format="format" :clearable="false">
                 </VueDatePicker>
@@ -328,13 +329,14 @@
           <p class="uppercase text-gray-500 md:mb-6">{{ $t('services') }}</p>
           <ul class="list-reset mb-6">
             <li class="mt-2 inline-block mr-2 md:block md:mr-0">
-              <NuxtLink to="/taxi-opatija-cijena"
-                class="no-underline hover:underline text-gray-800 hover:text-pink-500">{{ $t('servicesTaxi') }}
+              <NuxtLink to="/taxi-price" class="no-underline hover:underline text-gray-800 hover:text-pink-500">{{
+          $t('servicesTaxi') }}
               </NuxtLink>
             </li>
             <li class="mt-2 inline-block mr-2 md:block md:mr-0">
-              <NuxtLink to="/taxi-opatija-transferi-cijena"
-                class="no-underline hover:underline text-gray-800 hover:text-pink-500">{{ $t('servicesTransfers') }}
+              <NuxtLink :to="i18n.locale.value === 'en' ? '/en/transfers' : '/transferi'"
+                class="no-underline hover:underline text-gray-800 hover:text-pink-500">{{
+          $t('servicesTransfers') }}
               </NuxtLink>
             </li>
             <li class="mt-2 inline-block mr-2 md:block md:mr-0">

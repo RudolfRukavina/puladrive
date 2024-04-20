@@ -13,7 +13,7 @@
     <div class="bg-transparent backdrop-blur-[1px]  fixed bottom-0 z-50 w-full">
       <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl px-3 pb-2">
         <NuxtLink :to="{ path: '/', hash: '#naslovnica' }" class="flex items-center space-x-3 rtl:space-x-reverse">
-          <img src="../assets/imgs/logo.png" alt="" class="w-14 h-[42px]  inline-block rounded-xl">
+          <img src="../../assets/imgs/logo.png" alt="" class="w-14 h-[42px]  inline-block rounded-xl">
         </NuxtLink>
         <div class="flex items-center space-x-6 rtl:space-x-reverse">
           <a href="viber://chat?number=38598491369">
@@ -70,7 +70,7 @@
   </header>
 
   <main>
-    <img class="hero-photo h-[20vh] md:hidden rounded-none" src="../assets/imgs/cars.jpg" alt="Opatija Taxi" />
+    <img class="hero-photo h-[20vh] md:hidden rounded-none" src="../../assets/imgs/cars.jpg" alt="Opatija Taxi" />
     <div class=" overflow-x-auto text-nowrap whitespace-nowrap sticky top-0 mt-3 w-full z-50 bg-white">
       <div class="max-w-screen-xl px-4 py-2 mx-auto">
         <div class="flex items-center justify-evenly">
@@ -96,11 +96,11 @@
       <div class="relative isolate px-6 lg:px-8">
         <div class="mx-auto max-w-2xl pt-10">
           <div class="flex justify-center">
-            <img src="../assets/imgs/logo.webp" alt="Logo Taxi Opatija" class="-mt-5 object-cover w-3/12 sm:w-24" />
+            <img src="../../assets/imgs/logo.webp" alt="Logo Taxi Opatija" class="-mt-5 object-cover w-3/12 sm:w-24" />
           </div>
           <div class="text-center mb-6">
             <h1 class="text-[56px] leading-none font-bold tracking-tight text-gray-900">
-              {{ $t('aboutUs') }}
+              Special offers
             </h1>
             <a href="https://g.co/kgs/WPGpCp3" target="_blank" class="flex items-center mt-2.5 mb-5 justify-center">
               <div class="flex items-center space-x-1 rtl:space-x-reverse">
@@ -176,87 +176,17 @@
         <div class='flex justify-center'>
           <div
             class="max-w-md dark:ring-white/10 ring-primary/5 shadow-xl dark:shadow-thick rounded-3xl p-8 lg:row-start-4 h-full flex flex-col justify-between bg-white dark:bg-secondary">
-            <p class="text-xl tracking-tight font-medium text-black text-start  md:text-5xl">
-              {{ $t('iskustva') }}
+            <span class="font-bold text-xl">15%
+              off</span>
+            <p class="text-2xl mb-4 text-center font-medium text-gray-800">Taxi & Transfers</p>
+            <img class="rounded-xl" src="../../assets/imgs/seastar.jpeg" alt="">
+
+            <p class="text-3xl mt-2 tracking-tight font-bolder text-black text-start  md:text-5xl">
+              Sea Star Festival
             </p>
 
+            <p class="text-sm text-start font-medium text-gray-500">24.05.2024. - 26.05.2024.</p>
 
-            <div class="flex items-center mb-2">
-              <svg class="w-4 h-4 text-yellow-300 me-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-                fill="currentColor" viewBox="0 0 22 20">
-                <path
-                  d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
-              </svg>
-              <svg class="w-4 h-4 text-yellow-300 me-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-                fill="currentColor" viewBox="0 0 22 20">
-                <path
-                  d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
-              </svg>
-              <svg class="w-4 h-4 text-yellow-300 me-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-                fill="currentColor" viewBox="0 0 22 20">
-                <path
-                  d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
-              </svg>
-              <svg class="w-4 h-4 text-yellow-300 me-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-                fill="currentColor" viewBox="0 0 22 20">
-                <path
-                  d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
-              </svg>
-              <svg class="w-4 h-4 text-yellow-300 me-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-                fill="currentColor" viewBox="0 0 22 20">
-                <path
-                  d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
-              </svg>
-              <p class="ms-1 text-sm font-medium text-gray-500 dark:text-gray-400">5</p>
-              <p class="ms-1 text-sm font-medium text-gray-500 dark:text-gray-400">out of</p>
-              <p class="ms-1 text-sm font-medium text-gray-500 dark:text-gray-400">5</p>
-            </div>
-            <p class="text-sm text-start font-medium text-gray-500">12 global ratings</p>
-            <div class="flex items-center mt-4">
-              <a href="#" class="text-sm font-medium text-blue-600 dark:text-blue-500 hover:underline">5 star</a>
-              <div class="w-2/4 h-5 mx-4 bg-gray-200 rounded dark:bg-gray-700">
-                <div class="h-5 bg-yellow-300 rounded" style="width: 100%"></div>
-              </div>
-              <span class="text-sm font-medium text-gray-500 dark:text-gray-400">100%</span>
-            </div>
-            <div class="flex items-center mt-4">
-              <a href="#" class="text-sm font-medium text-blue-600 dark:text-blue-500 hover:underline">4 star</a>
-              <div class="w-2/4 h-5 mx-4 bg-gray-200 rounded dark:bg-gray-700">
-                <div class="h-5 bg-yellow-300 rounded" style="width: 0%"></div>
-              </div>
-              <span class="text-sm font-medium text-gray-500 dark:text-gray-400">0%</span>
-            </div>
-            <div class="flex items-center mt-4">
-              <a href="#" class="text-sm font-medium text-blue-600 dark:text-blue-500 hover:underline">3 star</a>
-              <div class="w-2/4 h-5 mx-4 bg-gray-200 rounded dark:bg-gray-700">
-                <div class="h-5 bg-yellow-300 rounded" style="width: 0%"></div>
-              </div>
-              <span class="text-sm font-medium text-gray-500 dark:text-gray-400">0%</span>
-            </div>
-            <div class="flex items-center mt-4">
-              <a href="#" class="text-sm font-medium text-blue-600 dark:text-blue-500 hover:underline">2 star</a>
-              <div class="w-2/4 h-5 mx-4 bg-gray-200 rounded dark:bg-gray-700">
-                <div class="h-5 bg-yellow-300 rounded" style="width: 0%"></div>
-              </div>
-              <span class="text-sm font-medium text-gray-500 dark:text-gray-400">0%</span>
-            </div>
-            <div class="flex items-center mt-4">
-              <a href="#" class="text-sm font-medium text-blue-600 dark:text-blue-500 hover:underline">1 star</a>
-              <div class="w-2/4 h-5 mx-4 bg-gray-200 rounded dark:bg-gray-700">
-                <div class="h-5 bg-yellow-300 rounded" style="width: 0%"></div>
-              </div>
-              <span class="text-sm font-medium text-gray-500 dark:text-gray-400">0%</span>
-            </div>
-
-            <div class="md:grid md:grid-cols-2 gap-2 lg:grid-cols-1 text-start">
-              <div class="mt-4">
-                <p class="text-sm text-pink-500 dark:text-pink-400">
-                  "Vrhunska i brza usluga! Vozač vrlo pristojan i uljudan."
-                </p>
-                <p class="text-xs mt-2 text-zinc-500"> <span class="block text-xs">Vedran</span> </p>
-              </div>
-
-            </div>
           </div>
         </div>
 
@@ -558,7 +488,7 @@
         <div class="flex-1 mb-6 text-black">
           <NuxtLink class="text-pink-600 no-underline hover:no-underline font-bold text-2xl lg:text-4xl"
             :to="{ path: '/', hash: '#naslovnica' }">
-            <img src="../assets/imgs/logo.png" alt="" class="w-20 h-[60px]  inline-block me-3 rounded-xl">
+            <img src="../../assets/imgs/logo.png" alt="" class="w-20 h-[60px]  inline-block me-3 rounded-xl">
           </NuxtLink>
         </div>
         <div class="flex-1">
@@ -577,7 +507,7 @@
             </li>
             <li class="mt-2 inline-block mr-2 md:block md:mr-0">
               <NuxtLink to="/onama" class="no-underline hover:underline text-gray-800 hover:text-pink-500">{{
-          $t('aboutus') }}
+                $t('aboutus') }}
               </NuxtLink>
             </li>
           </ul>
@@ -587,13 +517,13 @@
           <ul class="list-reset mb-6">
             <li class="mt-2 inline-block mr-2 md:block md:mr-0">
               <NuxtLink to="/taxi-price" class="no-underline hover:underline text-gray-800 hover:text-pink-500">{{
-          $t('servicesTaxi') }}
+                $t('servicesTaxi') }}
               </NuxtLink>
             </li>
             <li class="mt-2 inline-block mr-2 md:block md:mr-0">
               <NuxtLink :to="i18n.locale.value === 'en' ? '/en/transfers' : '/transferi'"
                 class="no-underline hover:underline text-gray-800 hover:text-pink-500">{{
-          $t('servicesTransfers') }}
+                $t('servicesTransfers') }}
               </NuxtLink>
             </li>
             <li class="mt-2 inline-block mr-2 md:block md:mr-0">
@@ -605,7 +535,7 @@
             <li class="mt-2 inline-block mr-2 md:block md:mr-0">
               <NuxtLink :to="i18n.locale.value === 'en' ? '/en/rent-a-car' : '/najam-automobila'"
                 class="no-underline hover:underline text-gray-800 hover:text-pink-500">{{
-          $t('servicesRentCar') }}
+                $t('servicesRentCar') }}
               </NuxtLink>
             </li>
           </ul>
