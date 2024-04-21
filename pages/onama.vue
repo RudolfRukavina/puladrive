@@ -211,7 +211,7 @@
               <p class="ms-1 text-sm font-medium text-gray-500 dark:text-gray-400">out of</p>
               <p class="ms-1 text-sm font-medium text-gray-500 dark:text-gray-400">5</p>
             </div>
-            <p class="text-sm text-start font-medium text-gray-500">12 global ratings</p>
+            <p class="text-sm text-start font-medium text-gray-500">13 global ratings</p>
             <div class="flex items-center mt-4">
               <a href="#" class="text-sm font-medium text-blue-600 dark:text-blue-500 hover:underline">5 star</a>
               <div class="w-2/4 h-5 mx-4 bg-gray-200 rounded dark:bg-gray-700">
