@@ -418,7 +418,171 @@
             </g>
           </svg>
         </div>
-        <section class="container mx-auto text-center py-5 pb-10 " id='radnovrijeme'>
+        <div class="flex overflow-x-auto p-4">
+          <!-- Card 1 -->
+
+          <!-- Card 2 -->
+          <div class="w-80 bg-white rounded-lg shadow-lg mx-2">
+            <div class="p-4 w-80">
+              <h3 class="text-xl font-semibold mb-2">What is Taxi Opatija?</h3>
+              <p class="text-sm">Taxi Opatija is a renowned tourist agency proud to offer top-notch passenger transport
+                services both domestically and internationally. Our mission is to ensure comfortable, safe, and reliable
+                travel for all our clients, regardless of destination or travel time.</p>
+            </div>
+          </div>
+
+          <div class="w-80 bg-white rounded-lg shadow-lg mx-2">
+            <div class="p-4 w-80">
+              <h3 class="text-xl font-semibold mb-2">Quality first!</h3>
+              <p class="text-sm mt-3">Our vehicle fleet consists of modern vans (8+1) and comfortable cars (3+1),
+                equipped with all necessary amenities to make your journey pleasant and stress-free. All our drivers are
+                highly qualified and experienced, dedicated to providing excellent service and passenger safety.</p>
+            </div>
+          </div>
+
+          <div class="w-80 bg-white rounded-lg shadow-lg mx-2">
+            <div class="p-4 w-80">
+              <h3 class="text-xl font-semibold mb-2">Adaptability!</h3>
+              <p class="text-sm mt-3">Whether you're traveling for business or leisure, alone or in a group, Taxi
+                Opatija is your reliable transportation partner. Our service is available 24/7 to ensure you can always
+                count on us, no matter your needs or the urgency of your travel.</p>
+            </div>
+          </div>
+
+          <div class="w-80 bg-white rounded-lg shadow-lg mx-2">
+            <div class="p-4 w-80">
+              <h3 class="text-xl font-semibold mb-2">Best at what we do!</h3>
+              <p class="text-sm mt-3">With our dedicated approach and attention to detail, Taxi Opatija creates a travel
+                experience that will remain a fond memory. Contact us today and let us provide you with an unforgettable
+                journey that exceeds all your expectations.</p>
+            </div>
+          </div>
+
+
+          <div class="w-80 bg-white rounded-lg shadow-lg mx-2">
+            <div class="p-4 w-80">
+              <h3 class="text-xl font-semibold mb-2">Custom arrangements!</h3>
+              <p class="text-sm mt-3">Yes, we offer transportation services for medical appointments, hospital visits,
+                and other healthcare-related needs. Contact us to arrange transportation for your medical appointments.
+              </p>
+            </div>
+          </div>
+
+          <div class="w-80 bg-white rounded-lg shadow-lg mx-2">
+            <div class="p-4 w-80">
+              <h3 class="text-xl font-semibold mb-2">Comfort!</h3>
+              <p class="text-sm mt-3">Yes, all our vehicles are equipped with amenities such as climate control and
+                comfortable seating to ensure a pleasant and enjoyable ride for our passengers.
+              </p>
+            </div>
+          </div>
+
+          <div class="w-80 bg-white rounded-lg shadow-lg mx-2">
+            <div class="p-4 w-80">
+              <h3 class="text-xl font-semibold mb-2">Reliability!</h3>
+              <p class="text-sm mt-3">Yes, you can schedule recurring rides for daily commutes or regular appointments
+                to ensure reliable transportation whenever you need it. Contact us to set up a recurring ride schedule
+                tailored to your needs.
+              </p>
+            </div>
+          </div>
+
+          <div class="w-80 bg-white rounded-lg shadow-lg mx-2">
+            <div class="p-4 w-80">
+              <h3 class="text-xl font-semibold mb-2">We are multilingual!</h3>
+              <p class="text-sm mt-3">Yes, many of our drivers are bilingual or multilingual, providing assistance in
+                various languages to cater to our diverse clientele. Let us know your language preference when booking.
+              </p>
+            </div>
+          </div>
+
+          <div class="w-80 bg-white rounded-lg shadow-lg mx-2">
+            <div class="p-4 w-80">
+              <h3 class="text-xl font-semibold mb-2">Wi-Fi!</h3>
+              <p class="text-sm mt-3">Yes, our drivers are equipped with smartphones and unlimited internet. If you need
+                Wi-Fi, please let your driver know and he will turn his Personal Hotspot on for you!
+              </p>
+            </div>
+          </div>
+
+          <div class="w-80 bg-white rounded-lg shadow-lg mx-2">
+            <div class="p-4 w-80">
+              <h3 class="text-xl font-semibold mb-2">Personalized group transport!</h3>
+              <p class="text-sm mt-3">Absolutely! We specialize in group transportation for events such as weddings,
+                parties, corporate outings, and more. Contact us to discuss your specific requirements and get a
+                personalized quote.
+              </p>
+            </div>
+          </div>
+
+          <div class="w-80 bg-white rounded-lg shadow-lg mx-2">
+            <div class="p-4 w-80">
+              <h3 class="text-xl font-semibold mb-2">Pet friendly!</h3>
+              <p class="text-sm mt-3">Yes, we welcome well-behaved pets in our vehicles. Just let us know in advance if
+                you'll be traveling with a pet so we can make the necessary arrangements.
+              </p>
+            </div>
+          </div>
+
+          <div class="w-80 bg-white rounded-lg shadow-lg mx-2">
+            <div class="p-4 w-80">
+              <h3 class="text-xl font-semibold mb-2">Custom requests!</h3>
+              <p class="text-sm mt-3">Of course! We strive to accommodate all customer requests to the best of our
+                ability. Simply provide us with the details of your desired pickup/drop-off location when booking.
+              </p>
+            </div>
+          </div>
+
+          <div class="w-80 bg-white rounded-lg shadow-lg mx-2">
+            <div class="p-4 w-80">
+              <h3 class="text-xl font-semibold mb-2">Intergrity!</h3>
+              <p class="text-sm mt-3">If you believe you've left something behind in one of our taxis, please contact us
+                as soon as possible with a description of the item and the date/time of your ride. We'll do our best to
+                locate and return it to you.
+              </p>
+            </div>
+          </div>
+
+          <div class="w-80 bg-white rounded-lg shadow-lg mx-2">
+            <div class="p-4 w-80">
+              <h3 class="text-xl font-semibold mb-2">Loyalty!</h3>
+              <p class="text-sm mt-3">Yes, we offer corporate accounts with special rates and billing options for
+                businesses. Contact us for more information on setting up an account.
+              </p>
+            </div>
+          </div>
+
+          <div class="w-80 bg-white rounded-lg shadow-lg mx-2">
+            <div class="p-4 w-80">
+              <h3 class="text-xl font-semibold mb-2">Safety!</h3>
+              <p class="text-sm mt-3">The safety and well-being of our passengers are our top priorities. Our drivers
+                undergo rigorous background checks, and our vehicles are regularly inspected and sanitized. We also
+                follow all local safety regulations.
+              </p>
+            </div>
+          </div>
+
+          <div class="w-80 bg-white rounded-lg shadow-lg mx-2">
+            <div class="p-4 w-80">
+              <h3 class="text-xl font-semibold mb-2">Aiports, cities and places!</h3>
+              <p class="text-sm mt-3">Absolutely! We provide reliable airport transfer services to and from all airports
+                in Europe. Just let us know your flight details, and we'll take care of the rest.
+              </p>
+            </div>
+          </div>
+
+          <div class="w-80 bg-white rounded-lg shadow-lg mx-2">
+            <div class="p-4 w-80">
+              <h3 class="text-xl font-semibold mb-2">Sky is the limit!</h3>
+              <p class="text-sm mt-3">We primarily serve the greater Opatija area, but we also offer long-distance trips
+                to surrounding areas anywhere in Europe. Just contact us for more details.
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+        <section class="container mx-auto text-center py-5 pb-10 w-[100vw] " id='radnovrijeme'>
           <h2 class="w-full my-2 text-5xl font-bold leading-tight text-center text-white">
             {{ $t('workhours') }}
           </h2>
@@ -499,12 +663,13 @@
           <p class="uppercase text-gray-500 md:mb-6">{{ $t('services') }}</p>
           <ul class="list-reset mb-6">
             <li class="mt-2 inline-block mr-2 md:block md:mr-0">
-              <NuxtLink to="/taxi-price"
-                class="no-underline hover:underline text-gray-800 hover:text-pink-500">{{ $t('servicesTaxi') }}
+              <NuxtLink to="/taxi-price" class="no-underline hover:underline text-gray-800 hover:text-pink-500">{{
+          $t('servicesTaxi') }}
               </NuxtLink>
             </li>
             <li class="mt-2 inline-block mr-2 md:block md:mr-0">
-              <NuxtLink :to="i18n.locale.value === 'en' ? '/en/transfers' : '/transferi' " class="no-underline hover:underline text-gray-800 hover:text-pink-500">{{
+              <NuxtLink :to="i18n.locale.value === 'en' ? '/en/transfers' : '/transferi'"
+                class="no-underline hover:underline text-gray-800 hover:text-pink-500">{{
           $t('servicesTransfers') }}
               </NuxtLink>
             </li>

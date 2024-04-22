@@ -286,6 +286,185 @@
         </svg>
       </div>
     </div>
+    <section class="bg-white py-8 -my-[1px]" id='stojeparallel'>
+      <div class="container max-w-5xl mx-auto m-8">
+        <h2 class="w-full my-2 text-3xl font-bold leading-tight text-center text-gray-800">
+          Što je Taxi Opatija? 🔍
+        </h2>
+        <div class="w-full mb-4">
+          <div class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
+        </div>
+        <p class="text-sm mt-3 font-medium lg:text-xl mx-8 tracking-tight text-black">
+          <br>
+          Taxi Opatija je renomirana turistička agencija koja se ponosi pružanjem vrhunskih usluga prijevoza putnika
+          kako u domaćem tako i u međunarodnom prometu. Naša misija je osigurati udobno, sigurno i pouzdano putovanje za
+          sve naše klijente, bez obzira na destinaciju ili vrijeme putovanja.
+        </p>
+        <p class="text-sm mt-3 font-medium lg:text-xl mx-8 tracking-tight text-black"> <br />
+
+          Naša flota vozila sastoji se od modernih kombija (8+1) i udobnih osobnih vozila (3+1), opremljenih svim
+          potrebnim sadržajima kako bi vaše putovanje bilo ugodno i bez stresa. Svi naši vozači su visoko kvalificirani
+          i iskusni, te su posvećeni pružanju vrhunske usluge i sigurnosti putnika.</p>
+        <p class="text-sm mt-3 font-medium lg:text-xl mx-8 tracking-tight text-black"> <br />
+          Neovisno o tome putujete li poslovno ili privatno, sami ili u grupi, Taxi Opatija je vaš pouzdani partner za
+          prijevoz. Naša usluga dostupna je 24 sata dnevno, 7 dana u tjednu, kako bismo osigurali da uvijek možete
+          računati na nas, bez obzira na vaše potrebe ili hitnost putovanja.
+        </p>
+        <p class="text-sm mt-3 font-medium lg:text-xl mx-8 tracking-tight text-black"> <br />
+          Svojim posvećenim pristupom i pažnjom prema detaljima, Taxi Opatija stvara iskustvo putovanja koje će vam
+          ostati u lijepom sjećanju. Kontaktirajte nas danas i dopustite nam da vam pružimo nezaboravno putovanje koje
+          će nadmašiti sva vaša očekivanja.</p>
+      </div>
+      <div class='flex justify-center'>
+        <NuxtLink to='#faq'
+          class="mx-auto lg:mx-0 gradient text-gray-800 hover:underline  font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
+          Frequently asked questions
+        </NuxtLink>
+
+      </div>
+    </section>
+    <div class='relative -mb-[1px] gradient'>
+      <svg class="wave-top" viewBox="0 0 1439 147" version="1.1" xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink">
+        <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+          <g transform="translate(-1.000000, -14.000000)" fill-rule="nonzero">
+            <g class="wave" fill="#ffffff">
+              <path
+                d="M1440,84 C1383.555,64.3 1342.555,51.3 1317,45 C1259.5,30.824 1206.707,25.526 1169,22 C1129.711,18.326 1044.426,18.475 980,22 C954.25,23.409 922.25,26.742 884,32 C845.122,37.787 818.455,42.121 804,45 C776.833,50.41 728.136,61.77 713,65 C660.023,76.309 621.544,87.729 584,94 C517.525,105.104 484.525,106.438 429,108 C379.49,106.484 342.823,104.484 319,102 C278.571,97.783 231.737,88.736 205,84 C154.629,75.076 86.296,57.743 0,32 L0,0 L1440,0 L1440,84 Z">
+              </path>
+            </g>
+            <g transform="translate(1.000000, 15.000000)" fill="#FFFFFF">
+              <g transform="translate(719.500000, 68.500000) rotate(-180.000000) translate(-719.500000, -68.500000) ">
+                <path
+                  d="M0,0 C90.7283404,0.927527913 147.912752,27.187927 291.910178,59.9119003 C387.908462,81.7278826 543.605069,89.334785 759,82.7326078 C469.336065,156.254352 216.336065,153.6679 0,74.9732496"
+                  opacity="0.100000001"></path>
+                <path
+                  d="M100,104.708498 C277.413333,72.2345949 426.147877,52.5246657 546.203633,45.5787101 C666.259389,38.6327546 810.524845,41.7979068 979,55.0741668 C931.069965,56.122511 810.303266,74.8455141 616.699903,111.243176 C423.096539,147.640838 250.863238,145.462612 100,104.708498 Z"
+                  opacity="0.100000001"></path>
+                <path
+                  d="M1046,51.6521276 C1130.83045,29.328812 1279.08318,17.607883 1439,40.1656806 L1439,120 C1271.17211,77.9435312 1140.17211,55.1609071 1046,51.6521276 Z"
+                  opacity="0.200000003"></path>
+              </g>
+            </g>
+          </g>
+        </g>
+      </svg>
+      <section class="container mx-auto px-5 text-center py-6">
+        <div class="my-8">
+          <h2 class="w-full my-2 text-2xl font-bold leading-tight text-center text-gray-800" id='faq'>
+            Frequently asked questions
+          </h2>
+          <div class="w-full mb-4">
+            <div class="h-1 mx-auto bg-white w-64 opacity-25 my-0 py-0 rounded-t"></div>
+          </div>
+          <ul class="text-left text-black max-w-lg grid grid-cols-1 lg:grid-cols-2 gap-4 mx-auto">
+            <li class="mb-6 bg-white rounded-xl p-4">
+              <strong>Do you offer transportation services for medical appointments or hospital visits?</strong><br>
+              <span>Yes, we offer transportation services for medical appointments, hospital visits, and other
+                healthcare-related needs. Contact us to arrange transportation for your medical appointments.</span>
+            </li>
+            <li class="mb-6 bg-white rounded-xl p-4">
+              <strong>Are your vehicles equipped with amenities such as climate control and comfortable
+                seating?</strong><br>
+              <span>Yes, all our vehicles are equipped with amenities such as climate control and comfortable seating to
+                ensure a pleasant and enjoyable ride for our passengers.</span>
+            </li>
+            <li class="mb-6 bg-white rounded-xl p-4">
+              <strong>Can I schedule recurring rides for daily commutes or regular appointments?</strong><br>
+              <span>Yes, you can schedule recurring rides for daily commutes or regular appointments to ensure reliable
+                transportation whenever you need it. Contact us to set up a recurring ride schedule tailored to your
+                needs.</span>
+            </li>
+            <li class="mb-6 bg-white rounded-xl p-4">
+              <strong>Are your drivers bilingual or multilingual?</strong><br>
+              <span>Yes, many of our drivers are bilingual or multilingual, providing assistance in various languages to
+                cater to our diverse clientele. Let us know your language preference when booking.</span>
+            </li>
+            <li class="mb-6 bg-white rounded-xl p-4">
+              <strong>Are your vehicles equipped with amenities such as Wi-Fi?</strong><br>
+              <span>Yes, our drivers are equipped with smartphones and unlimited internet. If you need Wi-Fi, please let
+                your driver know and he will turn his Personal Hotspot on for you!</span>
+            </li>
+            <li class="mb-6 bg-white rounded-xl p-4">
+              <strong>Do you offer group transportation for events or special occasions?</strong><br>
+              <span>Absolutely! We specialize in group transportation for events such as weddings, parties, corporate
+                outings, and more. Contact us to discuss your specific requirements and get a personalized quote.</span>
+            </li>
+            <li class="mb-6 bg-white rounded-xl p-4">
+              <strong>Are your vehicles pet-friendly?</strong><br>
+              <span>Yes, we welcome well-behaved pets in our vehicles. Just let us know in advance if you'll be
+                traveling
+                with a pet so we can make the necessary arrangements.</span>
+            </li>
+            <li class="mb-6 bg-white rounded-xl p-4">
+              <strong>Can I request a specific pickup/drop-off location that's not listed on your website?</strong><br>
+              <span>Of course! We strive to accommodate all customer requests to the best of our ability. Simply provide
+                us with the details of your desired pickup/drop-off location when booking.</span>
+            </li>
+            <li class="mb-6 bg-white rounded-xl p-4">
+              <strong>What should I do if I left something in one of your taxis?</strong><br>
+              <span>If you believe you've left something behind in one of our taxis, please contact us as soon as
+                possible
+                with a description of the item and the date/time of your ride. We'll do our best to locate and return it
+                to you.</span>
+            </li>
+            <li class="mb-6 bg-white rounded-xl p-4">
+              <strong>Do you offer corporate accounts for businesses?</strong><br>
+              <span>Yes, we offer corporate accounts with special rates and billing options for businesses. Contact us
+                for
+                more information on setting up an account.</span>
+            </li>
+            <li class="mb-6 bg-white rounded-xl p-4">
+              <strong>What safety measures do you have in place for passengers?</strong><br>
+              <span>The safety and well-being of our passengers are our top priorities. Our drivers undergo rigorous
+                background checks, and our vehicles are regularly inspected and sanitized. We also follow all local
+                safety
+                regulations.</span>
+            </li>
+            <li class="mb-6 bg-white rounded-xl p-4">
+              <strong>Do you offer airport transfer services?</strong><br>
+              <span>Absolutely! We provide reliable airport transfer services to and from all airports in Europe. Just
+                let
+                us know your flight details, and we'll take care of the rest.</span>
+            </li>
+            <li class="mb-6 bg-white rounded-xl p-4">
+              <strong>What areas do you serve?</strong><br>
+              <span>We primarily serve the greater Opatija area, but we also offer long-distance trips to surrounding
+                areas anywhere in Europe. Just contact us for more details.</span>
+            </li>
+          </ul>
+        </div>
+        <a href="tel:+38598491369">
+          <button
+            class="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
+            Call us!
+          </button>
+        </a>
+      </section>
+      <div class="relative -mt-12 lg:-mt-24">
+        <svg viewBox="0 0 1428 174" version="1.1" xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink">
+          <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+            <g transform="translate(-2.000000, 44.000000)" fill="#FFFFFF" fill-rule="nonzero">
+              <path
+                d="M0,0 C90.7283404,0.927527913 147.912752,27.187927 291.910178,59.9119003 C387.908462,81.7278826 543.605069,89.334785 759,82.7326078 C469.336065,156.254352 216.336065,153.6679 0,74.9732496"
+                opacity="0.100000001"></path>
+              <path
+                d="M100,104.708498 C277.413333,72.2345949 426.147877,52.5246657 546.203633,45.5787101 C666.259389,38.6327546 810.524845,41.7979068 979,55.0741668 C931.069965,56.122511 810.303266,74.8455141 616.699903,111.243176 C423.096539,147.640838 250.863238,145.462612 100,104.708498 Z"
+                opacity="0.100000001"></path>
+              <path
+                d="M1046,51.6521276 C1130.83045,29.328812 1279.08318,17.607883 1439,40.1656806 L1439,120 C1271.17211,77.9435312 1140.17211,55.1609071 1046,51.6521276 Z"
+                id="Path-4" opacity="0.200000003"></path>
+            </g>
+            <g transform="translate(-4.000000, 76.000000)" fill="#FFFFFF" fill-rule="nonzero">
+              <path
+                d="M0.457,34.035 C57.086,53.198 98.208,65.809 123.822,71.865 C181.454,85.495 234.295,90.29 272.033,93.459 C311.355,96.759 396.635,95.801 461.025,91.663 C486.76,90.01 518.727,86.372 556.926,80.752 C595.747,74.596 622.372,70.008 636.799,66.991 C663.913,61.324 712.501,49.503 727.605,46.128 C780.47,34.317 818.839,22.532 856.324,15.904 C922.689,4.169 955.676,2.522 1011.185,0.432 C1060.705,1.477 1097.39,3.129 1121.236,5.387 C1161.703,9.219 1208.621,17.821 1235.4,22.304 C1285.855,30.748 1354.351,47.432 1440.886,72.354 L1441.191,104.352 L1.121,104.031 L0.457,34.035 Z">
+              </path>
+            </g>
+          </g>
+        </svg>
+      </div>
+    </div>
     <!-- <div class='pb-10 pt-5 mx-5 text-center'>
       <span class="flex items-center">
         <span class="h-px flex-1 bg-black"></span>
@@ -647,11 +826,11 @@
   /* fallback for old browsers */
   background: -webkit-linear-gradient(to top,
       rgb(84, 221, 255),
-      #c6eeff);
+      rgb(136, 231, 255));
   /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to top,
       rgb(84, 221, 255),
-      #c6eeff);
+      rgb(136, 231, 255));
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 }
