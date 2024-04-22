@@ -1077,7 +1077,7 @@ useHead({
   title:
     "Home | Taxi Opatija | 0 - 24 | Call +385 98 491 369",
   htmlAttrs: {
-    lang: i18n.locale.value = navigator.language.split('-')[0],
+    lang: "en"
   },
   meta: [
     {
