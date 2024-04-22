@@ -11,10 +11,11 @@
     <div class="bg-transparent backdrop-blur-[1px] fixed bottom-0 z-50 w-full">
       <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl px-3 pb-2">
         <NuxtLink :to="{ path: '/', hash: '#naslovnica' }" class="flex items-center space-x-3 rtl:space-x-reverse">
-          <img src="../../../assets/imgs/logo.png" alt="" class="w-14 h-[42px]  inline-block rounded-xl">
+          <img src="../../../assets/imgs/logo.png" alt="taxi opatija logo"
+            class="w-14 h-[42px]  inline-block rounded-xl">
         </NuxtLink>
         <div class="flex items-center space-x-6 rtl:space-x-reverse">
-          <a href="viber://chat?number=38598491369">
+          <a href="viber://chat?number=38598491369" target="_blank" rel="noopener">
             <svg class="w-10 rounded-lg custom-shadow border border-white hover:border-none" version="1.1" id="Capa_1"
               xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
               viewBox="0 0 455.731 455.731" xml:space="preserve" fill="#000000">
@@ -44,7 +45,7 @@
               </g>
             </svg>
           </a>
-          <a href="https://api.whatsapp.com/send?phone=38598491369">
+          <a href="https://api.whatsapp.com/send?phone=38598491369" target="_blank" rel="noopener">
             <svg class="w-10 rounded-lg custom-shadow border border-white hover:border-none"
               xmlns="http://www.w3.org/2000/svg" aria-label="WhatsApp" role="img" viewBox="0 0 512 512" fill="#000000">
               <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
@@ -590,8 +591,9 @@
       <div class="w-full flex flex-col md:flex-row py-6">
         <div class="flex-1 mb-6 text-black">
           <NuxtLink class="text-pink-600 no-underline hover:no-underline font-bold text-2xl lg:text-4xl"
-            :to="{ path: '/', hash: '#naslovnica' }">
-            <img src="../../../assets/imgs/logo.png" alt="" class="w-20 h-[60px]  inline-block me-3 rounded-xl">
+            :to="{ path: '/', hash: '#naslovnica' }">alt="taxi opatija logo"
+            <img src="../../../assets/imgs/logo.png" alt="taxi opatija logo"
+              class="w-20 h-[60px]  inline-block me-3 rounded-xl">
           </NuxtLink>
         </div>
         <div class="flex-1">
