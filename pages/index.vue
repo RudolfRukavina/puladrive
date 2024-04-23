@@ -1121,8 +1121,8 @@ useHead({
           "telephone": "+38598491369",
           "contactType": "customer service"
         },
-        "logo": "https://taxiopatija.hr/logo.png",
-        "description": "Taxi Opatija provides reliable Transfersation services in Opatija. We offer 24/7 taxi service, transfers, car rentals, van rentals, and more.",
+        "logo": "https://taxiopatija.hr/opatija.jpeg",
+        "description": "Taxi Opatija | 24/7 Service | Taxi | Transfers | Car & Van Rentals | Call us now | Phone number +385 98 491 369 | Visit taxiopatija.hr for more information!",
         "address": {
           "@type": "PostalAddress",
           "streetAddress": "Ul. Dr. Ante Mandića 2",
