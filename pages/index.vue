@@ -8,10 +8,10 @@
   </Head>
 
   <header>
-    <div class="bg-transparent backdrop-blur-[1px]  fixed bottom-0 z-50 w-full">
+    <div class="bg-transparent backdrop-blur-[1px] fixed bottom-0 z-50 w-full">
       <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl px-3 pb-2">
         <NuxtLink :to="{ path: '/', hash: '#naslovnica' }" class="flex items-center space-x-3 rtl:space-x-reverse">
-          <img src="../assets/imgs/logo.png" alt="taxi opatija logo" class="w-14 h-[42px]  inline-block rounded-xl">
+          <img src="../assets/imgs/logo.png" alt="taxi opatija logo" class="w-14 h-[42px] inline-block rounded-xl" />
         </NuxtLink>
         <div class="flex items-center space-x-6 rtl:space-x-reverse">
           <a href="viber://chat?number=38598491369" target="_blank" rel="noopener">
@@ -51,8 +51,7 @@
               <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
               <g id="SVGRepo_iconCarrier">
                 <rect width="512" height="512" rx="15%" fill="#25d366"></rect>
-                <path fill="#25d366" stroke="#ffffff" stroke-width="26" d="M123 393l14-65a138 138 0 1150 47z">
-                </path>
+                <path fill="#25d366" stroke="#ffffff" stroke-width="26" d="M123 393l14-65a138 138 0 1150 47z"></path>
                 <path fill="#ffffff"
                   d="M308 273c-3-2-6-3-9 1l-12 16c-3 2-5 3-9 1-15-8-36-17-54-47-1-4 1-6 3-8l9-14c2-2 1-4 0-6l-12-29c-3-8-6-7-9-7h-8c-2 0-6 1-10 5-22 22-13 53 3 73 3 4 23 40 66 59 32 14 39 12 48 10 11-1 22-10 27-19 1-3 6-16 2-18">
                 </path>
@@ -60,36 +59,35 @@
             </svg>
           </a>
           <a href="tel:+38598491369"
-            class="text-[26px] px-2 border border-white hover:bg-blue-800 custom-shadow rounded-lg  text-black bg-blue-600"><i
-              class='fa fa-phone text-white'></i></a>
+            class="text-[26px] px-2 border border-white hover:bg-blue-800 custom-shadow rounded-lg text-black bg-blue-600"><i
+              class="fa fa-phone text-white"></i></a>
         </div>
       </div>
     </div>
   </header>
 
-  <main id='naslovnica'>
-    <div class="flex justify-center relative -mt-5">
-    </div>
-    <div class=" overflow-x-auto text-nowrap whitespace-nowrap sticky top-0 mt-3 w-full z-50 bg-white" id='start'>
+  <main id="naslovnica">
+    <div class="flex justify-center relative -mt-5"></div>
+    <div class="overflow-x-auto text-nowrap whitespace-nowrap sticky top-0 mt-3 w-full z-50 bg-white" id="start">
       <div class="max-w-screen-xl px-4 py-2 mx-auto">
         <div class="flex items-center justify-evenly">
-          <ul class="grid grid-cols-3 font-medium mt-0  text-base">
-            <li class="border-e px-4 w-full text-center  border-gray-300">
-              <NuxtLink :to="{ path: '/', hash: '#naslovnica' }" class="text-gray-900 hover:underline">{{ $t('home') }}
+          <ul class="grid grid-cols-3 font-medium mt-0 text-base">
+            <li class="border-e px-4 w-full text-center border-gray-300">
+              <NuxtLink :to="{ path: '/', hash: '#naslovnica' }" class="text-gray-900 hover:underline">{{ $t("home") }}
               </NuxtLink>
             </li>
-            <li class=" px-4 w-full text-center border-gray-300">
-              <NuxtLink :to="{ path: '/', hash: '#usluge' }" class="text-gray-900 hover:underline">{{ $t('services') }}
+            <li class="px-4 w-full text-center border-gray-300">
+              <NuxtLink :to="{ path: '/', hash: '#usluge' }" class="text-gray-900 hover:underline">{{ $t("services") }}
               </NuxtLink>
             </li>
             <li class="border-s px-4 w-full text-center">
-              <NuxtLink to='/onama' class="text-gray-900 hover:underline">{{ $t('aboutus') }}
+              <NuxtLink to="/onama" class="text-gray-900 hover:underline">{{ $t("aboutus") }}
               </NuxtLink>
             </li>
           </ul>
         </div>
       </div>
-      <hr>
+      <hr />
     </div>
     <div>
       <div class="relative isolate px-6 lg:px-8 mt-5">
@@ -98,11 +96,19 @@
             <img src="../assets/imgs/logo.webp" alt="Logo Taxi Opatija" class="-mt-5 object-cover w-3/12 sm:w-24" />
           </div>
           <h2 class="text-base font-normal text-center">
-            <NuxtLink to='/taxi-price' class="cursor-pointer">Taxi</NuxtLink> | <NuxtLink class="cursor-pointer"
-              :to="i18n.locale.value === 'en' ? '/en/transfers' : '/transferi'">{{ $t('transfers') }}</NuxtLink> |
-            <NuxtLink class="cursor-pointer"
-              :to="i18n.locale.value === 'en' ? '/en/rent-a-van' : '/najam-kombi-vozila'">Rent a van</NuxtLink> |
-            <NuxtLink class="cursor-pointer" :to="i18n.locale.value === 'en' ? '/en/rent-a-car' : '/najam-automobila'">
+            <NuxtLink to="/taxi-price" class="cursor-pointer">Taxi</NuxtLink> |
+            <NuxtLink class="cursor-pointer" :to="i18n.locale.value === 'en' ? '/en/transfers' : '/transferi'">{{
+          $t("transfers") }}</NuxtLink>
+            |
+            <NuxtLink class="cursor-pointer" :to="i18n.locale.value === 'en'
+            ? '/en/rent-a-van'
+            : '/najam-kombi-vozila'
+          ">Rent a van</NuxtLink>
+            |
+            <NuxtLink class="cursor-pointer" :to="i18n.locale.value === 'en'
+            ? '/en/rent-a-car'
+            : '/najam-automobila'
+          ">
               Rent a car</NuxtLink>
           </h2>
           <div class="text-center">
@@ -111,7 +117,7 @@
             </h1>
 
             <h2 class="text-base font-bold tracking-tight text-gray-900">
-              {{ $t('titleDesc') }}
+              {{ $t("titleDesc") }}
             </h2>
 
             <a href="https://g.co/kgs/WPGpCp3" target="_blank" class="flex items-center mt-2.5 mb-5 justify-center">
@@ -180,7 +186,7 @@
               <a id="callLink2" href="tel:+38598491369" class="inline-block w-50">
                 <button
                   class="bg-blue-700 border-2 border-lime-50 hover:bg-blue-800 text-white font-bold py-3 px-8 rounded-lg text-lg">
-                  <p class="inline-block">{{ $t('callARide') }}</p>
+                  <p class="inline-block">{{ $t("callARide") }}</p>
                 </button>
               </a>
               <a href="https://api.whatsapp.com/send?phone=38598491369" target="_blank" rel="noopener">
@@ -205,13 +211,12 @@
       </div>
     </div>
 
-
-    <div class="leading-normal tracking-normal  gradient" style="font-family: 'Source Sans Pro', sans-serif;">
+    <div class="leading-normal tracking-normal gradient" style="font-family: 'Source Sans Pro', sans-serif">
       <div class="mt-10 mb-20">
         <div class="flex justify-center">
           <div class="switch">
             <label for="toggle">
-              <input id="toggle" class="toggle-switch" type="checkbox" v-model="isDay">
+              <input id="toggle" class="toggle-switch" type="checkbox" v-model="isDay" />
               <div class="sun-moon">
                 <div class="dots"></div>
               </div>
@@ -221,17 +226,19 @@
               </div>
             </label>
           </div>
-
         </div>
 
         <h3 class="text-xl text-center text-gray-900 mb-4 font-bold">
-          <br> {{ isDay ? $t('dayDrive') : $t('nightDrive') }} {{ $t('drive') }} <br />
+          <br />
+          {{ isDay ? $t("dayDrive") : $t("nightDrive") }} {{ $t("drive") }}
+          <br />
         </h3>
 
-
         <ul class="list-disc list-inside text-center text-gray-700">
-          <li class="mb-2">{{ $t('startPrice') }}: 4.00€</li>
-          <li class="mb-2">{{ $t('perKm') }}: {{ isDay ? "1.60" : "2.00" }}€</li>
+          <li class="mb-2">{{ $t("startPrice") }}: 4.00€</li>
+          <li class="mb-2">
+            {{ $t("perKm") }}: {{ isDay ? "1.60" : "2.00" }}€
+          </li>
         </ul>
       </div>
       <div class="relative -mt-12 lg:-mt-24">
@@ -257,25 +264,25 @@
           </g>
         </svg>
       </div>
-      <section class="content-section  bg-white pb-16 pt-2 -my-[1px]" id="usluge">
+      <section class="content-section bg-white pb-16 pt-2 -my-[1px]" id="usluge">
         <div class="container mx-auto px-4 lg:px-5">
           <h2 class="w-full my-2 text-4xl font-bold leading-tight text-center text-gray-800">
-            {{ $t('services') }}
+            {{ $t("services") }}
           </h2>
           <div class="w-full mb-4">
             <div
-              class="h-1 mx-auto bg-gradient-to-r  from-gray-600 via-gray-700 to-gray-600 w-64 opacity-25 my-0 py-0 rounded-t">
+              class="h-1 mx-auto bg-gradient-to-r from-gray-600 via-gray-700 to-gray-600 w-64 opacity-25 my-0 py-0 rounded-t">
             </div>
           </div>
 
           <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
             <article
-              class="hover:animate-background rounded-xl bg-gradient-to-r  from-gray-400 via-slate-500 to-gray-400 p-0.5 shadow-md transition hover:bg-[length:400%_400%] hover:shadow-sm hover:[animation-duration:_4s]">
+              class="hover:animate-background rounded-xl bg-gradient-to-r from-gray-400 via-slate-500 to-gray-400 p-0.5 shadow-md transition hover:bg-[length:400%_400%] hover:shadow-sm hover:[animation-duration:_4s]">
               <NuxtLink to="/taxi-price">
                 <div class="rounded-[10px] bg-gray-50 p-4 sm:p-6 h-full">
                   <div class="flex justify-between mt-1">
-                    <span class="text-sm ms-8 w-full text-blue-800 text-center font-medium">{{
-          $t('pricingTaxi') }}</span>
+                    <span class="text-sm ms-8 w-full text-blue-800 text-center font-medium">{{ $t("pricingTaxi")
+                      }}</span>
                     <svg class="w-6 inline-block" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
                       <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
@@ -286,49 +293,23 @@
                     </svg>
                   </div>
                   <h3 class="mt-0 text-3xl font-bold text-gray-800 drop-shadow-sm py-1 text-center">
-                    {{ $t('taxiservice') }}
+                    {{ $t("taxiservice") }}
                   </h3>
                   <p class="text-gray-500 text-sm py-1 text-center">
-                    {{ $t('taxiDesc') }}
-                  </p>
-
-                </div>
-              </NuxtLink>
-            </article>
-
-            <article
-              class=" hover:animate-background rounded-xl bg-gradient-to-r from-gray-400 via-slate-500 to-gray-400 p-0.5 shadow-md transition hover:bg-[length:400%_400%] hover:shadow-sm hover:[animation-duration:_4s]">
-              <NuxtLink :to="i18n.locale.value === 'en' ? '/en/transfers' : '/transferi'">
-                <div class=" rounded-[10px] bg-gray-50 p-4 sm:p-6 h-full">
-                  <div class="flex justify-between mt-1">
-                    <span class="text-sm ms-8 w-full text-blue-800 text-center font-medium">{{
-          $t('pricingTransfers') }}</span>
-                    <svg class="w-6 inline-block" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                      <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                      <g id="SVGRepo_iconCarrier">
-                        <path d="M9 6L15 12L9 18" stroke="#000000" stroke-width="2" stroke-linecap="round"
-                          stroke-linejoin="round"></path>
-                      </g>
-                    </svg>
-                  </div>
-                  <h3 class="mt-0 text-3xl font-bold text-gray-800 drop-shadow-sm py-1 text-center">
-                    {{ $t('transfers') }}
-                  </h3>
-                  <p class="text-gray-500 text-sm py-1 text-center">
-                    {{ $t('transferDesc') }}
+                    {{ $t("taxiDesc") }}
                   </p>
                 </div>
               </NuxtLink>
             </article>
 
             <article
-              class=" hover:animate-background rounded-xl bg-gradient-to-r from-gray-400 via-slate-500 to-gray-400 p-0.5 shadow-md transition hover:bg-[length:400%_400%] hover:shadow-sm hover:[animation-duration:_4s]">
-              <NuxtLink :to="i18n.locale.value === 'en' ? '/en/rent-a-van' : '/najam-kombi-vozila'">
+              class="hover:animate-background rounded-xl bg-gradient-to-r from-gray-400 via-slate-500 to-gray-400 p-0.5 shadow-md transition hover:bg-[length:400%_400%] hover:shadow-sm hover:[animation-duration:_4s]">
+              <NuxtLink :to="i18n.locale.value === 'en' ? '/en/transfers' : '/transferi'
+          ">
                 <div class="rounded-[10px] bg-gray-50 p-4 sm:p-6 h-full">
                   <div class="flex justify-between mt-1">
-                    <span class="text-sm ms-8 w-full text-blue-800 text-center font-medium">{{
-          $t('pricingRentVan') }}</span>
+                    <span class="text-sm ms-8 w-full text-blue-800 text-center font-medium">{{ $t("pricingTransfers")
+                      }}</span>
                     <svg class="w-6 inline-block" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
                       <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
@@ -339,22 +320,25 @@
                     </svg>
                   </div>
                   <h3 class="mt-0 text-3xl font-bold text-gray-800 drop-shadow-sm py-1 text-center">
-                    {{ $t('rentVan') }}
+                    {{ $t("transfers") }}
                   </h3>
                   <p class="text-gray-500 text-sm py-1 text-center">
-                    {{ $t('rentVanDesc') }}
+                    {{ $t("transferDesc") }}
                   </p>
                 </div>
               </NuxtLink>
             </article>
 
             <article
-              class=" hover:animate-background rounded-xl bg-gradient-to-r from-gray-400 via-slate-500 to-gray-400 p-0.5 shadow-md transition hover:bg-[length:400%_400%] hover:shadow-sm hover:[animation-duration:_4s]">
-              <NuxtLink :to="i18n.locale.value === 'en' ? '/en/rent-a-car' : '/najam-automobila'">
+              class="hover:animate-background rounded-xl bg-gradient-to-r from-gray-400 via-slate-500 to-gray-400 p-0.5 shadow-md transition hover:bg-[length:400%_400%] hover:shadow-sm hover:[animation-duration:_4s]">
+              <NuxtLink :to="i18n.locale.value === 'en'
+            ? '/en/rent-a-van'
+            : '/najam-kombi-vozila'
+          ">
                 <div class="rounded-[10px] bg-gray-50 p-4 sm:p-6 h-full">
                   <div class="flex justify-between mt-1">
-                    <span class="text-sm ms-8 w-full text-blue-800 text-center font-medium">{{
-          $t('pricingRentCar') }}</span>
+                    <span class="text-sm ms-8 w-full text-blue-800 text-center font-medium">{{ $t("pricingRentVan")
+                      }}</span>
                     <svg class="w-6 inline-block" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
                       <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
@@ -365,23 +349,49 @@
                     </svg>
                   </div>
                   <h3 class="mt-0 text-3xl font-bold text-gray-800 drop-shadow-sm py-1 text-center">
-                    {{ $t('rentCar') }}
+                    {{ $t("rentVan") }}
                   </h3>
                   <p class="text-gray-500 text-sm py-1 text-center">
-                    {{ $t('rentCarDesc') }}
+                    {{ $t("rentVanDesc") }}
+                  </p>
+                </div>
+              </NuxtLink>
+            </article>
+
+            <article
+              class="hover:animate-background rounded-xl bg-gradient-to-r from-gray-400 via-slate-500 to-gray-400 p-0.5 shadow-md transition hover:bg-[length:400%_400%] hover:shadow-sm hover:[animation-duration:_4s]">
+              <NuxtLink :to="i18n.locale.value === 'en'
+            ? '/en/rent-a-car'
+            : '/najam-automobila'
+          ">
+                <div class="rounded-[10px] bg-gray-50 p-4 sm:p-6 h-full">
+                  <div class="flex justify-between mt-1">
+                    <span class="text-sm ms-8 w-full text-blue-800 text-center font-medium">{{ $t("pricingRentCar")
+                      }}</span>
+                    <svg class="w-6 inline-block" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                      <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                      <g id="SVGRepo_iconCarrier">
+                        <path d="M9 6L15 12L9 18" stroke="#000000" stroke-width="2" stroke-linecap="round"
+                          stroke-linejoin="round"></path>
+                      </g>
+                    </svg>
+                  </div>
+                  <h3 class="mt-0 text-3xl font-bold text-gray-800 drop-shadow-sm py-1 text-center">
+                    {{ $t("rentCar") }}
+                  </h3>
+                  <p class="text-gray-500 text-sm py-1 text-center">
+                    {{ $t("rentCarDesc") }}
                   </p>
                 </div>
               </NuxtLink>
             </article>
           </div>
         </div>
-
       </section>
 
-
-
       <!-- Change the colour #f8fafc to match the previous section colour -->
-      <div class='gradientWorkHours'>
+      <div class="gradientWorkHours">
         <div class="relative">
           <svg class="wave-top" viewBox="0 0 1439 147" version="1.1" xmlns="http://www.w3.org/2000/svg"
             xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -417,45 +427,60 @@
           <div class="w-80 bg-white rounded-lg shadow-lg mx-2">
             <div class="p-4 w-80">
               <h3 class="text-xl font-semibold mb-2">What is Taxi Opatija?</h3>
-              <p class="text-sm">Taxi Opatija is a renowned tourist agency proud to offer top-notch passenger Transfers
-                services both domestically and internationally. Our mission is to ensure comfortable, safe, and reliable
-                travel for all our clients, regardless of destination or travel time.</p>
+              <p class="text-sm">
+                Taxi Opatija is a renowned tourist agency proud to offer
+                top-notch passenger Transfers services both domestically and
+                internationally. Our mission is to ensure comfortable, safe, and
+                reliable travel for all our clients, regardless of destination
+                or travel time.
+              </p>
             </div>
           </div>
 
           <div class="w-80 bg-white rounded-lg shadow-lg mx-2">
             <div class="p-4 w-80">
               <h3 class="text-xl font-semibold mb-2">Quality first!</h3>
-              <p class="text-sm mt-3">Our vehicle fleet consists of modern vans (8+1) and comfortable cars (3+1),
-                equipped with all necessary amenities to make your journey pleasant and stress-free. All our drivers are
-                highly qualified and experienced, dedicated to providing excellent service and passenger safety.</p>
+              <p class="text-sm mt-3">
+                Our vehicle fleet consists of modern vans (8+1) and comfortable
+                cars (3+1), equipped with all necessary amenities to make your
+                journey pleasant and stress-free. All our drivers are highly
+                qualified and experienced, dedicated to providing excellent
+                service and passenger safety.
+              </p>
             </div>
           </div>
 
           <div class="w-80 bg-white rounded-lg shadow-lg mx-2">
             <div class="p-4 w-80">
               <h3 class="text-xl font-semibold mb-2">Adaptability!</h3>
-              <p class="text-sm mt-3">Whether you're traveling for business or leisure, alone or in a group, Taxi
-                Opatija is your reliable Transfersation partner. Our service is available 24/7 to ensure you can always
-                count on us, no matter your needs or the urgency of your travel.</p>
+              <p class="text-sm mt-3">
+                Whether you're traveling for business or leisure, alone or in a
+                group, Taxi Opatija is your reliable Transfersation partner. Our
+                service is available 24/7 to ensure you can always count on us,
+                no matter your needs or the urgency of your travel.
+              </p>
             </div>
           </div>
 
           <div class="w-80 bg-white rounded-lg shadow-lg mx-2">
             <div class="p-4 w-80">
               <h3 class="text-xl font-semibold mb-2">Best at what we do!</h3>
-              <p class="text-sm mt-3">With our dedicated approach and attention to detail, Taxi Opatija creates a travel
-                experience that will remain a fond memory. Contact us today and let us provide you with an unforgettable
-                journey that exceeds all your expectations.</p>
+              <p class="text-sm mt-3">
+                With our dedicated approach and attention to detail, Taxi
+                Opatija creates a travel experience that will remain a fond
+                memory. Contact us today and let us provide you with an
+                unforgettable journey that exceeds all your expectations.
+              </p>
             </div>
           </div>
-
 
           <div class="w-80 bg-white rounded-lg shadow-lg mx-2">
             <div class="p-4 w-80">
               <h3 class="text-xl font-semibold mb-2">Custom arrangements!</h3>
-              <p class="text-sm mt-3">Yes, we offer Transfersation services for medical appointments, hospital visits,
-                and other healthcare-related needs. Contact us to arrange Transfersation for your medical appointments.
+              <p class="text-sm mt-3">
+                Yes, we offer Transfersation services for medical appointments,
+                hospital visits, and other healthcare-related needs. Contact us
+                to arrange Transfersation for your medical appointments.
               </p>
             </div>
           </div>
@@ -463,8 +488,10 @@
           <div class="w-80 bg-white rounded-lg shadow-lg mx-2">
             <div class="p-4 w-80">
               <h3 class="text-xl font-semibold mb-2">Comfort!</h3>
-              <p class="text-sm mt-3">Yes, all our vehicles are equipped with amenities such as climate control and
-                comfortable seating to ensure a pleasant and enjoyable ride for our passengers.
+              <p class="text-sm mt-3">
+                Yes, all our vehicles are equipped with amenities such as
+                climate control and comfortable seating to ensure a pleasant and
+                enjoyable ride for our passengers.
               </p>
             </div>
           </div>
@@ -472,8 +499,10 @@
           <div class="w-80 bg-white rounded-lg shadow-lg mx-2">
             <div class="p-4 w-80">
               <h3 class="text-xl font-semibold mb-2">Reliability!</h3>
-              <p class="text-sm mt-3">Yes, you can schedule recurring rides for daily commutes or regular appointments
-                to ensure reliable Transfersation whenever you need it. Contact us to set up a recurring ride schedule
+              <p class="text-sm mt-3">
+                Yes, you can schedule recurring rides for daily commutes or
+                regular appointments to ensure reliable Transfersation whenever
+                you need it. Contact us to set up a recurring ride schedule
                 tailored to your needs.
               </p>
             </div>
@@ -482,8 +511,11 @@
           <div class="w-80 bg-white rounded-lg shadow-lg mx-2">
             <div class="p-4 w-80">
               <h3 class="text-xl font-semibold mb-2">We are multilingual!</h3>
-              <p class="text-sm mt-3">Yes, many of our drivers are bilingual or multilingual, providing assistance in
-                various languages to cater to our diverse clientele. Let us know your language preference when booking.
+              <p class="text-sm mt-3">
+                Yes, many of our drivers are bilingual or multilingual,
+                providing assistance in various languages to cater to our
+                diverse clientele. Let us know your language preference when
+                booking.
               </p>
             </div>
           </div>
@@ -491,18 +523,24 @@
           <div class="w-80 bg-white rounded-lg shadow-lg mx-2">
             <div class="p-4 w-80">
               <h3 class="text-xl font-semibold mb-2">Wi-Fi!</h3>
-              <p class="text-sm mt-3">Yes, our drivers are equipped with smartphones and unlimited internet. If you need
-                Wi-Fi, please let your driver know and he will turn his Personal Hotspot on for you!
+              <p class="text-sm mt-3">
+                Yes, our drivers are equipped with smartphones and unlimited
+                internet. If you need Wi-Fi, please let your driver know and he
+                will turn his Personal Hotspot on for you!
               </p>
             </div>
           </div>
 
           <div class="w-80 bg-white rounded-lg shadow-lg mx-2">
             <div class="p-4 w-80">
-              <h3 class="text-xl font-semibold mb-2">Personalized group Transfers!</h3>
-              <p class="text-sm mt-3">Absolutely! We specialize in group Transfersation for events such as weddings,
-                parties, corporate outings, and more. Contact us to discuss your specific requirements and get a
-                personalized quote.
+              <h3 class="text-xl font-semibold mb-2">
+                Personalized group Transfers!
+              </h3>
+              <p class="text-sm mt-3">
+                Absolutely! We specialize in group Transfersation for events
+                such as weddings, parties, corporate outings, and more. Contact
+                us to discuss your specific requirements and get a personalized
+                quote.
               </p>
             </div>
           </div>
@@ -510,8 +548,10 @@
           <div class="w-80 bg-white rounded-lg shadow-lg mx-2">
             <div class="p-4 w-80">
               <h3 class="text-xl font-semibold mb-2">Pet friendly!</h3>
-              <p class="text-sm mt-3">Yes, we welcome well-behaved pets in our vehicles. Just let us know in advance if
-                you'll be traveling with a pet so we can make the necessary arrangements.
+              <p class="text-sm mt-3">
+                Yes, we welcome well-behaved pets in our vehicles. Just let us
+                know in advance if you'll be traveling with a pet so we can make
+                the necessary arrangements.
               </p>
             </div>
           </div>
@@ -519,8 +559,10 @@
           <div class="w-80 bg-white rounded-lg shadow-lg mx-2">
             <div class="p-4 w-80">
               <h3 class="text-xl font-semibold mb-2">Custom requests!</h3>
-              <p class="text-sm mt-3">Of course! We strive to accommodate all customer requests to the best of our
-                ability. Simply provide us with the details of your desired pickup/drop-off location when booking.
+              <p class="text-sm mt-3">
+                Of course! We strive to accommodate all customer requests to the
+                best of our ability. Simply provide us with the details of your
+                desired pickup/drop-off location when booking.
               </p>
             </div>
           </div>
@@ -528,9 +570,11 @@
           <div class="w-80 bg-white rounded-lg shadow-lg mx-2">
             <div class="p-4 w-80">
               <h3 class="text-xl font-semibold mb-2">Intergrity!</h3>
-              <p class="text-sm mt-3">If you believe you've left something behind in one of our taxis, please contact us
-                as soon as possible with a description of the item and the date/time of your ride. We'll do our best to
-                locate and return it to you.
+              <p class="text-sm mt-3">
+                If you believe you've left something behind in one of our taxis,
+                please contact us as soon as possible with a description of the
+                item and the date/time of your ride. We'll do our best to locate
+                and return it to you.
               </p>
             </div>
           </div>
@@ -538,8 +582,10 @@
           <div class="w-80 bg-white rounded-lg shadow-lg mx-2">
             <div class="p-4 w-80">
               <h3 class="text-xl font-semibold mb-2">Loyalty!</h3>
-              <p class="text-sm mt-3">Yes, we offer corporate accounts with special rates and billing options for
-                businesses. Contact us for more information on setting up an account.
+              <p class="text-sm mt-3">
+                Yes, we offer corporate accounts with special rates and billing
+                options for businesses. Contact us for more information on
+                setting up an account.
               </p>
             </div>
           </div>
@@ -547,8 +593,10 @@
           <div class="w-80 bg-white rounded-lg shadow-lg mx-2">
             <div class="p-4 w-80">
               <h3 class="text-xl font-semibold mb-2">Safety!</h3>
-              <p class="text-sm mt-3">The safety and well-being of our passengers are our top priorities. Our drivers
-                undergo rigorous background checks, and our vehicles are regularly inspected and sanitized. We also
+              <p class="text-sm mt-3">
+                The safety and well-being of our passengers are our top
+                priorities. Our drivers undergo rigorous background checks, and
+                our vehicles are regularly inspected and sanitized. We also
                 follow all local safety regulations.
               </p>
             </div>
@@ -556,9 +604,13 @@
 
           <div class="w-80 bg-white rounded-lg shadow-lg mx-2">
             <div class="p-4 w-80">
-              <h3 class="text-xl font-semibold mb-2">Aiports, cities and places!</h3>
-              <p class="text-sm mt-3">Absolutely! We provide reliable airport transfer services to and from all airports
-                in Europe. Just let us know your flight details, and we'll take care of the rest.
+              <h3 class="text-xl font-semibold mb-2">
+                Aiports, cities and places!
+              </h3>
+              <p class="text-sm mt-3">
+                Absolutely! We provide reliable airport transfer services to and
+                from all airports in Europe. Just let us know your flight
+                details, and we'll take care of the rest.
               </p>
             </div>
           </div>
@@ -566,31 +618,30 @@
           <div class="w-80 bg-white rounded-lg shadow-lg mx-2">
             <div class="p-4 w-80">
               <h3 class="text-xl font-semibold mb-2">Sky is the limit!</h3>
-              <p class="text-sm mt-3">We primarily serve the greater Opatija area, but we also offer long-distance trips
-                to surrounding areas anywhere in Europe. Just contact us for more details.
+              <p class="text-sm mt-3">
+                We primarily serve the greater Opatija area, but we also offer
+                long-distance trips to surrounding areas anywhere in Europe.
+                Just contact us for more details.
               </p>
             </div>
           </div>
-
         </div>
 
-        <section class="container mx-auto text-center py-5 pb-10 w-[100vw] " id='radnovrijeme'>
+        <section class="container mx-auto text-center py-5 pb-10 w-[100vw]" id="radnovrijeme">
           <h2 class="w-full my-2 text-5xl font-bold leading-tight text-center text-white">
-            {{ $t('workhours') }}
+            {{ $t("workhours") }}
           </h2>
           <div class="w-full mb-4">
             <div class="h-1 mx-auto bg-white w-1/6 opacity-25 my-0 py-0 rounded-t"></div>
           </div>
-          <h3 class="my-4 text-white text-5xl leading-tight">
-            0 - 24
-          </h3>
+          <h3 class="my-4 text-white text-5xl leading-tight">0 - 24</h3>
           <h3 class="my-4 text-3xl text-white leading-tight">
-            {{ $t('openEveryDay') }}
+            {{ $t("openEveryDay") }}
           </h3>
           <a href="tel:+38598491369">
             <button
               class="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
-              {{ $t('callUs') }}
+              {{ $t("callUs") }}
             </button>
           </a>
         </section>
@@ -622,13 +673,13 @@
   </main>
 
   <footer class="bg-white mb-10">
-    <div class=" mx-auto px-8">
+    <div class="mx-auto px-8">
       <div class="w-full flex flex-col md:flex-row py-6">
         <div class="flex-1 mb-6 text-black">
           <NuxtLink class="text-pink-600 no-underline hover:no-underline font-bold text-2xl lg:text-4xl"
             :to="{ path: '/', hash: '#naslovnica' }">
             <img src="../assets/imgs/logo.png" alt="taxi opatija logo"
-              class="w-20 h-[60px]  inline-block me-3 rounded-xl">
+              class="w-20 h-[60px] inline-block me-3 rounded-xl" />
           </NuxtLink>
         </div>
         <div class="flex-1">
@@ -636,73 +687,76 @@
           <ul class="list-reset mb-6">
             <li class="mt-2 inline-block mr-2 md:block md:mr-0">
               <NuxtLink to="/" class="no-underline hover:underline text-gray-800 hover:text-pink-500">
-                {{ $t('home') }}
+                {{ $t("home") }}
               </NuxtLink>
             </li>
 
             <li class="mt-2 inline-block mr-2 md:block md:mr-0">
               <NuxtLink :to="{ path: '/', hash: '#usluge' }"
-                class=" no-underline hover:underline text-gray-800 hover:text-pink-500">{{ $t('services') }}
+                class="no-underline hover:underline text-gray-800 hover:text-pink-500">{{ $t("services") }}
               </NuxtLink>
             </li>
             <li class="mt-2 inline-block mr-2 md:block md:mr-0">
               <NuxtLink to="/onama" class="no-underline hover:underline text-gray-800 hover:text-pink-500">{{
-          $t('aboutus') }}
+          $t("aboutus") }}
               </NuxtLink>
             </li>
           </ul>
         </div>
         <div class="flex-1">
-          <p class="uppercase text-gray-500 md:mb-6">{{ $t('services') }}</p>
+          <p class="uppercase text-gray-500 md:mb-6">{{ $t("services") }}</p>
           <ul class="list-reset mb-6">
             <li class="mt-2 inline-block mr-2 md:block md:mr-0">
               <NuxtLink to="/taxi-price" class="no-underline hover:underline text-gray-800 hover:text-pink-500">{{
-          $t('servicesTaxi') }}
+          $t("servicesTaxi") }}
               </NuxtLink>
             </li>
             <li class="mt-2 inline-block mr-2 md:block md:mr-0">
-              <NuxtLink :to="i18n.locale.value === 'en' ? '/en/transfers' : '/transferi'"
-                class="no-underline hover:underline text-gray-800 hover:text-pink-500">{{
-          $t('servicesTransfers') }}
+              <NuxtLink :to="i18n.locale.value === 'en' ? '/en/transfers' : '/transferi'
+          " class="no-underline hover:underline text-gray-800 hover:text-pink-500">{{ $t("servicesTransfers") }}
               </NuxtLink>
             </li>
             <li class="mt-2 inline-block mr-2 md:block md:mr-0">
-              <NuxtLink :to="i18n.locale.value === 'en' ? '/en/rent-a-van' : '/najam-kombi-vozila'"
-                class="no-underline hover:underline text-gray-800 hover:text-pink-500">
-                {{ $t('servicesRentVan') }}
+              <NuxtLink :to="i18n.locale.value === 'en'
+            ? '/en/rent-a-van'
+            : '/najam-kombi-vozila'
+          " class="no-underline hover:underline text-gray-800 hover:text-pink-500">
+                {{ $t("servicesRentVan") }}
               </NuxtLink>
             </li>
             <li class="mt-2 inline-block mr-2 md:block md:mr-0">
-              <NuxtLink :to="i18n.locale.value === 'en' ? '/en/rent-a-car' : '/najam-automobila'"
-                class="no-underline hover:underline text-gray-800 hover:text-pink-500">{{
-          $t('servicesRentCar') }}
+              <NuxtLink :to="i18n.locale.value === 'en'
+            ? '/en/rent-a-car'
+            : '/najam-automobila'
+          " class="no-underline hover:underline text-gray-800 hover:text-pink-500">{{ $t("servicesRentCar") }}
               </NuxtLink>
             </li>
           </ul>
         </div>
 
         <div class="flex-1">
-          <p class="uppercase text-gray-500 md:mb-6">{{ $t('network') }}</p>
+          <p class="uppercase text-gray-500 md:mb-6">{{ $t("network") }}</p>
           <ul class="list-reset mb-6">
             <li class="mt-2 inline-block mr-2 md:block md:mr-0">
-              <a href="https://www.facebook.com/taxiopatija" target='_blank'
+              <a href="https://www.facebook.com/taxiopatija" target="_blank"
                 class="no-underline hover:underline text-gray-800 hover:text-pink-500">Facebook</a>
             </li>
             <li class="mt-2 inline-block mr-2 md:block md:mr-0">
-              <a href="https://www.instagram.com/taxiopatija.hr" target='_blank'
+              <a href="https://www.instagram.com/taxiopatija.hr" target="_blank"
                 class="no-underline hover:underline text-gray-800 hover:text-pink-500">Instagram</a>
             </li>
-
           </ul>
         </div>
         <div class="flex-1">
-          <p class="uppercase text-gray-500 md:mb-6">{{ $t('privacyPolicy') }}</p>
+          <p class="uppercase text-gray-500 md:mb-6">
+            {{ $t("privacyPolicy") }}
+          </p>
           <ul class="list-reset mb-6">
             <li class="mt-2 inline-block mr-2 md:block md:mr-0">
-              <a href="#" class="no-underline hover:underline text-gray-800 hover:text-pink-500">{{ $t('terms') }}</a>
+              <a href="#" class="no-underline hover:underline text-gray-800 hover:text-pink-500">{{ $t("terms") }}</a>
             </li>
             <li class="mt-2 inline-block mr-2 md:block md:mr-0">
-              <a href="#" class="no-underline hover:underline text-gray-800 hover:text-pink-500">{{ $t('privacy') }}</a>
+              <a href="#" class="no-underline hover:underline text-gray-800 hover:text-pink-500">{{ $t("privacy") }}</a>
             </li>
           </ul>
         </div>
@@ -718,7 +772,7 @@
   width: 32px;
   height: 32px;
   opacity: 0.5;
-  transition: all .5s;
+  transition: all 0.5s;
   margin: auto 3px;
   -moz-user-select: none;
   -webkit-user-select: none;
@@ -734,41 +788,36 @@
 .fr_lang,
 .en_lang {
   display: none;
-  transition: display .5s;
+  transition: display 0.5s;
 }
 
 /* Language */
 .active-lang {
   display: flex !important;
-  transition: display .5s;
+  transition: display 0.5s;
 }
 
 .active-flag {
-  transition: all .5s;
+  transition: all 0.5s;
   opacity: 1 !important;
 }
 
 .gradient {
-  background: #E6DADA;
+  background: #e6dada;
   /* fallback for old browsers */
   background: -webkit-linear-gradient(to top, #0093d7, #ffffff);
   /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to top,
-      #0093d7,
-      #ffffff);
+  background: linear-gradient(to top, #0093d7, #ffffff);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .gradientWorkHours {
-  background: #E6DADA;
+  background: #e6dada;
   /* fallback for old browsers */
   background: -webkit-linear-gradient(to top, #0093d7, #00a3d0);
   /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to top,
-      #0093d7,
-      #00a3d0);
+  background: linear-gradient(to top, #0093d7, #00a3d0);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
 }
 
 .a {
@@ -837,8 +886,6 @@ button {
     rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
 
-
-
 .credit {
   display: flex;
   justify-content: center;
@@ -877,10 +924,8 @@ button {
   transition: all 0.3s;
 }
 
-
-
 .switch input:checked~.fill {
-  background: #E9F8FD;
+  background: #e9f8fd;
 }
 
 .stars1,
@@ -888,7 +933,7 @@ button {
   position: absolute;
   height: 0.4rem;
   width: 0.4rem;
-  background: #FFFFFF;
+  background: #ffffff;
   border-radius: 50%;
   transition: 0.3s all ease;
 }
@@ -912,7 +957,7 @@ button {
   display: block;
   height: 0.25rem;
   width: 0.25rem;
-  background: #FFFFFF;
+  background: #ffffff;
   border-radius: 50%;
   transition: 0.2s all ease;
 }
@@ -945,12 +990,12 @@ button {
   height: 3rem;
   width: 3rem;
   margin: 0.5rem;
-  background: #FFFDF2;
+  background: #fffdf2;
   border-radius: 50%;
   transition: all 0.5s ease;
 
   /* Default to Moon */
-  border: 0.25rem solid #DEE2C6;
+  border: 0.25rem solid #dee2c6;
 }
 
 .sun-moon .dots {
@@ -959,8 +1004,8 @@ button {
   left: 23px;
   height: 1rem;
   width: 1rem;
-  background: #EFEEDB;
-  border: 0.25rem solid #DEE2C6;
+  background: #efeedb;
+  border: 0.25rem solid #dee2c6;
   border-radius: 50%;
   transition: 0.4s all ease;
 }
@@ -972,8 +1017,8 @@ button {
   display: block;
   height: 0.25rem;
   width: 0.25rem;
-  background: #EFEEDB;
-  border: 0.25rem solid #DEE2C6;
+  background: #efeedb;
+  border: 0.25rem solid #dee2c6;
   border-radius: 50%;
   transition: 0.4s all ease;
 }
@@ -992,16 +1037,16 @@ button {
 
 .switch input:checked~.sun-moon {
   left: calc(100% - 4rem);
-  background: #F5EC59;
-  border-color: #E7C65C;
+  background: #f5ec59;
+  border-color: #e7c65c;
   transform: rotate(-25deg);
 }
 
 .switch input:checked~.sun-moon .dots,
 .switch input:checked~.sun-moon .dots:after,
 .switch input:checked~.sun-moon .dots:before {
-  background: #FFFFFF;
-  border-color: #FFFFFF;
+  background: #ffffff;
+  border-color: #ffffff;
 }
 
 .switch input:checked~.sun-moon .dots {
@@ -1033,8 +1078,8 @@ button {
 }
 
 .switch input:checked~.background {
-  border: 0.25rem solid #78C1D5;
-  background: linear-gradient(to right, #78C1D5 0%, #BBE7F5 100%);
+  border: 0.25rem solid #78c1d5;
+  background: linear-gradient(to right, #78c1d5 0%, #bbe7f5 100%);
 }
 </style>
 
@@ -1042,24 +1087,23 @@ button {
 import { ref } from "vue";
 import dayjs from "dayjs";
 
-const { locale, setLocale } = useI18n()
+const { locale, setLocale } = useI18n();
 
 const i18n = useI18n();
 
 onMounted(() => {
-  scrollToSection('#start');
-  i18n.locale.value = navigator.language.split('-')[0]
+  scrollToSection("#start");
+  i18n.locale.value = navigator.language.split("-")[0];
 });
 
 function scrollToSection(hash) {
   const element = document.querySelector(hash);
   if (element) {
-    element.scrollIntoView({ behavior: 'smooth' });
+    element.scrollIntoView({ behavior: "smooth" });
   }
 }
 
-const isDay = ref(true)
-
+const isDay = ref(true);
 
 const currentTime = ref(dayjs().format("HH:mm"));
 
@@ -1067,17 +1111,16 @@ onMounted(() => {
   setInterval(() => {
     currentTime.value = dayjs().format("HH:mm");
   }, 1000);
-  getPeriodOfDay()
+  getPeriodOfDay();
 });
 
 const getPeriodOfDay = () => {
   if (dayjs().hour() > 5 && dayjs().hour() < 22) {
-    isDay.value = true
+    isDay.value = true;
   } else {
-    isDay.value = false
+    isDay.value = false;
   }
-}
-
+};
 
 useHead({
   title: "Taxi Opatija | taxiopatija.hr | 24/7",
@@ -1087,19 +1130,26 @@ useHead({
   meta: [
     {
       name: "description",
-      content: "Opatija Taxi #1 | 24/7 | Taxi | Transfers | Car & Van Rentals | Located in Opatija - Transport across Europe",
+      content:
+        "Opatija Taxi #1 | 24/7 | Taxi | Transfers | Car & Van Rentals | Located in Opatija - Transport across Europe",
     },
-    { hid: "og:url", property: "og:url", content: "https://www.taxiopatija.hr" },
+    {
+      hid: "og:url",
+      property: "og:url",
+      content: "https://www.taxiopatija.hr",
+    },
     { hid: "og:type", property: "og:type", content: "website" },
     {
       hid: "og:title",
       property: "og:title",
-      content: "Opatija Taxi #1 | 24/7 | Taxi | Transfers | Car & Van Rentals | Located in Opatija - Transport across Europe",
+      content:
+        "Opatija Taxi #1 | 24/7 | Taxi | Transfers | Car & Van Rentals | Located in Opatija - Transport across Europe",
     },
     {
       hid: "og:description",
       property: "og:description",
-      content: "Opatija Taxi #1 | 24/7 | Taxi | Transfers | Car & Van Rentals | Located in Opatija - Transport across Europe",
+      content:
+        "Opatija Taxi #1 | 24/7 | Taxi | Transfers | Car & Van Rentals | Located in Opatija - Transport across Europe",
     },
     {
       hid: "og:image",
@@ -1116,144 +1166,151 @@ useHead({
       innerHTML: JSON.stringify({
         "@context": "https://schema.org",
         "@type": "Organization",
-        "image": "https://www.taxiopatija.hr/opatija.jpeg",
-        "url": "https://www.taxiopatija.hr",
-        "sameAs": ["https://taxiopatija.hr"],
-        "logo": "https://www.taxiopatija.hr/opatija.jpeg",
-        "name": "Taxi Opatija",
-        "description": "Taxi Opatija is a renowned tourist agency company headquartered in Opatija, Croatia. Taxi Opatija offers top-notch transfer services both domestically and internationally with a mission to ensure comfortable, safe, and reliable travel for all clients, regardless of destination or travel time.",
-        "email": "anterukavina@yahoo.com.hr",
-        "telephone": "+38598491369",
+        image: "https://www.taxiopatija.hr/opatija.jpeg",
+        url: "https://www.taxiopatija.hr",
+        sameAs: ["https://taxiopatija.hr"],
+        logo: "https://www.taxiopatija.hr/opatija.jpeg",
+        name: "Taxi Opatija",
+        description:
+          "Taxi Opatija is a renowned tourist agency company headquartered in Opatija, Croatia. Taxi Opatija offers top-notch transfer services both domestically and internationally with a mission to ensure comfortable, safe, and reliable travel for all clients, regardless of destination or travel time.",
+        email: "anterukavina@yahoo.com.hr",
+        telephone: "+38598491369",
 
-        "address": {
+        address: {
           "@type": "PostalAddress",
-          "streetAddress": "Ul. Dr. Ante Mandića 2",
-          "addressLocality": "Opatija",
-          "addressCountry": "Croatia",
-          "addressRegion": "Primorje-Gorski Kotar County",
-          "postalCode": "51410",
+          streetAddress: "Ul. Dr. Ante Mandića 2",
+          addressLocality: "Opatija",
+          addressCountry: "Croatia",
+          addressRegion: "Primorje-Gorski Kotar County",
+          postalCode: "51410",
         },
-        "contactPoint": {
+        contactPoint: {
           "@type": "ContactPoint",
-          "telephone": "+38598491369",
-          "email": "anterukavina@yahoo.com.hr"
-        }
+          telephone: "+38598491369",
+          email: "anterukavina@yahoo.com.hr",
+        },
       }),
     },
     {
-      "type": "application/ld+json",
-      "innerHTML": JSON.stringify({
+      type: "application/ld+json",
+      innerHTML: JSON.stringify({
         "@context": "https://schema.org",
         "@type": "LocalBusiness",
-        "name": "Taxi Opatija",
-        "description": "Taxi Opatija is a renowned tourist agency company headquartered in Opatija, Croatia. Taxi Opatija offers top-notch transfer services both domestically and internationally with a mission to ensure comfortable, safe, and reliable travel for all clients, regardless of destination or travel time.",
-        "url": "https://www.taxiopatija.hr",
-        "logo": "https://www.taxiopatija.hr/opatija.jpeg",
-        "openingHours": "Mo,Tu,We,Th,Fr 00:00-24:00",
-        "address": {
+        name: "Taxi Opatija",
+        description:
+          "Taxi Opatija is a renowned tourist agency company headquartered in Opatija, Croatia. Taxi Opatija offers top-notch transfer services both domestically and internationally with a mission to ensure comfortable, safe, and reliable travel for all clients, regardless of destination or travel time.",
+        url: "https://www.taxiopatija.hr",
+        logo: "https://www.taxiopatija.hr/opatija.jpeg",
+        openingHours: "Mo,Tu,We,Th,Fr 00:00-24:00",
+        address: {
           "@type": "PostalAddress",
-          "streetAddress": "Ul. Dr. Ante Mandića 2",
-          "addressLocality": "Opatija",
-          "addressCountry": "Croatia",
-          "addressRegion": "Primorje-Gorski Kotar County",
-          "postalCode": "51410",
+          streetAddress: "Ul. Dr. Ante Mandića 2",
+          addressLocality: "Opatija",
+          addressCountry: "Croatia",
+          addressRegion: "Primorje-Gorski Kotar County",
+          postalCode: "51410",
         },
-        "telephone": "+38598491369",
-        "priceRange": "$$"
-      })
+        telephone: "+38598491369",
+        priceRange: "$$",
+      }),
     },
     {
-      "@context": "https://schema.org",
-      "@type": "Review",
-      "reviewRating": {
-        "@type": "Rating",
-        "ratingValue": "5",
-        "bestRating": "5"
-      },
-      "author": {
-        "@type": "Person",
-        "name": "Vedran Mihailovic"
-      },
-      "datePublished": "2024-04-23",
-      "description": "Vrhunska i brza usluga! Vozač vrlo pristojan i uljudan.",
-      "itemReviewed": {
-        "@type": "LocalBusiness",
-        "name": "Taxi Opatija - taxiopatija.hr",
-        "image": "https://www.taxiopatija.hr/opatija.jpeg"
-      }
+      type: "application/ld+json",
+      innerHTML: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "Review",
+        reviewRating: {
+          "@type": "Rating",
+          ratingValue: "5",
+          bestRating: "5",
+        },
+        author: {
+          "@type": "Person",
+          name: "Vedran Mihailovic",
+        },
+        datePublished: "2024-04-23",
+        description: "Vrhunska i brza usluga! Vozač vrlo pristojan i uljudan.",
+        itemReviewed: {
+          "@type": "LocalBusiness",
+          name: "Taxi Opatija - taxiopatija.hr",
+          image: "https://www.taxiopatija.hr/opatija.jpeg",
+        },
+      }),
     },
     {
-      "@context": "https://schema.org",
-      "@type": "ItemList",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "item": {
-            "@type": "Course",
-            "url": "https://www.taxiopatija.hr/taxi-price",
-            "name": "Taxi Opatija - Taxi",
-            "description": "Taxi service pricing 2024.",
-            "provider": {
-              "@type": "Organization",
-              "name": "Taxi Opatija",
-              "sameAs": "https://taxiopatija.hr/taxi-price"
-            }
-          }
-        },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "item": {
-            "@type": "Course",
-            "url": "https://www.taxiopatija.hr/en/rent-a-van",
-            "name": "Taxi Opatija - Rent a van",
-            "description": "Van rental - pricing 2024.",
-            "provider": {
-              "@type": "Organization",
-              "name": "Taxi Opatija",
-              "sameAs": "https://taxiopatija.hr/en/rent-a-van"
-            }
-          }
-        },
-        {
-          "@type": "ListItem",
-          "position": 3,
-          "item": {
-            "@type": "Course",
-            "url": "https://www.taxiopatija.hr/en/rent-a-car",
-            "name": "Taxi Opatija - Rent a car",
-            "description": "Car rental - pricing 2024.",
-            "provider": {
-              "@type": "Organization",
-              "name": "Taxi Opatija",
-              "sameAs": "https://taxiopatija.hr/en/rent-a-car"
-            }
-          }
-        },
-        {
-          "@type": "ListItem",
-          "position": 4,
-          "item": {
-            "@type": "Course",
-            "url": "https://www.taxiopatija.hr/en/transfers",
-            "name": "Taxi Opatija - Transfers",
-            "description": "Transfers to Airport/Cities/Places - pricing 2024.",
-            "provider": {
-              "@type": "Organization",
-              "name": "Taxi Opatija",
-              "sameAs": "https://taxiopatija.hr/en/transfers"
-            }
-          }
-        }
-      ]
-    }]
+      type: "application/ld+json",
+      innerHTML: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "ItemList",
+        itemListElement: [
+          {
+            "@type": "ListItem",
+            position: 1,
+            item: {
+              "@type": "Course",
+              url: "https://www.taxiopatija.hr/taxi-price",
+              name: "Taxi Opatija - Taxi",
+              description: "Taxi service pricing 2024.",
+              provider: {
+                "@type": "Organization",
+                name: "Taxi Opatija",
+                sameAs: "https://taxiopatija.hr/taxi-price",
+              },
+            },
+          },
+          {
+            "@type": "ListItem",
+            position: 2,
+            item: {
+              "@type": "Course",
+              url: "https://www.taxiopatija.hr/en/rent-a-van",
+              name: "Taxi Opatija - Rent a van",
+              description: "Van rental - pricing 2024.",
+              provider: {
+                "@type": "Organization",
+                name: "Taxi Opatija",
+                sameAs: "https://taxiopatija.hr/en/rent-a-van",
+              },
+            },
+          },
+          {
+            "@type": "ListItem",
+            position: 3,
+            item: {
+              "@type": "Course",
+              url: "https://www.taxiopatija.hr/en/rent-a-car",
+              name: "Taxi Opatija - Rent a car",
+              description: "Car rental - pricing 2024.",
+              provider: {
+                "@type": "Organization",
+                name: "Taxi Opatija",
+                sameAs: "https://taxiopatija.hr/en/rent-a-car",
+              },
+            },
+          },
+          {
+            "@type": "ListItem",
+            position: 4,
+            item: {
+              "@type": "Course",
+              url: "https://www.taxiopatija.hr/en/transfers",
+              name: "Taxi Opatija - Transfers",
+              description: "Transfers to Airport/Cities/Places - pricing 2024.",
+              provider: {
+                "@type": "Organization",
+                name: "Taxi Opatija",
+                sameAs: "https://taxiopatija.hr/en/transfers",
+              },
+            },
+          },
+        ],
+      }),
+    },
+  ],
 });
 
-
 useSeoMeta({
-  title:
-    "Taxi Opatija | taxiopatija.hr | 24/7",
+  title: "Taxi Opatija | taxiopatija.hr | 24/7",
   ogTitle:
     "Opatija Taxi #1 | 24/7 | Taxi | Transfers | Car & Van Rentals | Located in Opatija - Transport across Europe",
   description:
