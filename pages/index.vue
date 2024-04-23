@@ -1,7 +1,7 @@
 <template>
 
   <Head>
-    <title>Taxi Opatija | 24/7 Service | Taxi | Transport | Car & Van Rentals</title>
+    <title>Taxi Opatija | 24/7 Service | Taxi | Transfers | Car & Van Rentals</title>
     <link rel="canonical" href="https://taxiopatija.hr/" />
   </Head>
 
@@ -95,6 +95,14 @@
           <div class="flex justify-center">
             <img src="../assets/imgs/logo.webp" alt="Logo Taxi Opatija" class="-mt-5 object-cover w-3/12 sm:w-24" />
           </div>
+          <h2 class="text-base font-normal text-center">
+            <NuxtLink to='/taxi-price' class="cursor-pointer">Taxi</NuxtLink> | <NuxtLink class="cursor-pointer"
+              :to="i18n.locale.value === 'en' ? '/en/transfers' : '/transferi'">{{ $t('transfers') }}</NuxtLink> |
+            <NuxtLink class="cursor-pointer"
+              :to="i18n.locale.value === 'en' ? '/en/rent-a-van' : '/najam-kombi-vozila'">Rent a van</NuxtLink> |
+            <NuxtLink class="cursor-pointer" :to="i18n.locale.value === 'en' ? '/en/rent-a-car' : '/najam-automobila'">
+              Rent a car</NuxtLink>
+          </h2>
           <div class="text-center">
             <h1 class="text-[56px] leading-none font-bold tracking-tight text-gray-900 drop-shadow-md">
               Taxi Opatija
@@ -407,7 +415,7 @@
           <div class="w-80 bg-white rounded-lg shadow-lg mx-2">
             <div class="p-4 w-80">
               <h3 class="text-xl font-semibold mb-2">What is Taxi Opatija?</h3>
-              <p class="text-sm">Taxi Opatija is a renowned tourist agency proud to offer top-notch passenger transport
+              <p class="text-sm">Taxi Opatija is a renowned tourist agency proud to offer top-notch passenger Transfers
                 services both domestically and internationally. Our mission is to ensure comfortable, safe, and reliable
                 travel for all our clients, regardless of destination or travel time.</p>
             </div>
@@ -426,7 +434,7 @@
             <div class="p-4 w-80">
               <h3 class="text-xl font-semibold mb-2">Adaptability!</h3>
               <p class="text-sm mt-3">Whether you're traveling for business or leisure, alone or in a group, Taxi
-                Opatija is your reliable transportation partner. Our service is available 24/7 to ensure you can always
+                Opatija is your reliable Transfersation partner. Our service is available 24/7 to ensure you can always
                 count on us, no matter your needs or the urgency of your travel.</p>
             </div>
           </div>
@@ -444,8 +452,8 @@
           <div class="w-80 bg-white rounded-lg shadow-lg mx-2">
             <div class="p-4 w-80">
               <h3 class="text-xl font-semibold mb-2">Custom arrangements!</h3>
-              <p class="text-sm mt-3">Yes, we offer transportation services for medical appointments, hospital visits,
-                and other healthcare-related needs. Contact us to arrange transportation for your medical appointments.
+              <p class="text-sm mt-3">Yes, we offer Transfersation services for medical appointments, hospital visits,
+                and other healthcare-related needs. Contact us to arrange Transfersation for your medical appointments.
               </p>
             </div>
           </div>
@@ -463,7 +471,7 @@
             <div class="p-4 w-80">
               <h3 class="text-xl font-semibold mb-2">Reliability!</h3>
               <p class="text-sm mt-3">Yes, you can schedule recurring rides for daily commutes or regular appointments
-                to ensure reliable transportation whenever you need it. Contact us to set up a recurring ride schedule
+                to ensure reliable Transfersation whenever you need it. Contact us to set up a recurring ride schedule
                 tailored to your needs.
               </p>
             </div>
@@ -489,8 +497,8 @@
 
           <div class="w-80 bg-white rounded-lg shadow-lg mx-2">
             <div class="p-4 w-80">
-              <h3 class="text-xl font-semibold mb-2">Personalized group transport!</h3>
-              <p class="text-sm mt-3">Absolutely! We specialize in group transportation for events such as weddings,
+              <h3 class="text-xl font-semibold mb-2">Personalized group Transfers!</h3>
+              <p class="text-sm mt-3">Absolutely! We specialize in group Transfersation for events such as weddings,
                 parties, corporate outings, and more. Contact us to discuss your specific requirements and get a
                 personalized quote.
               </p>
@@ -1070,26 +1078,26 @@ const getPeriodOfDay = () => {
 
 
 useHead({
-  title: "Taxi Opatija | 24/7 Service | Taxi | Transport | Car & Van Rentals",
+  title: "Taxi Opatija | 24/7 Service | Taxi | Transfers | Car & Van Rentals",
   htmlAttrs: {
     lang: "en",
   },
   meta: [
     {
       name: "description",
-      content: "Taxi Opatija | 24/7 Service | Taxi | Transports | Car & Van Rentals | Call us now | Phone number +385 98 491 369 | Visit taxiopatija.hr for more information!",
+      content: "Taxi Opatija | 24/7 Service | Taxi | Transfers | Car & Van Rentals | Call us now | Phone number +385 98 491 369 | Visit taxiopatija.hr for more information!",
     },
     { hid: "og:url", property: "og:url", content: "https://taxiopatija.hr" },
     { hid: "og:type", property: "og:type", content: "website" },
     {
       hid: "og:title",
       property: "og:title",
-      content: "Taxi Opatija | 24/7 Service | Taxi | Transports | Car & Van Rentals | Call us now | Phone number +385 98 491 369 | Visit taxiopatija.hr for more information!",
+      content: "Taxi Opatija | 24/7 Service | Taxi | Transfers | Car & Van Rentals | Call us now | Phone number +385 98 491 369 | Visit taxiopatija.hr for more information!",
     },
     {
       hid: "og:description",
       property: "og:description",
-      content: "Taxi Opatija | 24/7 Service | Taxi | Transports | Car & Van Rentals | Call us now | Phone number +385 98 491 369 | Visit taxiopatija.hr for more information!",
+      content: "Taxi Opatija | 24/7 Service | Taxi | Transfers | Car & Van Rentals | Call us now | Phone number +385 98 491 369 | Visit taxiopatija.hr for more information!",
     },
     {
       hid: "og:image",
@@ -1114,7 +1122,7 @@ useHead({
           "contactType": "customer service"
         },
         "logo": "https://taxiopatija.hr/logo.png",
-        "description": "Taxi Opatija provides reliable transportation services in Opatija. We offer 24/7 taxi service, transfers, car rentals, van rentals, and more.",
+        "description": "Taxi Opatija provides reliable Transfersation services in Opatija. We offer 24/7 taxi service, transfers, car rentals, van rentals, and more.",
         "address": {
           "@type": "PostalAddress",
           "streetAddress": "Ul. Dr. Ante Mandića 2",
@@ -1130,13 +1138,13 @@ useHead({
 
 useSeoMeta({
   title:
-    "Taxi Opatija | 24/7 Service | Taxi | Transport | Car & Van Rentals",
+    "Taxi Opatija | 24/7 Service | Taxi | Transfers | Car & Van Rentals",
   ogTitle:
-    "Taxi Opatija | 24/7 Service | Taxi | Transport | Car & Van Rentals",
+    "Taxi Opatija | 24/7 Service | Taxi | Transfers | Car & Van Rentals",
   description:
-    "Taxi Opatija | 24/7 Service | Taxi | Transport | Car & Van Rentals",
+    "Taxi Opatija | 24/7 Service | Taxi | Transfers | Car & Van Rentals",
   ogDescription:
-    "Taxi Opatija | 24/7 Service | Taxi | Transport | Car & Van Rentals",
+    "Taxi Opatija | 24/7 Service | Taxi | Transfers | Car & Van Rentals",
   ogImage: "https://taxiopatija.hr/opatija.jpeg",
   twitterCard: "https://taxiopatija.hr/opatija.jpeg",
 });
