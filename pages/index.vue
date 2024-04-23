@@ -2,6 +2,8 @@
 
   <Head>
     <title>Taxi Opatija | taxiopatija.hr | 24/7</title>
+    <Meta name="description"
+      content="Opatija Taxi #1 | 24/7 | Taxi | Transfers | Car & Van Rentals | Located in Opatija - Transport across Europe" />
     <link rel="canonical" href="https://www.taxiopatija.hr/" />
   </Head>
 
