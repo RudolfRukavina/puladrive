@@ -1,7 +1,7 @@
 <template>
 
   <Head>
-    <title>Taxi Opatija | 24/7 Service | Taxi | Transfers | Car & Van Rentals</title>
+    <title>Taxi Opatija - taxiopatija.hr</title>
     <link rel="canonical" href="https://www.taxiopatija.hr/" />
   </Head>
 
@@ -1078,26 +1078,26 @@ const getPeriodOfDay = () => {
 
 
 useHead({
-  title: "Taxi Opatija | 24/7 Service | Taxi | Transfers | Car & Van Rentals",
+  title: "Taxi Opatija - taxiopatija.hr | 24/7",
   htmlAttrs: {
     lang: "en",
   },
   meta: [
     {
       name: "description",
-      content: "Taxi Opatija | 24/7 Service | Taxi | Transfers | Car & Van Rentals | Call us now | Phone number +385 98 491 369 | Visit taxiopatija.hr for more information!",
+      content: "#1 | 24/7 | TAXI | Transfers | Car & Van Rentals | Located in Opatija - Transport across Europe",
     },
     { hid: "og:url", property: "og:url", content: "https://taxiopatija.hr" },
     { hid: "og:type", property: "og:type", content: "website" },
     {
       hid: "og:title",
       property: "og:title",
-      content: "Taxi Opatija | 24/7 Service | Taxi | Transfers | Car & Van Rentals | Call us now | Phone number +385 98 491 369 | Visit taxiopatija.hr for more information!",
+      content: "#1 | 24/7 | TAXI | Transfers | Car & Van Rentals | Located in Opatija - Transport across Europe",
     },
     {
       hid: "og:description",
       property: "og:description",
-      content: "Taxi Opatija | 24/7 Service | Taxi | Transfers | Car & Van Rentals | Call us now | Phone number +385 98 491 369 | Visit taxiopatija.hr for more information!",
+      content: "#1 | 24/7 | TAXI | Transfers | Car & Van Rentals | Located in Opatija - Transport across Europe",
     },
     {
       hid: "og:image",
@@ -1122,7 +1122,7 @@ useHead({
           "contactType": "customer service"
         },
         "logo": "https://taxiopatija.hr/opatija.jpeg",
-        "description": "Taxi Opatija | 24/7 Service | Taxi | Transfers | Car & Van Rentals | Call us now | Phone number +385 98 491 369 | Visit taxiopatija.hr for more information!",
+        "description": "#1 | 24/7 | TAXI | Transfers | Car & Van Rentals | Located in Opatija - Transport across Europe",
         "address": {
           "@type": "PostalAddress",
           "streetAddress": "Ul. Dr. Ante Mandića 2",
@@ -1138,13 +1138,13 @@ useHead({
 
 useSeoMeta({
   title:
-    "Taxi Opatija | 24/7 Service | Taxi | Transfers | Car & Van Rentals",
+    "Taxi Opatija - taxiopatija.hr",
   ogTitle:
-    "Taxi Opatija | 24/7 Service | Taxi | Transfers | Car & Van Rentals",
+    "#1 | 24/7 | TAXI | Transfers | Car & Van Rentals | Located in Opatija - Transport across Europe",
   description:
-    "Taxi Opatija | 24/7 Service | Taxi | Transfers | Car & Van Rentals",
+    "#1 | 24/7 | TAXI | Transfers | Car & Van Rentals | Located in Opatija - Transport across Europe",
   ogDescription:
-    "Taxi Opatija | 24/7 Service | Taxi | Transfers | Car & Van Rentals",
+    "#1 | 24/7 | TAXI | Transfers | Car & Van Rentals | Located in Opatija - Transport across Europe",
   ogImage: "https://taxiopatija.hr/opatija.jpeg",
   twitterCard: "https://taxiopatija.hr/opatija.jpeg",
 });
