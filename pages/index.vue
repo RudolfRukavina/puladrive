@@ -1,19 +1,11 @@
 <template>
 
-
-  <head>
+  <Head>
     <title>Taxi Opatija | 24/7 Service | Taxi | Transports | Car & Van Rentals | Call +385 98 491 369</title>
     <meta name="description"
       content="Looking for reliable taxi services in Opatija? Taxi Opatija offers 24/7 transportation solutions, including taxi rides, transfers, car rentals, van rentals, and more. Call us at +385 98 491 369 or visit our website for inquiry." />
-    <meta property="og:url" content="https://taxiopatija.hr" />
-    <meta property="og:type" content="website" />
-    <meta property="og:title"
-      content="Looking for reliable taxi services in Opatija? Taxi Opatija offers 24/7 transportation solutions, including taxi rides, transfers, car rentals, van rentals, and more. Call us at +385 98 491 369 or visit our website for inquiry." />
-    <meta property="og:description"
-      content="Looking for reliable taxi services in Opatija? Taxi Opatija offers 24/7 transportation solutions, including taxi rides, transfers, car rentals, van rentals, and more. Call us at +385 98 491 369 or visit our website for inquiry." />
-    <meta property="og:image" content="https://taxiopatija.hr/opatija.jpeg" />
     <link rel="canonical" href="https://taxiopatija.hr/" />
-  </head>
+  </Head>
 
   <header>
     <div class="bg-transparent backdrop-blur-[1px]  fixed bottom-0 z-50 w-full">
