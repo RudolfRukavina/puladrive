@@ -101,13 +101,13 @@
           $t("transfers") }}</NuxtLink>
             |
             <NuxtLink class="cursor-pointer" :to="i18n.locale.value === 'en'
-            ? '/en/rent-a-van'
-            : '/najam-kombi-vozila'
+          ? '/en/rent-a-van'
+          : '/najam-kombi-vozila'
           ">Rent a van</NuxtLink>
             |
             <NuxtLink class="cursor-pointer" :to="i18n.locale.value === 'en'
-            ? '/en/rent-a-car'
-            : '/najam-automobila'
+          ? '/en/rent-a-car'
+          : '/najam-automobila'
           ">
               Rent a car</NuxtLink>
           </h2>
@@ -332,8 +332,8 @@
             <article
               class="hover:animate-background rounded-xl bg-gradient-to-r from-gray-400 via-slate-500 to-gray-400 p-0.5 shadow-md transition hover:bg-[length:400%_400%] hover:shadow-sm hover:[animation-duration:_4s]">
               <NuxtLink :to="i18n.locale.value === 'en'
-            ? '/en/rent-a-van'
-            : '/najam-kombi-vozila'
+          ? '/en/rent-a-van'
+          : '/najam-kombi-vozila'
           ">
                 <div class="rounded-[10px] bg-gray-50 p-4 sm:p-6 h-full">
                   <div class="flex justify-between mt-1">
@@ -361,8 +361,8 @@
             <article
               class="hover:animate-background rounded-xl bg-gradient-to-r from-gray-400 via-slate-500 to-gray-400 p-0.5 shadow-md transition hover:bg-[length:400%_400%] hover:shadow-sm hover:[animation-duration:_4s]">
               <NuxtLink :to="i18n.locale.value === 'en'
-            ? '/en/rent-a-car'
-            : '/najam-automobila'
+          ? '/en/rent-a-car'
+          : '/najam-automobila'
           ">
                 <div class="rounded-[10px] bg-gray-50 p-4 sm:p-6 h-full">
                   <div class="flex justify-between mt-1">
@@ -718,16 +718,16 @@
             </li>
             <li class="mt-2 inline-block mr-2 md:block md:mr-0">
               <NuxtLink :to="i18n.locale.value === 'en'
-            ? '/en/rent-a-van'
-            : '/najam-kombi-vozila'
+          ? '/en/rent-a-van'
+          : '/najam-kombi-vozila'
           " class="no-underline hover:underline text-gray-800 hover:text-pink-500">
                 {{ $t("servicesRentVan") }}
               </NuxtLink>
             </li>
             <li class="mt-2 inline-block mr-2 md:block md:mr-0">
               <NuxtLink :to="i18n.locale.value === 'en'
-            ? '/en/rent-a-car'
-            : '/najam-automobila'
+          ? '/en/rent-a-car'
+          : '/najam-automobila'
           " class="no-underline hover:underline text-gray-800 hover:text-pink-500">{{ $t("servicesRentCar") }}
               </NuxtLink>
             </li>
@@ -1196,6 +1196,7 @@ useHead({
       innerHTML: JSON.stringify({
         "@context": "https://schema.org",
         "@type": "LocalBusiness",
+        image: "https://www.taxiopatija.hr/opatija.jpeg",
         name: "Taxi Opatija",
         description:
           "Taxi Opatija is a renowned tourist agency company headquartered in Opatija, Croatia. Taxi Opatija offers top-notch transfer services both domestically and internationally with a mission to ensure comfortable, safe, and reliable travel for all clients, regardless of destination or travel time.",
@@ -1234,6 +1235,16 @@ useHead({
           "@type": "LocalBusiness",
           name: "Taxi Opatija - taxiopatija.hr",
           image: "https://www.taxiopatija.hr/opatija.jpeg",
+          telephone: "+38598491369",
+          priceRange: "$$",
+          address: {
+            "@type": "PostalAddress",
+            streetAddress: "Ul. Dr. Ante Mandića 2",
+            addressLocality: "Opatija",
+            addressCountry: "Croatia",
+            addressRegion: "Primorje-Gorski Kotar County",
+            postalCode: "51410",
+          },
         },
       }),
     },
@@ -1256,6 +1267,18 @@ useHead({
                 name: "Taxi Opatija",
                 sameAs: "https://taxiopatija.hr/taxi-price",
               },
+              offers: {
+                "@type": "AggregateOffer",
+                "offerCount": 2,
+                "lowPrice": 1.60,
+                "highPrice": 2.00,
+                "priceCurrency": "EUR"
+              },
+              "hasCourseInstance": [{
+                "@type": "CourseInstance",
+                "courseMode": "Onsite",
+                "location": "Opatija",
+              }]
             },
           },
           {
@@ -1271,6 +1294,18 @@ useHead({
                 name: "Taxi Opatija",
                 sameAs: "https://taxiopatija.hr/en/rent-a-van",
               },
+              offers: {
+                "@type": "AggregateOffer",
+                "offerCount": 1,
+                "lowPrice": 100.00,
+                "highPrice": 125.00,
+                "priceCurrency": "EUR"
+              },
+              "hasCourseInstance": [{
+                "@type": "CourseInstance",
+                "courseMode": "Onsite",
+                "location": "Opatija",
+              }]
             },
           },
           {
@@ -1286,6 +1321,18 @@ useHead({
                 name: "Taxi Opatija",
                 sameAs: "https://taxiopatija.hr/en/rent-a-car",
               },
+              offers: {
+                "@type": "AggregateOffer",
+                "offerCount": 1,
+                "lowPrice": 50.00,
+                "highPrice": 80.00,
+                "priceCurrency": "EUR"
+              },
+              "hasCourseInstance": [{
+                "@type": "CourseInstance",
+                "courseMode": "Onsite",
+                "location": "Opatija",
+              }]
             },
           },
           {
@@ -1301,6 +1348,18 @@ useHead({
                 name: "Taxi Opatija",
                 sameAs: "https://taxiopatija.hr/en/transfers",
               },
+              offers: {
+                "@type": "AggregateOffer",
+                "offerCount": 1,
+                "lowPrice": 80.00,
+                "highPrice": 350.00,
+                "priceCurrency": "EUR"
+              },
+              "hasCourseInstance": [{
+                "@type": "CourseInstance",
+                "courseMode": "Onsite",
+                "location": "Opatija",
+              }]
             },
           },
         ],
