@@ -1089,7 +1089,7 @@ useHead({
       name: "description",
       content: "Opatija Taxi #1 | 24/7 | Taxi | Transfers | Car & Van Rentals | Located in Opatija - Transport across Europe",
     },
-    { hid: "og:url", property: "og:url", content: "https://taxiopatija.hr" },
+    { hid: "og:url", property: "og:url", content: "https://www.taxiopatija.hr" },
     { hid: "og:type", property: "og:type", content: "website" },
     {
       hid: "og:title",
@@ -1104,7 +1104,7 @@ useHead({
     {
       hid: "og:image",
       property: "og:image",
-      content: "https://taxiopatija.hr/opatija.jpeg",
+      content: "https://www.taxiopatija.hr/opatija.jpeg",
     },
   ],
   bodyAttrs: {
@@ -1114,27 +1114,140 @@ useHead({
     {
       type: "application/ld+json",
       innerHTML: JSON.stringify({
-        "@context": "http://schema.org",
+        "@context": "https://schema.org",
         "@type": "Organization",
+        "image": "https://www.taxiopatija.hr/opatija.jpeg",
+        "url": "https://www.taxiopatija.hr",
+        "sameAs": ["https://taxiopatija.hr"],
+        "logo": "https://www.taxiopatija.hr/opatija.jpeg",
         "name": "Taxi Opatija",
-        "url": "https://taxiopatija.hr",
-        "contactPoint": {
-          "@type": "ContactPoint",
-          "telephone": "+38598491369",
-          "contactType": "customer service"
-        },
-        "logo": "https://taxiopatija.hr/opatija.jpeg",
-        "description": "Opatija Taxi #1 | 24/7 | Taxi | Transfers | Car & Van Rentals | Located in Opatija - Transport across Europe",
+        "description": "Taxi Opatija is a renowned tourist agency company headquartered in Opatija, Croatia. Taxi Opatija offers top-notch transfer services both domestically and internationally with a mission to ensure comfortable, safe, and reliable travel for all clients, regardless of destination or travel time.",
+        "email": "anterukavina@yahoo.com.hr",
+        "telephone": "+38598491369",
+
         "address": {
           "@type": "PostalAddress",
           "streetAddress": "Ul. Dr. Ante Mandića 2",
           "addressLocality": "Opatija",
+          "addressCountry": "Croatia",
+          "addressRegion": "Primorje-Gorski Kotar County",
           "postalCode": "51410",
-          "addressCountry": "Croatia"
+        },
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": "+38598491369",
+          "email": "anterukavina@yahoo.com.hr"
         }
       }),
     },
-  ],
+    {
+      "type": "application/ld+json",
+      "innerHTML": JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Taxi Opatija",
+        "description": "Taxi Opatija is a renowned tourist agency company headquartered in Opatija, Croatia. Taxi Opatija offers top-notch transfer services both domestically and internationally with a mission to ensure comfortable, safe, and reliable travel for all clients, regardless of destination or travel time.",
+        "url": "https://www.taxiopatija.hr",
+        "logo": "https://www.taxiopatija.hr/opatija.jpeg",
+        "openingHours": "Mo,Tu,We,Th,Fr 00:00-24:00",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Ul. Dr. Ante Mandića 2",
+          "addressLocality": "Opatija",
+          "addressCountry": "Croatia",
+          "addressRegion": "Primorje-Gorski Kotar County",
+          "postalCode": "51410",
+        },
+        "telephone": "+38598491369",
+        "priceRange": "$$"
+      })
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Review",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "5",
+        "bestRating": "5"
+      },
+      "author": {
+        "@type": "Person",
+        "name": "Vedran Mihailovic"
+      },
+      "datePublished": "2024-04-23",
+      "description": "Vrhunska i brza usluga! Vozač vrlo pristojan i uljudan.",
+      "itemReviewed": {
+        "@type": "LocalBusiness",
+        "name": "Taxi Opatija - taxiopatija.hr",
+        "image": "https://www.taxiopatija.hr/opatija.jpeg"
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "ItemList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@type": "Course",
+            "url": "https://www.taxiopatija.hr/taxi-price",
+            "name": "Taxi Opatija - Taxi",
+            "description": "Taxi service pricing 2024.",
+            "provider": {
+              "@type": "Organization",
+              "name": "Taxi Opatija",
+              "sameAs": "https://taxiopatija.hr/taxi-price"
+            }
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@type": "Course",
+            "url": "https://www.taxiopatija.hr/en/rent-a-van",
+            "name": "Taxi Opatija - Rent a van",
+            "description": "Van rental - pricing 2024.",
+            "provider": {
+              "@type": "Organization",
+              "name": "Taxi Opatija",
+              "sameAs": "https://taxiopatija.hr/en/rent-a-van"
+            }
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "item": {
+            "@type": "Course",
+            "url": "https://www.taxiopatija.hr/en/rent-a-car",
+            "name": "Taxi Opatija - Rent a car",
+            "description": "Car rental - pricing 2024.",
+            "provider": {
+              "@type": "Organization",
+              "name": "Taxi Opatija",
+              "sameAs": "https://taxiopatija.hr/en/rent-a-car"
+            }
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "item": {
+            "@type": "Course",
+            "url": "https://www.taxiopatija.hr/en/transfers",
+            "name": "Taxi Opatija - Transfers",
+            "description": "Transfers to Airport/Cities/Places - pricing 2024.",
+            "provider": {
+              "@type": "Organization",
+              "name": "Taxi Opatija",
+              "sameAs": "https://taxiopatija.hr/en/transfers"
+            }
+          }
+        }
+      ]
+    }]
 });
 
 
@@ -1147,7 +1260,7 @@ useSeoMeta({
     "Opatija Taxi #1 | 24/7 | Taxi | Transfers | Car & Van Rentals | Located in Opatija - Transport across Europe",
   ogDescription:
     "Opatija Taxi #1 | 24/7 | Taxi | Transfers | Car & Van Rentals | Located in Opatija - Transport across Europe",
-  ogImage: "https://taxiopatija.hr/opatija.jpeg",
-  twitterCard: "https://taxiopatija.hr/opatija.jpeg",
+  ogImage: "https://www.taxiopatija.hr/opatija.jpeg",
+  twitterCard: "https://www.taxiopatija.hr/opatija.jpeg",
 });
 </script>
