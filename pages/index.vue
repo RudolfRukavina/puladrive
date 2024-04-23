@@ -1,9 +1,7 @@
 <template>
 
   <Head>
-    <title>Taxi Opatija | 24/7 Service | Taxi | Transports | Car & Van Rentals | Call +385 98 491 369</title>
-    <meta name="description"
-      content="Looking for reliable taxi services in Opatija? Taxi Opatija offers 24/7 transportation solutions, including taxi rides, transfers, car rentals, van rentals, and more. Call us at +385 98 491 369 or visit our website for inquiry." />
+    <title>Taxi Opatija | 24/7 Service | Taxi | Transport | Car & Van Rentals</title>
     <link rel="canonical" href="https://taxiopatija.hr/" />
   </Head>
 
@@ -1072,33 +1070,32 @@ const getPeriodOfDay = () => {
 
 
 useHead({
-  title: "Taxi Opatija | 24/7 Service | Taxi | Transports | Car & Van Rentals | Call +385 98 491 369",
+  title: "Taxi Opatija | 24/7 Service | Taxi | Transport | Car & Van Rentals",
   htmlAttrs: {
     lang: "en",
   },
   meta: [
     {
       name: "description",
-      content: "Looking for reliable taxi services in Opatija? Taxi Opatija offers 24/7 transportation solutions, including taxi rides, transfers, car rentals, van rentals, and more. Call us at +385 98 491 369 or visit our website for inquiry.",
+      content: "Taxi Opatija | 24/7 Service | Taxi | Transports | Car & Van Rentals | Call us now | Phone number +385 98 491 369 | Visit taxiopatija.hr for more information!",
     },
     { hid: "og:url", property: "og:url", content: "https://taxiopatija.hr" },
     { hid: "og:type", property: "og:type", content: "website" },
     {
       hid: "og:title",
       property: "og:title",
-      content: "Looking for reliable taxi services in Opatija? Taxi Opatija offers 24/7 transportation solutions, including taxi rides, transfers, car rentals, van rentals, and more. Call us at +385 98 491 369 or visit our website for inquiry.",
+      content: "Taxi Opatija | 24/7 Service | Taxi | Transports | Car & Van Rentals | Call us now | Phone number +385 98 491 369 | Visit taxiopatija.hr for more information!",
     },
     {
       hid: "og:description",
       property: "og:description",
-      content: "Looking for reliable taxi services in Opatija? Taxi Opatija offers 24/7 transportation solutions, including taxi rides, transfers, car rentals, van rentals, and more. Call us at +385 98 491 369 or visit our website for inquiry.",
+      content: "Taxi Opatija | 24/7 Service | Taxi | Transports | Car & Van Rentals | Call us now | Phone number +385 98 491 369 | Visit taxiopatija.hr for more information!",
     },
     {
       hid: "og:image",
       property: "og:image",
       content: "https://taxiopatija.hr/opatija.jpeg",
     },
-    { rel: "canonical", href: "https://taxiopatija.hr/" },
   ],
   bodyAttrs: {
     class: "",
@@ -1133,13 +1130,13 @@ useHead({
 
 useSeoMeta({
   title:
-    "Taxi Opatija | 24/7 Service | Taxi | Transports | Car & Van Rentals | Call +385 98 491 369",
+    "Taxi Opatija | 24/7 Service | Taxi | Transport | Car & Van Rentals",
   ogTitle:
-    "Taxi Opatija | 24/7 Service | Taxi | Transports | Car & Van Rentals | Call +385 98 491 369",
+    "Taxi Opatija | 24/7 Service | Taxi | Transport | Car & Van Rentals",
   description:
-    "Taxi Opatija | 24/7 Service | Taxi | Transports | Car & Van Rentals | Call +385 98 491 369",
+    "Taxi Opatija | 24/7 Service | Taxi | Transport | Car & Van Rentals",
   ogDescription:
-    "Taxi Opatija | 24/7 Service | Taxi | Transports | Car & Van Rentals | Call +385 98 491 369",
+    "Taxi Opatija | 24/7 Service | Taxi | Transport | Car & Van Rentals",
   ogImage: "https://taxiopatija.hr/opatija.jpeg",
   twitterCard: "https://taxiopatija.hr/opatija.jpeg",
 });

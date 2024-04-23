@@ -1,16 +1,7 @@
 <template>
 
   <Head>
-    <title>Taxi Opatija | About Us | 24/7 Service | Taxi | Transports | Car & Van Rentals | Call +385 98 491 369</title>
-    <meta name="description"
-      content="About us | Taxi Opatija | Best service at the best price | Available 24 hours every day | Quality! | Adaptability! | Best at what we do! | Reliability! | Comfort! | Safety! | Wi-Fi!" />
-    <meta property="og:url" content="https://taxiopatija.hr" />
-    <meta property="og:type" content="website" />
-    <meta property="og:title"
-      content="About us | Taxi Opatija | Best service at the best price | Available 24 hours every day | Quality! | Adaptability! | Best at what we do! | Reliability! | Comfort! | Safety! | Wi-Fi!" />
-    <meta property="og:description"
-      content="About us | Taxi Opatija | Best service at the best price | Available 24 hours every day | Quality! | Adaptability! | Best at what we do! | Reliability! | Comfort! | Safety! | Wi-Fi!" />
-    <meta property="og:image" content="https://taxiopatija.hr/opatija.jpeg" />
+    <title>About us | Taxi Opatija | Taxi | Transport | Car & Van Rentals</title>
   </Head>
 
   <header>
@@ -651,7 +642,7 @@ onMounted(() => {
 
 useHead({
   title:
-    "Taxi Opatija | About Us | 24/7 Service | Taxi | Transports | Car & Van Rentals | Call +385 98 491 369",
+    "About us | Taxi Opatija | Taxi | Transport | Car & Van Rentals",
   htmlAttrs: {
     lang: "en",
   },
@@ -659,7 +650,7 @@ useHead({
     {
       name: "description",
       content:
-        "About us | Taxi Opatija | Best service at the best price | Available 24 hours every day | Quality! | Adaptability! | Best at what we do! | Reliability! | Comfort! | Safety! | Wi-Fi!",
+        "About us | Taxi Opatija | Best service at the best price | Available 24 hours every day | Quality! | Adaptability! | Best at what we do! | Reliability! | Comfort!",
     },
     { hid: "og:url", property: "og:url", content: "https://taxiopatija.hr" },
     { hid: "og:type", property: "og:type", content: "website" },
@@ -667,13 +658,13 @@ useHead({
       hid: "og:title",
       property: "og:title",
       content:
-        "About us | Taxi Opatija | Best service at the best price | Available 24 hours every day | Quality! | Adaptability! | Best at what we do! | Reliability! | Comfort! | Safety! | Wi-Fi!",
+        "About us | Taxi Opatija | Best service at the best price | Available 24 hours every day | Quality! | Adaptability! | Best at what we do! | Reliability! | Comfort!",
     },
     {
       hid: "og:description",
       property: "og:description",
       content:
-        "About us | Taxi Opatija | Best service at the best price | Available 24 hours every day | Quality! | Adaptability! | Best at what we do! | Reliability! | Comfort! | Safety! | Wi-Fi!",
+        "About us | Taxi Opatija | Best service at the best price | Available 24 hours every day | Quality! | Adaptability! | Best at what we do! | Reliability! | Comfort!",
     },
     {
       hid: "og:image",
@@ -714,13 +705,13 @@ useHead({
 
 useSeoMeta({
   title:
-    "About us | Taxi Opatija | Best service at the best price | Available 24 hours every day | Quality! | Adaptability! | Best at what we do! | Reliability! | Comfort! | Safety! | Wi-Fi!",
+    "About us | Taxi Opatija | Best service at the best price | Available 24 hours every day | Quality! | Adaptability! | Best at what we do! | Reliability! | Comfort!",
   ogTitle:
-    "About us | Taxi Opatija | Best service at the best price | Available 24 hours every day | Quality! | Adaptability! | Best at what we do! | Reliability! | Comfort! | Safety! | Wi-Fi!",
+    "About us | Taxi Opatija | Best service at the best price | Available 24 hours every day | Quality! | Adaptability! | Best at what we do! | Reliability! | Comfort!",
   description:
-    "About us | Taxi Opatija | Best service at the best price | Available 24 hours every day | Quality! | Adaptability! | Best at what we do! | Reliability! | Comfort! | Safety! | Wi-Fi!",
+    "About us | Taxi Opatija | Best service at the best price | Available 24 hours every day | Quality! | Adaptability! | Best at what we do! | Reliability! | Comfort!",
   ogDescription:
-    "About us | Taxi Opatija | Best service at the best price | Available 24 hours every day | Quality! | Adaptability! | Best at what we do! | Reliability! | Comfort! | Safety! | Wi-Fi!",
+    "About us | Taxi Opatija | Best service at the best price | Available 24 hours every day | Quality! | Adaptability! | Best at what we do! | Reliability! | Comfort!",
   ogImage: "https://taxiopatija.hr/opatija.jpeg",
   twitterCard: "https://taxiopatija.hr/opatija.jpeg",
 });
