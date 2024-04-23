@@ -5,6 +5,7 @@
     <Meta name="description"
       content="Opatija Taxi #1 | 24/7 | Taxi | Transfers | Car & Van Rentals | Located in Opatija - Transport across Europe" />
     <link rel="canonical" href="https://www.taxiopatija.hr/" />
+    <link rel="icon" href="/favicon.ico">
   </Head>
 
   <header>
@@ -1161,6 +1162,15 @@ useHead({
     class: "",
   },
   script: [
+    {
+      type: "application/ld+json",
+      innerHTML: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "The station for all transportation needs!",
+        "url": "https://www.taxiopatija.hr/"
+      })
+    },
     {
       type: "application/ld+json",
       innerHTML: JSON.stringify({
