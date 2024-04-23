@@ -2,7 +2,7 @@
 
   <Head>
     <title>Taxi Opatija | 24/7 Service | Taxi | Transfers | Car & Van Rentals</title>
-    <link rel="canonical" href="https://taxiopatija.hr/" />
+    <link rel="canonical" href="https://www.taxiopatija.hr/" />
   </Head>
 
   <header>
