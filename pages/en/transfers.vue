@@ -148,6 +148,19 @@
       </div>
       <div class="flex justify-center w-full">
         <div class="border mx-5 max-w-lg mt-10 border-black custom-shadow rounded-lg p-6 relative bg-white pl-10">
+          <h3 class="text-3xl inline-block text-gray-900 mb-2 drop-shadow-md" :class="selectedTransfer.transferTitle ? 'text-2xl' : 'text-3xl'
+          ">
+            {{
+          selectedTransfer.transferTitle
+            ? selectedTransfer.transferTitle
+            : "Transfers"
+        }}
+          </h3>
+          <p class="text-gray-500 text-sm pb-3">
+            {{ selectedTransfer.transferSubtitle ? selectedTransfer.transferSubtitle : baseSubtitle }}
+
+          </p>
+          <hr />
           <div>
             <h3 class="text-xl text-gray-900 mb-4">Choose an airport</h3>
 
