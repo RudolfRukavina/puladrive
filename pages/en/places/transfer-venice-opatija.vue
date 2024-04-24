@@ -11,8 +11,8 @@
     <div class="bg-transparent backdrop-blur-[1px] fixed bottom-0 z-50 w-full">
       <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl px-3 pb-2">
         <NuxtLink :to="{ path: '/', hash: '#naslovnica' }" class="flex items-center space-x-3 rtl:space-x-reverse">
-          <img src="../../../assets/imgs/logo.png" alt="taxi opatija logo"
-            class="w-14 h-[42px]  inline-block rounded-xl">
+          <img src="../../../assets/imgs/taxiopatijalogo.png" title="Taxi Opatija's business image, Logo"
+            alt="Taxi Opatija, logo" class="w-14 h-[42px]  inline-block rounded-xl">
         </NuxtLink>
         <div class="flex items-center space-x-6 rtl:space-x-reverse">
           <a href="viber://chat?number=%2B38598491369">
@@ -93,8 +93,8 @@
       <div class="relative isolate px-6 lg:px-8">
         <div class="mx-auto max-w-2xl pt-10">
           <div class="flex justify-center">
-            <img src="../../../assets/imgs/logo.webp" alt="Logo Taxi Opatija"
-              class="-mt-5 object-cover w-3/12 sm:w-24" />
+            <img src="../../../assets/imgs/taxiopatijalogo.webp" alt="Taxi Opatija Business Logo Image"
+              title="Taxi Opatija, logo" class="-mt-5 object-cover w-3/12 sm:w-24" />
           </div>
           <div class="text-center mb-6">
             <h1 class="text-[56px] leading-none font-bold tracking-tight text-gray-900">
@@ -592,8 +592,8 @@
         <div class="flex-1 mb-6 text-black">
           <NuxtLink class="text-pink-600 no-underline hover:no-underline font-bold text-2xl lg:text-4xl"
             :to="{ path: '/', hash: '#naslovnica' }">alt="taxi opatija logo
-            <img src="../../../assets/imgs/logo.png" alt="taxi opatija logo"
-              class="w-20 h-[60px]  inline-block me-3 rounded-xl">
+            <img src="../../../assets/imgs/taxiopatijalogo.png" title="Taxi Opatija's business image, Logo"
+              alt="Taxi Opatija, logo" class="w-20 h-[60px]  inline-block me-3 rounded-xl">
           </NuxtLink>
         </div>
         <div class="flex-1">

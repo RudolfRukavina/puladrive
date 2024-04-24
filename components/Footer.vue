@@ -80,7 +80,7 @@
         <div class="flex-1 mb-6 text-black">
           <a class="text-pink-600 no-underline hover:no-underline font-bold text-2xl lg:text-4xl" href="#">
             <!--Icon from: http://www.potlabicons.com/ -->
-            <img src="../assets/img/ktourslogo.png" alt="taxi opatija logo"
+            <img src="../assets/img/ktourslogo.png" title="Taxi Opatija's business image, Logo" alt="Taxi Opatija, logo"
               class="h-14 w-14  border-4 border-gray-50  inline-block me-3 rounded-xl">
 
           </a>
