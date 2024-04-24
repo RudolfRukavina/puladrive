@@ -119,7 +119,7 @@
           </h2>
           <div class="text-center">
             <h1 class="text-[56px] leading-none tracking-tight text-gray-900 drop-shadow-md">
-              <strong>Taxi Opatija</strong><strong class="text-transparent absolute text-xs"> Abbazia Taxi</strong>
+              <strong>Taxi Opatija</strong>
             </h1>
 
             <h2 class="text-base font-bold tracking-tight text-gray-900">
@@ -1152,7 +1152,7 @@ useHead({
       hid: "og:title",
       property: "og:title",
       content:
-        "Opatija Taxi #1 | 24/7 | Taxi | Transfers | Car & Van Rentals | Located in Opatija - Transport across Europe",
+        "Taxi Opatija | The station for all transportation needs! | 24/7",
     },
     {
       hid: "og:description",
@@ -1273,7 +1273,7 @@ useHead({
 useSeoMeta({
   title: "Taxi Opatija | The station for all transportation needs! | 24/7",
   ogTitle:
-    "Opatija Taxi #1 | 24/7 | Taxi | Transfers | Car & Van Rentals | Located in Opatija - Transport across Europe",
+    "Taxi Opatija | The station for all transportation needs! | 24/7",
   description:
     "Opatija Taxi #1 | 24/7 | Taxi | Transfers | Car & Van Rentals | Located in Opatija - Transport across Europe",
   ogDescription:

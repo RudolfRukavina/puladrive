@@ -1,10 +1,9 @@
 <template>
 
   <Head>
-    <Title>Rent a car | Pricing 2024. | Taxi Opatija | 0 - 24
+    <Title>Najam automobila | Cijena 2024. | Taxi Opatija
     </Title>
-    <Meta name="description"
-      content="Rent a car | Pricing 2024. | Taxi Opatija | Best service at the best price | Available 24 hours every day | Rent a car & more" />
+    <Meta name="description" content="24/7 | Najam automobila (3+1) | Cijena | 50 - 80€ / dan | Taxi Opatija" />
   </Head>
 
   <header>
@@ -650,97 +649,74 @@ const selectedItemsText = computed(() => {
 });
 
 useHead({
-  title:
-    "Rent a car price | Taxi Opatija | 0 - 24 | Taxi & more",
+  title: "Najam automobila | Cijena 2024. | Taxi Opatija",
   htmlAttrs: {
-    lang: "en",
+    lang: "hr",
   },
-
   meta: [
     {
       name: "description",
       content:
-        "Taxi Opatija | Best service at the best price | Available 24 hours every day | Taxi & more | taxiopatija.hr",
+        "24/7 | Najam automobila (3+1) | Cijena | 50 - 80€ / dan | Taxi Opatija",
     },
     { hid: "og:url", property: "og:url", content: "https://taxiopatija.hr" },
     { hid: "og:type", property: "og:type", content: "website" },
     {
       hid: "og:title",
       property: "og:title",
-      content:
-        "Taxi Opatija | Best service at the best price | Available 24 hours every day | Taxi & more | taxiopatija.hr",
+      content: "Najam automobila | Cijena 2024. | Taxi Opatija",
     },
     {
       hid: "og:description",
       property: "og:description",
       content:
-        "Taxi Opatija | Best service at the best price | Available 24 hours every day | Taxi & more | taxiopatija.hr",
+        "24/7 | Najam automobila (3+1) | Cijena | 50 - 80€ / dan | Taxi Opatija",
     },
     {
       hid: "og:image",
       property: "og:image",
-      content: "https://www.taxiopatija.hr/opatija.jpeg",
+      content: "https://www.taxiopatija.hr/cars.jpg",
     },
-    // Structured Data Markup for Home Page
+  ],
+  bodyAttrs: {
+    class: "",
+  },
+  script: [
     {
-      hid: "structured-data-home",
       type: "application/ld+json",
       innerHTML: JSON.stringify({
         "@context": "http://schema.org",
         "@type": "Organization",
-        name: "Taxi Opatija",
-        url: "https://taxiopatija.hr",
+        name: "Taxi Opatija Najam Automobila",
+        url: "https://www.taxiopatija.hr/najam-automobila",
         contactPoint: {
           "@type": "ContactPoint",
           telephone: "+38598491369",
           contactType: "customer service",
         },
-      }),
-    },
-    // Structured Data Markup for /onama Page
-    {
-      hid: "structured-data-onama",
-      type: "application/ld+json",
-      innerHTML: JSON.stringify({
-        "@context": "http://schema.org",
-        "@type": "WebPage",
-        name: "O nama | Taxi Opatija",
-        url: "https://www.taxiopatija.hr/onama",
+        logo: "https://www.taxiopatija.hr/taxiopatijalogo.png",
         description:
-          "O nama | Saznajte više o nama | Visit taxiopatija.hr/onama",
-      }),
-    },
-    // Structured Data Markup for /usluge Page
-    {
-      hid: "structured-data-usluge",
-      type: "application/ld+json",
-      innerHTML: JSON.stringify({
-        "@context": "http://schema.org",
-        "@type": "WebPage",
-        name: "Usluge | Taxi Opatija",
-        url: "https://www.taxiopatija.hr/usluge",
-        description:
-          "Usluge | Pregledajte naše usluge | Taxi | Transfers | Excursions | Rent a Van | Rent a Car | Visit taxiopatija.hr/usluge",
+          "24/7 | Najam automobila (3+1) | Cijena | 50 - 80€ / dan | Taxi Opatija",
+        address: {
+          "@type": "PostalAddress",
+          streetAddress: "Ul. Dr. Ante Mandića 2",
+          addressLocality: "Opatija",
+          postalCode: "51410",
+          addressCountry: "Croatia",
+        },
       }),
     },
   ],
-
-  bodyAttrs: {
-    class: "",
-  },
-  script: [],
 });
 
 useSeoMeta({
-  title:
-    "Taxi Opatija | Best service at the best price | Available 24 hours every day | Taxi & more | taxiopatija.hr",
-  ogTitle:
-    "Taxi Opatija | Best service at the best price | Available 24 hours every day | Taxi & more | taxiopatija.hr",
+  title: "Najam automobila | Cijena 2024. | Taxi Opatija",
+  ogTitle: "Najam automobila | Cijena 2024. | Taxi Opatija",
   description:
-    "Taxi Opatija | Best service at the best price | Available 24 hours every day | Taxi & more | taxiopatija.hr",
+    "24/7 | Najam automobila (3+1) | Cijena | 50 - 80€ / dan | Taxi Opatija",
   ogDescription:
-    "Taxi Opatija | Best service at the best price | Available 24 hours every day | Taxi & more | taxiopatija.hr",
-  ogImage: "https://www.taxiopatija.hr/opatija.jpeg",
-  twitterCard: "https://www.taxiopatija.hr/opatija.jpeg",
+    "24/7 | Najam automobila (3+1) | Cijena | 50 - 80€ / dan | Taxi Opatija",
+  ogImage: "https://www.taxiopatija.hr/cars.jpg",
+  twitterCard: "https://www.taxiopatija.hr/cars.jpg",
 });
 </script>

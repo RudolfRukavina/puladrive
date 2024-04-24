@@ -1,20 +1,16 @@
 <template>
 
   <Head>
-    <Title>Taxi service | Pricing 2024. | Taxi Opatija | 0 - 24
-    </Title>
-    <Meta name="description"
-      content="Taxi service | Pricing 2024. | Taxi Opatija | Best service at the best price | Available 24 hours every day | Taxi & more" />
+    <title>Taxi price | 2024. | Taxi Opatija</title>
+    <Meta name="description" content="Taxi by Modern vans (8+1) & Cars (3+1) | Price | Initial: 4.00€ | Day - 1.60€ per
+      km | Night 2.00€ per km | Taxi Opatija" />
   </Head>
-
   <header>
-
-
-    <div class="bg-transparent backdrop-blur-[1px]  fixed bottom-0 z-50 w-full">
+    <div class="bg-transparent backdrop-blur-[1px] fixed bottom-0 z-50 w-full">
       <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl px-3 pb-2">
         <NuxtLink :to="{ path: '/', hash: '#naslovnica' }" class="flex items-center space-x-3 rtl:space-x-reverse">
           <img src="../assets/imgs/taxiopatijalogo.png" title="Taxi Opatija's business image, Logo"
-            alt="Taxi Opatija, logo" class="w-14 h-[42px]  inline-block rounded-xl">
+            alt="Taxi Opatija, logo" class="w-14 h-[42px] inline-block rounded-xl" />
         </NuxtLink>
         <div class="flex items-center space-x-6 rtl:space-x-reverse">
           <a href="viber://chat?number=%2B38598491369">
@@ -54,8 +50,7 @@
               <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
               <g id="SVGRepo_iconCarrier">
                 <rect width="512" height="512" rx="15%" fill="#25d366"></rect>
-                <path fill="#25d366" stroke="#ffffff" stroke-width="26" d="M123 393l14-65a138 138 0 1150 47z">
-                </path>
+                <path fill="#25d366" stroke="#ffffff" stroke-width="26" d="M123 393l14-65a138 138 0 1150 47z"></path>
                 <path fill="#ffffff"
                   d="M308 273c-3-2-6-3-9 1l-12 16c-3 2-5 3-9 1-15-8-36-17-54-47-1-4 1-6 3-8l9-14c2-2 1-4 0-6l-12-29c-3-8-6-7-9-7h-8c-2 0-6 1-10 5-22 22-13 53 3 73 3 4 23 40 66 59 32 14 39 12 48 10 11-1 22-10 27-19 1-3 6-16 2-18">
                 </path>
@@ -63,33 +58,33 @@
             </svg>
           </a>
           <a href="tel:+38598491369"
-            class="text-[26px] px-2 border border-white hover:bg-blue-800 custom-shadow rounded-lg  text-black bg-blue-600"><i
-              class='fa fa-phone text-white'></i></a>
+            class="text-[26px] px-2 border border-white hover:bg-blue-800 custom-shadow rounded-lg text-black bg-blue-600"><i
+              class="fa fa-phone text-white"></i></a>
         </div>
       </div>
     </div>
   </header>
   <main>
-    <div class=" overflow-x-auto text-nowrap whitespace-nowrap sticky top-0 w-full z-50 bg-white">
+    <div class="overflow-x-auto text-nowrap whitespace-nowrap sticky top-0 w-full z-50 bg-white">
       <div class="max-w-screen-xl px-4 py-2 mx-auto">
         <div class="flex items-center justify-evenly">
-          <ul class="grid grid-cols-3 font-medium mt-0  text-base">
-            <li class="border-e px-4 w-full text-center  border-gray-300">
-              <NuxtLink :to="{ path: '/', hash: '#naslovnica' }" class="text-gray-900 hover:underline">{{ $t('home') }}
+          <ul class="grid grid-cols-3 font-medium mt-0 text-base">
+            <li class="border-e px-4 w-full text-center border-gray-300">
+              <NuxtLink :to="{ path: '/', hash: '#naslovnica' }" class="text-gray-900 hover:underline">{{ $t("home") }}
               </NuxtLink>
             </li>
-            <li class=" px-4 w-full text-center border-gray-300">
-              <NuxtLink :to="{ path: '/', hash: '#usluge' }" class="text-gray-900 hover:underline">{{ $t('services') }}
+            <li class="px-4 w-full text-center border-gray-300">
+              <NuxtLink :to="{ path: '/', hash: '#usluge' }" class="text-gray-900 hover:underline">{{ $t("services") }}
               </NuxtLink>
             </li>
             <li class="border-s px-4 w-full text-center">
-              <NuxtLink to='/onama' class="text-gray-900 hover:underline">{{ $t('aboutus') }}
+              <NuxtLink to="/onama" class="text-gray-900 hover:underline">{{ $t("aboutus") }}
               </NuxtLink>
             </li>
           </ul>
         </div>
       </div>
-      <hr>
+      <hr />
     </div>
     <div>
       <div class="relative isolate px-6 lg:px-8">
@@ -103,20 +98,14 @@
               Taxi Opatija
             </h1>
             <h2 class="text-base font-bold tracking-tight text-gray-900">
-              {{ $t('pricingTaxi') }}
+              {{ $t("pricingTaxi") }}
             </h2>
           </div>
-
         </div>
-
       </div>
     </div>
 
-    <div class="leading-normal tracking-normal  gradient" style="font-family: 'Source Sans Pro', sans-serif;">
-
-
-
-
+    <div class="leading-normal tracking-normal gradient" style="font-family: 'Source Sans Pro', sans-serif">
       <!-- Change the colour #f8fafc to match the previous section colour -->
       <div class="relative">
         <svg class="wave-top" viewBox="0 0 1439 147" version="1.1" xmlns="http://www.w3.org/2000/svg"
@@ -148,7 +137,7 @@
       <div class="flex justify-center">
         <div class="switch">
           <label for="toggle">
-            <input id="toggle" class="toggle-switch" type="checkbox" v-model="isDay">
+            <input id="toggle" class="toggle-switch" type="checkbox" v-model="isDay" />
             <div class="sun-moon">
               <div class="dots"></div>
             </div>
@@ -158,33 +147,41 @@
             </div>
           </label>
         </div>
-
       </div>
       <div class="flex flex-col mx-5 md:flex-row justify-center mb-32 mt-6 md:space-x-6">
-        <div class="bg-white custom-shadow  rounded-md p-6" v-if='isDay'>
-          <p class="text-green-700 bg-green-200 px-2.5 py-1 rounded-full inline-block mb-2">{{ $t('dayDrive') }} {{
-          $t('drive') }}
+        <div class="bg-white custom-shadow rounded-md p-6" v-if="isDay">
+          <p class="text-green-700 bg-green-200 px-2.5 py-1 rounded-full inline-block mb-2">
+            {{ $t("dayDrive") }} {{ $t("drive") }}
           </p>
           <h3 class="text-xl text-gray-900 mb-4">
-            {{ $t('tService') }}<br>
+            {{ $t("tService") }}<br />
             <span class="font-bold text-gray-600 text-sm">05:00 - 22:00</span>
           </h3>
           <ul class="list-disc list-inside text-gray-700">
-            <li class="mb-2">{{ $t('startPrice') }}: <span class="font-bold">4.00€</span></li>
-            <li class="mb-2">{{ $t('perKm') }}: <span class="font-bold">1.60€</span></li>
+            <li class="mb-2">
+              {{ $t("startPrice") }}: <span class="font-bold">4.00€</span>
+            </li>
+            <li class="mb-2">
+              {{ $t("perKm") }}: <span class="font-bold">1.60€</span>
+            </li>
           </ul>
         </div>
 
-        <div class="bg-white custom-shadow  rounded-md p-6" v-else>
-          <p class="text-red-700 bg-red-200 px-2.5 py-1 rounded-full inline-block mb-2">{{ $t('nightDrive') }} {{
-          $t('drive') }}</p>
+        <div class="bg-white custom-shadow rounded-md p-6" v-else>
+          <p class="text-red-700 bg-red-200 px-2.5 py-1 rounded-full inline-block mb-2">
+            {{ $t("nightDrive") }} {{ $t("drive") }}
+          </p>
           <h3 class="text-xl text-gray-900 mb-4">
-            {{ $t('tService') }}<br>
+            {{ $t("tService") }}<br />
             <span class="font-bold text-gray-600 text-sm">22:00 - 05:00</span>
           </h3>
           <ul class="list-disc list-inside text-gray-700">
-            <li class="mb-2">{{ $t('startPrice') }}: <span class="font-bold">4.00€</span></li>
-            <li class="mb-2">{{ $t('perKm') }}: <span class="font-bold">2.00€</span></li>
+            <li class="mb-2">
+              {{ $t("startPrice") }}: <span class="font-bold">4.00€</span>
+            </li>
+            <li class="mb-2">
+              {{ $t("perKm") }}: <span class="font-bold">2.00€</span>
+            </li>
           </ul>
         </div>
       </div>
@@ -215,13 +212,13 @@
   </main>
 
   <footer class="bg-white mb-10">
-    <div class=" mx-auto px-8">
+    <div class="mx-auto px-8">
       <div class="w-full flex flex-col md:flex-row py-6">
         <div class="flex-1 mb-6 text-black">
           <NuxtLink class="text-pink-600 no-underline hover:no-underline font-bold text-2xl lg:text-4xl"
             :to="{ path: '/', hash: '#naslovnica' }">
             <img src="../assets/imgs/taxiopatijalogo.png" title="Taxi Opatija's business image, Logo"
-              alt="Taxi Opatija, logo" class="w-20 h-[60px]  inline-block me-3 rounded-xl">
+              alt="Taxi Opatija, logo" class="w-20 h-[60px] inline-block me-3 rounded-xl" />
           </NuxtLink>
         </div>
         <div class="flex-1">
@@ -229,73 +226,76 @@
           <ul class="list-reset mb-6">
             <li class="mt-2 inline-block mr-2 md:block md:mr-0">
               <NuxtLink to="/" class="no-underline hover:underline text-gray-800 hover:text-pink-500">
-                {{ $t('home') }}
+                {{ $t("home") }}
               </NuxtLink>
             </li>
 
             <li class="mt-2 inline-block mr-2 md:block md:mr-0">
               <NuxtLink :to="{ path: '/', hash: '#usluge' }"
-                class=" no-underline hover:underline text-gray-800 hover:text-pink-500">{{ $t('services') }}
+                class="no-underline hover:underline text-gray-800 hover:text-pink-500">{{ $t("services") }}
               </NuxtLink>
             </li>
             <li class="mt-2 inline-block mr-2 md:block md:mr-0">
               <NuxtLink to="/onama" class="no-underline hover:underline text-gray-800 hover:text-pink-500">{{
-          $t('aboutus') }}
+          $t("aboutus") }}
               </NuxtLink>
             </li>
           </ul>
         </div>
         <div class="flex-1">
-          <p class="uppercase text-gray-500 md:mb-6">{{ $t('services') }}</p>
+          <p class="uppercase text-gray-500 md:mb-6">{{ $t("services") }}</p>
           <ul class="list-reset mb-6">
             <li class="mt-2 inline-block mr-2 md:block md:mr-0">
               <NuxtLink to="/taxi-price" class="no-underline hover:underline text-gray-800 hover:text-pink-500">{{
-          $t('servicesTaxi') }}
+          $t("servicesTaxi") }}
               </NuxtLink>
             </li>
             <li class="mt-2 inline-block mr-2 md:block md:mr-0">
-              <NuxtLink :to="i18n.locale.value === 'en' ? '/en/transfers' : '/transferi'"
-                class="no-underline hover:underline text-gray-800 hover:text-pink-500">{{
-          $t('servicesTransfers') }}
+              <NuxtLink :to="i18n.locale.value === 'en' ? '/en/transfers' : '/transferi'
+          " class="no-underline hover:underline text-gray-800 hover:text-pink-500">{{ $t("servicesTransfers") }}
               </NuxtLink>
             </li>
             <li class="mt-2 inline-block mr-2 md:block md:mr-0">
-              <NuxtLink :to="i18n.locale.value === 'en' ? '/en/rent-a-van' : '/najam-kombi-vozila'"
-                class="no-underline hover:underline text-gray-800 hover:text-pink-500">
-                {{ $t('servicesRentVan') }}
+              <NuxtLink :to="i18n.locale.value === 'en'
+          ? '/en/rent-a-van'
+          : '/najam-kombi-vozila'
+          " class="no-underline hover:underline text-gray-800 hover:text-pink-500">
+                {{ $t("servicesRentVan") }}
               </NuxtLink>
             </li>
             <li class="mt-2 inline-block mr-2 md:block md:mr-0">
-              <NuxtLink :to="i18n.locale.value === 'en' ? '/en/rent-a-car' : '/najam-automobila'"
-                class="no-underline hover:underline text-gray-800 hover:text-pink-500">{{
-          $t('servicesRentCar') }}
+              <NuxtLink :to="i18n.locale.value === 'en'
+          ? '/en/rent-a-car'
+          : '/najam-automobila'
+          " class="no-underline hover:underline text-gray-800 hover:text-pink-500">{{ $t("servicesRentCar") }}
               </NuxtLink>
             </li>
           </ul>
         </div>
 
         <div class="flex-1">
-          <p class="uppercase text-gray-500 md:mb-6">{{ $t('network') }}</p>
+          <p class="uppercase text-gray-500 md:mb-6">{{ $t("network") }}</p>
           <ul class="list-reset mb-6">
             <li class="mt-2 inline-block mr-2 md:block md:mr-0">
-              <a href="https://www.facebook.com/taxiopatija" target='_blank'
+              <a href="https://www.facebook.com/taxiopatija" target="_blank"
                 class="no-underline hover:underline text-gray-800 hover:text-pink-500">Facebook</a>
             </li>
             <li class="mt-2 inline-block mr-2 md:block md:mr-0">
-              <a href="https://www.instagram.com/taxiopatija.hr" target='_blank'
+              <a href="https://www.instagram.com/taxiopatija.hr" target="_blank"
                 class="no-underline hover:underline text-gray-800 hover:text-pink-500">Instagram</a>
             </li>
-
           </ul>
         </div>
         <div class="flex-1">
-          <p class="uppercase text-gray-500 md:mb-6">{{ $t('privacyPolicy') }}</p>
+          <p class="uppercase text-gray-500 md:mb-6">
+            {{ $t("privacyPolicy") }}
+          </p>
           <ul class="list-reset mb-6">
             <li class="mt-2 inline-block mr-2 md:block md:mr-0">
-              <a href="#" class="no-underline hover:underline text-gray-800 hover:text-pink-500">{{ $t('terms') }}</a>
+              <a href="#" class="no-underline hover:underline text-gray-800 hover:text-pink-500">{{ $t("terms") }}</a>
             </li>
             <li class="mt-2 inline-block mr-2 md:block md:mr-0">
-              <a href="#" class="no-underline hover:underline text-gray-800 hover:text-pink-500">{{ $t('privacy') }}</a>
+              <a href="#" class="no-underline hover:underline text-gray-800 hover:text-pink-500">{{ $t("privacy") }}</a>
             </li>
           </ul>
         </div>
@@ -306,17 +306,12 @@
 
 <style scoped>
 .gradient {
-  background: #E6DADA;
+  background: #e6dada;
   /* fallback for old browsers */
-  background: -webkit-linear-gradient(to top,
-      rgb(84, 221, 255),
-      #c6eeff);
+  background: -webkit-linear-gradient(to top, rgb(84, 221, 255), #c6eeff);
   /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to top,
-      rgb(84, 221, 255),
-      #c6eeff);
+  background: linear-gradient(to top, rgb(84, 221, 255), #c6eeff);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
 }
 
 .a {
@@ -417,10 +412,8 @@ button {
   transition: all 0.3s;
 }
 
-
-
 .switch input:checked~.fill {
-  background: #E9F8FD;
+  background: #e9f8fd;
 }
 
 .stars1,
@@ -428,7 +421,7 @@ button {
   position: absolute;
   height: 0.4rem;
   width: 0.4rem;
-  background: #FFFFFF;
+  background: #ffffff;
   border-radius: 50%;
   transition: 0.3s all ease;
 }
@@ -452,7 +445,7 @@ button {
   display: block;
   height: 0.25rem;
   width: 0.25rem;
-  background: #FFFFFF;
+  background: #ffffff;
   border-radius: 50%;
   transition: 0.2s all ease;
 }
@@ -485,12 +478,12 @@ button {
   height: 3rem;
   width: 3rem;
   margin: 0.5rem;
-  background: #FFFDF2;
+  background: #fffdf2;
   border-radius: 50%;
   transition: all 0.5s ease;
 
   /* Default to Moon */
-  border: 0.25rem solid #DEE2C6;
+  border: 0.25rem solid #dee2c6;
 }
 
 .sun-moon .dots {
@@ -499,8 +492,8 @@ button {
   left: 23px;
   height: 1rem;
   width: 1rem;
-  background: #EFEEDB;
-  border: 0.25rem solid #DEE2C6;
+  background: #efeedb;
+  border: 0.25rem solid #dee2c6;
   border-radius: 50%;
   transition: 0.4s all ease;
 }
@@ -512,8 +505,8 @@ button {
   display: block;
   height: 0.25rem;
   width: 0.25rem;
-  background: #EFEEDB;
-  border: 0.25rem solid #DEE2C6;
+  background: #efeedb;
+  border: 0.25rem solid #dee2c6;
   border-radius: 50%;
   transition: 0.4s all ease;
 }
@@ -532,16 +525,16 @@ button {
 
 .switch input:checked~.sun-moon {
   left: calc(100% - 4rem);
-  background: #F5EC59;
-  border-color: #E7C65C;
+  background: #f5ec59;
+  border-color: #e7c65c;
   transform: rotate(-25deg);
 }
 
 .switch input:checked~.sun-moon .dots,
 .switch input:checked~.sun-moon .dots:after,
 .switch input:checked~.sun-moon .dots:before {
-  background: #FFFFFF;
-  border-color: #FFFFFF;
+  background: #ffffff;
+  border-color: #ffffff;
 }
 
 .switch input:checked~.sun-moon .dots {
@@ -573,8 +566,8 @@ button {
 }
 
 .switch input:checked~.background {
-  border: 0.25rem solid #78C1D5;
-  background: linear-gradient(to right, #78C1D5 0%, #BBE7F5 100%);
+  border: 0.25rem solid #78c1d5;
+  background: linear-gradient(to right, #78c1d5 0%, #bbe7f5 100%);
 }
 </style>
 
@@ -582,33 +575,32 @@ button {
 import { ref } from "vue";
 import dayjs from "dayjs";
 
-const { locale, setLocale } = useI18n()
+const { locale, setLocale } = useI18n();
 
 const i18n = useI18n();
 
-const isDay = ref(true)
+const isDay = ref(true);
 
 const currentTime = ref(dayjs().format("HH:mm"));
 
 onMounted(() => {
-  i18n.locale.value = navigator.language.split('-')[0]
+  i18n.locale.value = navigator.language.split("-")[0];
   setInterval(() => {
     currentTime.value = dayjs().format("HH:mm");
   }, 1000);
-  getPeriodOfDay()
-
+  getPeriodOfDay();
 });
 
 const getPeriodOfDay = () => {
   if (dayjs().hour() > 5 && dayjs().hour() < 22) {
-    isDay.value = true
+    isDay.value = true;
   } else {
-    isDay.value = false
+    isDay.value = false;
   }
-}
+};
 
-
-const baseSubtitle = "Brzi i udobni transferi do i od zračnih luka: Krk, Pula, Zagreb, Trst, Ljubljana, Split, Zadar, Venecija."
+const baseSubtitle =
+  "Brzi i udobni transferi do i od zračnih luka: Krk, Pula, Zagreb, Trst, Ljubljana, Split, Zadar, Venecija.";
 const selectedTransfer = ref("");
 
 const transfersData = ref([
@@ -671,8 +663,7 @@ const transfersData = ref([
 ]);
 
 useHead({
-  title:
-    "Taxi price | Taxi Opatija | 0 - 24 | Taxi & more",
+  title: "Taxi price | 2024. | Taxi Opatija",
   htmlAttrs: {
     lang: "en",
   },
@@ -680,86 +671,66 @@ useHead({
     {
       name: "description",
       content:
-        "Taxi Opatija | Best service at the best price | Available 24 hours every day | Taxi & more | taxiopatija.hr",
+        "Taxi by modern vans (8+1) & Cars (3+1) | Price | Initial: 4.00€ | Day - 1.60€ per km | Night 2.00€ per km | Taxi Opatija",
     },
     { hid: "og:url", property: "og:url", content: "https://taxiopatija.hr" },
     { hid: "og:type", property: "og:type", content: "website" },
     {
       hid: "og:title",
       property: "og:title",
-      content:
-        "Taxi Opatija | Best service at the best price | Available 24 hours every day | Taxi & more | taxiopatija.hr",
+      content: "Taxi price | 2024. | Taxi Opatija",
     },
     {
       hid: "og:description",
       property: "og:description",
       content:
-        "Taxi Opatija | Best service at the best price | Available 24 hours every day | Taxi & more | taxiopatija.hr",
+        "Taxi by modern vans (8+1) & Cars (3+1) | Price | Initial: 4.00€ | Day - 1.60€ per km | Night 2.00€ per km | Taxi Opatija",
     },
     {
       hid: "og:image",
       property: "og:image",
-      content: "https://www.taxiopatija.hr/opatija.jpeg",
-    },
-    // Structured Data Markup for Home Page
-    {
-      hid: "structured-data-home",
-      type: "application/ld+json",
-      innerHTML: JSON.stringify({
-        "@context": "http://schema.org",
-        "@type": "Organization",
-        name: "Taxi Opatija",
-        url: "https://taxiopatija.hr",
-        contactPoint: {
-          "@type": "ContactPoint",
-          telephone: "+38598491369",
-          contactType: "customer service",
-        },
-      }),
-    },
-    // Structured Data Markup for /onama Page
-    {
-      hid: "structured-data-onama",
-      type: "application/ld+json",
-      innerHTML: JSON.stringify({
-        "@context": "http://schema.org",
-        "@type": "WebPage",
-        name: "O nama | Taxi Opatija",
-        url: "https://www.taxiopatija.hr/onama",
-        description:
-          "O nama | Saznajte više o nama | Visit taxiopatija.hr/onama",
-      }),
-    },
-    // Structured Data Markup for /usluge Page
-    {
-      hid: "structured-data-usluge",
-      type: "application/ld+json",
-      innerHTML: JSON.stringify({
-        "@context": "http://schema.org",
-        "@type": "WebPage",
-        name: "Usluge | Taxi Opatija",
-        url: "https://www.taxiopatija.hr/usluge",
-        description:
-          "Usluge | Pregledajte naše usluge | Taxi | Transfers | Excursions | Rent a Van | Rent a Car | Visit taxiopatija.hr/usluge",
-      }),
+      content: "https://www.taxiopatija.hr/cars.jpg",
     },
   ],
   bodyAttrs: {
     class: "",
   },
-  script: [],
+  script: [
+    {
+      type: "application/ld+json",
+      innerHTML: JSON.stringify({
+        "@context": "http://schema.org",
+        "@type": "Organization",
+        name: "Taxi Opatija",
+        url: "https://www.taxiopatija.hr/taxi-price",
+        contactPoint: {
+          "@type": "ContactPoint",
+          telephone: "+38598491369",
+          contactType: "customer service",
+        },
+        logo: "https://www.taxiopatija.hr/taxiopatijalogo.png",
+        description:
+          "Taxi by Modern vans (8+1) & Cars (3+1) | Price | Initial: 4.00€ | Day - 1.60€ per km | Night 2.00€ per km | Taxi Opatija",
+        address: {
+          "@type": "PostalAddress",
+          streetAddress: "Ul. Dr. Ante Mandića 2",
+          addressLocality: "Opatija",
+          postalCode: "51410",
+          addressCountry: "Croatia",
+        },
+      }),
+    },
+  ],
 });
 
 useSeoMeta({
-  title:
-    "Taxi Opatija | Best service at the best price | Available 24 hours every day | Taxi & more | taxiopatija.hr",
-  ogTitle:
-    "Taxi Opatija | Best service at the best price | Available 24 hours every day | Taxi & more | taxiopatija.hr",
+  title: "Taxi price | 2024. | Taxi Opatija",
+  ogTitle: "Taxi price | 2024. | Taxi Opatija",
   description:
-    "Taxi Opatija | Best service at the best price | Available 24 hours every day | Taxi & more | taxiopatija.hr",
+    "Taxi by modern vans (8+1) & Cars (3+1) | Price | Initial: 4.00€ | Day - 1.60€ per km | Night 2.00€ per km | Taxi Opatija",
   ogDescription:
-    "Taxi Opatija | Best service at the best price | Available 24 hours every day | Taxi & more | taxiopatija.hr",
-  ogImage: "https://www.taxiopatija.hr/opatija.jpeg",
-  twitterCard: "https://www.taxiopatija.hr/opatija.jpeg",
+    "Taxi by modern vans (8+1) & Cars (3+1) | Price | Initial: 4.00€ | Day - 1.60€ per km | Night 2.00€ per km | Taxi Opatija",
+  ogImage: "https://www.taxiopatija.hr/cars.jpg",
+  twitterCard: "https://www.taxiopatija.hr/cars.jpg",
 });
 </script>

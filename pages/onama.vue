@@ -1,8 +1,11 @@
 <template>
 
   <Head>
-    <title>About us | Taxi Opatija | Taxi | Transport | Car & Van Rentals</title>
+    <title>About us | Taxi Opatija | 24/7</title>
+    <Meta name="description"
+      content="24/7 | Modern vans (8+1) & Cars (3+1) | Highly qualified and experienced drivers | Go anywhere across Europe with us - Taxi Opatija" />
   </Head>
+
 
   <header>
     <div class="bg-transparent backdrop-blur-[1px]  fixed bottom-0 z-50 w-full">
@@ -652,26 +655,26 @@ useHead({
     {
       name: "description",
       content:
-        "About us | Taxi Opatija | Best service at the best price | Available 24 hours every day | Quality! | Adaptability! | Best at what we do! | Reliability! | Comfort!",
+        "24/7 | Modern vans (8+1) & Cars (3+1) | Highly qualified and experienced drivers | Go anywhere across Europe with us - Taxi Opatija",
     },
-    { hid: "og:url", property: "og:url", content: "https://taxiopatija.hr" },
+    { hid: "og:url", property: "og:url", content: "https://www.taxiopatija.hr/onama" },
     { hid: "og:type", property: "og:type", content: "website" },
     {
       hid: "og:title",
       property: "og:title",
       content:
-        "About us | Taxi Opatija | Best service at the best price | Available 24 hours every day | Quality! | Adaptability! | Best at what we do! | Reliability! | Comfort!",
+        "About us | Taxi Opatija | 24/7",
     },
     {
       hid: "og:description",
       property: "og:description",
       content:
-        "About us | Taxi Opatija | Best service at the best price | Available 24 hours every day | Quality! | Adaptability! | Best at what we do! | Reliability! | Comfort!",
+        "24/7 | Modern vans (8+1) & Cars (3+1) | Highly qualified and experienced drivers | Go anywhere across Europe with us - Taxi Opatija",
     },
     {
       hid: "og:image",
       property: "og:image",
-      content: "https://www.taxiopatija.hr/opatija.jpeg",
+      content: "https://www.taxiopatija.hr/cars.jpg",
     },
   ],
   bodyAttrs: {
@@ -690,8 +693,8 @@ useHead({
           "telephone": "+38598491369",
           "contactType": "customer service"
         },
-        "logo": "https://www.taxiopatija.hr/opatija.jpeg",
-        "description": "About us | Taxi Opatija | Best service at the best price | Available 24 hours every day | Quality! | Adaptability! | Best at what we do! | Reliability! | Comfort!",
+        "logo": "https://www.taxiopatija.hr/taxiopatijalogo.png",
+        "description": "24/7 | Modern vans (8+1) & Cars (3+1) | Highly qualified and experienced drivers | Go anywhere across Europe with us - Taxi Opatija",
         "address": {
           "@type": "PostalAddress",
           "streetAddress": "Ul. Dr. Ante Mandića 2",
@@ -707,14 +710,14 @@ useHead({
 
 useSeoMeta({
   title:
-    "About us | Taxi Opatija | Best service at the best price | Available 24 hours every day | Quality! | Adaptability! | Best at what we do! | Reliability! | Comfort!",
+    "About us | Taxi Opatija | 24/7",
   ogTitle:
-    "About us | Taxi Opatija | Best service at the best price | Available 24 hours every day | Quality! | Adaptability! | Best at what we do! | Reliability! | Comfort!",
+    "About us | Taxi Opatija | 24/7",
   description:
-    "About us | Taxi Opatija | Best service at the best price | Available 24 hours every day | Quality! | Adaptability! | Best at what we do! | Reliability! | Comfort!",
+    "24/7 | Modern vans (8+1) & Cars (3+1) | Highly qualified and experienced drivers | Go anywhere across Europe with us - Taxi Opatija",
   ogDescription:
-    "About us | Taxi Opatija | Best service at the best price | Available 24 hours every day | Quality! | Adaptability! | Best at what we do! | Reliability! | Comfort!",
-  ogImage: "https://www.taxiopatija.hr/opatija.jpeg",
-  twitterCard: "https://www.taxiopatija.hr/opatija.jpeg",
+    "24/7 | Modern vans (8+1) & Cars (3+1) | Highly qualified and experienced drivers | Go anywhere across Europe with us - Taxi Opatija",
+  ogImage: "https://www.taxiopatija.hr/cars.jpg",
+  twitterCard: "https://www.taxiopatija.hr/cars.jpg",
 });
 </script>
