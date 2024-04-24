@@ -14,7 +14,7 @@
           <img src="../assets/imgs/logo.png" alt="taxi opatija logo" class="w-14 h-[42px]  inline-block rounded-xl">
         </NuxtLink>
         <div class="flex items-center space-x-6 rtl:space-x-reverse">
-          <a href="viber://chat?number=38598491369" target="_blank" rel="noopener">
+          <a href="viber://chat?number=%2B38598491369">
             <svg class="w-10 rounded-lg custom-shadow border border-white hover:border-none" version="1.1" id="Capa_1"
               xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
               viewBox="0 0 455.731 455.731" xml:space="preserve" fill="#000000">
@@ -637,7 +637,7 @@ useHead({
     {
       hid: "og:image",
       property: "og:image",
-      content: "https://taxiopatija.hr/opatija.jpeg",
+      content: "https://www.taxiopatija.hr/opatija.jpeg",
     },
     // Structured Data Markup for Home Page
     {
@@ -663,7 +663,7 @@ useHead({
         "@context": "http://schema.org",
         "@type": "WebPage",
         name: "O nama | Taxi Opatija",
-        url: "https://taxiopatija.hr/onama",
+        url: "https://www.taxiopatija.hr/onama",
         description:
           "O nama | Saznajte više o nama | Visit taxiopatija.hr/onama",
       }),
@@ -676,7 +676,7 @@ useHead({
         "@context": "http://schema.org",
         "@type": "WebPage",
         name: "Usluge | Taxi Opatija",
-        url: "https://taxiopatija.hr/usluge",
+        url: "https://www.taxiopatija.hr/usluge",
         description:
           "Usluge | Pregledajte naše usluge | Taxi | Transfers | Excursions | Rent a Van | Rent a Car | Visit taxiopatija.hr/usluge",
       }),
@@ -697,7 +697,7 @@ useSeoMeta({
     "Taxi Opatija | Best service at the best price | Available 24 hours every day | Taxi & more | taxiopatija.hr",
   ogDescription:
     "Taxi Opatija | Best service at the best price | Available 24 hours every day | Taxi & more | taxiopatija.hr",
-  ogImage: "https://taxiopatija.hr/opatija.jpeg",
-  twitterCard: "https://taxiopatija.hr/opatija.jpeg",
+  ogImage: "https://www.taxiopatija.hr/opatija.jpeg",
+  twitterCard: "https://www.taxiopatija.hr/opatija.jpeg",
 });
 </script>

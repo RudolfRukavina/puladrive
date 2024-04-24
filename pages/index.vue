@@ -14,7 +14,7 @@
           <img src="../assets/imgs/logo.png" alt="taxi opatija logo" class="w-14 h-[42px] inline-block rounded-xl" />
         </NuxtLink>
         <div class="flex items-center space-x-6 rtl:space-x-reverse">
-          <a href="viber://chat?number=38598491369" target="_blank" rel="noopener">
+          <a href="viber://chat?number=%2B38598491369">
             <svg class="w-10 rounded-lg custom-shadow border border-white hover:border-none" version="1.1" id="Capa_1"
               xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
               viewBox="0 0 455.731 455.731" xml:space="preserve" fill="#000000">
@@ -153,7 +153,7 @@
             </a>
 
             <div class="mt-10 flex items-center justify-evenly gap-x-2">
-              <a href="viber://chat?number=38598491369" target="_blank" rel="noopener">
+              <a href="viber://chat?number=%2B38598491369">
                 <svg class="w-14 rounded-lg custom-shadow border border-white hover:border-none" version="1.1"
                   id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                   viewBox="0 0 455.731 455.731" xml:space="preserve" fill="#000000">
@@ -1211,7 +1211,7 @@ useHead({
           "Taxi Opatija is a renowned tourist agency company headquartered in Opatija, Croatia. Taxi Opatija offers top-notch transfer services both domestically and internationally with a mission to ensure comfortable, safe, and reliable travel for all clients, regardless of destination or travel time.",
         url: "https://www.taxiopatija.hr",
         logo: "https://www.taxiopatija.hr/opatija.jpeg",
-        openingHours: "Mo,Tu,We,Th,Fr 00:00-24:00",
+        openingHours: "Mo,Tu,We,Th,Fr,Sa,Su 00:00-24:00",
         address: {
           "@type": "PostalAddress",
           streetAddress: "Ul. Dr. Ante Mandića 2",
@@ -1238,7 +1238,7 @@ useHead({
           "@type": "Person",
           name: "Vedran Mihailovic",
         },
-        datePublished: "2024-04-23",
+        datePublished: "2024-03-26",
         description: "Vrhunska i brza usluga! Vozač vrlo pristojan i uljudan.",
         itemReviewed: {
           "@type": "LocalBusiness",
@@ -1262,7 +1262,7 @@ useHead({
 });
 
 useSeoMeta({
-  title: "Taxi Opatija | taxiopatija.hr | 24/7",
+  title: "Taxi Opatija | The station for all transportation needs! | 24/7",
   ogTitle:
     "Opatija Taxi #1 | 24/7 | Taxi | Transfers | Car & Van Rentals | Located in Opatija - Transport across Europe",
   description:
