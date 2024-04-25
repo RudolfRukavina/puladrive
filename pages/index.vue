@@ -1,9 +1,9 @@
 <template>
 
   <Head>
-    <title>Taxi Opatija | The station for all transportation needs! | 24/7</title>
+    <title>Taxi Opatija | Discover | Prices - Services - Contact | 24/7</title>
     <Meta name="description"
-      content="Opatija Taxi #1 | 24/7 | Taxi | Transfers | Car & Van Rentals | Located in Opatija - Transport across Europe" />
+      content="Discover Taxi Opatija: Explore taxi prices, diverse transport services, and contact us effortlessly via phone, Viber, or WhatsApp! Call +385 98 491 369 - Opatija's most trusted taxi service." />
     <link rel="canonical" href="https://www.taxiopatija.hr/" />
   </Head>
 
@@ -430,20 +430,21 @@
           <!-- Card 1 -->
 
           <!-- Card 2 -->
-          <div class="w-80 bg-white rounded-lg shadow-lg mx-2">
+          <div class="w-80 bg-sky-700 text-white rounded-lg shadow-lg mx-2">
             <div class="p-4 w-80">
-              <h3 class="text-xl font-semibold mb-2">What is Taxi Opatija?</h3>
+              <h3 class="text-xl font-semibold mb-2">Discover</h3>
               <p class="text-sm">
-                Taxi Opatija is a renowned tourist agency proud to offer
-                top-notch passenger Transfers services both domestically and
-                internationally. Our mission is to ensure comfortable, safe, and
-                reliable travel for all our clients, regardless of destination
-                or travel time.
+                Discover the epitome of travel with Taxi Opatija, renowned for offering top-notch transfer services both
+                domestically and internationally. Our mission is simple yet profound: to ensure every journey is a
+                seamless blend of comfort, safety, and reliability. As Opatija's most trusted taxi service, we take
+                pride in delivering unparalleled experiences to our clients, regardless of destination or travel time.
+                Book your
+                ride now and experience the distinction of Taxi Opatija.
               </p>
             </div>
           </div>
 
-          <div class="w-80 bg-white rounded-lg shadow-lg mx-2">
+          <div class="w-80 bg-sky-600 text-white rounded-lg shadow-lg mx-2">
             <div class="p-4 w-80">
               <h3 class="text-xl font-semibold mb-2">Quality first!</h3>
               <p class="text-sm mt-3">
@@ -456,7 +457,7 @@
             </div>
           </div>
 
-          <div class="w-80 bg-white rounded-lg shadow-lg mx-2">
+          <div class="w-80 bg-sky-700 text-white rounded-lg shadow-lg mx-2">
             <div class="p-4 w-80">
               <h3 class="text-xl font-semibold mb-2">Adaptability!</h3>
               <p class="text-sm mt-3">
@@ -468,7 +469,7 @@
             </div>
           </div>
 
-          <div class="w-80 bg-white rounded-lg shadow-lg mx-2">
+          <div class="w-80 bg-sky-600 text-white rounded-lg shadow-lg mx-2">
             <div class="p-4 w-80">
               <h3 class="text-xl font-semibold mb-2">Best at what we do!</h3>
               <p class="text-sm mt-3">
@@ -480,7 +481,7 @@
             </div>
           </div>
 
-          <div class="w-80 bg-white rounded-lg shadow-lg mx-2">
+          <div class="w-80 bg-sky-700 text-white rounded-lg shadow-lg mx-2">
             <div class="p-4 w-80">
               <h3 class="text-xl font-semibold mb-2">Custom arrangements!</h3>
               <p class="text-sm mt-3">
@@ -491,7 +492,7 @@
             </div>
           </div>
 
-          <div class="w-80 bg-white rounded-lg shadow-lg mx-2">
+          <div class="w-80 bg-sky-600 text-white rounded-lg shadow-lg mx-2">
             <div class="p-4 w-80">
               <h3 class="text-xl font-semibold mb-2">Comfort!</h3>
               <p class="text-sm mt-3">
@@ -502,7 +503,7 @@
             </div>
           </div>
 
-          <div class="w-80 bg-white rounded-lg shadow-lg mx-2">
+          <div class="w-80 bg-sky-700 text-white rounded-lg shadow-lg mx-2">
             <div class="p-4 w-80">
               <h3 class="text-xl font-semibold mb-2">Reliability!</h3>
               <p class="text-sm mt-3">
@@ -514,7 +515,7 @@
             </div>
           </div>
 
-          <div class="w-80 bg-white rounded-lg shadow-lg mx-2">
+          <div class="w-80 bg-sky-600 text-white rounded-lg shadow-lg mx-2">
             <div class="p-4 w-80">
               <h3 class="text-xl font-semibold mb-2">We are multilingual!</h3>
               <p class="text-sm mt-3">
@@ -526,7 +527,7 @@
             </div>
           </div>
 
-          <div class="w-80 bg-white rounded-lg shadow-lg mx-2">
+          <div class="w-80 bg-sky-700 text-white rounded-lg shadow-lg mx-2">
             <div class="p-4 w-80">
               <h3 class="text-xl font-semibold mb-2">Wi-Fi!</h3>
               <p class="text-sm mt-3">
@@ -537,7 +538,7 @@
             </div>
           </div>
 
-          <div class="w-80 bg-white rounded-lg shadow-lg mx-2">
+          <div class="w-80 bg-sky-600 text-white rounded-lg shadow-lg mx-2">
             <div class="p-4 w-80">
               <h3 class="text-xl font-semibold mb-2">
                 Personalized group Transfers!
@@ -551,7 +552,7 @@
             </div>
           </div>
 
-          <div class="w-80 bg-white rounded-lg shadow-lg mx-2">
+          <div class="w-80 bg-sky-700 text-white rounded-lg shadow-lg mx-2">
             <div class="p-4 w-80">
               <h3 class="text-xl font-semibold mb-2">Pet friendly!</h3>
               <p class="text-sm mt-3">
@@ -562,7 +563,7 @@
             </div>
           </div>
 
-          <div class="w-80 bg-white rounded-lg shadow-lg mx-2">
+          <div class="w-80 bg-sky-600 text-white rounded-lg shadow-lg mx-2">
             <div class="p-4 w-80">
               <h3 class="text-xl font-semibold mb-2">Custom requests!</h3>
               <p class="text-sm mt-3">
@@ -573,7 +574,7 @@
             </div>
           </div>
 
-          <div class="w-80 bg-white rounded-lg shadow-lg mx-2">
+          <div class="w-80 bg-sky-700 text-white rounded-lg shadow-lg mx-2">
             <div class="p-4 w-80">
               <h3 class="text-xl font-semibold mb-2">Intergrity!</h3>
               <p class="text-sm mt-3">
@@ -585,7 +586,7 @@
             </div>
           </div>
 
-          <div class="w-80 bg-white rounded-lg shadow-lg mx-2">
+          <div class="w-80 bg-sky-600 text-white rounded-lg shadow-lg mx-2">
             <div class="p-4 w-80">
               <h3 class="text-xl font-semibold mb-2">Loyalty!</h3>
               <p class="text-sm mt-3">
@@ -596,7 +597,7 @@
             </div>
           </div>
 
-          <div class="w-80 bg-white rounded-lg shadow-lg mx-2">
+          <div class="w-80 bg-sky-700 text-white rounded-lg shadow-lg mx-2">
             <div class="p-4 w-80">
               <h3 class="text-xl font-semibold mb-2">Safety!</h3>
               <p class="text-sm mt-3">
@@ -608,7 +609,7 @@
             </div>
           </div>
 
-          <div class="w-80 bg-white rounded-lg shadow-lg mx-2">
+          <div class="w-80 bg-sky-600 text-white rounded-lg shadow-lg mx-2">
             <div class="p-4 w-80">
               <h3 class="text-xl font-semibold mb-2">
                 Aiports, cities and places!
@@ -621,7 +622,7 @@
             </div>
           </div>
 
-          <div class="w-80 bg-white rounded-lg shadow-lg mx-2">
+          <div class="w-80 bg-sky-700 text-white rounded-lg shadow-lg mx-2">
             <div class="p-4 w-80">
               <h3 class="text-xl font-semibold mb-2">Sky is the limit!</h3>
               <p class="text-sm mt-3">
@@ -1132,7 +1133,7 @@ const getPeriodOfDay = () => {
 };
 
 useHead({
-  title: "Taxi Opatija | The station for all transportation needs! | 24/7",
+  title: "Taxi Opatija | Discover | Prices - Services - Contact | 24/7",
   htmlAttrs: {
     lang: "en",
   },
@@ -1140,7 +1141,7 @@ useHead({
     {
       name: "description",
       content:
-        "Opatija Taxi #1 | 24/7 | Taxi | Transfers | Car & Van Rentals | Located in Opatija - Transport across Europe",
+        "Discover Taxi Opatija: Explore taxi prices, diverse transport services, and contact us effortlessly via phone, Viber, or WhatsApp! Call +385 98 491 369 - Opatija's most trusted taxi service.",
     },
     {
       hid: "og:url",
@@ -1152,13 +1153,13 @@ useHead({
       hid: "og:title",
       property: "og:title",
       content:
-        "Taxi Opatija | The station for all transportation needs! | 24/7",
+        "Taxi Opatija | Discover | Prices - Services - Contact | 24/7",
     },
     {
       hid: "og:description",
       property: "og:description",
       content:
-        "Opatija Taxi #1 | 24/7 | Taxi | Transfers | Car & Van Rentals | Located in Opatija - Transport across Europe",
+        "Discover Taxi Opatija: Explore taxi prices, diverse transport services, and contact us effortlessly via phone, Viber, or WhatsApp! Call +385 98 491 369 - Opatija's most trusted taxi service.",
     },
     {
       hid: "og:image",
@@ -1271,13 +1272,13 @@ useHead({
 });
 
 useSeoMeta({
-  title: "Taxi Opatija | The station for all transportation needs! | 24/7",
+  title: "Taxi Opatija | Discover | Prices - Services - Contact | 24/7",
   ogTitle:
-    "Taxi Opatija | The station for all transportation needs! | 24/7",
+    "Taxi Opatija | Discover | Prices - Services - Contact | 24/7",
   description:
-    "Opatija Taxi #1 | 24/7 | Taxi | Transfers | Car & Van Rentals | Located in Opatija - Transport across Europe",
+    "Discover Taxi Opatija: Explore taxi prices, diverse transport services, and contact us effortlessly via phone, Viber, or WhatsApp! Call +385 98 491 369 - Opatija's most trusted taxi service.",
   ogDescription:
-    "Opatija Taxi #1 | 24/7 | Taxi | Transfers | Car & Van Rentals | Located in Opatija - Transport across Europe",
+    "Discover Taxi Opatija: Explore taxi prices, diverse transport services, and contact us effortlessly via phone, Viber, or WhatsApp! Call +385 98 491 369 - Opatija's most trusted taxi service.",
   ogImage: "https://www.taxiopatija.hr/opatija.jpeg",
   twitterCard: "https://www.taxiopatija.hr/opatija.jpeg",
 });
