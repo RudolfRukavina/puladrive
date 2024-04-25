@@ -673,7 +673,7 @@ useHead({
       content:
         "Taxi by modern vans (8+1) & Cars (3+1) | Price | Initial: 4.00€ | Day - 1.60€ per km | Night 2.00€ per km | Taxi Opatija",
     },
-    { hid: "og:url", property: "og:url", content: "https://taxiopatija.hr" },
+    { hid: "og:url", property: "og:url", content: "https://taxiopatija.hr/taxi-price" },
     { hid: "og:type", property: "og:type", content: "website" },
     {
       hid: "og:title",

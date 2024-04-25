@@ -621,7 +621,7 @@ useHead({
       content:
         "24/7 | Najam putničkih kombi vozila (8+1) | Cijena | 100 - 125€ / dan | Taxi Opatija",
     },
-    { hid: "og:url", property: "og:url", content: "https://taxiopatija.hr" },
+    { hid: "og:url", property: "og:url", content: "https://taxiopatija.hr/najam-kombi-vozila" },
     { hid: "og:type", property: "og:type", content: "website" },
     {
       hid: "og:title",

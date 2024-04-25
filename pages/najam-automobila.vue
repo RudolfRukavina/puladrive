@@ -659,7 +659,7 @@ useHead({
       content:
         "24/7 | Najam automobila (3+1) | Cijena | 50 - 80€ / dan | Taxi Opatija",
     },
-    { hid: "og:url", property: "og:url", content: "https://taxiopatija.hr" },
+    { hid: "og:url", property: "og:url", content: "https://taxiopatija.hr/najam-automobila" },
     { hid: "og:type", property: "og:type", content: "website" },
     {
       hid: "og:title",
