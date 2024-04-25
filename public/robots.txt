@@ -2,3 +2,6 @@ User-agent: *
 Allow: /
 
 Sitemap: https://www.taxiopatija.hr/sitemap.xml
+
+Disallow: /en/airport/
+Disallow: /en/places/
