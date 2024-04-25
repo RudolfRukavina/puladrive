@@ -1,7 +1,7 @@
 <template>
 
   <Head>
-    <Title>Transfers | Pricing 2024. | Taxi Opatija
+    <Title>Transfers | Price 2024. | Taxi Opatija
     </Title>
     <Meta name="description"
       content="24/7 | Transfers by modern vans (8+1) & cars (3+1) | Price | 80 - 350€ | Anywhere in Europe | Taxi Opatija" />
@@ -483,7 +483,7 @@ const cityTransfersData = ref([
 ]);
 
 useHead({
-  title: "Transfers | Pricing 2024. | Taxi Opatija",
+  title: "Transfers | Price 2024. | Taxi Opatija",
   htmlAttrs: {
     lang: "en",
   },
@@ -498,7 +498,7 @@ useHead({
     {
       hid: "og:title",
       property: "og:title",
-      content: "Transfers | Pricing 2024. | Taxi Opatija",
+      content: "Transfers | Price 2024. | Taxi Opatija",
     },
     {
       hid: "og:description",
@@ -544,8 +544,8 @@ useHead({
 });
 
 useSeoMeta({
-  title: "Transfers | Pricing 2024. | Taxi Opatija",
-  ogTitle: "Transfers | Pricing 2024. | Taxi Opatija",
+  title: "Transfers | Price 2024. | Taxi Opatija",
+  ogTitle: "Transfers | Price 2024. | Taxi Opatija",
   description:
     "24/7 | Transfers by modern vans (8+1) & cars (3+1) | Price | 80 - 350€ | Anywhere in Europe | Taxi Opatija",
   ogDescription:
