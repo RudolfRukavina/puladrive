@@ -12,7 +12,7 @@
       <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl px-3 pb-2">
         <NuxtLink :to="{ path: '/', hash: '#home' }" class="flex items-center space-x-3 rtl:space-x-reverse">
           <img src="../assets/imgs/taxiopatijalogo.png" title="Taxi Opatija's business image, Logo"
-            alt="Taxi Opatija, logo" class="w-14 h-[42px] inline-block rounded-xl" />
+            alt="Taxi Opatija, logo" class="w-17 h-[44px] inline-block rounded-xl" />
         </NuxtLink>
         <div class="flex items-center space-x-6 rtl:space-x-reverse">
           <a href="viber://chat?number=%2B38598491369">
@@ -60,8 +60,8 @@
             </svg>
           </a>
           <a href="tel:+38598491369"
-            class="text-[26px] px-2 border border-white hover:bg-blue-800 custom-shadow rounded-lg text-black bg-blue-600"><i
-              class="fa fa-phone text-white"></i></a>
+            class="bg-blue-700 border-2 border-lime-50 hover:bg-blue-800 text-white font-bold py-[5px] px-2 rounded-lg text-lg">+385
+            98 491 369</a>
         </div>
       </div>
     </div>
@@ -276,7 +276,7 @@
         </svg>
       </div>
 
-      <h2 class="text-white my-3 font-bold drop-shadow-md text-5xl text-center" id="taxi-price">
+      <h2 class="text-white my-3 mt-20 font-bold drop-shadow-md text-5xl text-center" id="taxi-price">
         <strong>Taxi price</strong>
       </h2>
       <div class="w-full mb-4">
@@ -332,7 +332,7 @@
           </ul>
         </div>
       </div>
-      <h2 class="text-white my-3 mt-10 font-bold drop-shadow-md text-5xl text-center" id="transfers">
+      <h2 class="text-white my-3 mt-20 font-bold drop-shadow-md text-5xl text-center" id="transfers">
         <strong>Transfers</strong>
       </h2>
       <div class="w-full">
@@ -455,7 +455,7 @@
               </div>
             </div>
           </div>
-          <h2 class="text-white my-3 mt-12 font-bold drop-shadow-md text-5xl text-center">
+          <h2 class="text-white my-3 mt-20 font-bold drop-shadow-md text-5xl text-center">
             <strong>Rent a van </strong>
           </h2>
           <div class="w-full mb-4">
@@ -484,7 +484,7 @@
               </div>
             </NuxtLink>
           </article>
-          <h2 class="text-white my-3 mt-12 font-bold drop-shadow-md text-5xl text-center">
+          <h2 class="text-white my-3 mt-20 font-bold drop-shadow-md text-5xl text-center">
             <strong>Rent a car </strong>
           </h2>
           <div class="w-full mb-4">

@@ -60,8 +60,8 @@
             </svg>
           </a>
           <a href="tel:+38598491369"
-            class="text-[26px] px-2 border border-white hover:bg-blue-800 custom-shadow rounded-lg text-black bg-blue-600"><i
-              class="fa fa-phone text-white"></i></a>
+            class="bg-blue-700 border-2 border-lime-50 hover:bg-blue-800 text-white font-bold py-[5px] px-2 rounded-lg text-lg">+385
+            98 491 369</a>
         </div>
       </div>
     </div>
