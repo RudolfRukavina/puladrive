@@ -76,8 +76,7 @@
               </NuxtLink>
             </li>
             <li class="px-4 w-full text-center border-gray-300">
-              <NuxtLink :to="{ path: '/', hash: '#services' }" class="text-gray-900 hover:underline">{{ $t("services")
-                }}
+              <NuxtLink :to="{ path: '/', hash: '#prices' }" class="text-gray-900 hover:underline">Prices
               </NuxtLink>
             </li>
             <li class="border-s px-4 w-full text-center">
@@ -607,7 +606,7 @@
             </li>
 
             <li class="mt-2 inline-block mr-2 md:block md:mr-0">
-              <NuxtLink :to="{ path: '/', hash: '#services' }"
+              <NuxtLink :to="{ path: '/', hash: '#prices' }"
                 class="no-underline hover:underline text-gray-800 hover:text-pink-500">{{ $t("services") }}
               </NuxtLink>
             </li>

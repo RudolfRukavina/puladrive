@@ -79,8 +79,7 @@
               </NuxtLink>
             </li>
             <li class="px-4 w-full text-center border-gray-300">
-              <NuxtLink :to="{ path: '/', hash: '#services' }" class="text-gray-900 hover:underline">{{ $t("services")
-                }}
+              <NuxtLink :to="{ path: '/', hash: '#prices' }" class="text-gray-900 hover:underline">Prices
               </NuxtLink>
             </li>
             <li class="border-s px-4 w-full text-center">
@@ -244,8 +243,7 @@
         </div>
       </div>
     </div>
-    <div class="leading-normal tracking-normal gradient" style="font-family: 'Source Sans Pro', sans-serif"
-      id="services">
+    <div class="leading-normal tracking-normal gradient" style="font-family: 'Source Sans Pro', sans-serif">
       <!-- Change the colour #f8fafc to match the previous section colour -->
       <div class="relative">
         <svg class="wave-top mt-16" viewBox="0 0 1439 147" version="1.1" xmlns="http://www.w3.org/2000/svg"
@@ -274,247 +272,247 @@
           </g>
         </svg>
       </div>
-
-      <h2 class="text-white my-3 mt-20 font-bold drop-shadow-md text-5xl text-center" id="taxi-price">
-        <strong>Taxi price</strong>
-      </h2>
-      <div class="w-full mb-4">
-        <div class="h-1 mx-auto bg-white w-2/6 opacity-25 my-0 py-0 rounded-t"></div>
-      </div>
-      <div class="flex justify-center">
-        <div class="switch">
-          <label for="toggle">
-            <input id="toggle" class="toggle-switch" type="checkbox" v-model="isDay" />
-            <div class="sun-moon">
-              <div class="dots"></div>
-            </div>
-            <div class="background">
-              <div class="stars1"></div>
-              <div class="stars2"></div>
-            </div>
-          </label>
+      <section id="prices">
+        <h2 class="text-white my-3 mt-20 font-bold drop-shadow-md text-5xl text-center" id="taxi-price">
+          <strong>Taxi price</strong>
+        </h2>
+        <div class="w-full mb-4">
+          <div class="h-1 mx-auto bg-white w-2/6 opacity-25 my-0 py-0 rounded-t"></div>
         </div>
-      </div>
-      <div class="flex flex-col mx-5 md:flex-row justify-center mb-[23px] mt-6 md:space-x-6">
-        <div class="bg-white custom-shadow rounded-md p-6" v-if="!isDay">
-          <p class="text-red-700 bg-red-200 px-2.5 py-1 rounded-full inline-block mb-2">
-            {{ $t("nightDrive") }} {{ $t("drive") }}
-          </p>
-          <h3 class="text-xl text-gray-900 mb-4">
-            {{ $t("tService") }}<br />
-            <span class="font-bold text-gray-600 text-sm">22:00 - 05:00</span>
-          </h3>
-          <ul class="list-disc list-inside text-gray-700">
-            <li class="mb-2">
-              {{ $t("startPrice") }}: <span class="font-bold">4.00€</span>
-            </li>
-            <li class="mb-2">
-              {{ $t("perKm") }}: <span class="font-bold">2.00€</span>
-            </li>
-          </ul>
+        <div class="flex justify-center">
+          <div class="switch">
+            <label for="toggle">
+              <input id="toggle" class="toggle-switch" type="checkbox" v-model="isDay" />
+              <div class="sun-moon">
+                <div class="dots"></div>
+              </div>
+              <div class="background">
+                <div class="stars1"></div>
+                <div class="stars2"></div>
+              </div>
+            </label>
+          </div>
         </div>
-        <div class="bg-white custom-shadow rounded-md p-6" v-if="isDay">
-          <p class="text-green-700 bg-green-200 px-2.5 py-1 rounded-full inline-block mb-2">
-            {{ $t("dayDrive") }} {{ $t("drive") }}
-          </p>
-          <h3 class="text-xl text-gray-900 mb-4">
-            {{ $t("tService") }}<br />
-            <span class="font-bold text-gray-600 text-sm">05:00 - 22:00</span>
-          </h3>
-          <ul class="list-disc list-inside text-gray-700">
-            <li class="mb-2">
-              {{ $t("startPrice") }}: <span class="font-bold">4.00€</span>
-            </li>
-            <li class="mb-2">
-              {{ $t("perKm") }}: <span class="font-bold">1.60€</span>
-            </li>
-          </ul>
+        <div class="flex flex-col mx-5 md:flex-row justify-center mb-[23px] mt-6 md:space-x-6">
+          <div class="bg-white custom-shadow rounded-md p-6" v-if="!isDay">
+            <p class="text-red-700 bg-red-200 px-2.5 py-1 rounded-full inline-block mb-2">
+              {{ $t("nightDrive") }} {{ $t("drive") }}
+            </p>
+            <h3 class="text-xl text-gray-900 mb-4">
+              {{ $t("tService") }}<br />
+              <span class="font-bold text-gray-600 text-sm">22:00 - 05:00</span>
+            </h3>
+            <ul class="list-disc list-inside text-gray-700">
+              <li class="mb-2">
+                {{ $t("startPrice") }}: <span class="font-bold">4.00€</span>
+              </li>
+              <li class="mb-2">
+                {{ $t("perKm") }}: <span class="font-bold">2.00€</span>
+              </li>
+            </ul>
+          </div>
+          <div class="bg-white custom-shadow rounded-md p-6" v-if="isDay">
+            <p class="text-green-700 bg-green-200 px-2.5 py-1 rounded-full inline-block mb-2">
+              {{ $t("dayDrive") }} {{ $t("drive") }}
+            </p>
+            <h3 class="text-xl text-gray-900 mb-4">
+              {{ $t("tService") }}<br />
+              <span class="font-bold text-gray-600 text-sm">05:00 - 22:00</span>
+            </h3>
+            <ul class="list-disc list-inside text-gray-700">
+              <li class="mb-2">
+                {{ $t("startPrice") }}: <span class="font-bold">4.00€</span>
+              </li>
+              <li class="mb-2">
+                {{ $t("perKm") }}: <span class="font-bold">1.60€</span>
+              </li>
+            </ul>
+          </div>
         </div>
-      </div>
-      <h2 class="text-white my-3 mt-20 font-bold drop-shadow-md text-5xl text-center" id="transfers">
-        <strong>Transfers</strong>
-      </h2>
-      <div class="w-full">
-        <div class="h-1 mx-auto bg-white w-2/6 opacity-25 my-0 py-0 rounded-t"></div>
-      </div>
+        <h2 class="text-white my-3 mt-20 font-bold drop-shadow-md text-5xl text-center" id="transfers">
+          <strong>Transfers</strong>
+        </h2>
+        <div class="w-full">
+          <div class="h-1 mx-auto bg-white w-2/6 opacity-25 my-0 py-0 rounded-t"></div>
+        </div>
 
-      <section class="content-section bg-transparent pb-16 pt-5 px-4 lg:px-5">
-        <div class="container mx-auto">
-          <div class="grid grid-cols-1 gap-8">
-            <!-- Transfers -->
-            <div class="overflow-x-scroll w-full rounded-xl">
-              <div class="flex gap-4">
-                <article class="service-card bg-white rounded-xl shadow-md transition hover:shadow-lg">
-                  <div class="p-6 w-80">
-                    <h3 class="text-2xl font-bold text-gray-800 mb-4">
-                      Transfers
-                    </h3>
-                    <p class="text-gray-600">
-                      Experience swift and seamless transfers to and from
-                      <strong>airports</strong>, <strong>cities</strong>, and
-                      <strong>destinations</strong>.
-                    </p>
-                    <p class="text-gray-600 my-3">
-                      Simplify your travel arrangements with our quick and
-                      efficient inquiry process.
-                    </p>
-                    <p class="text-gray-600 my-3">
-                      <strong>Scroll right</strong> to explore pricing options.
-                    </p>
-                  </div>
-                </article>
-
-                <article class="service-card bg-white rounded-xl shadow-md transition hover:shadow-lg">
-                  <div class="p-6 pb-0 w-80">
-                    <h3 class="text-2xl font-bold text-gray-800">
-                      Airport Transfers
-                    </h3>
-                  </div>
-
-                  <div class="p-6 pt-0">
-                    <h3 class="text-xl text-gray-900 mb-4">
-                      Choose an airport
-                    </h3>
-
-                    <div class="grid grid-cols-2 gap-4">
-                      <NuxtLink :to="transfer.address" v-for="transfer in transfersData"
-                        @click="selectedTransfer = transfer"
-                        class="whitespace-nowrap rounded-full bg-sky-100 px-2.5 py-0.5 text-base text-center text-blue-600 cursor-pointer"
-                        :class="transfer.name === 'Custom' ? 'col-span-2' : ''">
-                        {{ transfer.name }}
-                      </NuxtLink>
+        <section class="content-section bg-transparent pb-16 pt-5 px-4 lg:px-5">
+          <div class="container mx-auto">
+            <div class="grid grid-cols-1 gap-8">
+              <!-- Transfers -->
+              <div class="overflow-x-scroll w-full rounded-xl">
+                <div class="flex gap-4">
+                  <article class="service-card bg-white rounded-xl shadow-md transition hover:shadow-lg">
+                    <div class="p-6 w-80">
+                      <h3 class="text-2xl font-bold text-gray-800 mb-4">
+                        Transfers
+                      </h3>
+                      <p class="text-gray-600">
+                        Experience swift and seamless transfers to and from
+                        <strong>airports</strong>, <strong>cities</strong>, and
+                        <strong>destinations</strong>.
+                      </p>
+                      <p class="text-gray-600 my-3">
+                        Simplify your travel arrangements with our quick and
+                        efficient inquiry process.
+                      </p>
+                      <p class="text-gray-600 my-3">
+                        <strong>Scroll right</strong> to explore pricing options.
+                      </p>
                     </div>
-                  </div>
-                </article>
+                  </article>
 
-                <article class="service-card bg-white rounded-xl shadow-md transition hover:shadow-lg">
-                  <div class="p-6 pb-0 w-80">
-                    <h3 class="text-2xl font-bold text-gray-800">
-                      City Transfers
-                    </h3>
-                  </div>
-                  <div class="p-6 pt-0">
-                    <h3 class="text-xl text-gray-900 mb-4">Choose a city</h3>
-
-                    <div class="grid grid-cols-2 gap-4">
-                      <NuxtLink :to="transfer.address" v-for="transfer in cityTransfersData"
-                        @click="selectedTransfer = transfer"
-                        class="whitespace-nowrap rounded-full bg-sky-100 px-2.5 py-0.5 text-base text-center text-blue-600 cursor-pointer"
-                        :class="transfer.name === 'Custom' ? 'col-span-2' : ''">
-                        {{ transfer.name }}
-                      </NuxtLink>
+                  <article class="service-card bg-white rounded-xl shadow-md transition hover:shadow-lg">
+                    <div class="p-6 pb-0 w-80">
+                      <h3 class="text-2xl font-bold text-gray-800">
+                        Airport Transfers
+                      </h3>
                     </div>
-                  </div>
-                </article>
 
-                <article class="service-card bg-white rounded-xl shadow-md transition hover:shadow-lg">
-                  <div class="p-6 pb-0 w-80">
-                    <h3 class="text-2xl font-bold text-gray-800">Excursions</h3>
-                  </div>
-                  <div class="p-6 pt-0">
-                    <h3 class="text-xl text-gray-900 mb-4">
-                      Choose an location
-                    </h3>
+                    <div class="p-6 pt-0">
+                      <h3 class="text-xl text-gray-900 mb-4">
+                        Choose an airport
+                      </h3>
 
-                    <div class="grid grid-cols-2 gap-4">
-                      <NuxtLink :to="transfer.address" v-for="transfer in excursionTransfersData"
-                        @click="selectedTransfer = transfer"
-                        class="whitespace-nowrap rounded-full bg-sky-100 px-2.5 py-0.5 text-base text-center text-blue-600 cursor-pointer"
-                        :class="transfer.name === 'Custom' ? 'col-span-2' : ''">
-                        {{ transfer.name }}
-                      </NuxtLink>
+                      <div class="grid grid-cols-2 gap-4">
+                        <NuxtLink :to="transfer.address" v-for="transfer in transfersData"
+                          @click="selectedTransfer = transfer"
+                          class="whitespace-nowrap rounded-full bg-sky-100 px-2.5 py-0.5 text-base text-center text-blue-600 cursor-pointer"
+                          :class="transfer.name === 'Custom' ? 'col-span-2' : ''">
+                          {{ transfer.name }}
+                        </NuxtLink>
+                      </div>
                     </div>
-                  </div>
-                </article>
-                <article class="service-card bg-white rounded-xl shadow-md transition hover:shadow-lg">
-                  <div class="p-6 pb-0 w-80">
-                    <h3 class="text-2xl font-bold text-gray-800">
-                      Special Offers
-                    </h3>
-                  </div>
-                  <div class="p-6 pt-0">
-                    <span class="text-base text-gray-900">24.05.2024 - 26.05.2024</span>
-                    <h4 class="text-xl text-gray-900 mb-4">
-                      Sea Star Festival
-                    </h4>
+                  </article>
 
-                    <div class="grid grid-cols-1 gap-4">
-                      <NuxtLink :to="transfer.address" v-for="transfer in specialTransfersData"
-                        @click="selectedTransfer = transfer"
-                        class="whitespace-nowrap rounded-full bg-sky-100 px-2.5 py-0.5 text-base text-center text-blue-600 cursor-pointer">
-                        {{ transfer.name }}
-                      </NuxtLink>
+                  <article class="service-card bg-white rounded-xl shadow-md transition hover:shadow-lg">
+                    <div class="p-6 pb-0 w-80">
+                      <h3 class="text-2xl font-bold text-gray-800">
+                        City Transfers
+                      </h3>
                     </div>
-                  </div>
-                  <div class="flex justify-center">
-                    <span class="text-sm font-bold text-white bg-sky-600 rounded-xl p-2 m-2 text-center w-full">15%
-                      discount</span>
-                  </div>
-                </article>
+                    <div class="p-6 pt-0">
+                      <h3 class="text-xl text-gray-900 mb-4">Choose a city</h3>
+
+                      <div class="grid grid-cols-2 gap-4">
+                        <NuxtLink :to="transfer.address" v-for="transfer in cityTransfersData"
+                          @click="selectedTransfer = transfer"
+                          class="whitespace-nowrap rounded-full bg-sky-100 px-2.5 py-0.5 text-base text-center text-blue-600 cursor-pointer"
+                          :class="transfer.name === 'Custom' ? 'col-span-2' : ''">
+                          {{ transfer.name }}
+                        </NuxtLink>
+                      </div>
+                    </div>
+                  </article>
+
+                  <article class="service-card bg-white rounded-xl shadow-md transition hover:shadow-lg">
+                    <div class="p-6 pb-0 w-80">
+                      <h3 class="text-2xl font-bold text-gray-800">Excursions</h3>
+                    </div>
+                    <div class="p-6 pt-0">
+                      <h3 class="text-xl text-gray-900 mb-4">
+                        Choose an location
+                      </h3>
+
+                      <div class="grid grid-cols-2 gap-4">
+                        <NuxtLink :to="transfer.address" v-for="transfer in excursionTransfersData"
+                          @click="selectedTransfer = transfer"
+                          class="whitespace-nowrap rounded-full bg-sky-100 px-2.5 py-0.5 text-base text-center text-blue-600 cursor-pointer"
+                          :class="transfer.name === 'Custom' ? 'col-span-2' : ''">
+                          {{ transfer.name }}
+                        </NuxtLink>
+                      </div>
+                    </div>
+                  </article>
+                  <article class="service-card bg-white rounded-xl shadow-md transition hover:shadow-lg">
+                    <div class="p-6 pb-0 w-80">
+                      <h3 class="text-2xl font-bold text-gray-800">
+                        Special Offers
+                      </h3>
+                    </div>
+                    <div class="p-6 pt-0">
+                      <span class="text-base text-gray-900">24.05.2024 - 26.05.2024</span>
+                      <h4 class="text-xl text-gray-900 mb-4">
+                        Sea Star Festival
+                      </h4>
+
+                      <div class="grid grid-cols-1 gap-4">
+                        <NuxtLink :to="transfer.address" v-for="transfer in specialTransfersData"
+                          @click="selectedTransfer = transfer"
+                          class="whitespace-nowrap rounded-full bg-sky-100 px-2.5 py-0.5 text-base text-center text-blue-600 cursor-pointer">
+                          {{ transfer.name }}
+                        </NuxtLink>
+                      </div>
+                    </div>
+                    <div class="flex justify-center">
+                      <span class="text-sm font-bold text-white bg-sky-600 rounded-xl p-2 m-2 text-center w-full">15%
+                        discount</span>
+                    </div>
+                  </article>
+                </div>
               </div>
             </div>
-          </div>
-          <h2 class="text-white my-3 mt-20 font-bold drop-shadow-md text-5xl text-center">
-            <strong>Rent a van </strong>
-          </h2>
-          <div class="w-full mb-4">
-            <div class="h-1 mx-auto bg-white w-2/6 opacity-25 my-0 py-0 rounded-t"></div>
-          </div>
-          <!-- Rent a Van -->
-          <article class="service-card bg-white rounded-xl shadow-md transition hover:shadow-lg">
-            <NuxtLink :to="i18n.locale.value === 'en'
+            <h2 class="text-white my-3 mt-20 font-bold drop-shadow-md text-5xl text-center">
+              <strong>Rent a van </strong>
+            </h2>
+            <div class="w-full mb-4">
+              <div class="h-1 mx-auto bg-white w-2/6 opacity-25 my-0 py-0 rounded-t"></div>
+            </div>
+            <!-- Rent a Van -->
+            <article class="service-card bg-white rounded-xl shadow-md transition hover:shadow-lg">
+              <NuxtLink :to="i18n.locale.value === 'en'
           ? '/en/rent-a-van'
           : '/najam-kombi-vozila'
           ">
-              <div class="p-6">
-                <h3 class="text-2xl font-bold text-gray-800 mb-4">
-                  {{ $t("rentVan") }}
-                </h3>
-                <p class="text-gray-600">{{ $t("rentVanDesc") }}</p>
-              </div>
-              <div class="flex items-center justify-between px-6 py-4 bg-gray-100 rounded-b-xl">
-                <span class="text-blue-800 font-medium">{{
+                <div class="p-6">
+                  <h3 class="text-2xl font-bold text-gray-800 mb-4">
+                    {{ $t("rentVan") }}
+                  </h3>
+                  <p class="text-gray-600">{{ $t("rentVanDesc") }}</p>
+                </div>
+                <div class="flex items-center justify-between px-6 py-4 bg-gray-100 rounded-b-xl">
+                  <span class="text-blue-800 font-medium">{{
           $t("pricingRentVan")
         }}</span>
-                <svg class="w-6 text-gray-800" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M9 6L15 12L9 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                    stroke-linejoin="round"></path>
-                </svg>
-              </div>
-            </NuxtLink>
-          </article>
-          <h2 class="text-white my-3 mt-20 font-bold drop-shadow-md text-5xl text-center">
-            <strong>Rent a car </strong>
-          </h2>
-          <div class="w-full mb-4">
-            <div class="h-1 mx-auto bg-white w-2/6 opacity-25 my-0 py-0 rounded-t"></div>
-          </div>
-          <!-- Rent a Car -->
-          <article class="service-card bg-white rounded-xl shadow-md mb-9 transition hover:shadow-lg">
-            <NuxtLink :to="i18n.locale.value === 'en'
+                  <svg class="w-6 text-gray-800" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9 6L15 12L9 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                      stroke-linejoin="round"></path>
+                  </svg>
+                </div>
+              </NuxtLink>
+            </article>
+            <h2 class="text-white my-3 mt-20 font-bold drop-shadow-md text-5xl text-center">
+              <strong>Rent a car </strong>
+            </h2>
+            <div class="w-full mb-4">
+              <div class="h-1 mx-auto bg-white w-2/6 opacity-25 my-0 py-0 rounded-t"></div>
+            </div>
+            <!-- Rent a Car -->
+            <article class="service-card bg-white rounded-xl shadow-md mb-9 transition hover:shadow-lg">
+              <NuxtLink :to="i18n.locale.value === 'en'
             ? '/en/rent-a-car'
             : '/najam-automobila'
           ">
-              <div class="p-6">
-                <h3 class="text-2xl font-bold text-gray-800 mb-4">
-                  {{ $t("rentCar") }} (3+1)
-                </h3>
-                <p class="text-gray-600">{{ $t("rentCarDesc") }}</p>
-              </div>
-              <div class="flex items-center justify-between px-6 py-4 bg-gray-100 rounded-b-xl">
-                <span class="text-blue-800 font-medium">{{
+                <div class="p-6">
+                  <h3 class="text-2xl font-bold text-gray-800 mb-4">
+                    {{ $t("rentCar") }} (3+1)
+                  </h3>
+                  <p class="text-gray-600">{{ $t("rentCarDesc") }}</p>
+                </div>
+                <div class="flex items-center justify-between px-6 py-4 bg-gray-100 rounded-b-xl">
+                  <span class="text-blue-800 font-medium">{{
           $t("pricingRentCar")
         }}</span>
-                <svg class="w-6 text-gray-800" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M9 6L15 12L9 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                    stroke-linejoin="round"></path>
-                </svg>
-              </div>
-            </NuxtLink>
-          </article>
-        </div>
+                  <svg class="w-6 text-gray-800" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9 6L15 12L9 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                      stroke-linejoin="round"></path>
+                  </svg>
+                </div>
+              </NuxtLink>
+            </article>
+          </div>
+        </section>
       </section>
-
       <div class="relative -mt-12 lg:-mt-24">
         <svg viewBox="0 0 1423 174" version="1.1" xmlns="http://www.w3.org/2000/svg"
           xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -952,7 +950,7 @@
             </li>
 
             <li class="mt-2 inline-block mr-2 md:block md:mr-0">
-              <NuxtLink :to="{ path: '/', hash: '#services' }"
+              <NuxtLink :to="{ path: '/', hash: '#prices' }"
                 class="no-underline hover:underline text-gray-800 hover:text-pink-500">{{ $t("services") }}
               </NuxtLink>
             </li>
