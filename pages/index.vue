@@ -1,12 +1,11 @@
 <template>
 
   <Head>
-    <title>Taxi Opatija | Discover | Prices - Services - Contact | 24/7</title>
+    <title>Taxi Opatija | Opatija's most trusted taxi | Available 24/7</title>
     <Meta name="description"
       content="Discover Taxi Opatija: Explore taxi prices, diverse transport services, and contact us effortlessly via phone, Viber, or WhatsApp!" />
     <link rel="canonical" href="https://www.taxiopatija.hr/" />
   </Head>
-
   <header>
     <div class="bg-transparent backdrop-blur-[1px] fixed bottom-0 z-50 w-full">
       <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl px-3 pb-2">
@@ -1180,7 +1179,7 @@ const getPeriodOfDay = () => {
 };
 
 useHead({
-  title: "Taxi Opatija | Discover | Prices - Services - Contact | 24/7",
+  title: "Taxi Opatija | Opatija's most trusted taxi | Available 24/7",
   htmlAttrs: {
     lang: "en",
   },
@@ -1199,7 +1198,7 @@ useHead({
     {
       hid: "og:title",
       property: "og:title",
-      content: "Taxi Opatija | Discover | Prices - Services - Contact | 24/7",
+      content: "Taxi Opatija | Opatija's most trusted taxi | Available 24/7",
     },
     {
       hid: "og:description",
@@ -1317,8 +1316,8 @@ useHead({
 });
 
 useSeoMeta({
-  title: "Taxi Opatija | Discover | Prices - Services - Contact | 24/7",
-  ogTitle: "Taxi Opatija | Discover | Prices - Services - Contact | 24/7",
+  title: "Taxi Opatija | Opatija's most trusted taxi | Available 24/7",
+  ogTitle: "Taxi Opatija | Opatija's most trusted taxi | Available 24/7",
   description:
     "Discover Taxi Opatija: Explore taxi prices, diverse transport services, and contact us effortlessly via phone, Viber, or WhatsApp!",
   ogDescription:
