@@ -68,7 +68,7 @@
   </header>
 
   <main id="home">
-    <img class="hero-photo h-[200px] mb-5 md:hidden rounded-none" src="../assets/imgs/opatijamainphoto.webp"
+    <img class="hero-photo h-[200px] mb-6 md:hidden rounded-none" src="../assets/imgs/opatijamainphoto.webp"
       alt="Opatija Taxi" />
     <div class="flex justify-center relative -mt-5"></div>
     <div class="overflow-x-auto text-nowrap whitespace-nowrap sticky top-0 mt-3 w-full z-50 bg-white" id="start">
@@ -94,7 +94,7 @@
       <hr />
     </div>
     <div>
-      <div class="relative isolate px-6 lg:px-8 mt-[55px] pb-20">
+      <div class="relative isolate px-6 lg:px-8 mt-[35px] pb-20">
         <div class="mx-auto max-w-2xl pt-10">
           <div class="flex justify-center">
             <img src="../assets/imgs/taxiopatijalogo.webp" alt="Taxi Opatija Business Logo Image"
@@ -249,7 +249,7 @@
       id="services">
       <!-- Change the colour #f8fafc to match the previous section colour -->
       <div class="relative">
-        <svg class="wave-top mt-10" viewBox="0 0 1439 147" version="1.1" xmlns="http://www.w3.org/2000/svg"
+        <svg class="wave-top mt-16" viewBox="0 0 1439 147" version="1.1" xmlns="http://www.w3.org/2000/svg"
           xmlns:xlink="http://www.w3.org/1999/xlink">
           <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
             <g transform="translate(-1.000000, -14.000000)" fill-rule="nonzero">
