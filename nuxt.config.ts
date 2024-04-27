@@ -27,7 +27,7 @@ export default defineNuxtConfig({
       ],
     },
   },
-  modules: ["@nuxtjs/tailwindcss", "nuxt-swiper", "dayjs-nuxt", '@nuxtjs/i18n'],
+  modules: ["@nuxtjs/tailwindcss", "nuxt-swiper", "dayjs-nuxt", '@nuxtjs/i18n', "nuxt-marquee"],
   i18n: {
     vueI18n: './i18n.config.ts', // if you are using custom path, default
        detectBrowserLanguage: {

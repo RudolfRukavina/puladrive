@@ -4,8 +4,8 @@ export default defineI18nConfig(() => ({
   messages: {
     en: {
       welcome: "Welcome",
-      titleDesc: "Simple, fast, reliable.",
-      callARide: "Call a ride",
+      titleDesc: "Official taxi of Opatija",
+      callARide: "Call a taxi",
       home: "Home",
       services: "Services",
       aboutus: "About us",
@@ -44,7 +44,7 @@ export default defineI18nConfig(() => ({
     hr: {
       welcome: "Dobrodošli",
       titleDesc: "Jednostavno, brzo, pouzdano.",
-      callARide: "Pozovi prijevoz",
+      callARide: "Pozovi taksi",
       home: "Naslovnica",
       services: "Usluge",
       aboutus: "O nama",

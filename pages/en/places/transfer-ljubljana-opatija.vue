@@ -10,7 +10,7 @@
   <header>
     <div class="bg-transparent backdrop-blur-[1px] fixed bottom-0 z-50 w-full">
       <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl px-3 pb-2">
-        <NuxtLink :to="{ path: '/', hash: '#naslovnica' }" class="flex items-center space-x-3 rtl:space-x-reverse">
+        <NuxtLink :to="{ path: '/', hash: '#home' }" class="flex items-center space-x-3 rtl:space-x-reverse">
           <img src="../../../assets/imgs/taxiopatijalogo.png" title="Taxi Opatija's business image, Logo"
             alt="Taxi Opatija, logo" class="w-14 h-[42px]  inline-block rounded-xl">
         </NuxtLink>
@@ -67,20 +67,21 @@
     </div>
   </header>
   <main>
-    <div class="overflow-x-auto text-nowrap whitespace-nowrap sticky top-0 mt-3 w-full z-50 bg-white">
+    <div class="overflow-x-auto text-nowrap whitespace-nowrap sticky top-0 w-full z-50 bg-white" id="start">
       <div class="max-w-screen-xl px-4 py-2 mx-auto">
         <div class="flex items-center justify-evenly">
-          <ul class="grid grid-cols-3 font-medium mt-0  text-base">
-            <li class="border-e px-4 w-full text-center  border-gray-300">
-              <NuxtLink :to="{ path: '/', hash: '#naslovnica' }" class="text-gray-900 hover:underline">{{ $t('home') }}
+          <ul class="grid grid-cols-3 font-medium mt-0 text-base">
+            <li class="border-e px-4 w-full text-center border-gray-300">
+              <NuxtLink :to="{ path: '/', hash: '#home' }" class="text-gray-900 hover:underline">{{ $t("home") }}
               </NuxtLink>
             </li>
-            <li class=" px-4 w-full text-center border-gray-300">
-              <NuxtLink :to="{ path: '/', hash: '#usluge' }" class="text-gray-900 hover:underline">{{ $t('services') }}
+            <li class="px-4 w-full text-center border-gray-300">
+              <NuxtLink :to="{ path: '/', hash: '#services' }" class="text-gray-900 hover:underline">{{ $t("services")
+                }}
               </NuxtLink>
             </li>
             <li class="border-s px-4 w-full text-center">
-              <NuxtLink to='/onama' class="text-gray-900 hover:underline">{{ $t('aboutus') }}
+              <NuxtLink :to="{ path: '/', hash: '#about-us' }" class="text-gray-900 hover:underline">{{ $t("aboutus") }}
               </NuxtLink>
             </li>
           </ul>
@@ -150,7 +151,7 @@
       <div class="flex justify-center w-full">
         <div
           class="border-t border-l border-r mx-5 min-w-lg w-full max-w-lg border-black custom-shadow rounded-t-lg p-6 relative bg-white">
-          <NuxtLink :to="i18n.locale.value === 'en' ? '/en/transfers' : '/transferi'">
+          <NuxtLink :to="{ path: '/', hash: '#transfers' }">
             <svg
               class="w-8 mb-4 bg-red-600 rounded-tl-md rounded-br-lg p-[3px] m-1 absolute top-0 left-0 cursor-pointer"
               viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -587,13 +588,13 @@
   </main>
 
   <footer class="bg-white mb-10">
-    <div class=" mx-auto px-8">
+    <div class="mx-auto px-8">
       <div class="w-full flex flex-col md:flex-row py-6">
         <div class="flex-1 mb-6 text-black">
           <NuxtLink class="text-pink-600 no-underline hover:no-underline font-bold text-2xl lg:text-4xl"
-            :to="{ path: '/', hash: '#naslovnica' }">
+            :to="{ path: '/', hash: '#home' }">
             <img src="../../../assets/imgs/taxiopatijalogo.png" title="Taxi Opatija's business image, Logo"
-              alt="Taxi Opatija, logo" class="w-20 h-[60px]  inline-block me-3 rounded-xl">
+              alt="Taxi Opatija, logo" class="w-20 h-[60px] inline-block me-3 rounded-xl" />
           </NuxtLink>
         </div>
         <div class="flex-1">
@@ -601,72 +602,81 @@
           <ul class="list-reset mb-6">
             <li class="mt-2 inline-block mr-2 md:block md:mr-0">
               <NuxtLink to="/" class="no-underline hover:underline text-gray-800 hover:text-pink-500">
-                {{ $t('home') }}
+                {{ $t("home") }}
               </NuxtLink>
             </li>
 
             <li class="mt-2 inline-block mr-2 md:block md:mr-0">
-              <NuxtLink :to="{ path: '/', hash: '#usluge' }"
-                class=" no-underline hover:underline text-gray-800 hover:text-pink-500">{{ $t('services') }}
+              <NuxtLink :to="{ path: '/', hash: '#services' }"
+                class="no-underline hover:underline text-gray-800 hover:text-pink-500">{{ $t("services") }}
               </NuxtLink>
             </li>
             <li class="mt-2 inline-block mr-2 md:block md:mr-0">
-              <NuxtLink to="/onama" class="no-underline hover:underline text-gray-800 hover:text-pink-500">{{
-          $t('aboutus') }}
-              </NuxtLink>
-            </li>
-          </ul>
-        </div>
-        <div class="flex-1">
-          <p class="uppercase text-gray-500 md:mb-6">{{ $t('services') }}</p>
-          <ul class="list-reset mb-6">
-            <li class="mt-2 inline-block mr-2 md:block md:mr-0">
-              <NuxtLink to="/taxi-price" class="no-underline hover:underline text-gray-800 hover:text-pink-500">{{
-          $t('servicesTaxi') }}
-              </NuxtLink>
-            </li>
-            <li class="mt-2 inline-block mr-2 md:block md:mr-0">
-              <NuxtLink :to="i18n.locale.value === 'en' ? '/en/transfers' : '/transferi'"
-                class="no-underline hover:underline text-gray-800 hover:text-pink-500">{{ $t('servicesTransfers') }}
-              </NuxtLink>
-            </li>
-            <li class="mt-2 inline-block mr-2 md:block md:mr-0">
-              <NuxtLink :to="i18n.locale.value === 'en' ? '/en/rent-a-van' : '/najam-kombi-vozila'"
-                class="no-underline hover:underline text-gray-800 hover:text-pink-500">
-                {{ $t('servicesRentVan') }}
-              </NuxtLink>
-            </li>
-            <li class="mt-2 inline-block mr-2 md:block md:mr-0">
-              <NuxtLink :to="i18n.locale.value === 'en' ? '/en/rent-a-car' : '/najam-automobila'"
+              <NuxtLink :to="{ path: '/', hash: '#about-us' }"
                 class="no-underline hover:underline text-gray-800 hover:text-pink-500">{{
-          $t('servicesRentCar') }}
+          $t("aboutus") }}
+              </NuxtLink>
+            </li>
+          </ul>
+        </div>
+        <div class="flex-1">
+          <p class="uppercase text-gray-500 md:mb-6">{{ $t("services") }}</p>
+          <ul class="list-reset mb-6">
+            <li class="mt-2 inline-block mr-2 md:block md:mr-0">
+              <NuxtLink :to="{ path: '/', hash: '#taxi-price' }"
+                class="no-underline hover:underline text-gray-800 hover:text-pink-500">{{
+          $t("servicesTaxi") }}
+              </NuxtLink>
+            </li>
+            <li class="mt-2 inline-block mr-2 md:block md:mr-0">
+              <NuxtLink :to="{ path: '/', hash: '#transfers' }"
+                class="no-underline hover:underline text-gray-800 hover:text-pink-500">{{ $t("servicesTransfers") }}
+              </NuxtLink>
+            </li>
+            <li class="mt-2 inline-block mr-2 md:block md:mr-0">
+              <NuxtLink :to="i18n.locale.value === 'en'
+          ? '/en/rent-a-van'
+          : '/najam-kombi-vozila'
+          " class="no-underline hover:underline text-gray-800 hover:text-pink-500">
+                {{ $t("servicesRentVan") }}
+              </NuxtLink>
+            </li>
+            <li class="mt-2 inline-block mr-2 md:block md:mr-0">
+              <NuxtLink :to="i18n.locale.value === 'en'
+          ? '/en/rent-a-car'
+          : '/najam-automobila'
+          " class="no-underline hover:underline text-gray-800 hover:text-pink-500">{{ $t("servicesRentCar") }}
               </NuxtLink>
             </li>
           </ul>
         </div>
 
         <div class="flex-1">
-          <p class="uppercase text-gray-500 md:mb-6">{{ $t('network') }}</p>
+          <p class="uppercase text-gray-500 md:mb-6">{{ $t("network") }}</p>
           <ul class="list-reset mb-6">
             <li class="mt-2 inline-block mr-2 md:block md:mr-0">
-              <a href="https://www.facebook.com/taxiopatija" target='_blank'
+              <a href="https://www.facebook.com/taxiopatija" target="_blank"
                 class="no-underline hover:underline text-gray-800 hover:text-pink-500">Facebook</a>
             </li>
             <li class="mt-2 inline-block mr-2 md:block md:mr-0">
-              <a href="https://www.instagram.com/taxiopatija.hr" target='_blank'
+              <a href="https://www.instagram.com/taxiopatija.hr" target="_blank"
                 class="no-underline hover:underline text-gray-800 hover:text-pink-500">Instagram</a>
             </li>
-
           </ul>
         </div>
         <div class="flex-1">
-          <p class="uppercase text-gray-500 md:mb-6">{{ $t('privacyPolicy') }}</p>
+          <p class="uppercase text-gray-500 md:mb-6">
+            {{ $t("privacyPolicy") }}
+          </p>
           <ul class="list-reset mb-6">
             <li class="mt-2 inline-block mr-2 md:block md:mr-0">
-              <a href="#" class="no-underline hover:underline text-gray-800 hover:text-pink-500">{{ $t('terms') }}</a>
+              <NuxtLink to="/" class="no-underline hover:underline text-gray-800 hover:text-pink-500">{{ $t("terms") }}
+              </NuxtLink>
             </li>
             <li class="mt-2 inline-block mr-2 md:block md:mr-0">
-              <a href="#" class="no-underline hover:underline text-gray-800 hover:text-pink-500">{{ $t('privacy') }}</a>
+              <NuxtLink to="/" class="no-underline hover:underline text-gray-800 hover:text-pink-500">{{ $t("privacy")
+                }}
+              </NuxtLink>
             </li>
           </ul>
         </div>

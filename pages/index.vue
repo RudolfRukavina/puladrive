@@ -10,7 +10,7 @@
   <header>
     <div class="bg-transparent backdrop-blur-[1px] fixed bottom-0 z-50 w-full">
       <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl px-3 pb-2">
-        <NuxtLink :to="{ path: '/', hash: '#naslovnica' }" class="flex items-center space-x-3 rtl:space-x-reverse">
+        <NuxtLink :to="{ path: '/', hash: '#home' }" class="flex items-center space-x-3 rtl:space-x-reverse">
           <img src="../assets/imgs/taxiopatijalogo.png" title="Taxi Opatija's business image, Logo"
             alt="Taxi Opatija, logo" class="w-14 h-[42px] inline-block rounded-xl" />
         </NuxtLink>
@@ -67,22 +67,23 @@
     </div>
   </header>
 
-  <main id="naslovnica">
+  <main id="home">
     <div class="flex justify-center relative -mt-5"></div>
     <div class="overflow-x-auto text-nowrap whitespace-nowrap sticky top-0 mt-3 w-full z-50 bg-white" id="start">
       <div class="max-w-screen-xl px-4 py-2 mx-auto">
         <div class="flex items-center justify-evenly">
           <ul class="grid grid-cols-3 font-medium mt-0 text-base">
             <li class="border-e px-4 w-full text-center border-gray-300">
-              <NuxtLink :to="{ path: '/', hash: '#naslovnica' }" class="text-gray-900 hover:underline">{{ $t("home") }}
+              <NuxtLink :to="{ path: '/', hash: '#home' }" class="text-gray-900 hover:underline">{{ $t("home") }}
               </NuxtLink>
             </li>
             <li class="px-4 w-full text-center border-gray-300">
-              <NuxtLink :to="{ path: '/', hash: '#usluge' }" class="text-gray-900 hover:underline">{{ $t("services") }}
+              <NuxtLink :to="{ path: '/', hash: '#services' }" class="text-gray-900 hover:underline">{{ $t("services")
+                }}
               </NuxtLink>
             </li>
             <li class="border-s px-4 w-full text-center">
-              <NuxtLink to="/onama" class="text-gray-900 hover:underline">{{ $t("aboutus") }}
+              <NuxtLink :to="{ path: '/', hash: '#about-us' }" class="text-gray-900 hover:underline">{{ $t("aboutus") }}
               </NuxtLink>
             </li>
           </ul>
@@ -91,40 +92,68 @@
       <hr />
     </div>
     <div>
-      <div class="relative isolate px-6 lg:px-8 mt-5">
+      <div class="relative isolate px-6 lg:px-8 mt-[55px] pb-20">
         <div class="mx-auto max-w-2xl pt-10">
           <div class="flex justify-center">
             <img src="../assets/imgs/taxiopatijalogo.webp" alt="Taxi Opatija Business Logo Image"
               title="Taxi Opatija, logo" class="-mt-5 object-cover w-3/12 sm:w-24" />
           </div>
-          <h2 class="text-sm -mb-1 font-normal text-center">
-            <NuxtLink to="/taxi-price" class="cursor-pointer"><strong class="text-gray-600 py-3">Taxi</strong>
-            </NuxtLink> |
-            <NuxtLink class="cursor-pointer" :to="i18n.locale.value === 'en' ? '/en/transfers' : '/transferi'">
-              <strong class="text-gray-600 py-3">{{
-          $t("transfers") }}</strong>
-            </NuxtLink>
-            |
-            <NuxtLink class="cursor-pointer" :to="i18n.locale.value === 'en'
-          ? '/en/rent-a-van'
-          : '/najam-kombi-vozila'
-          "><strong class="text-gray-600 py-3">Rent a van</strong></NuxtLink>
-            |
-            <NuxtLink class="cursor-pointer" :to="i18n.locale.value === 'en'
-          ? '/en/rent-a-car'
-          : '/najam-automobila'
-          ">
-              <strong class="text-gray-600 py-3">Rent a car</strong>
-            </NuxtLink>
-          </h2>
           <div class="text-center">
             <h1 class="text-[56px] leading-none tracking-tight text-gray-900 drop-shadow-md">
               <strong>Taxi Opatija</strong>
             </h1>
 
-            <h2 class="text-base font-bold tracking-tight text-gray-900">
-              {{ $t("titleDesc") }}
-            </h2>
+            <div class="text-lg flex justify-center font-medium tracking-tight px-8 text-black">
+              <NuxtMarquee :pauseOnHover="true" :gradientWidth="130" class="rounded-[58px]" :gradient="true"
+                gradientColor="white" speed="40">
+                |
+                <span class="px-3">
+                  <strong>Welcome to taxiopatija.hr</strong>
+                </span>
+                |
+                <span class="px-3">
+                  <strong>Opatija's most trusted taxi</strong>
+                </span>
+                |
+                <span class="px-3">
+                  <strong>Simple, fast, reliable</strong>
+                </span>
+                |
+                <span class="px-3">
+                  <strong>Our services include</strong>
+                </span>
+                -
+                <span class="px-3">
+                  <strong>Taxi</strong>
+                </span>
+                -
+                <span class="px-3">
+                  <strong>Airport transfers</strong>
+                </span>
+                -
+                <span class="px-3">
+                  <strong>City transfers</strong>
+                </span>
+                -
+                <span class="px-3">
+                  <strong>Excursions</strong>
+                </span>
+                -
+                <span class="px-3">
+                  <strong>Rent a car (3+1)</strong>
+                </span>
+                -
+                <span class="px-3">
+                  <strong>Rent a van (8+1)</strong>
+                </span>
+                |
+                <span class="px-3">
+                  <strong>Contact us by Viber, phone number or WhatsApp!</strong>
+                </span>
+
+              </NuxtMarquee>
+            </div>
+
 
             <a href="https://g.co/kgs/WPGpCp3" target="_blank" class="flex items-center mt-2.5 mb-5 justify-center">
               <div class="flex items-center space-x-1 rtl:space-x-reverse">
@@ -216,42 +245,261 @@
         </div>
       </div>
     </div>
-
-    <div class="leading-normal tracking-normal gradient" style="font-family: 'Source Sans Pro', sans-serif">
-      <div class="mt-10 mb-20">
-        <div class="flex justify-center">
-          <div class="switch">
-            <label for="toggle">
-              <input id="toggle" class="toggle-switch" type="checkbox" v-model="isDay" />
-              <div class="sun-moon">
-                <div class="dots"></div>
-              </div>
-              <div class="background">
-                <div class="stars1"></div>
-                <div class="stars2"></div>
-              </div>
-            </label>
-          </div>
-        </div>
-
-        <h3 class="text-xl text-center text-gray-900 mb-4 font-bold">
-          <br />
-          {{ isDay ? $t("dayDrive") : $t("nightDrive") }} {{ $t("drive") }}
-          <br />
-        </h3>
-
-        <ul class="list-disc list-inside text-center text-gray-700">
-          <li class="mb-2">{{ $t("startPrice") }}: 4.00€</li>
-          <li class="mb-2">
-            {{ $t("perKm") }}: {{ isDay ? "1.60" : "2.00" }}€
-          </li>
-        </ul>
-      </div>
-      <div class="relative -mt-12 lg:-mt-24">
-        <svg viewBox="0 0 1428 174" version="1.1" xmlns="http://www.w3.org/2000/svg"
+    <div class="leading-normal tracking-normal gradient" style="font-family: 'Source Sans Pro', sans-serif"
+      id="services">
+      <!-- Change the colour #f8fafc to match the previous section colour -->
+      <div class="relative">
+        <svg class="wave-top mt-10" viewBox="0 0 1439 147" version="1.1" xmlns="http://www.w3.org/2000/svg"
           xmlns:xlink="http://www.w3.org/1999/xlink">
-          <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-            <g transform="translate(-2.000000, 44.000000)" fill="#FFFFFF" fill-rule="nonzero">
+          <g stroke="none" stroke-width="1" fill="#ffffff" fill-rule="evenodd">
+            <g transform="translate(-1.000000, -14.000000)" fill-rule="nonzero">
+              <g class="wave" fill="#ffffff">
+                <path
+                  d="M1440,84 C1383.555,64.3 1342.555,51.3 1317,45 C1259.5,30.824 1206.707,25.526 1169,22 C1129.711,18.326 1044.426,18.475 980,22 C954.25,23.409 922.25,26.742 884,32 C845.122,37.787 818.455,42.121 804,45 C776.833,50.41 728.136,61.77 713,65 C660.023,76.309 621.544,87.729 584,94 C517.525,105.104 484.525,106.438 429,108 C379.49,106.484 342.823,104.484 319,102 C278.571,97.783 231.737,88.736 205,84 C154.629,75.076 86.296,57.743 0,32 L0,0 L1440,0 L1440,84 Z">
+                </path>
+              </g>
+              <g transform="translate(1.000000, 15.000000)" fill="#FFFFFF">
+                <g transform="translate(719.500000, 68.500000) rotate(-180.000000) translate(-719.500000, -68.500000) ">
+                  <path
+                    d="M0,0 C90.7283404,0.927527913 147.912752,27.187927 291.910178,59.9119003 C387.908462,81.7278826 543.605069,89.334785 759,82.7326078 C469.336065,156.254352 216.336065,153.6679 0,74.9732496"
+                    opacity="0.100000001"></path>
+                  <path
+                    d="M100,104.708498 C277.413333,72.2345949 426.147877,52.5246657 546.203633,45.5787101 C666.259389,38.6327546 810.524845,41.7979068 979,55.0741668 C931.069965,56.122511 810.303266,74.8455141 616.699903,111.243176 C423.096539,147.640838 250.863238,145.462612 100,104.708498 Z"
+                    opacity="0.100000001"></path>
+                  <path
+                    d="M1046,51.6521276 C1130.83045,29.328812 1279.08318,17.607883 1439,40.1656806 L1439,120 C1271.17211,77.9435312 1140.17211,55.1609071 1046,51.6521276 Z"
+                    opacity="0.200000003"></path>
+                </g>
+              </g>
+            </g>
+          </g>
+        </svg>
+      </div>
+
+      <h2 class="text-white my-3 font-bold drop-shadow-md text-5xl text-center" id="taxi-price"><strong>Taxi
+          price</strong>
+      </h2>
+      <div class="w-full mb-4">
+        <div class="h-1 mx-auto bg-white w-2/6 opacity-25 my-0 py-0 rounded-t"></div>
+      </div>
+      <div class="flex justify-center">
+        <div class="switch">
+          <label for="toggle">
+            <input id="toggle" class="toggle-switch" type="checkbox" v-model="isDay" />
+            <div class="sun-moon">
+              <div class="dots"></div>
+            </div>
+            <div class="background">
+              <div class="stars1"></div>
+              <div class="stars2"></div>
+            </div>
+          </label>
+        </div>
+      </div>
+      <div class="flex flex-col mx-5 md:flex-row justify-center mb-[23px] mt-6 md:space-x-6">
+        <div class="bg-white custom-shadow rounded-md p-6" v-if="!isDay">
+          <p class="text-red-700 bg-red-200 px-2.5 py-1 rounded-full inline-block mb-2">
+            {{ $t("nightDrive") }} {{ $t("drive") }}
+          </p>
+          <h3 class="text-xl text-gray-900 mb-4">
+            {{ $t("tService") }}<br />
+            <span class="font-bold text-gray-600 text-sm">22:00 - 05:00</span>
+          </h3>
+          <ul class="list-disc list-inside text-gray-700">
+            <li class="mb-2">
+              {{ $t("startPrice") }}: <span class="font-bold">4.00€</span>
+            </li>
+            <li class="mb-2">
+              {{ $t("perKm") }}: <span class="font-bold">2.00€</span>
+            </li>
+          </ul>
+        </div>
+        <div class="bg-white custom-shadow rounded-md p-6" v-if="isDay">
+          <p class="text-green-700 bg-green-200 px-2.5 py-1 rounded-full inline-block mb-2">
+            {{ $t("dayDrive") }} {{ $t("drive") }}
+          </p>
+          <h3 class="text-xl text-gray-900 mb-4">
+            {{ $t("tService") }}<br />
+            <span class="font-bold text-gray-600 text-sm">05:00 - 22:00</span>
+          </h3>
+          <ul class="list-disc list-inside text-gray-700">
+            <li class="mb-2">
+              {{ $t("startPrice") }}: <span class="font-bold">4.00€</span>
+            </li>
+            <li class="mb-2">
+              {{ $t("perKm") }}: <span class="font-bold">1.60€</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <h2 class="text-white my-3 mt-10 font-bold drop-shadow-md text-5xl text-center" id="transfers">
+        <strong>Transfers</strong>
+      </h2>
+      <div class="w-full">
+        <div class="h-1 mx-auto bg-white w-2/6 opacity-25 my-0 py-0 rounded-t"></div>
+      </div>
+
+
+
+
+      <section class="content-section bg-transparent pb-16 pt-5 px-4 lg:px-5">
+        <div class="container mx-auto">
+          <div class="grid grid-cols-1 gap-8">
+            <!-- Transfers -->
+            <div class="overflow-x-scroll w-full rounded-xl">
+              <div class="flex gap-4">
+                <article class="service-card bg-white rounded-xl shadow-md transition hover:shadow-lg">
+
+                  <div class="p-6 w-80">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">Transfers</h3>
+                    <p class="text-gray-600">Experience swift and seamless transfers to and from
+                      <strong>airports</strong>,
+                      <strong>cities</strong>, and <strong>destinations</strong>.
+                    </p>
+                    <p class="text-gray-600 my-3">Simplify your travel arrangements with our quick and efficient
+                      inquiry process.</p>
+                    <p class="text-gray-600 my-3"><strong>Scroll right</strong> to explore pricing options.</p>
+                  </div>
+
+                </article>
+
+                <article class="service-card bg-white rounded-xl shadow-md transition hover:shadow-lg">
+
+                  <div class="p-6 pb-0 w-80">
+                    <h3 class="text-2xl font-bold text-gray-800">Airport Transfers</h3>
+                  </div>
+
+                  <div class="p-6 pt-0">
+                    <h3 class="text-xl text-gray-900 mb-4">Choose an airport</h3>
+
+                    <div class="grid grid-cols-2 gap-4">
+                      <NuxtLink :to="transfer.address" v-for="transfer in transfersData"
+                        @click="selectedTransfer = transfer"
+                        class="whitespace-nowrap rounded-full bg-sky-100 px-2.5 py-0.5 text-base text-center text-blue-600 cursor-pointer"
+                        :class="transfer.name === 'Custom' ? 'col-span-2' : ''">
+                        {{ transfer.name }}
+                      </NuxtLink>
+                    </div>
+                  </div>
+                </article>
+
+
+                <article class="service-card bg-white rounded-xl shadow-md transition hover:shadow-lg">
+
+                  <div class="p-6 pb-0 w-80">
+                    <h3 class="text-2xl font-bold text-gray-800">City Transfers</h3>
+                  </div>
+                  <div class="p-6 pt-0">
+                    <h3 class="text-xl text-gray-900 mb-4">Choose a city</h3>
+
+                    <div class="grid grid-cols-2 gap-4">
+                      <NuxtLink :to="transfer.address" v-for="transfer in cityTransfersData"
+                        @click="selectedTransfer = transfer"
+                        class="whitespace-nowrap rounded-full bg-sky-100 px-2.5 py-0.5 text-base text-center text-blue-600 cursor-pointer"
+                        :class="transfer.name === 'Custom' ? 'col-span-2' : ''">
+                        {{ transfer.name }}
+                      </NuxtLink>
+                    </div>
+                  </div>
+                </article>
+
+
+                <article class="service-card bg-white rounded-xl shadow-md transition hover:shadow-lg">
+
+                  <div class="p-6 pb-0 w-80">
+                    <h3 class="text-2xl font-bold text-gray-800">Excursions</h3>
+                  </div>
+                  <div class="p-6 pt-0">
+                    <h3 class="text-xl text-gray-900 mb-4">Choose an location</h3>
+
+                    <div class="grid grid-cols-2 gap-4">
+                      <NuxtLink :to="transfer.address" v-for="transfer in excursionTransfersData"
+                        @click="selectedTransfer = transfer"
+                        class="whitespace-nowrap rounded-full bg-sky-100 px-2.5 py-0.5 text-base text-center text-blue-600 cursor-pointer"
+                        :class="transfer.name === 'Custom' ? 'col-span-2' : ''">
+                        {{ transfer.name }}
+                      </NuxtLink>
+                    </div>
+                  </div>
+                </article>
+                <article class="service-card bg-white rounded-xl shadow-md transition hover:shadow-lg">
+                  <div class="p-6 pb-0 w-80">
+                    <h3 class="text-2xl font-bold text-gray-800">Special Offers</h3>
+                  </div>
+                  <div class="p-6 pt-0">
+                    <span class="text-base text-gray-900">24.05.2024 - 26.05.2024</span>
+                    <h4 class="text-xl text-gray-900 mb-4">Sea Star Festival</h4>
+
+                    <div class="grid grid-cols-1 gap-4">
+                      <NuxtLink :to="transfer.address" v-for="transfer in specialTransfersData"
+                        @click="selectedTransfer = transfer"
+                        class="whitespace-nowrap rounded-full bg-sky-100 px-2.5 py-0.5 text-base text-center text-blue-600 cursor-pointer">
+                        {{ transfer.name }}
+                      </NuxtLink>
+                    </div>
+                  </div>
+                  <div class="flex justify-center"> <span
+                      class="text-sm font-bold text-white bg-sky-600 rounded-xl  p-2 m-2 text-center w-full">15%
+                      discount</span></div>
+                </article>
+              </div>
+            </div>
+
+          </div>
+          <h2 class="text-white my-3 mt-12 font-bold drop-shadow-md text-5xl text-center"><strong>Rent a van
+            </strong>
+          </h2>
+          <div class="w-full mb-4">
+            <div class="h-1 mx-auto bg-white w-2/6 opacity-25 my-0 py-0 rounded-t"></div>
+          </div>
+          <!-- Rent a Van -->
+          <article class="service-card bg-white rounded-xl shadow-md transition hover:shadow-lg">
+            <NuxtLink :to="i18n.locale.value === 'en' ? '/en/rent-a-van' : '/najam-kombi-vozila'">
+              <div class="p-6">
+                <h3 class="text-2xl font-bold text-gray-800 mb-4">{{ $t("rentVan") }}</h3>
+                <p class="text-gray-600">{{ $t("rentVanDesc") }}</p>
+              </div>
+              <div class="flex items-center justify-between px-6 py-4 bg-gray-100 rounded-b-xl">
+                <span class="text-blue-800 font-medium">{{ $t("pricingRentVan") }}</span>
+                <svg class="w-6 text-gray-800" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M9 6L15 12L9 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round"></path>
+                </svg>
+              </div>
+            </NuxtLink>
+
+          </article>
+          <h2 class="text-white my-3 mt-12 font-bold drop-shadow-md text-5xl text-center"><strong>Rent a car
+            </strong>
+          </h2>
+          <div class="w-full mb-4">
+            <div class="h-1 mx-auto bg-white w-2/6 opacity-25 my-0 py-0 rounded-t"></div>
+          </div>
+          <!-- Rent a Car -->
+          <article class="service-card bg-white rounded-xl shadow-md mb-9 transition hover:shadow-lg">
+            <NuxtLink :to="i18n.locale.value === 'en' ? '/en/rent-a-car' : '/najam-automobila'">
+              <div class="p-6">
+                <h3 class="text-2xl font-bold text-gray-800 mb-4">{{ $t("rentCar") }} (3+1)</h3>
+                <p class="text-gray-600">{{ $t("rentCarDesc") }}</p>
+              </div>
+              <div class="flex items-center justify-between px-6 py-4 bg-gray-100 rounded-b-xl">
+                <span class="text-blue-800 font-medium">{{ $t("pricingRentCar") }}</span>
+                <svg class="w-6 text-gray-800" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M9 6L15 12L9 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round"></path>
+                </svg>
+              </div>
+            </NuxtLink>
+          </article>
+        </div>
+      </section>
+
+
+      <div class="relative -mt-12 lg:-mt-24">
+        <svg viewBox="0 0 1423 174" version="1.1" xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink">
+          <g stroke="none" stroke-width="0" fill="#ffffff" fill-rule="evenodd">
+            <g transform="translate(-2.000000, 44.000000)" fill="#ffffff" fill-rule="nonzero">
               <path
                 d="M0,0 C90.7283404,0.927527913 147.912752,27.187927 291.910178,59.9119003 C387.908462,81.7278826 543.605069,89.334785 759,82.7326078 C469.336065,156.254352 216.336065,153.6679 0,74.9732496"
                 opacity="0.100000001"></path>
@@ -262,7 +510,7 @@
                 d="M1046,51.6521276 C1130.83045,29.328812 1279.08318,17.607883 1439,40.1656806 L1439,120 C1271.17211,77.9435312 1140.17211,55.1609071 1046,51.6521276 Z"
                 id="Path-4" opacity="0.200000003"></path>
             </g>
-            <g transform="translate(-4.000000, 76.000000)" fill="#FFFFFF" fill-rule="nonzero">
+            <g transform="translate(-4.000000, 76.000000)" fill="#ffffff" fill-rule="nonzero">
               <path
                 d="M0.457,34.035 C57.086,53.198 98.208,65.809 123.822,71.865 C181.454,85.495 234.295,90.29 272.033,93.459 C311.355,96.759 396.635,95.801 461.025,91.663 C486.76,90.01 518.727,86.372 556.926,80.752 C595.747,74.596 622.372,70.008 636.799,66.991 C663.913,61.324 712.501,49.503 727.605,46.128 C780.47,34.317 818.839,22.532 856.324,15.904 C922.689,4.169 955.676,2.522 1011.185,0.432 C1060.705,1.477 1097.39,3.129 1121.236,5.387 C1161.703,9.219 1208.621,17.821 1235.4,22.304 C1285.855,30.748 1354.351,47.432 1440.886,72.354 L1441.191,104.352 L1.121,104.031 L0.457,34.035 Z">
               </path>
@@ -270,138 +518,302 @@
           </g>
         </svg>
       </div>
-      <section class="content-section bg-white pb-16 pt-2 -my-[1px]" id="usluge">
-        <div class="container mx-auto px-4 lg:px-5">
-          <h2 class="w-full my-2 text-4xl font-bold leading-tight text-center text-gray-800">
-            {{ $t("services") }}
-          </h2>
-          <div class="w-full mb-4">
-            <div
-              class="h-1 mx-auto bg-gradient-to-r from-gray-600 via-gray-700 to-gray-600 w-64 opacity-25 my-0 py-0 rounded-t">
+
+      <!-- About us -->
+      <div class="overflow-x-scroll bg-white" id="about-us">
+        <div class="flex px-5 w-auto bg-white">
+          <div class="w-[100vw] py-[42.5px] leading-3 text-center ">
+            <div class='flex'>
+              <div
+                class="inline-block pe-5 dark:ring-white/10 ring-primary/5  dark:shadow-thick rounded-3xl lg:row-start-4 h-full p-5 dark:bg-secondary">
+                <div class="flex justify-between cursor-pointer">
+                  <p class="text-4xl tracking-tight font-medium text-black text-start  md:text-5xl">
+                    About us
+                  </p>
+                  <div class="flex justify-evenlys items-center">
+                    <span class="text-gray-800 font-bolder">Scroll right</span>
+                    <svg class="w-6 text-gray-800" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M9 6L15 12L9 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round"></path>
+                    </svg>
+                  </div>
+                </div>
+                <div class="flex items-center mb-2 w-[80vw] min-w-md max-w-lg">
+                  <svg class="w-4 h-4 text-yellow-300 me-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor" viewBox="0 0 22 20">
+                    <path
+                      d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                  </svg>
+                  <svg class="w-4 h-4 text-yellow-300 me-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor" viewBox="0 0 22 20">
+                    <path
+                      d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                  </svg>
+                  <svg class="w-4 h-4 text-yellow-300 me-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor" viewBox="0 0 22 20">
+                    <path
+                      d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                  </svg>
+                  <svg class="w-4 h-4 text-yellow-300 me-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor" viewBox="0 0 22 20">
+                    <path
+                      d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                  </svg>
+                  <svg class="w-4 h-4 text-yellow-300 me-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor" viewBox="0 0 22 20">
+                    <path
+                      d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                  </svg>
+                  <p class="ms-1 text-sm font-medium text-gray-500 dark:text-gray-400">5</p>
+                  <p class="ms-1 text-sm font-medium text-gray-500 dark:text-gray-400">out of</p>
+                  <p class="ms-1 text-sm font-medium text-gray-500 dark:text-gray-400">5</p>
+                </div>
+                <p class="text-sm text-start font-medium text-gray-500">13 global ratings</p>
+                <div class="flex items-center mt-4">
+                  <a href="#" class="text-sm font-medium text-blue-600 dark:text-blue-500 hover:underline">5 star</a>
+                  <div class="w-2/4 h-5 mx-4 bg-gray-200 rounded dark:bg-gray-700">
+                    <div class="h-5 bg-yellow-300 rounded" style="width: 100%"></div>
+                  </div>
+                  <span class="text-sm font-medium text-gray-500 dark:text-gray-400">100%</span>
+                </div>
+                <div class="flex items-center mt-4">
+                  <a href="#" class="text-sm font-medium text-blue-600 dark:text-blue-500 hover:underline">4 star</a>
+                  <div class="w-2/4 h-5 mx-4 bg-gray-200 rounded dark:bg-gray-700">
+                    <div class="h-5 bg-yellow-300 rounded" style="width: 0%"></div>
+                  </div>
+                  <span class="text-sm font-medium text-gray-500 dark:text-gray-400">0%</span>
+                </div>
+                <div class="flex items-center mt-4">
+                  <a href="#" class="text-sm font-medium text-blue-600 dark:text-blue-500 hover:underline">3 star</a>
+                  <div class="w-2/4 h-5 mx-4 bg-gray-200 rounded dark:bg-gray-700">
+                    <div class="h-5 bg-yellow-300 rounded" style="width: 0%"></div>
+                  </div>
+                  <span class="text-sm font-medium text-gray-500 dark:text-gray-400">0%</span>
+                </div>
+                <div class="flex items-center mt-4">
+                  <a href="#" class="text-sm font-medium text-blue-600 dark:text-blue-500 hover:underline">2 star</a>
+                  <div class="w-2/4 h-5 mx-4 bg-gray-200 rounded dark:bg-gray-700">
+                    <div class="h-5 bg-yellow-300 rounded" style="width: 0%"></div>
+                  </div>
+                  <span class="text-sm font-medium text-gray-500 dark:text-gray-400">0%</span>
+                </div>
+                <div class="flex items-center mt-4">
+                  <a href="#" class="text-sm font-medium text-blue-600 dark:text-blue-500 hover:underline">1 star</a>
+                  <div class="w-2/4 h-5 mx-4 bg-gray-200 rounded dark:bg-gray-700">
+                    <div class="h-5 bg-yellow-300 rounded" style="width: 0%"></div>
+                  </div>
+                  <span class="text-sm font-medium text-gray-500 dark:text-gray-400">0%</span>
+                </div>
+
+                <div class="md:grid md:grid-cols-2 gap-2 lg:grid-cols-1 text-start">
+                  <div class="mt-4">
+                    <p class="text-sm text-pink-500 dark:text-pink-400">
+                      "Vrhunska i brza usluga! Vozač vrlo pristojan i uljudan."
+                    </p>
+                    <p class="text-xs mt-2 text-zinc-500"> <span class="block text-xs">Vedran</span> </p>
+                  </div>
+
+                </div>
+              </div>
+              <div
+                class="inline-block px-6 dark:ring-white/10 ring-primary/5  dark:shadow-thick rounded-3xl lg:row-start-4 h-full p-5 bg-white dark:bg-secondary">
+                <div class="flex justify-between">
+                  <p class="text-2xl tracking-tight font-medium text-gray-900 text-start  md:text-4xl">
+                    What is Taxi Opatija?
+                  </p>
+                  <img src="../assets/imgs/taxiopatijalogo.png" title="Taxi Opatija's business image, Logo"
+                    alt="Taxi Opatija, logo" class="w-11 h-8 inline-block me-3 rounded-xl" />
+                </div>
+                <div class="flex items-center mb-2 w-[80vw] min-w-md max-w-md">
+                  <svg class="w-4 h-4 text-yellow-300 me-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor" viewBox="0 0 22 20">
+                    <path
+                      d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                  </svg>
+                  <svg class="w-4 h-4 text-yellow-300 me-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor" viewBox="0 0 22 20">
+                    <path
+                      d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                  </svg>
+                  <svg class="w-4 h-4 text-yellow-300 me-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor" viewBox="0 0 22 20">
+                    <path
+                      d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                  </svg>
+                  <svg class="w-4 h-4 text-yellow-300 me-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor" viewBox="0 0 22 20">
+                    <path
+                      d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                  </svg>
+                  <svg class="w-4 h-4 text-yellow-300 me-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor" viewBox="0 0 22 20">
+                    <path
+                      d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                  </svg>
+                  <p class="ms-1 text-sm font-medium text-gray-500 dark:text-gray-400">5</p>
+                  <p class="ms-1 text-sm font-medium text-gray-500 dark:text-gray-400">out of</p>
+                  <p class="ms-1 text-sm font-medium text-gray-500 dark:text-gray-400">5</p>
+                </div>
+                <p class="text-xl text-start font-medium text-gray-700 drop-shadow-md">Taxi Opatija is the official and
+                  most trusted
+                  taxi service in Opatija.</p>
+                <p class="text-xl text-start my-2 font-medium text-gray-500">
+                  Whether you're looking for a quick taxi ride in Opatija or a big trip anywhere across Europe, Taxi
+                  Opatija
+                  is your go-to destination for exceptional service, ensuring
+                  prompt, reliable, and comfortable transportation experiences.</p>
+              </div>
+              <div
+                class="inline-block px-6 dark:ring-white/10 ring-primary/5  dark:shadow-thick rounded-3xl lg:row-start-4 h-full p-5 bg-white dark:bg-secondary">
+                <div class="flex justify-between">
+                  <p class="text-2xl tracking-tight font-medium text-gray-900 text-start  md:text-4xl">
+                    Our vehicle fleet
+                  </p>
+                  <img src="../assets/imgs/taxiopatijalogo.png" title="Taxi Opatija's vehicle fleet, cars and vans"
+                    alt="Taxi Opatija's vehicle fleet, cars and vans" class="w-11 h-8 inline-block me-3 rounded-xl" />
+                </div>
+                <div class="flex items-center mb-2 w-[80vw] min-w-md max-w-md">
+                  <svg class="w-4 h-4 text-yellow-300 me-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor" viewBox="0 0 22 20">
+                    <path
+                      d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                  </svg>
+                  <svg class="w-4 h-4 text-yellow-300 me-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor" viewBox="0 0 22 20">
+                    <path
+                      d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                  </svg>
+                  <svg class="w-4 h-4 text-yellow-300 me-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor" viewBox="0 0 22 20">
+                    <path
+                      d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                  </svg>
+                  <svg class="w-4 h-4 text-yellow-300 me-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor" viewBox="0 0 22 20">
+                    <path
+                      d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                  </svg>
+                  <svg class="w-4 h-4 text-yellow-300 me-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor" viewBox="0 0 22 20">
+                    <path
+                      d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                  </svg>
+                  <p class="ms-1 text-sm font-medium text-gray-500 dark:text-gray-400">5</p>
+                  <p class="ms-1 text-sm font-medium text-gray-500 dark:text-gray-400">out of</p>
+                  <p class="ms-1 text-sm font-medium text-gray-500 dark:text-gray-400">5</p>
+                </div>
+                <div class="flex justify-between">
+                  <img src="../assets/imgs/cars.jpg" title="Taxi Opatija's business image, Logo"
+                    alt="Taxi Opatija, logo" class=" w-[80vw] min-w-md max-w-md inline-block me-3 rounded-xl" />
+                </div>
+                <p class="text-xl text-start my-2 font-medium text-gray-500">
+                  Our vehicle fleet consists of modern vans (8+1) and comfortable cars (3+1), equipped with all
+                  necessary amenities to make your journey pleasant and stress-free.</p>
+              </div>
+              <div
+                class="inline-block px-6 dark:ring-white/10 ring-primary/5  dark:shadow-thick rounded-3xl lg:row-start-4 h-full p-5  bg-white dark:bg-secondary">
+                <div class="flex justify-between">
+                  <p class="text-2xl tracking-tight font-medium text-gray-900 text-start  md:text-4xl">
+                    Best at what we do!
+                  </p>
+                  <img src="../assets/imgs/taxiopatijalogo.png" title="Taxi Opatija's business image, Logo"
+                    alt="Taxi Opatija, logo" class="w-11 h-8 inline-block me-3 rounded-xl" />
+                </div>
+                <div class="w-48 text-base">
+                  <NuxtMarquee :pauseOnHover="true" :gradientWidth="100" class="rounded-[58px]" :gradient="true"
+                    gradientColor="white" speed="40">
+                    <span class="px-3">
+                      <strong>24/7</strong>
+                    </span>
+
+                    |
+                    <span class="px-3">
+                      <strong>Opatija's most trusted taxi</strong>
+                    </span>
+                    |
+                    <span class="px-3">
+                      <strong>Safety</strong>
+                    </span>
+                    |
+                    <span class="px-3">
+                      <strong>Reliability</strong>
+                    </span>
+                    |
+                    <span class="px-3">
+                      <strong>Comfort</strong>
+                    </span>
+                    |
+                    <span class="px-3">
+                      <strong>Quality</strong>
+                    </span>
+                    |
+                    <span class="px-3">
+                      <strong>Cleanliness</strong>
+                    </span>
+                    |
+                    <span class="px-3">
+                      <strong>Trust</strong>
+                    </span>
+                    |
+
+                  </NuxtMarquee>
+                </div>
+                <div class="flex items-center mb-2 w-[80vw] min-w-md max-w-md">
+                  <svg class="w-4 h-4 text-yellow-300 me-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor" viewBox="0 0 22 20">
+                    <path
+                      d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                  </svg>
+                  <svg class="w-4 h-4 text-yellow-300 me-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor" viewBox="0 0 22 20">
+                    <path
+                      d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                  </svg>
+                  <svg class="w-4 h-4 text-yellow-300 me-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor" viewBox="0 0 22 20">
+                    <path
+                      d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                  </svg>
+                  <svg class="w-4 h-4 text-yellow-300 me-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor" viewBox="0 0 22 20">
+                    <path
+                      d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                  </svg>
+                  <svg class="w-4 h-4 text-yellow-300 me-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor" viewBox="0 0 22 20">
+                    <path
+                      d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                  </svg>
+                  <p class="ms-1 text-sm font-medium text-gray-500 dark:text-gray-400">5</p>
+                  <p class="ms-1 text-sm font-medium text-gray-500 dark:text-gray-400">out of</p>
+                  <p class="ms-1 text-sm font-medium text-gray-500 dark:text-gray-400">5</p>
+                </div>
+                <p class="text-xl text-start my-2 font-medium text-gray-500">
+                  With our dedicated approach and attention to detail, Taxi Opatija creates a travel experience that
+                  will remain a fond memory. Contact us today and let us provide you with an unforgettable journey that
+                  exceeds all your expectations.</p>
+                <a href="tel:+38598491369">
+                  <button
+                    class="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
+                    {{ $t("callUs") }}
+                  </button>
+                </a>
+              </div>
+
             </div>
-          </div>
 
-          <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
-            <article
-              class="hover:animate-background rounded-xl bg-gradient-to-r from-gray-400 via-slate-500 to-gray-400 p-0.5 shadow-md transition hover:bg-[length:400%_400%] hover:shadow-sm hover:[animation-duration:_4s]">
-              <NuxtLink to="/taxi-price">
-                <div class="rounded-[10px] bg-gray-50 p-4 sm:p-6 h-full">
-                  <div class="flex justify-between mt-1">
-                    <span class="text-sm ms-8 w-full text-blue-800 text-center font-medium">{{ $t("pricingTaxi")
-                      }}</span>
-                    <svg class="w-6 inline-block" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                      <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                      <g id="SVGRepo_iconCarrier">
-                        <path d="M9 6L15 12L9 18" stroke="#000000" stroke-width="2" stroke-linecap="round"
-                          stroke-linejoin="round"></path>
-                      </g>
-                    </svg>
-                  </div>
-                  <h3 class="mt-0 text-3xl font-bold text-gray-800 drop-shadow-sm py-1 text-center">
-                    {{ $t("taxiservice") }}
-                  </h3>
-                  <p class="text-gray-500 text-sm py-1 text-center">
-                    {{ $t("taxiDesc") }}
-                  </p>
-                </div>
-              </NuxtLink>
-            </article>
-
-            <article
-              class="hover:animate-background rounded-xl bg-gradient-to-r from-gray-400 via-slate-500 to-gray-400 p-0.5 shadow-md transition hover:bg-[length:400%_400%] hover:shadow-sm hover:[animation-duration:_4s]">
-              <NuxtLink :to="i18n.locale.value === 'en' ? '/en/transfers' : '/transferi'
-          ">
-                <div class="rounded-[10px] bg-gray-50 p-4 sm:p-6 h-full">
-                  <div class="flex justify-between mt-1">
-                    <span class="text-sm ms-8 w-full text-blue-800 text-center font-medium">{{ $t("pricingTransfers")
-                      }}</span>
-                    <svg class="w-6 inline-block" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                      <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                      <g id="SVGRepo_iconCarrier">
-                        <path d="M9 6L15 12L9 18" stroke="#000000" stroke-width="2" stroke-linecap="round"
-                          stroke-linejoin="round"></path>
-                      </g>
-                    </svg>
-                  </div>
-                  <h3 class="mt-0 text-3xl font-bold text-gray-800 drop-shadow-sm py-1 text-center">
-                    {{ $t("transfers") }}
-                  </h3>
-                  <p class="text-gray-500 text-sm py-1 text-center">
-                    {{ $t("transferDesc") }}
-                  </p>
-                </div>
-              </NuxtLink>
-            </article>
-
-            <article
-              class="hover:animate-background rounded-xl bg-gradient-to-r from-gray-400 via-slate-500 to-gray-400 p-0.5 shadow-md transition hover:bg-[length:400%_400%] hover:shadow-sm hover:[animation-duration:_4s]">
-              <NuxtLink :to="i18n.locale.value === 'en'
-          ? '/en/rent-a-van'
-          : '/najam-kombi-vozila'
-          ">
-                <div class="rounded-[10px] bg-gray-50 p-4 sm:p-6 h-full">
-                  <div class="flex justify-between mt-1">
-                    <span class="text-sm ms-8 w-full text-blue-800 text-center font-medium">{{ $t("pricingRentVan")
-                      }}</span>
-                    <svg class="w-6 inline-block" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                      <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                      <g id="SVGRepo_iconCarrier">
-                        <path d="M9 6L15 12L9 18" stroke="#000000" stroke-width="2" stroke-linecap="round"
-                          stroke-linejoin="round"></path>
-                      </g>
-                    </svg>
-                  </div>
-                  <h3 class="mt-0 text-3xl font-bold text-gray-800 drop-shadow-sm py-1 text-center">
-                    {{ $t("rentVan") }}
-                  </h3>
-                  <p class="text-gray-500 text-sm py-1 text-center">
-                    {{ $t("rentVanDesc") }}
-                  </p>
-                </div>
-              </NuxtLink>
-            </article>
-
-            <article
-              class="hover:animate-background rounded-xl bg-gradient-to-r from-gray-400 via-slate-500 to-gray-400 p-0.5 shadow-md transition hover:bg-[length:400%_400%] hover:shadow-sm hover:[animation-duration:_4s]">
-              <NuxtLink :to="i18n.locale.value === 'en'
-          ? '/en/rent-a-car'
-          : '/najam-automobila'
-          ">
-                <div class="rounded-[10px] bg-gray-50 p-4 sm:p-6 h-full">
-                  <div class="flex justify-between mt-1">
-                    <span class="text-sm ms-8 w-full text-blue-800 text-center font-medium">{{ $t("pricingRentCar")
-                      }}</span>
-                    <svg class="w-6 inline-block" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                      <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                      <g id="SVGRepo_iconCarrier">
-                        <path d="M9 6L15 12L9 18" stroke="#000000" stroke-width="2" stroke-linecap="round"
-                          stroke-linejoin="round"></path>
-                      </g>
-                    </svg>
-                  </div>
-                  <h3 class="mt-0 text-3xl font-bold text-gray-800 drop-shadow-sm py-1 text-center">
-                    {{ $t("rentCar") }}
-                  </h3>
-                  <p class="text-gray-500 text-sm py-1 text-center">
-                    {{ $t("rentCarDesc") }}
-                  </p>
-                </div>
-              </NuxtLink>
-            </article>
           </div>
         </div>
-      </section>
+      </div>
+
+
 
       <!-- Change the colour #f8fafc to match the previous section colour -->
       <div class="gradientWorkHours">
         <div class="relative">
           <svg class="wave-top" viewBox="0 0 1439 147" version="1.1" xmlns="http://www.w3.org/2000/svg"
             xmlns:xlink="http://www.w3.org/1999/xlink">
-            <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+            <g stroke="none" stroke-width="1" fill="#ffffff" fill-rule="evenodd">
               <g transform="translate(-1.000000, -14.000000)" fill-rule="nonzero">
                 <g class="wave" fill="#ffffff">
                   <path
@@ -425,213 +837,6 @@
               </g>
             </g>
           </svg>
-        </div>
-        <div class="flex overflow-x-auto p-4">
-          <!-- Card 1 -->
-
-          <!-- Card 2 -->
-          <div class="w-80 bg-sky-700 text-white rounded-lg shadow-lg mx-2">
-            <div class="p-4 w-80">
-              <h3 class="text-xl font-semibold mb-2">Discover</h3>
-              <p class="text-sm">
-                Discover the epitome of travel with Taxi Opatija, renowned for offering top-notch transfer services both
-                domestically and internationally. Our mission is simple yet profound: to ensure every journey is a
-                seamless blend of comfort, safety, and reliability. As Opatija's most trusted taxi service, we take
-                pride in delivering unparalleled experiences to our clients, regardless of destination or travel time.
-                Book your
-                ride now and experience the distinction of Taxi Opatija.
-              </p>
-            </div>
-          </div>
-
-          <div class="w-80 bg-sky-600 text-white rounded-lg shadow-lg mx-2">
-            <div class="p-4 w-80">
-              <h3 class="text-xl font-semibold mb-2">Quality first!</h3>
-              <p class="text-sm mt-3">
-                Our vehicle fleet consists of modern vans (8+1) and comfortable
-                cars (3+1), equipped with all necessary amenities to make your
-                journey pleasant and stress-free. All our drivers are highly
-                qualified and experienced, dedicated to providing excellent
-                service and passenger safety.
-              </p>
-            </div>
-          </div>
-
-          <div class="w-80 bg-sky-700 text-white rounded-lg shadow-lg mx-2">
-            <div class="p-4 w-80">
-              <h3 class="text-xl font-semibold mb-2">Adaptability!</h3>
-              <p class="text-sm mt-3">
-                Whether you're traveling for business or leisure, alone or in a
-                group, Taxi Opatija is your reliable Transfersation partner. Our
-                service is available 24/7 to ensure you can always count on us,
-                no matter your needs or the urgency of your travel.
-              </p>
-            </div>
-          </div>
-
-          <div class="w-80 bg-sky-600 text-white rounded-lg shadow-lg mx-2">
-            <div class="p-4 w-80">
-              <h3 class="text-xl font-semibold mb-2">Best at what we do!</h3>
-              <p class="text-sm mt-3">
-                With our dedicated approach and attention to detail, Taxi
-                Opatija creates a travel experience that will remain a fond
-                memory. Contact us today and let us provide you with an
-                unforgettable journey that exceeds all your expectations.
-              </p>
-            </div>
-          </div>
-
-          <div class="w-80 bg-sky-700 text-white rounded-lg shadow-lg mx-2">
-            <div class="p-4 w-80">
-              <h3 class="text-xl font-semibold mb-2">Custom arrangements!</h3>
-              <p class="text-sm mt-3">
-                Yes, we offer Transfersation services for medical appointments,
-                hospital visits, and other healthcare-related needs. Contact us
-                to arrange Transfersation for your medical appointments.
-              </p>
-            </div>
-          </div>
-
-          <div class="w-80 bg-sky-600 text-white rounded-lg shadow-lg mx-2">
-            <div class="p-4 w-80">
-              <h3 class="text-xl font-semibold mb-2">Comfort!</h3>
-              <p class="text-sm mt-3">
-                Yes, all our vehicles are equipped with amenities such as
-                climate control and comfortable seating to ensure a pleasant and
-                enjoyable ride for our passengers.
-              </p>
-            </div>
-          </div>
-
-          <div class="w-80 bg-sky-700 text-white rounded-lg shadow-lg mx-2">
-            <div class="p-4 w-80">
-              <h3 class="text-xl font-semibold mb-2">Reliability!</h3>
-              <p class="text-sm mt-3">
-                Yes, you can schedule recurring rides for daily commutes or
-                regular appointments to ensure reliable Transfersation whenever
-                you need it. Contact us to set up a recurring ride schedule
-                tailored to your needs.
-              </p>
-            </div>
-          </div>
-
-          <div class="w-80 bg-sky-600 text-white rounded-lg shadow-lg mx-2">
-            <div class="p-4 w-80">
-              <h3 class="text-xl font-semibold mb-2">We are multilingual!</h3>
-              <p class="text-sm mt-3">
-                Yes, many of our drivers are bilingual or multilingual,
-                providing assistance in various languages to cater to our
-                diverse clientele. Let us know your language preference when
-                booking.
-              </p>
-            </div>
-          </div>
-
-          <div class="w-80 bg-sky-700 text-white rounded-lg shadow-lg mx-2">
-            <div class="p-4 w-80">
-              <h3 class="text-xl font-semibold mb-2">Wi-Fi!</h3>
-              <p class="text-sm mt-3">
-                Yes, our drivers are equipped with smartphones and unlimited
-                internet. If you need Wi-Fi, please let your driver know and he
-                will turn his Personal Hotspot on for you!
-              </p>
-            </div>
-          </div>
-
-          <div class="w-80 bg-sky-600 text-white rounded-lg shadow-lg mx-2">
-            <div class="p-4 w-80">
-              <h3 class="text-xl font-semibold mb-2">
-                Personalized group Transfers!
-              </h3>
-              <p class="text-sm mt-3">
-                Absolutely! We specialize in group Transfersation for events
-                such as weddings, parties, corporate outings, and more. Contact
-                us to discuss your specific requirements and get a personalized
-                quote.
-              </p>
-            </div>
-          </div>
-
-          <div class="w-80 bg-sky-700 text-white rounded-lg shadow-lg mx-2">
-            <div class="p-4 w-80">
-              <h3 class="text-xl font-semibold mb-2">Pet friendly!</h3>
-              <p class="text-sm mt-3">
-                Yes, we welcome well-behaved pets in our vehicles. Just let us
-                know in advance if you'll be traveling with a pet so we can make
-                the necessary arrangements.
-              </p>
-            </div>
-          </div>
-
-          <div class="w-80 bg-sky-600 text-white rounded-lg shadow-lg mx-2">
-            <div class="p-4 w-80">
-              <h3 class="text-xl font-semibold mb-2">Custom requests!</h3>
-              <p class="text-sm mt-3">
-                Of course! We strive to accommodate all customer requests to the
-                best of our ability. Simply provide us with the details of your
-                desired pickup/drop-off location when booking.
-              </p>
-            </div>
-          </div>
-
-          <div class="w-80 bg-sky-700 text-white rounded-lg shadow-lg mx-2">
-            <div class="p-4 w-80">
-              <h3 class="text-xl font-semibold mb-2">Intergrity!</h3>
-              <p class="text-sm mt-3">
-                If you believe you've left something behind in one of our taxis,
-                please contact us as soon as possible with a description of the
-                item and the date/time of your ride. We'll do our best to locate
-                and return it to you.
-              </p>
-            </div>
-          </div>
-
-          <div class="w-80 bg-sky-600 text-white rounded-lg shadow-lg mx-2">
-            <div class="p-4 w-80">
-              <h3 class="text-xl font-semibold mb-2">Loyalty!</h3>
-              <p class="text-sm mt-3">
-                Yes, we offer corporate accounts with special rates and billing
-                options for businesses. Contact us for more information on
-                setting up an account.
-              </p>
-            </div>
-          </div>
-
-          <div class="w-80 bg-sky-700 text-white rounded-lg shadow-lg mx-2">
-            <div class="p-4 w-80">
-              <h3 class="text-xl font-semibold mb-2">Safety!</h3>
-              <p class="text-sm mt-3">
-                The safety and well-being of our passengers are our top
-                priorities. Our drivers undergo rigorous background checks, and
-                our vehicles are regularly inspected and sanitized. We also
-                follow all local safety regulations.
-              </p>
-            </div>
-          </div>
-
-          <div class="w-80 bg-sky-600 text-white rounded-lg shadow-lg mx-2">
-            <div class="p-4 w-80">
-              <h3 class="text-xl font-semibold mb-2">
-                Aiports, cities and places!
-              </h3>
-              <p class="text-sm mt-3">
-                Absolutely! We provide reliable airport transfer services to and
-                from all airports in Europe. Just let us know your flight
-                details, and we'll take care of the rest.
-              </p>
-            </div>
-          </div>
-
-          <div class="w-80 bg-sky-700 text-white rounded-lg shadow-lg mx-2">
-            <div class="p-4 w-80">
-              <h3 class="text-xl font-semibold mb-2">Sky is the limit!</h3>
-              <p class="text-sm mt-3">
-                We primarily serve the greater Opatija area, but we also offer
-                long-distance trips to surrounding areas anywhere in Europe.
-                Just contact us for more details.
-              </p>
-            </div>
-          </div>
         </div>
 
         <section class="container mx-auto text-center py-5 pb-10 w-[100vw]" id="radnovrijeme">
@@ -684,7 +889,7 @@
       <div class="w-full flex flex-col md:flex-row py-6">
         <div class="flex-1 mb-6 text-black">
           <NuxtLink class="text-pink-600 no-underline hover:no-underline font-bold text-2xl lg:text-4xl"
-            :to="{ path: '/', hash: '#naslovnica' }">
+            :to="{ path: '/', hash: '#home' }">
             <img src="../assets/imgs/taxiopatijalogo.png" title="Taxi Opatija's business image, Logo"
               alt="Taxi Opatija, logo" class="w-20 h-[60px] inline-block me-3 rounded-xl" />
           </NuxtLink>
@@ -699,12 +904,13 @@
             </li>
 
             <li class="mt-2 inline-block mr-2 md:block md:mr-0">
-              <NuxtLink :to="{ path: '/', hash: '#usluge' }"
+              <NuxtLink :to="{ path: '/', hash: '#services' }"
                 class="no-underline hover:underline text-gray-800 hover:text-pink-500">{{ $t("services") }}
               </NuxtLink>
             </li>
             <li class="mt-2 inline-block mr-2 md:block md:mr-0">
-              <NuxtLink to="/onama" class="no-underline hover:underline text-gray-800 hover:text-pink-500">{{
+              <NuxtLink :to="{ path: '/', hash: '#about-us' }"
+                class="no-underline hover:underline text-gray-800 hover:text-pink-500">{{
           $t("aboutus") }}
               </NuxtLink>
             </li>
@@ -714,13 +920,14 @@
           <p class="uppercase text-gray-500 md:mb-6">{{ $t("services") }}</p>
           <ul class="list-reset mb-6">
             <li class="mt-2 inline-block mr-2 md:block md:mr-0">
-              <NuxtLink to="/taxi-price" class="no-underline hover:underline text-gray-800 hover:text-pink-500">{{
+              <NuxtLink :to="{ path: '/', hash: '#taxi-price' }"
+                class="no-underline hover:underline text-gray-800 hover:text-pink-500">{{
           $t("servicesTaxi") }}
               </NuxtLink>
             </li>
             <li class="mt-2 inline-block mr-2 md:block md:mr-0">
-              <NuxtLink :to="i18n.locale.value === 'en' ? '/en/transfers' : '/transferi'
-          " class="no-underline hover:underline text-gray-800 hover:text-pink-500">{{ $t("servicesTransfers") }}
+              <NuxtLink :to="{ path: '/', hash: '#transfers' }"
+                class="no-underline hover:underline text-gray-800 hover:text-pink-500">{{ $t("servicesTransfers") }}
               </NuxtLink>
             </li>
             <li class="mt-2 inline-block mr-2 md:block md:mr-0">
@@ -773,10 +980,26 @@
       </div>
     </div>
   </footer>
+
 </template>
 
 <style scoped>
 @import url("//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css");
+
+.slide-up-enter-active,
+.slide-up-leave-active {
+  transition: all 0.25s ease-out;
+}
+
+.slide-up-enter-from {
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+.slide-up-leave-to {
+  opacity: 0;
+  transform: translateY(-30px);
+}
 
 #lang-switch img {
   width: 32px;
@@ -815,9 +1038,9 @@
 .gradient {
   background: #e6dada;
   /* fallback for old browsers */
-  background: -webkit-linear-gradient(to top, #0093d7, #ffffff);
+  background: -webkit-linear-gradient(to top, #0093d7, #0093d7);
   /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to top, #0093d7, #ffffff);
+  background: linear-gradient(to top, #0093d7, #0093d7);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
@@ -1112,6 +1335,117 @@ function scrollToSection(hash) {
     element.scrollIntoView({ behavior: "smooth" });
   }
 }
+
+
+const baseSubtitle = "Fast and convenient transfers to and from the following airports: Krk, Pula, Zagreb, Trieste, Ljubljana, Split, Zadar, Venice."
+
+const baseCitySubtitle = "Fast and comfortable transfers to and from cities and places: Pula, Rovinj, Poreč, Plitvice Lakes, Postojna Cave, Ljubljana, Trieste, Venice."
+
+const selectedTransfer = ref("");
+const selectedCityTransfer = ref("");
+
+const transfersData = ref([
+  {
+    name: "Rijeka (Krk)",
+    address: "/en/airport/transfer-opatija-rijeka",
+  },
+  {
+    name: "Pula",
+    address: "/en/airport/transfer-opatija-pula",
+  },
+  {
+    name: "Zagreb",
+    address: "/en/airport/transfer-opatija-zagreb",
+  },
+  {
+    name: "Trieste",
+    address: "/en/airport/transfer-opatija-trieste",
+  },
+  {
+    name: "Ljubljana",
+    address: "/en/airport/transfer-opatija-ljubljana",
+  },
+  {
+    name: "Split",
+    address: "/en/airport/transfer-opatija-split",
+  },
+  {
+    name: "Zadar",
+    address: "/en/airport/transfer-opatija-zadar",
+  },
+  {
+    name: "Venice",
+    address: "/en/airport/transfer-opatija-venice",
+  },
+  {
+    name: "Custom",
+    address: "tel:+38598491369",
+  },
+]);
+
+const cityTransfersData = ref([
+  {
+    name: "Poreč",
+    address: "/en/places/transfer-opatija-porec",
+  },
+  {
+    name: "Pula",
+    address: "/en/places/transfer-opatija-pula",
+  },
+  {
+    name: "Rovinj",
+    address: "/en/places/transfer-opatija-rovinj",
+  },
+  {
+    name: "Trst",
+    address: "/en/places/transfer-opatija-trieste",
+  },
+  {
+    name: "Ljubljana",
+    address: "/en/places/transfer-opatija-ljubljana",
+  },
+  {
+    name: "Venice",
+    address: "/en/places/transfer-opatija-venice",
+  },
+  {
+    name: "Custom",
+    address: "tel:+38598491369",
+  },
+]);
+
+
+const excursionTransfersData = ref([
+  {
+    name: "Plitvice lakes",
+    address: "/en/places/transfer-opatija-plitvice-lakes",
+  },
+  {
+    name: "Postojna cave",
+    address: "/en/places/transfer-opatija-postojna-cave",
+  },
+  {
+    name: "Custom",
+    address: "tel:+38598491369",
+  },
+]);
+
+const specialTransfersData = ref([
+  {
+    name: "Taxi in Umag",
+    address: "tel:+38598491369",
+  },
+  {
+    name: "Transfer to Umag",
+    address: "tel:+38598491369",
+  },
+  {
+    name: "Transfer from Umag",
+    address: "tel:+38598491369",
+  },
+
+]);
+
 
 const isDay = ref(true);
 
