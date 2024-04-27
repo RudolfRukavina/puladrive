@@ -3,7 +3,7 @@
   <Head>
     <title>Taxi Opatija | Discover | Prices - Services - Contact | 24/7</title>
     <Meta name="description"
-      content="Discover Taxi Opatija: Explore taxi prices, diverse transport services, and contact us effortlessly via phone, Viber, or WhatsApp! Call +385 98 491 369 - Opatija's most trusted taxi service." />
+      content="Discover Taxi Opatija: Explore taxi prices, diverse transport services, and contact us effortlessly via phone, Viber, or WhatsApp!" />
     <link rel="canonical" href="https://www.taxiopatija.hr/" />
   </Head>
 
@@ -68,6 +68,8 @@
   </header>
 
   <main id="home">
+    <img class="hero-photo h-[20vh] mb-5 md:hidden rounded-none" src="../assets/imgs/opatijamainphoto.webp"
+      alt="Opatija Taxi" />
     <div class="flex justify-center relative -mt-5"></div>
     <div class="overflow-x-auto text-nowrap whitespace-nowrap sticky top-0 mt-3 w-full z-50 bg-white" id="start">
       <div class="max-w-screen-xl px-4 py-2 mx-auto">
@@ -150,10 +152,8 @@
                 <span class="px-3">
                   <strong>Contact us by Viber, phone number or WhatsApp!</strong>
                 </span>
-
               </NuxtMarquee>
             </div>
-
 
             <a href="https://g.co/kgs/WPGpCp3" target="_blank" class="flex items-center mt-2.5 mb-5 justify-center">
               <div class="flex items-center space-x-1 rtl:space-x-reverse">
@@ -251,7 +251,7 @@
       <div class="relative">
         <svg class="wave-top mt-10" viewBox="0 0 1439 147" version="1.1" xmlns="http://www.w3.org/2000/svg"
           xmlns:xlink="http://www.w3.org/1999/xlink">
-          <g stroke="none" stroke-width="1" fill="#ffffff" fill-rule="evenodd">
+          <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
             <g transform="translate(-1.000000, -14.000000)" fill-rule="nonzero">
               <g class="wave" fill="#ffffff">
                 <path
@@ -276,8 +276,8 @@
         </svg>
       </div>
 
-      <h2 class="text-white my-3 font-bold drop-shadow-md text-5xl text-center" id="taxi-price"><strong>Taxi
-          price</strong>
+      <h2 class="text-white my-3 font-bold drop-shadow-md text-5xl text-center" id="taxi-price">
+        <strong>Taxi price</strong>
       </h2>
       <div class="w-full mb-4">
         <div class="h-1 mx-auto bg-white w-2/6 opacity-25 my-0 py-0 rounded-t"></div>
@@ -339,9 +339,6 @@
         <div class="h-1 mx-auto bg-white w-2/6 opacity-25 my-0 py-0 rounded-t"></div>
       </div>
 
-
-
-
       <section class="content-section bg-transparent pb-16 pt-5 px-4 lg:px-5">
         <div class="container mx-auto">
           <div class="grid grid-cols-1 gap-8">
@@ -349,28 +346,36 @@
             <div class="overflow-x-scroll w-full rounded-xl">
               <div class="flex gap-4">
                 <article class="service-card bg-white rounded-xl shadow-md transition hover:shadow-lg">
-
                   <div class="p-6 w-80">
-                    <h3 class="text-2xl font-bold text-gray-800 mb-4">Transfers</h3>
-                    <p class="text-gray-600">Experience swift and seamless transfers to and from
-                      <strong>airports</strong>,
-                      <strong>cities</strong>, and <strong>destinations</strong>.
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">
+                      Transfers
+                    </h3>
+                    <p class="text-gray-600">
+                      Experience swift and seamless transfers to and from
+                      <strong>airports</strong>, <strong>cities</strong>, and
+                      <strong>destinations</strong>.
                     </p>
-                    <p class="text-gray-600 my-3">Simplify your travel arrangements with our quick and efficient
-                      inquiry process.</p>
-                    <p class="text-gray-600 my-3"><strong>Scroll right</strong> to explore pricing options.</p>
+                    <p class="text-gray-600 my-3">
+                      Simplify your travel arrangements with our quick and
+                      efficient inquiry process.
+                    </p>
+                    <p class="text-gray-600 my-3">
+                      <strong>Scroll right</strong> to explore pricing options.
+                    </p>
                   </div>
-
                 </article>
 
                 <article class="service-card bg-white rounded-xl shadow-md transition hover:shadow-lg">
-
                   <div class="p-6 pb-0 w-80">
-                    <h3 class="text-2xl font-bold text-gray-800">Airport Transfers</h3>
+                    <h3 class="text-2xl font-bold text-gray-800">
+                      Airport Transfers
+                    </h3>
                   </div>
 
                   <div class="p-6 pt-0">
-                    <h3 class="text-xl text-gray-900 mb-4">Choose an airport</h3>
+                    <h3 class="text-xl text-gray-900 mb-4">
+                      Choose an airport
+                    </h3>
 
                     <div class="grid grid-cols-2 gap-4">
                       <NuxtLink :to="transfer.address" v-for="transfer in transfersData"
@@ -383,11 +388,11 @@
                   </div>
                 </article>
 
-
                 <article class="service-card bg-white rounded-xl shadow-md transition hover:shadow-lg">
-
                   <div class="p-6 pb-0 w-80">
-                    <h3 class="text-2xl font-bold text-gray-800">City Transfers</h3>
+                    <h3 class="text-2xl font-bold text-gray-800">
+                      City Transfers
+                    </h3>
                   </div>
                   <div class="p-6 pt-0">
                     <h3 class="text-xl text-gray-900 mb-4">Choose a city</h3>
@@ -403,14 +408,14 @@
                   </div>
                 </article>
 
-
                 <article class="service-card bg-white rounded-xl shadow-md transition hover:shadow-lg">
-
                   <div class="p-6 pb-0 w-80">
                     <h3 class="text-2xl font-bold text-gray-800">Excursions</h3>
                   </div>
                   <div class="p-6 pt-0">
-                    <h3 class="text-xl text-gray-900 mb-4">Choose an location</h3>
+                    <h3 class="text-xl text-gray-900 mb-4">
+                      Choose an location
+                    </h3>
 
                     <div class="grid grid-cols-2 gap-4">
                       <NuxtLink :to="transfer.address" v-for="transfer in excursionTransfersData"
@@ -424,11 +429,15 @@
                 </article>
                 <article class="service-card bg-white rounded-xl shadow-md transition hover:shadow-lg">
                   <div class="p-6 pb-0 w-80">
-                    <h3 class="text-2xl font-bold text-gray-800">Special Offers</h3>
+                    <h3 class="text-2xl font-bold text-gray-800">
+                      Special Offers
+                    </h3>
                   </div>
                   <div class="p-6 pt-0">
                     <span class="text-base text-gray-900">24.05.2024 - 26.05.2024</span>
-                    <h4 class="text-xl text-gray-900 mb-4">Sea Star Festival</h4>
+                    <h4 class="text-xl text-gray-900 mb-4">
+                      Sea Star Festival
+                    </h4>
 
                     <div class="grid grid-cols-1 gap-4">
                       <NuxtLink :to="transfer.address" v-for="transfer in specialTransfersData"
@@ -438,52 +447,65 @@
                       </NuxtLink>
                     </div>
                   </div>
-                  <div class="flex justify-center"> <span
-                      class="text-sm font-bold text-white bg-sky-600 rounded-xl  p-2 m-2 text-center w-full">15%
-                      discount</span></div>
+                  <div class="flex justify-center">
+                    <span class="text-sm font-bold text-white bg-sky-600 rounded-xl p-2 m-2 text-center w-full">15%
+                      discount</span>
+                  </div>
                 </article>
               </div>
             </div>
-
           </div>
-          <h2 class="text-white my-3 mt-12 font-bold drop-shadow-md text-5xl text-center"><strong>Rent a van
-            </strong>
+          <h2 class="text-white my-3 mt-12 font-bold drop-shadow-md text-5xl text-center">
+            <strong>Rent a van </strong>
           </h2>
           <div class="w-full mb-4">
             <div class="h-1 mx-auto bg-white w-2/6 opacity-25 my-0 py-0 rounded-t"></div>
           </div>
           <!-- Rent a Van -->
           <article class="service-card bg-white rounded-xl shadow-md transition hover:shadow-lg">
-            <NuxtLink :to="i18n.locale.value === 'en' ? '/en/rent-a-van' : '/najam-kombi-vozila'">
+            <NuxtLink :to="i18n.locale.value === 'en'
+          ? '/en/rent-a-van'
+          : '/najam-kombi-vozila'
+          ">
               <div class="p-6">
-                <h3 class="text-2xl font-bold text-gray-800 mb-4">{{ $t("rentVan") }}</h3>
+                <h3 class="text-2xl font-bold text-gray-800 mb-4">
+                  {{ $t("rentVan") }}
+                </h3>
                 <p class="text-gray-600">{{ $t("rentVanDesc") }}</p>
               </div>
               <div class="flex items-center justify-between px-6 py-4 bg-gray-100 rounded-b-xl">
-                <span class="text-blue-800 font-medium">{{ $t("pricingRentVan") }}</span>
+                <span class="text-blue-800 font-medium">{{
+          $t("pricingRentVan")
+        }}</span>
                 <svg class="w-6 text-gray-800" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M9 6L15 12L9 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                     stroke-linejoin="round"></path>
                 </svg>
               </div>
             </NuxtLink>
-
           </article>
-          <h2 class="text-white my-3 mt-12 font-bold drop-shadow-md text-5xl text-center"><strong>Rent a car
-            </strong>
+          <h2 class="text-white my-3 mt-12 font-bold drop-shadow-md text-5xl text-center">
+            <strong>Rent a car </strong>
           </h2>
           <div class="w-full mb-4">
             <div class="h-1 mx-auto bg-white w-2/6 opacity-25 my-0 py-0 rounded-t"></div>
           </div>
           <!-- Rent a Car -->
           <article class="service-card bg-white rounded-xl shadow-md mb-9 transition hover:shadow-lg">
-            <NuxtLink :to="i18n.locale.value === 'en' ? '/en/rent-a-car' : '/najam-automobila'">
+            <NuxtLink :to="i18n.locale.value === 'en'
+            ? '/en/rent-a-car'
+            : '/najam-automobila'
+          ">
               <div class="p-6">
-                <h3 class="text-2xl font-bold text-gray-800 mb-4">{{ $t("rentCar") }} (3+1)</h3>
+                <h3 class="text-2xl font-bold text-gray-800 mb-4">
+                  {{ $t("rentCar") }} (3+1)
+                </h3>
                 <p class="text-gray-600">{{ $t("rentCarDesc") }}</p>
               </div>
               <div class="flex items-center justify-between px-6 py-4 bg-gray-100 rounded-b-xl">
-                <span class="text-blue-800 font-medium">{{ $t("pricingRentCar") }}</span>
+                <span class="text-blue-800 font-medium">{{
+          $t("pricingRentCar")
+        }}</span>
                 <svg class="w-6 text-gray-800" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M9 6L15 12L9 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                     stroke-linejoin="round"></path>
@@ -493,7 +515,6 @@
           </article>
         </div>
       </section>
-
 
       <div class="relative -mt-12 lg:-mt-24">
         <svg viewBox="0 0 1423 174" version="1.1" xmlns="http://www.w3.org/2000/svg"
@@ -522,12 +543,12 @@
       <!-- About us -->
       <div class="overflow-x-scroll bg-white" id="about-us">
         <div class="flex px-5 w-auto bg-white">
-          <div class="w-[100vw] py-[42.5px] leading-3 text-center ">
-            <div class='flex'>
+          <div class="w-[100vw] py-[42.5px] leading-3 text-center">
+            <div class="flex">
               <div
-                class="inline-block pe-5 dark:ring-white/10 ring-primary/5  dark:shadow-thick rounded-3xl lg:row-start-4 h-full p-5 dark:bg-secondary">
+                class="inline-block pe-5 dark:ring-white/10 ring-primary/5 dark:shadow-thick rounded-3xl lg:row-start-4 h-full p-5 dark:bg-secondary">
                 <div class="flex justify-between cursor-pointer">
-                  <p class="text-4xl tracking-tight font-medium text-black text-start  md:text-5xl">
+                  <p class="text-4xl tracking-tight font-medium text-black text-start md:text-5xl">
                     About us
                   </p>
                   <div class="flex justify-evenlys items-center">
@@ -564,11 +585,19 @@
                     <path
                       d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
                   </svg>
-                  <p class="ms-1 text-sm font-medium text-gray-500 dark:text-gray-400">5</p>
-                  <p class="ms-1 text-sm font-medium text-gray-500 dark:text-gray-400">out of</p>
-                  <p class="ms-1 text-sm font-medium text-gray-500 dark:text-gray-400">5</p>
+                  <p class="ms-1 text-sm font-medium text-gray-500 dark:text-gray-400">
+                    5
+                  </p>
+                  <p class="ms-1 text-sm font-medium text-gray-500 dark:text-gray-400">
+                    out of
+                  </p>
+                  <p class="ms-1 text-sm font-medium text-gray-500 dark:text-gray-400">
+                    5
+                  </p>
                 </div>
-                <p class="text-sm text-start font-medium text-gray-500">13 global ratings</p>
+                <p class="text-sm text-start font-medium text-gray-500">
+                  13 global ratings
+                </p>
                 <div class="flex items-center mt-4">
                   <a href="#" class="text-sm font-medium text-blue-600 dark:text-blue-500 hover:underline">5 star</a>
                   <div class="w-2/4 h-5 mx-4 bg-gray-200 rounded dark:bg-gray-700">
@@ -610,15 +639,16 @@
                     <p class="text-sm text-pink-500 dark:text-pink-400">
                       "Vrhunska i brza usluga! Vozač vrlo pristojan i uljudan."
                     </p>
-                    <p class="text-xs mt-2 text-zinc-500"> <span class="block text-xs">Vedran</span> </p>
+                    <p class="text-xs mt-2 text-zinc-500">
+                      <span class="block text-xs">Vedran</span>
+                    </p>
                   </div>
-
                 </div>
               </div>
               <div
-                class="inline-block px-6 dark:ring-white/10 ring-primary/5  dark:shadow-thick rounded-3xl lg:row-start-4 h-full p-5 bg-white dark:bg-secondary">
+                class="inline-block px-6 dark:ring-white/10 ring-primary/5 dark:shadow-thick rounded-3xl lg:row-start-4 h-full p-5 bg-white dark:bg-secondary">
                 <div class="flex justify-between">
-                  <p class="text-2xl tracking-tight font-medium text-gray-900 text-start  md:text-4xl">
+                  <p class="text-2xl tracking-tight font-medium text-gray-900 text-start md:text-4xl">
                     What is Taxi Opatija?
                   </p>
                   <img src="../assets/imgs/taxiopatijalogo.png" title="Taxi Opatija's business image, Logo"
@@ -650,23 +680,31 @@
                     <path
                       d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
                   </svg>
-                  <p class="ms-1 text-sm font-medium text-gray-500 dark:text-gray-400">5</p>
-                  <p class="ms-1 text-sm font-medium text-gray-500 dark:text-gray-400">out of</p>
-                  <p class="ms-1 text-sm font-medium text-gray-500 dark:text-gray-400">5</p>
+                  <p class="ms-1 text-sm font-medium text-gray-500 dark:text-gray-400">
+                    5
+                  </p>
+                  <p class="ms-1 text-sm font-medium text-gray-500 dark:text-gray-400">
+                    out of
+                  </p>
+                  <p class="ms-1 text-sm font-medium text-gray-500 dark:text-gray-400">
+                    5
+                  </p>
                 </div>
-                <p class="text-xl text-start font-medium text-gray-700 drop-shadow-md">Taxi Opatija is the official and
-                  most trusted
-                  taxi service in Opatija.</p>
+                <p class="text-xl text-start font-medium text-gray-700 drop-shadow-md">
+                  Taxi Opatija is the official and most trusted taxi service in
+                  Opatija.
+                </p>
                 <p class="text-xl text-start my-2 font-medium text-gray-500">
-                  Whether you're looking for a quick taxi ride in Opatija or a big trip anywhere across Europe, Taxi
-                  Opatija
-                  is your go-to destination for exceptional service, ensuring
-                  prompt, reliable, and comfortable transportation experiences.</p>
+                  Whether you're looking for a quick taxi ride in Opatija or a
+                  big trip anywhere across Europe, Taxi Opatija is your go-to
+                  destination for exceptional service, ensuring prompt,
+                  reliable, and comfortable transportation experiences.
+                </p>
               </div>
               <div
-                class="inline-block px-6 dark:ring-white/10 ring-primary/5  dark:shadow-thick rounded-3xl lg:row-start-4 h-full p-5 bg-white dark:bg-secondary">
+                class="inline-block px-6 dark:ring-white/10 ring-primary/5 dark:shadow-thick rounded-3xl lg:row-start-4 h-full p-5 bg-white dark:bg-secondary">
                 <div class="flex justify-between">
-                  <p class="text-2xl tracking-tight font-medium text-gray-900 text-start  md:text-4xl">
+                  <p class="text-2xl tracking-tight font-medium text-gray-900 text-start md:text-4xl">
                     Our vehicle fleet
                   </p>
                   <img src="../assets/imgs/taxiopatijalogo.png" title="Taxi Opatija's vehicle fleet, cars and vans"
@@ -698,22 +736,30 @@
                     <path
                       d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
                   </svg>
-                  <p class="ms-1 text-sm font-medium text-gray-500 dark:text-gray-400">5</p>
-                  <p class="ms-1 text-sm font-medium text-gray-500 dark:text-gray-400">out of</p>
-                  <p class="ms-1 text-sm font-medium text-gray-500 dark:text-gray-400">5</p>
+                  <p class="ms-1 text-sm font-medium text-gray-500 dark:text-gray-400">
+                    5
+                  </p>
+                  <p class="ms-1 text-sm font-medium text-gray-500 dark:text-gray-400">
+                    out of
+                  </p>
+                  <p class="ms-1 text-sm font-medium text-gray-500 dark:text-gray-400">
+                    5
+                  </p>
                 </div>
                 <div class="flex justify-between">
                   <img src="../assets/imgs/cars.jpg" title="Taxi Opatija's business image, Logo"
-                    alt="Taxi Opatija, logo" class=" w-[80vw] min-w-md max-w-md inline-block me-3 rounded-xl" />
+                    alt="Taxi Opatija, logo" class="w-[80vw] min-w-md max-w-md inline-block me-3 rounded-xl" />
                 </div>
                 <p class="text-xl text-start my-2 font-medium text-gray-500">
-                  Our vehicle fleet consists of modern vans (8+1) and comfortable cars (3+1), equipped with all
-                  necessary amenities to make your journey pleasant and stress-free.</p>
+                  Our vehicle fleet consists of modern vans (8+1) and
+                  comfortable cars (3+1), equipped with all necessary amenities
+                  to make your journey pleasant and stress-free.
+                </p>
               </div>
               <div
-                class="inline-block px-6 dark:ring-white/10 ring-primary/5  dark:shadow-thick rounded-3xl lg:row-start-4 h-full p-5  bg-white dark:bg-secondary">
+                class="inline-block px-6 dark:ring-white/10 ring-primary/5 dark:shadow-thick rounded-3xl lg:row-start-4 h-full p-5 bg-white dark:bg-secondary">
                 <div class="flex justify-between">
-                  <p class="text-2xl tracking-tight font-medium text-gray-900 text-start  md:text-4xl">
+                  <p class="text-2xl tracking-tight font-medium text-gray-900 text-start md:text-4xl">
                     Best at what we do!
                   </p>
                   <img src="../assets/imgs/taxiopatijalogo.png" title="Taxi Opatija's business image, Logo"
@@ -755,7 +801,6 @@
                       <strong>Trust</strong>
                     </span>
                     |
-
                   </NuxtMarquee>
                 </div>
                 <div class="flex items-center mb-2 w-[80vw] min-w-md max-w-md">
@@ -784,14 +829,22 @@
                     <path
                       d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
                   </svg>
-                  <p class="ms-1 text-sm font-medium text-gray-500 dark:text-gray-400">5</p>
-                  <p class="ms-1 text-sm font-medium text-gray-500 dark:text-gray-400">out of</p>
-                  <p class="ms-1 text-sm font-medium text-gray-500 dark:text-gray-400">5</p>
+                  <p class="ms-1 text-sm font-medium text-gray-500 dark:text-gray-400">
+                    5
+                  </p>
+                  <p class="ms-1 text-sm font-medium text-gray-500 dark:text-gray-400">
+                    out of
+                  </p>
+                  <p class="ms-1 text-sm font-medium text-gray-500 dark:text-gray-400">
+                    5
+                  </p>
                 </div>
                 <p class="text-xl text-start my-2 font-medium text-gray-500">
-                  With our dedicated approach and attention to detail, Taxi Opatija creates a travel experience that
-                  will remain a fond memory. Contact us today and let us provide you with an unforgettable journey that
-                  exceeds all your expectations.</p>
+                  With our dedicated approach and attention to detail, Taxi
+                  Opatija creates a travel experience that will remain a fond
+                  memory. Contact us today and let us provide you with an
+                  unforgettable journey that exceeds all your expectations.
+                </p>
                 <a href="tel:+38598491369">
                   <button
                     class="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
@@ -799,14 +852,10 @@
                   </button>
                 </a>
               </div>
-
             </div>
-
           </div>
         </div>
       </div>
-
-
 
       <!-- Change the colour #f8fafc to match the previous section colour -->
       <div class="gradientWorkHours">
@@ -910,8 +959,7 @@
             </li>
             <li class="mt-2 inline-block mr-2 md:block md:mr-0">
               <NuxtLink :to="{ path: '/', hash: '#about-us' }"
-                class="no-underline hover:underline text-gray-800 hover:text-pink-500">{{
-          $t("aboutus") }}
+                class="no-underline hover:underline text-gray-800 hover:text-pink-500">{{ $t("aboutus") }}
               </NuxtLink>
             </li>
           </ul>
@@ -921,8 +969,7 @@
           <ul class="list-reset mb-6">
             <li class="mt-2 inline-block mr-2 md:block md:mr-0">
               <NuxtLink :to="{ path: '/', hash: '#taxi-price' }"
-                class="no-underline hover:underline text-gray-800 hover:text-pink-500">{{
-          $t("servicesTaxi") }}
+                class="no-underline hover:underline text-gray-800 hover:text-pink-500">{{ $t("servicesTaxi") }}
               </NuxtLink>
             </li>
             <li class="mt-2 inline-block mr-2 md:block md:mr-0">
@@ -980,7 +1027,6 @@
       </div>
     </div>
   </footer>
-
 </template>
 
 <style scoped>
@@ -1325,7 +1371,9 @@ const { locale, setLocale } = useI18n();
 const i18n = useI18n();
 
 onMounted(() => {
-  scrollToSection("#start");
+  if (!window.location.hash) {
+    scrollToSection("#start");
+  }
   i18n.locale.value = navigator.language.split("-")[0];
 });
 
@@ -1336,10 +1384,11 @@ function scrollToSection(hash) {
   }
 }
 
+const baseSubtitle =
+  "Fast and convenient transfers to and from the following airports: Krk, Pula, Zagreb, Trieste, Ljubljana, Split, Zadar, Venice.";
 
-const baseSubtitle = "Fast and convenient transfers to and from the following airports: Krk, Pula, Zagreb, Trieste, Ljubljana, Split, Zadar, Venice."
-
-const baseCitySubtitle = "Fast and comfortable transfers to and from cities and places: Pula, Rovinj, Poreč, Plitvice Lakes, Postojna Cave, Ljubljana, Trieste, Venice."
+const baseCitySubtitle =
+  "Fast and comfortable transfers to and from cities and places: Pula, Rovinj, Poreč, Plitvice Lakes, Postojna Cave, Ljubljana, Trieste, Venice.";
 
 const selectedTransfer = ref("");
 const selectedCityTransfer = ref("");
@@ -1414,7 +1463,6 @@ const cityTransfersData = ref([
   },
 ]);
 
-
 const excursionTransfersData = ref([
   {
     name: "Plitvice lakes",
@@ -1443,9 +1491,7 @@ const specialTransfersData = ref([
     name: "Transfer from Umag",
     address: "tel:+38598491369",
   },
-
 ]);
-
 
 const isDay = ref(true);
 
@@ -1475,7 +1521,7 @@ useHead({
     {
       name: "description",
       content:
-        "Discover Taxi Opatija: Explore taxi prices, diverse transport services, and contact us effortlessly via phone, Viber, or WhatsApp! Call +385 98 491 369 - Opatija's most trusted taxi service.",
+        "Discover Taxi Opatija: Explore taxi prices, diverse transport services, and contact us effortlessly via phone, Viber, or WhatsApp!",
     },
     {
       hid: "og:url",
@@ -1486,14 +1532,13 @@ useHead({
     {
       hid: "og:title",
       property: "og:title",
-      content:
-        "Taxi Opatija | Discover | Prices - Services - Contact | 24/7",
+      content: "Taxi Opatija | Discover | Prices - Services - Contact | 24/7",
     },
     {
       hid: "og:description",
       property: "og:description",
       content:
-        "Discover Taxi Opatija: Explore taxi prices, diverse transport services, and contact us effortlessly via phone, Viber, or WhatsApp! Call +385 98 491 369 - Opatija's most trusted taxi service.",
+        "Discover Taxi Opatija: Explore taxi prices, diverse transport services, and contact us effortlessly via phone, Viber, or WhatsApp!",
     },
     {
       hid: "og:image",
@@ -1510,9 +1555,9 @@ useHead({
       innerHTML: JSON.stringify({
         "@context": "https://schema.org",
         "@type": "WebSite",
-        "name": "The station for all transportation needs!",
-        "url": "https://www.taxiopatija.hr/"
-      })
+        name: "The station for all transportation needs!",
+        url: "https://www.taxiopatija.hr/",
+      }),
     },
     {
       type: "application/ld+json",
@@ -1601,18 +1646,16 @@ useHead({
         },
       }),
     },
-
   ],
 });
 
 useSeoMeta({
   title: "Taxi Opatija | Discover | Prices - Services - Contact | 24/7",
-  ogTitle:
-    "Taxi Opatija | Discover | Prices - Services - Contact | 24/7",
+  ogTitle: "Taxi Opatija | Discover | Prices - Services - Contact | 24/7",
   description:
-    "Discover Taxi Opatija: Explore taxi prices, diverse transport services, and contact us effortlessly via phone, Viber, or WhatsApp! Call +385 98 491 369 - Opatija's most trusted taxi service.",
+    "Discover Taxi Opatija: Explore taxi prices, diverse transport services, and contact us effortlessly via phone, Viber, or WhatsApp!",
   ogDescription:
-    "Discover Taxi Opatija: Explore taxi prices, diverse transport services, and contact us effortlessly via phone, Viber, or WhatsApp! Call +385 98 491 369 - Opatija's most trusted taxi service.",
+    "Discover Taxi Opatija: Explore taxi prices, diverse transport services, and contact us effortlessly via phone, Viber, or WhatsApp!",
   ogImage: "https://www.taxiopatija.hr/opatija.jpeg",
   twitterCard: "https://www.taxiopatija.hr/opatija.jpeg",
 });
