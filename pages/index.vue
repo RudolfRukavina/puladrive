@@ -68,7 +68,7 @@
   </header>
 
   <main id="home">
-    <img class="hero-photo h-[20vh] mb-5 md:hidden rounded-none" src="../assets/imgs/opatijamainphoto.webp"
+    <img class="hero-photo h-[200px] mb-5 md:hidden rounded-none" src="../assets/imgs/opatijamainphoto.webp"
       alt="Opatija Taxi" />
     <div class="flex justify-center relative -mt-5"></div>
     <div class="overflow-x-auto text-nowrap whitespace-nowrap sticky top-0 mt-3 w-full z-50 bg-white" id="start">
@@ -747,7 +747,7 @@
                   </p>
                 </div>
                 <div class="flex justify-between">
-                  <img src="../assets/imgs/cars.jpg" title="Taxi Opatija's business image, Logo"
+                  <img src="../assets/imgs/cars.jpg" loading="lazy" title="Taxi Opatija's business image, Logo"
                     alt="Taxi Opatija, logo" class="w-[80vw] min-w-md max-w-md inline-block me-3 rounded-xl" />
                 </div>
                 <p class="text-xl text-start my-2 font-medium text-gray-500">
@@ -1029,9 +1029,306 @@
   </footer>
 </template>
 
-<style scoped>
-@import url("//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css");
+<script setup>
+import { ref } from "vue";
+import dayjs from "dayjs";
 
+const { locale, setLocale } = useI18n();
+
+const i18n = useI18n();
+
+onMounted(() => {
+  if (!window.location.hash) {
+    scrollToSection("#start");
+  }
+  i18n.locale.value = navigator.language.split("-")[0];
+});
+
+function scrollToSection(hash) {
+  const element = document.querySelector(hash);
+  if (element) {
+    element.scrollIntoView({ behavior: "smooth" });
+  }
+}
+
+const baseSubtitle =
+  "Fast and convenient transfers to and from the following airports: Krk, Pula, Zagreb, Trieste, Ljubljana, Split, Zadar, Venice.";
+
+const baseCitySubtitle =
+  "Fast and comfortable transfers to and from cities and places: Pula, Rovinj, Poreč, Plitvice Lakes, Postojna Cave, Ljubljana, Trieste, Venice.";
+
+const selectedTransfer = ref("");
+const selectedCityTransfer = ref("");
+
+const transfersData = ref([
+  {
+    name: "Rijeka (Krk)",
+    address: "/en/airport/transfer-opatija-rijeka",
+  },
+  {
+    name: "Pula",
+    address: "/en/airport/transfer-opatija-pula",
+  },
+  {
+    name: "Zagreb",
+    address: "/en/airport/transfer-opatija-zagreb",
+  },
+  {
+    name: "Trieste",
+    address: "/en/airport/transfer-opatija-trieste",
+  },
+  {
+    name: "Ljubljana",
+    address: "/en/airport/transfer-opatija-ljubljana",
+  },
+  {
+    name: "Split",
+    address: "/en/airport/transfer-opatija-split",
+  },
+  {
+    name: "Zadar",
+    address: "/en/airport/transfer-opatija-zadar",
+  },
+  {
+    name: "Venice",
+    address: "/en/airport/transfer-opatija-venice",
+  },
+  {
+    name: "Custom",
+    address: "tel:+38598491369",
+  },
+]);
+
+const cityTransfersData = ref([
+  {
+    name: "Poreč",
+    address: "/en/places/transfer-opatija-porec",
+  },
+  {
+    name: "Pula",
+    address: "/en/places/transfer-opatija-pula",
+  },
+  {
+    name: "Rovinj",
+    address: "/en/places/transfer-opatija-rovinj",
+  },
+  {
+    name: "Trst",
+    address: "/en/places/transfer-opatija-trieste",
+  },
+  {
+    name: "Ljubljana",
+    address: "/en/places/transfer-opatija-ljubljana",
+  },
+  {
+    name: "Venice",
+    address: "/en/places/transfer-opatija-venice",
+  },
+  {
+    name: "Custom",
+    address: "tel:+38598491369",
+  },
+]);
+
+const excursionTransfersData = ref([
+  {
+    name: "Plitvice lakes",
+    address: "/en/places/transfer-opatija-plitvice-lakes",
+  },
+  {
+    name: "Postojna cave",
+    address: "/en/places/transfer-opatija-postojna-cave",
+  },
+  {
+    name: "Custom",
+    address: "tel:+38598491369",
+  },
+]);
+
+const specialTransfersData = ref([
+  {
+    name: "Taxi in Umag",
+    address: "tel:+38598491369",
+  },
+  {
+    name: "Transfer to Umag",
+    address: "tel:+38598491369",
+  },
+  {
+    name: "Transfer from Umag",
+    address: "tel:+38598491369",
+  },
+]);
+
+const isDay = ref(true);
+
+const currentTime = ref(dayjs().format("HH:mm"));
+
+onMounted(() => {
+  setInterval(() => {
+    currentTime.value = dayjs().format("HH:mm");
+  }, 1000);
+  getPeriodOfDay();
+});
+
+const getPeriodOfDay = () => {
+  if (dayjs().hour() > 5 && dayjs().hour() < 22) {
+    isDay.value = true;
+  } else {
+    isDay.value = false;
+  }
+};
+
+useHead({
+  title: "Taxi Opatija | Discover | Prices - Services - Contact | 24/7",
+  htmlAttrs: {
+    lang: "en",
+  },
+  meta: [
+    {
+      name: "description",
+      content:
+        "Discover Taxi Opatija: Explore taxi prices, diverse transport services, and contact us effortlessly via phone, Viber, or WhatsApp!",
+    },
+    {
+      hid: "og:url",
+      property: "og:url",
+      content: "https://www.taxiopatija.hr",
+    },
+    { hid: "og:type", property: "og:type", content: "website" },
+    {
+      hid: "og:title",
+      property: "og:title",
+      content: "Taxi Opatija | Discover | Prices - Services - Contact | 24/7",
+    },
+    {
+      hid: "og:description",
+      property: "og:description",
+      content:
+        "Discover Taxi Opatija: Explore taxi prices, diverse transport services, and contact us effortlessly via phone, Viber, or WhatsApp!",
+    },
+    {
+      hid: "og:image",
+      property: "og:image",
+      content: "https://www.taxiopatija.hr/opatija.jpeg",
+    },
+  ],
+  bodyAttrs: {
+    class: "",
+  },
+  script: [
+    {
+      type: "application/ld+json",
+      innerHTML: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        name: "The station for all transportation needs!",
+        url: "https://www.taxiopatija.hr/",
+      }),
+    },
+    {
+      type: "application/ld+json",
+      innerHTML: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        image: "https://www.taxiopatija.hr/opatija.jpeg",
+        url: "https://www.taxiopatija.hr",
+        sameAs: ["https://taxiopatija.hr"],
+        logo: "https://www.taxiopatija.hr/opatija.jpeg",
+        name: "Taxi Opatija",
+        description:
+          "Taxi Opatija is a renowned tourist agency company headquartered in Opatija, Croatia. Taxi Opatija offers top-notch transfer services both domestically and internationally with a mission to ensure comfortable, safe, and reliable travel for all clients, regardless of destination or travel time.",
+        email: "anterukavina@yahoo.com.hr",
+        telephone: "+38598491369",
+
+        address: {
+          "@type": "PostalAddress",
+          streetAddress: "Ul. Dr. Ante Mandića 2",
+          addressLocality: "Opatija",
+          addressCountry: "Croatia",
+          addressRegion: "Primorje-Gorski Kotar County",
+          postalCode: "51410",
+        },
+        contactPoint: {
+          "@type": "ContactPoint",
+          telephone: "+38598491369",
+          email: "anterukavina@yahoo.com.hr",
+        },
+      }),
+    },
+    {
+      type: "application/ld+json",
+      innerHTML: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        image: "https://www.taxiopatija.hr/opatija.jpeg",
+        name: "Taxi Opatija",
+        description:
+          "Taxi Opatija is a renowned tourist agency company headquartered in Opatija, Croatia. Taxi Opatija offers top-notch transfer services both domestically and internationally with a mission to ensure comfortable, safe, and reliable travel for all clients, regardless of destination or travel time.",
+        url: "https://www.taxiopatija.hr",
+        logo: "https://www.taxiopatija.hr/opatija.jpeg",
+        openingHours: "Mo,Tu,We,Th,Fr,Sa,Su 00:00-24:00",
+        address: {
+          "@type": "PostalAddress",
+          streetAddress: "Ul. Dr. Ante Mandića 2",
+          addressLocality: "Opatija",
+          addressCountry: "Croatia",
+          addressRegion: "Primorje-Gorski Kotar County",
+          postalCode: "51410",
+        },
+        telephone: "+38598491369",
+        priceRange: "$$",
+      }),
+    },
+    {
+      type: "application/ld+json",
+      innerHTML: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "Review",
+        reviewRating: {
+          "@type": "Rating",
+          ratingValue: "5",
+          bestRating: "5",
+        },
+        author: {
+          "@type": "Person",
+          name: "Vedran Mihailovic",
+        },
+        datePublished: "2024-03-26",
+        description: "Vrhunska i brza usluga! Vozač vrlo pristojan i uljudan.",
+        itemReviewed: {
+          "@type": "LocalBusiness",
+          name: "Taxi Opatija - taxiopatija.hr",
+          image: "https://www.taxiopatija.hr/opatija.jpeg",
+          telephone: "+38598491369",
+          priceRange: "$$",
+          address: {
+            "@type": "PostalAddress",
+            streetAddress: "Ul. Dr. Ante Mandića 2",
+            addressLocality: "Opatija",
+            addressCountry: "Croatia",
+            addressRegion: "Primorje-Gorski Kotar County",
+            postalCode: "51410",
+          },
+        },
+      }),
+    },
+  ],
+});
+
+useSeoMeta({
+  title: "Taxi Opatija | Discover | Prices - Services - Contact | 24/7",
+  ogTitle: "Taxi Opatija | Discover | Prices - Services - Contact | 24/7",
+  description:
+    "Discover Taxi Opatija: Explore taxi prices, diverse transport services, and contact us effortlessly via phone, Viber, or WhatsApp!",
+  ogDescription:
+    "Discover Taxi Opatija: Explore taxi prices, diverse transport services, and contact us effortlessly via phone, Viber, or WhatsApp!",
+  ogImage: "https://www.taxiopatija.hr/opatija.jpeg",
+  twitterCard: "https://www.taxiopatija.hr/opatija.jpeg",
+});
+</script>
+
+<style scoped>
 .slide-up-enter-active,
 .slide-up-leave-active {
   transition: all 0.25s ease-out;
@@ -1361,302 +1658,3 @@ button {
   background: linear-gradient(to right, #78c1d5 0%, #bbe7f5 100%);
 }
 </style>
-
-<script setup>
-import { ref } from "vue";
-import dayjs from "dayjs";
-
-const { locale, setLocale } = useI18n();
-
-const i18n = useI18n();
-
-onMounted(() => {
-  if (!window.location.hash) {
-    scrollToSection("#start");
-  }
-  i18n.locale.value = navigator.language.split("-")[0];
-});
-
-function scrollToSection(hash) {
-  const element = document.querySelector(hash);
-  if (element) {
-    element.scrollIntoView({ behavior: "smooth" });
-  }
-}
-
-const baseSubtitle =
-  "Fast and convenient transfers to and from the following airports: Krk, Pula, Zagreb, Trieste, Ljubljana, Split, Zadar, Venice.";
-
-const baseCitySubtitle =
-  "Fast and comfortable transfers to and from cities and places: Pula, Rovinj, Poreč, Plitvice Lakes, Postojna Cave, Ljubljana, Trieste, Venice.";
-
-const selectedTransfer = ref("");
-const selectedCityTransfer = ref("");
-
-const transfersData = ref([
-  {
-    name: "Rijeka (Krk)",
-    address: "/en/airport/transfer-opatija-rijeka",
-  },
-  {
-    name: "Pula",
-    address: "/en/airport/transfer-opatija-pula",
-  },
-  {
-    name: "Zagreb",
-    address: "/en/airport/transfer-opatija-zagreb",
-  },
-  {
-    name: "Trieste",
-    address: "/en/airport/transfer-opatija-trieste",
-  },
-  {
-    name: "Ljubljana",
-    address: "/en/airport/transfer-opatija-ljubljana",
-  },
-  {
-    name: "Split",
-    address: "/en/airport/transfer-opatija-split",
-  },
-  {
-    name: "Zadar",
-    address: "/en/airport/transfer-opatija-zadar",
-  },
-  {
-    name: "Venice",
-    address: "/en/airport/transfer-opatija-venice",
-  },
-  {
-    name: "Custom",
-    address: "tel:+38598491369",
-  },
-]);
-
-const cityTransfersData = ref([
-  {
-    name: "Poreč",
-    address: "/en/places/transfer-opatija-porec",
-  },
-  {
-    name: "Pula",
-    address: "/en/places/transfer-opatija-pula",
-  },
-  {
-    name: "Rovinj",
-    address: "/en/places/transfer-opatija-rovinj",
-  },
-  {
-    name: "Trst",
-    address: "/en/places/transfer-opatija-trieste",
-  },
-  {
-    name: "Ljubljana",
-    address: "/en/places/transfer-opatija-ljubljana",
-  },
-  {
-    name: "Venice",
-    address: "/en/places/transfer-opatija-venice",
-  },
-  {
-    name: "Custom",
-    address: "tel:+38598491369",
-  },
-]);
-
-const excursionTransfersData = ref([
-  {
-    name: "Plitvice lakes",
-    address: "/en/places/transfer-opatija-plitvice-lakes",
-  },
-  {
-    name: "Postojna cave",
-    address: "/en/places/transfer-opatija-postojna-cave",
-  },
-  {
-    name: "Custom",
-    address: "tel:+38598491369",
-  },
-]);
-
-const specialTransfersData = ref([
-  {
-    name: "Taxi in Umag",
-    address: "tel:+38598491369",
-  },
-  {
-    name: "Transfer to Umag",
-    address: "tel:+38598491369",
-  },
-  {
-    name: "Transfer from Umag",
-    address: "tel:+38598491369",
-  },
-]);
-
-const isDay = ref(true);
-
-const currentTime = ref(dayjs().format("HH:mm"));
-
-onMounted(() => {
-  setInterval(() => {
-    currentTime.value = dayjs().format("HH:mm");
-  }, 1000);
-  getPeriodOfDay();
-});
-
-const getPeriodOfDay = () => {
-  if (dayjs().hour() > 5 && dayjs().hour() < 22) {
-    isDay.value = true;
-  } else {
-    isDay.value = false;
-  }
-};
-
-useHead({
-  title: "Taxi Opatija | Discover | Prices - Services - Contact | 24/7",
-  htmlAttrs: {
-    lang: "en",
-  },
-  meta: [
-    {
-      name: "description",
-      content:
-        "Discover Taxi Opatija: Explore taxi prices, diverse transport services, and contact us effortlessly via phone, Viber, or WhatsApp!",
-    },
-    {
-      hid: "og:url",
-      property: "og:url",
-      content: "https://www.taxiopatija.hr",
-    },
-    { hid: "og:type", property: "og:type", content: "website" },
-    {
-      hid: "og:title",
-      property: "og:title",
-      content: "Taxi Opatija | Discover | Prices - Services - Contact | 24/7",
-    },
-    {
-      hid: "og:description",
-      property: "og:description",
-      content:
-        "Discover Taxi Opatija: Explore taxi prices, diverse transport services, and contact us effortlessly via phone, Viber, or WhatsApp!",
-    },
-    {
-      hid: "og:image",
-      property: "og:image",
-      content: "https://www.taxiopatija.hr/opatija.jpeg",
-    },
-  ],
-  bodyAttrs: {
-    class: "",
-  },
-  script: [
-    {
-      type: "application/ld+json",
-      innerHTML: JSON.stringify({
-        "@context": "https://schema.org",
-        "@type": "WebSite",
-        name: "The station for all transportation needs!",
-        url: "https://www.taxiopatija.hr/",
-      }),
-    },
-    {
-      type: "application/ld+json",
-      innerHTML: JSON.stringify({
-        "@context": "https://schema.org",
-        "@type": "Organization",
-        image: "https://www.taxiopatija.hr/opatija.jpeg",
-        url: "https://www.taxiopatija.hr",
-        sameAs: ["https://taxiopatija.hr"],
-        logo: "https://www.taxiopatija.hr/opatija.jpeg",
-        name: "Taxi Opatija",
-        description:
-          "Taxi Opatija is a renowned tourist agency company headquartered in Opatija, Croatia. Taxi Opatija offers top-notch transfer services both domestically and internationally with a mission to ensure comfortable, safe, and reliable travel for all clients, regardless of destination or travel time.",
-        email: "anterukavina@yahoo.com.hr",
-        telephone: "+38598491369",
-
-        address: {
-          "@type": "PostalAddress",
-          streetAddress: "Ul. Dr. Ante Mandića 2",
-          addressLocality: "Opatija",
-          addressCountry: "Croatia",
-          addressRegion: "Primorje-Gorski Kotar County",
-          postalCode: "51410",
-        },
-        contactPoint: {
-          "@type": "ContactPoint",
-          telephone: "+38598491369",
-          email: "anterukavina@yahoo.com.hr",
-        },
-      }),
-    },
-    {
-      type: "application/ld+json",
-      innerHTML: JSON.stringify({
-        "@context": "https://schema.org",
-        "@type": "LocalBusiness",
-        image: "https://www.taxiopatija.hr/opatija.jpeg",
-        name: "Taxi Opatija",
-        description:
-          "Taxi Opatija is a renowned tourist agency company headquartered in Opatija, Croatia. Taxi Opatija offers top-notch transfer services both domestically and internationally with a mission to ensure comfortable, safe, and reliable travel for all clients, regardless of destination or travel time.",
-        url: "https://www.taxiopatija.hr",
-        logo: "https://www.taxiopatija.hr/opatija.jpeg",
-        openingHours: "Mo,Tu,We,Th,Fr,Sa,Su 00:00-24:00",
-        address: {
-          "@type": "PostalAddress",
-          streetAddress: "Ul. Dr. Ante Mandića 2",
-          addressLocality: "Opatija",
-          addressCountry: "Croatia",
-          addressRegion: "Primorje-Gorski Kotar County",
-          postalCode: "51410",
-        },
-        telephone: "+38598491369",
-        priceRange: "$$",
-      }),
-    },
-    {
-      type: "application/ld+json",
-      innerHTML: JSON.stringify({
-        "@context": "https://schema.org",
-        "@type": "Review",
-        reviewRating: {
-          "@type": "Rating",
-          ratingValue: "5",
-          bestRating: "5",
-        },
-        author: {
-          "@type": "Person",
-          name: "Vedran Mihailovic",
-        },
-        datePublished: "2024-03-26",
-        description: "Vrhunska i brza usluga! Vozač vrlo pristojan i uljudan.",
-        itemReviewed: {
-          "@type": "LocalBusiness",
-          name: "Taxi Opatija - taxiopatija.hr",
-          image: "https://www.taxiopatija.hr/opatija.jpeg",
-          telephone: "+38598491369",
-          priceRange: "$$",
-          address: {
-            "@type": "PostalAddress",
-            streetAddress: "Ul. Dr. Ante Mandića 2",
-            addressLocality: "Opatija",
-            addressCountry: "Croatia",
-            addressRegion: "Primorje-Gorski Kotar County",
-            postalCode: "51410",
-          },
-        },
-      }),
-    },
-  ],
-});
-
-useSeoMeta({
-  title: "Taxi Opatija | Discover | Prices - Services - Contact | 24/7",
-  ogTitle: "Taxi Opatija | Discover | Prices - Services - Contact | 24/7",
-  description:
-    "Discover Taxi Opatija: Explore taxi prices, diverse transport services, and contact us effortlessly via phone, Viber, or WhatsApp!",
-  ogDescription:
-    "Discover Taxi Opatija: Explore taxi prices, diverse transport services, and contact us effortlessly via phone, Viber, or WhatsApp!",
-  ogImage: "https://www.taxiopatija.hr/opatija.jpeg",
-  twitterCard: "https://www.taxiopatija.hr/opatija.jpeg",
-});
-</script>
