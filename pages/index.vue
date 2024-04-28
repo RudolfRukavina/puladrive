@@ -69,8 +69,7 @@
   <main id="home">
     <!-- <img class="hero-photo h-[200px] mb-6 md:hidden rounded-none" src="../assets/imgs/opatijamainphoto.webp"
       alt="Opatija Taxi" /> -->
-    <div
-      class="overflow-x-auto text-nowrap whitespace-nowrap sticky top-0 mt-3 w-full z-50 bg-white text-gray-800 shadow-sm"
+    <div class="overflow-x-auto text-nowrap whitespace-nowrap sticky top-0 w-full z-50 bg-white text-gray-800 shadow-sm"
       id="start">
       <div class="max-w-screen-xl px-4 py-2 mx-auto">
         <div class="flex items-center justify-evenly">
