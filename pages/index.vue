@@ -69,7 +69,6 @@
   <main id="home">
     <!-- <img class="hero-photo h-[200px] mb-6 md:hidden rounded-none" src="../assets/imgs/opatijamainphoto.webp"
       alt="Opatija Taxi" /> -->
-    <div class="flex justify-center relative -mt-5"></div>
     <div
       class="overflow-x-auto text-nowrap whitespace-nowrap sticky top-0 mt-3 w-full z-50 bg-white text-gray-800 shadow-sm"
       id="start">
@@ -94,7 +93,7 @@
       </div>
       <hr />
     </div>
-    <div class="relative isolate px-6 lg:px-8 mt-10 pb-14 bg-white">
+    <div class="relative isolate px-6 lg:px-8 pt-8 pb-10 bg-white">
       <div class="mx-auto max-w-2xl pt-10">
         <div class="flex justify-center">
           <img src="../assets/imgs/taxiopatijalogo.webp" alt="Taxi Opatija Business Logo Image"
@@ -244,7 +243,7 @@
         </div>
       </div>
     </div>
-    <div class="relative bg-sky-500">
+    <div class="relative line-remover">
       <svg class="wave-top" viewBox="0 0 1439 147" version="1.1" xmlns="http://www.w3.org/2000/svg"
         xmlns:xlink="http://www.w3.org/1999/xlink">
         <g stroke="none" stroke-width="1" fill="#FFFFFF" fill-rule="evenodd">
@@ -898,8 +897,8 @@
       </div>
 
       <!-- Change the colour #f8fafc to match the previous section colour -->
-      <div class="gradientWorkHours">
-        <div class="relative">
+      <div class="bg-sky-500">
+        <div class="relative line-remover">
           <svg class="wave-top" viewBox="0 0 1439 147" version="1.1" xmlns="http://www.w3.org/2000/svg"
             xmlns:xlink="http://www.w3.org/1999/xlink">
             <g stroke="none" stroke-width="1" fill="#ffffff" fill-rule="evenodd">
@@ -1367,6 +1366,11 @@ useSeoMeta({
 </script>
 
 <style scoped>
+.line-remover {
+  background: linear-gradient(to bottom, white 0%, #0ea5e9 5%, #0ea5e9 100%);
+}
+
+
 .slide-up-enter-active,
 .slide-up-leave-active {
   transition: all 0.25s ease-out;
