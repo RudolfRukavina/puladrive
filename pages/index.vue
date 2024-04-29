@@ -1,7 +1,7 @@
 <template>
 
   <Head>
-    <title>Taxi Opatija | Opatija's most trusted taxi | Available 24/7</title>
+    <title>🌍 Taxi Opatija | 24/7 - Need a taxi? 🌟 Here's your ride.</title>
     <Meta name="description"
       content="Discover Taxi Opatija: Explore taxi prices, diverse transport services, and contact us effortlessly via phone, Viber, or WhatsApp!" />
     <link rel="canonical" href="https://www.taxiopatija.hr/" />
@@ -9,7 +9,8 @@
   <header>
     <div class="bg-transparent backdrop-blur-[1px] fixed bottom-0 z-50 w-full">
       <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl px-3 pb-2">
-        <NuxtLink :to="{ path: '/', hash: '#home' }" class="flex items-center space-x-3 rtl:space-x-reverse">
+        <NuxtLink id='Go to homepage' :to="{ path: '/', hash: '#home' }"
+          class="flex items-center space-x-3 rtl:space-x-reverse">
           <img src="../assets/imgs/taxiopatijalogo.png" title="Taxi Opatija's business image, Logo"
             alt="Taxi Opatija, logo" class="w-17 h-[44px] inline-block rounded-xl" />
         </NuxtLink>
@@ -79,11 +80,11 @@
               </NuxtLink>
             </li>
             <li class="px-4 w-full text-center border-gray-300">
-              <NuxtLink :to="{ path: '/', hash: '#prices' }" class="hover:underline drop-shadow-md">Prices
+              <NuxtLink :to="{ path: '/', hash: '#prices' }" class="hover:underline drop-shadow-md">{{ $t("prices") }}
               </NuxtLink>
             </li>
             <li class="border-s px-4 w-full text-center">
-              <NuxtLink :to="{ path: '/', hash: '#about-us' }" class="hover:underline drop-shadow-md">{{ $t("aboutus")
+              <NuxtLink :to="{ path: '/', hash: '#about-us' }" class="hover:underline drop-shadow-md">{{ $t("aboutUs")
                 }}
               </NuxtLink>
             </li>
@@ -108,19 +109,19 @@
               gradientColor="white" speed="40">
               |
               <span class="px-3">
-                <strong>Welcome to taxiopatija.hr</strong>
+                <strong>{{ $t('welcome') }}</strong>
               </span>
               |
               <span class="px-3">
-                <strong>Opatija's most trusted taxi</strong>
+                <strong>{{ $t('mostTrusted') }}</strong>
               </span>
               |
               <span class="px-3">
-                <strong>Simple, fast, reliable</strong>
+                <strong>{{ $t('simple') }}</strong>
               </span>
               |
               <span class="px-3">
-                <strong>Our services include</strong>
+                <strong>{{ $t('ourServices') }}</strong>
               </span>
               -
               <span class="px-3">
@@ -128,27 +129,27 @@
               </span>
               -
               <span class="px-3">
-                <strong>Airport transfers</strong>
+                <strong>{{ $t('airport') }}</strong>
               </span>
               -
               <span class="px-3">
-                <strong>City transfers</strong>
+                <strong>{{ $t('cityTransfers') }}</strong>
               </span>
               -
               <span class="px-3">
-                <strong>Excursions</strong>
+                <strong>{{ $t('excursions') }}</strong>
               </span>
               -
               <span class="px-3">
-                <strong>Rent a car (3+1)</strong>
+                <strong>{{ $t('rentCar') }}</strong>
               </span>
               -
               <span class="px-3">
-                <strong>Rent a van (8+1)</strong>
+                <strong>{{ $t('rentVan') }}</strong>
               </span>
               |
               <span class="px-3">
-                <strong>Contact us by Viber, phone number or WhatsApp!</strong>
+                <strong>{{ $t('contactUs') }}</strong>
               </span>
             </NuxtMarquee>
           </div>
@@ -274,19 +275,19 @@
       <div class="grid grid-cols-2 gap-6 max-w-md text-base text-center">
         <NuxtLink :to="{ path: '/', hash: '#taxi-price' }"
           class="mx-auto cursor-pointer lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full py-2 px-4 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
-          Taxi prices
+          {{ $t('taxiprice') }}
         </NuxtLink>
         <NuxtLink :to="{ path: '/', hash: '#transfers' }"
           class="mx-auto cursor-pointer lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full py-2 px-4 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
-          Transfers
+          {{ $t('transfers') }}
         </NuxtLink>
         <NuxtLink :to="{ path: '/', hash: '#rent-a-van' }"
           class="mx-auto cursor-pointer lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full py-2 px-4 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
-          Rent a van
+          {{ $t('vanRental') }}
         </NuxtLink>
         <NuxtLink :to="{ path: '/', hash: '#rent-a-car' }"
           class="mx-auto cursor-pointer lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full py-2 px-4 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
-          Rent a car
+          {{ $t('rentCar') }}
         </NuxtLink>
       </div>
     </div>
@@ -295,7 +296,7 @@
         <Seperator />
         <article class="py-10 bg-sky-500" id="taxi-price">
           <h2 class="text-white my-3 font-bold drop-shadow-md text-5xl text-center">
-            <strong>Taxi price</strong>
+            <strong>{{ $t('taxiprice') }}</strong>
           </h2>
           <div class="w-full mb-4">
             <div class="h-1 mx-auto bg-white w-2/6 opacity-25 my-0 py-0 rounded-t"></div>
@@ -402,8 +403,7 @@
                           <NuxtLink :to="transfer.address" v-for="transfer in transfersData"
                             @click="selectedTransfer = transfer"
                             class="whitespace-nowrap rounded-full bg-sky-100 px-2.5 py-0.5 text-base text-center text-blue-600 cursor-pointer"
-                            :class="transfer.name === 'Custom' ? 'col-span-2' : ''
-          ">
+                            :class="transfer.name === 'Custom' ? 'col-span-2' : ''">
                             {{ transfer.name }}
                           </NuxtLink>
                         </div>
@@ -489,7 +489,7 @@
         <Seperator />
         <article class="py-10 pb-16 bg-sky-500" id="rent-a-van">
           <h2 class="text-white my-3 font-bold drop-shadow-md text-5xl text-center">
-            <strong>Rent a van </strong>
+            <strong>{{ $t('vanRental') }} </strong>
           </h2>
           <div class="w-full mb-4">
             <div class="h-1 mx-auto bg-white w-2/6 opacity-25 my-0 py-0 rounded-t"></div>
@@ -523,7 +523,7 @@
         <Seperator />
         <article class="py-10 bg-sky-500" id="rent-a-car">
           <h2 class="text-white my-3 font-bold drop-shadow-md text-5xl text-center">
-            <strong>Rent a car </strong>
+            <strong>{{ $t('carRental') }}</strong>
           </h2>
           <div class="w-full mb-4">
             <div class="h-1 mx-auto bg-white w-2/6 opacity-25 my-0 py-0 rounded-t"></div>
@@ -531,8 +531,8 @@
           <div class="flex justify-center">
             <div class="service-card bg-white rounded-xl mx-5 max-w-lg shadow-md mb-9 transition hover:shadow-lg">
               <NuxtLink :to="i18n.locale.value === 'en'
-            ? '/en/rent-a-car'
-            : '/najam-automobila'
+          ? '/en/rent-a-car'
+          : '/najam-automobila'
           ">
                 <div class="p-6">
                   <h3 class="text-2xl font-bold text-gray-800 mb-4">
@@ -587,7 +587,7 @@
                 class="inline-block pe-5 dark:ring-white/10 ring-primary/5 dark:shadow-thick rounded-3xl lg:row-start-4 h-full p-5 dark:bg-secondary">
                 <div class="flex justify-between cursor-pointer">
                   <p class="text-4xl tracking-tight font-medium text-black text-start md:text-5xl">
-                    About us
+                    {{ $t('aboutUs') }}
                   </p>
                   <div class="flex justify-evenlys items-center">
                     <span class="text-gray-800 font-bolder">Scroll right</span>
@@ -634,7 +634,7 @@
                   </p>
                 </div>
                 <p class="text-sm text-start font-medium text-gray-500">
-                  13 global ratings
+                  15 global ratings
                 </p>
                 <div class="flex items-center mt-4">
                   <a href="#" class="text-sm font-medium text-blue-600 dark:text-blue-500 hover:underline">5 star</a>
@@ -687,7 +687,7 @@
                 class="inline-block px-6 dark:ring-white/10 ring-primary/5 dark:shadow-thick rounded-3xl lg:row-start-4 h-full p-5 bg-white dark:bg-secondary">
                 <div class="flex justify-between">
                   <p class="text-2xl tracking-tight font-medium text-gray-900 text-start md:text-4xl">
-                    What is Taxi Opatija?
+                    {{ $t('whatIs') }}
                   </p>
                   <img src="../assets/imgs/taxiopatijalogo.png" title="Taxi Opatija's business image, Logo"
                     alt="Taxi Opatija, logo" class="w-11 h-8 inline-block me-3 rounded-xl" />
@@ -729,21 +729,17 @@
                   </p>
                 </div>
                 <p class="text-xl text-start font-medium text-gray-700 drop-shadow-md">
-                  Taxi Opatija is the official and most trusted taxi service in
-                  Opatija.
+                  {{ $t('taxiOpatijaIs') }}
                 </p>
                 <p class="text-xl text-start my-2 font-medium text-gray-500">
-                  Whether you're looking for a quick taxi ride in Opatija or a
-                  big trip anywhere across Europe, Taxi Opatija is your go-to
-                  destination for exceptional service, ensuring prompt,
-                  reliable, and comfortable transportation experiences.
+                  {{ $t('toDesc') }}
                 </p>
               </div>
               <div
                 class="inline-block px-6 dark:ring-white/10 ring-primary/5 dark:shadow-thick rounded-3xl lg:row-start-4 h-full p-5 bg-white dark:bg-secondary">
                 <div class="flex justify-between">
                   <p class="text-2xl tracking-tight font-medium text-gray-900 text-start md:text-4xl">
-                    Our vehicle fleet
+                    {{ $t('fleet') }}
                   </p>
                   <img src="../assets/imgs/taxiopatijalogo.png" title="Taxi Opatija's vehicle fleet, cars and vans"
                     alt="Taxi Opatija's vehicle fleet, cars and vans" class="w-11 h-8 inline-block me-3 rounded-xl" />
@@ -789,16 +785,14 @@
                     alt="Taxi Opatija, logo" class="w-[80vw] min-w-md max-w-md inline-block me-3 rounded-xl" />
                 </div>
                 <p class="text-xl text-start my-2 font-medium text-gray-500">
-                  Our vehicle fleet consists of modern vans (8+1) and
-                  comfortable cars (3+1), equipped with all necessary amenities
-                  to make your journey pleasant and stress-free.
+                  {{ $t('fleetDesc') }}
                 </p>
               </div>
               <div
                 class="inline-block px-6 dark:ring-white/10 ring-primary/5 dark:shadow-thick rounded-3xl lg:row-start-4 h-full p-5 bg-white dark:bg-secondary">
                 <div class="flex justify-between">
                   <p class="text-2xl tracking-tight font-medium text-gray-900 text-start md:text-4xl">
-                    Best at what we do!
+                    {{ $t('best') }}
                   </p>
                   <img src="../assets/imgs/taxiopatijalogo.png" title="Taxi Opatija's business image, Logo"
                     alt="Taxi Opatija, logo" class="w-11 h-8 inline-block me-3 rounded-xl" />
@@ -812,7 +806,7 @@
 
                     |
                     <span class="px-3">
-                      <strong>Opatija's most trusted taxi</strong>
+                      <strong>{{ $t('mostTrusted') }}</strong>
                     </span>
                     |
                     <span class="px-3">
@@ -878,10 +872,7 @@
                   </p>
                 </div>
                 <p class="text-xl text-start my-2 font-medium text-gray-500">
-                  With our dedicated approach and attention to detail, Taxi
-                  Opatija creates a travel experience that will remain a fond
-                  memory. Contact us today and let us provide you with an
-                  unforgettable journey that exceeds all your expectations.
+                  {{ $t('approach') }}
                 </p>
                 <a href="tel:+38598491369">
                   <button
@@ -997,7 +988,7 @@
             </li>
             <li class="mt-2 inline-block mr-2 md:block md:mr-0">
               <NuxtLink :to="{ path: '/', hash: '#about-us' }"
-                class="no-underline hover:underline text-gray-800 hover:text-pink-500">{{ $t("aboutus") }}
+                class="no-underline hover:underline text-gray-800 hover:text-pink-500">{{ $t("aboutUs") }}
               </NuxtLink>
             </li>
           </ul>
@@ -1216,7 +1207,7 @@ const getPeriodOfDay = () => {
 };
 
 useHead({
-  title: "Taxi Opatija | Opatija's most trusted taxi | Available 24/7",
+  title: "🌍 Taxi Opatija | 24/7 - Need a taxi? 🌟 Here's your ride.",
   htmlAttrs: {
     lang: "en",
   },
@@ -1235,7 +1226,7 @@ useHead({
     {
       hid: "og:title",
       property: "og:title",
-      content: "Taxi Opatija | Opatija's most trusted taxi | Available 24/7",
+      content: "🌍 Taxi Opatija | 24/7 - Need a taxi? 🌟 Here's your ride.",
     },
     {
       hid: "og:description",
@@ -1353,8 +1344,8 @@ useHead({
 });
 
 useSeoMeta({
-  title: "Taxi Opatija | Opatija's most trusted taxi | Available 24/7",
-  ogTitle: "Taxi Opatija | Opatija's most trusted taxi | Available 24/7",
+  title: "🌍 Taxi Opatija | 24/7 - Need a taxi? 🌟 Here's your ride.",
+  ogTitle: "🌍 Taxi Opatija | 24/7 - Need a taxi? 🌟 Here's your ride.",
   description:
     "Discover Taxi Opatija: Explore taxi prices, diverse transport services, and contact us effortlessly via phone, Viber, or WhatsApp!",
   ogDescription:
