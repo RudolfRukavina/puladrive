@@ -1,7 +1,7 @@
 <template>
 
   <Head>
-    <title> Taxi Opatija | 24/7 - Need a taxi? Here's your ride.</title>
+    <title>Taxi Opatija | 24/7 - Need a taxi? Here's your ride.</title>
     <Meta name="description"
       content="Discover Taxi Opatija: Explore taxi prices, diverse transport services, and contact us effortlessly via phone, Viber, or WhatsApp!" />
     <link rel="canonical" href="https://www.taxiopatija.hr/" />
@@ -68,8 +68,8 @@
   </header>
 
   <main id="home">
-    <!-- <img class="hero-photo h-[200px] mb-6 md:hidden rounded-none" src="../assets/imgs/opatijamainphoto.webp"
-      alt="Opatija Taxi" /> -->
+    <img class="hero-photo h-[0.1px] sm:hidden rounded-none" src="../assets/imgs/opatijamainphoto.webp"
+      alt="Opatija taxi service, image of Opatija" />
     <div class="overflow-x-auto text-nowrap whitespace-nowrap sticky top-0 w-full z-50 bg-white text-gray-800 shadow-sm"
       id="start">
       <div class="max-w-screen-xl px-4 py-2 mx-auto">
@@ -745,7 +745,7 @@
           </ul>
         </div>
         <div class="flex-1">
-          <p class="uppercase text-gray-500 md:mb-6">{{ $t("pricing") }}</p>
+          <p class="uppercase text-gray-500 md:mb-6">{{ $t("prices") }}</p>
           <ul class="list-reset mb-6">
             <li class="mt-2 inline-block mr-2 md:block md:mr-0">
               <NuxtLink :to="{ path: '/', hash: '#taxi-price' }"
@@ -848,7 +848,7 @@ useHead({
     {
       hid: "og:title",
       property: "og:title",
-      content: " Taxi Opatija | 24/7 - Need a taxi? Here's your ride.",
+      content: "Taxi Opatija | 24/7 - Need a taxi? Here's your ride.",
     },
     {
       hid: "og:description",
@@ -966,8 +966,8 @@ useHead({
 });
 
 useSeoMeta({
-  title: " Taxi Opatija | 24/7 - Need a taxi? Here's your ride.",
-  ogTitle: " Taxi Opatija | 24/7 - Need a taxi? Here's your ride.",
+  title: "Taxi Opatija | 24/7 - Need a taxi? Here's your ride.",
+  ogTitle: "Taxi Opatija | 24/7 - Need a taxi? Here's your ride.",
   description:
     "Discover Taxi Opatija: Explore taxi prices, diverse transport services, and contact us effortlessly via phone, Viber, or WhatsApp!",
   ogDescription:
