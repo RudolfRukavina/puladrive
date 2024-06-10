@@ -1,7 +1,7 @@
 <template>
 
   <Head>
-    <title>🌍 Taxi Opatija | 24/7 - Need a taxi? 🌟 Here's your ride.</title>
+    <title> Taxi Opatija | 24/7 - Need a taxi? Here's your ride.</title>
     <Meta name="description"
       content="Discover Taxi Opatija: Explore taxi prices, diverse transport services, and contact us effortlessly via phone, Viber, or WhatsApp!" />
     <link rel="canonical" href="https://www.taxiopatija.hr/" />
@@ -80,7 +80,8 @@
               </NuxtLink>
             </li>
             <li class="px-4 w-full text-center border-gray-300">
-              <NuxtLink :to="{ path: '/', hash: '#prices' }" class="hover:underline drop-shadow-md">{{ $t("prices") }}
+              <NuxtLink :to="{ path: '/', hash: '#taxi-price' }" class="hover:underline drop-shadow-md">{{ $t("prices")
+                }}
               </NuxtLink>
             </li>
             <li class="border-s px-4 w-full text-center">
@@ -100,7 +101,7 @@
             title="Taxi Opatija, logo" class="-mt-5 object-cover w-3/12 sm:w-24" />
         </div>
         <div class="text-center">
-          <h1 class="text-[56px] leading-none tracking-tight text-gray-900 drop-shadow-md">
+          <h1 class="text-[42px] leading-none tracking-tight text-gray-900 drop-shadow-md">
             <strong>Taxi Opatija</strong>
           </h1>
 
@@ -118,34 +119,6 @@
               |
               <span class="px-3">
                 <strong>{{ $t('simple') }}</strong>
-              </span>
-              |
-              <span class="px-3">
-                <strong>{{ $t('ourServices') }}</strong>
-              </span>
-              -
-              <span class="px-3">
-                <strong>Taxi</strong>
-              </span>
-              -
-              <span class="px-3">
-                <strong>{{ $t('airport') }}</strong>
-              </span>
-              -
-              <span class="px-3">
-                <strong>{{ $t('cityTransfers') }}</strong>
-              </span>
-              -
-              <span class="px-3">
-                <strong>{{ $t('excursions') }}</strong>
-              </span>
-              -
-              <span class="px-3">
-                <strong>{{ $t('rentCar') }}</strong>
-              </span>
-              -
-              <span class="px-3">
-                <strong>{{ $t('rentVan') }}</strong>
               </span>
               |
               <span class="px-3">
@@ -270,30 +243,8 @@
         </g>
       </svg>
     </div>
-
-    <div class="flex justify-center w-full bg-sky-500 py-5 mb-10 -mt-[1px]" id="prices">
-      <div class="grid grid-cols-2 gap-6 max-w-md text-base text-center">
-        <NuxtLink :to="{ path: '/', hash: '#taxi-price' }"
-          class="mx-auto cursor-pointer lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full py-2 px-4 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
-          {{ $t('taxiprice') }}
-        </NuxtLink>
-        <NuxtLink :to="{ path: '/', hash: '#transfers' }"
-          class="mx-auto cursor-pointer lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full py-2 px-4 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
-          {{ $t('transfers') }}
-        </NuxtLink>
-        <NuxtLink :to="{ path: '/', hash: '#rent-a-van' }"
-          class="mx-auto cursor-pointer lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full py-2 px-4 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
-          {{ $t('vanRental') }}
-        </NuxtLink>
-        <NuxtLink :to="{ path: '/', hash: '#rent-a-car' }"
-          class="mx-auto cursor-pointer lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full py-2 px-4 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
-          {{ $t('rentCar') }}
-        </NuxtLink>
-      </div>
-    </div>
     <div class="leading-normal tracking-normal bg-sky-500" style="font-family: 'Source Sans Pro', sans-serif">
       <section>
-        <Seperator />
         <article class="py-10 bg-sky-500" id="taxi-price">
           <h2 class="text-white my-3 font-bold drop-shadow-md text-5xl text-center">
             <strong>{{ $t('taxiprice') }}</strong>
@@ -352,207 +303,7 @@
             </div>
           </div>
         </article>
-        <Seperator />
-        <article class="py-10 bg-sky-500" id="transfers">
-          <h2 class="text-white my-3 font-bold drop-shadow-md text-5xl text-center">
-            <strong>Transfers</strong>
-          </h2>
-          <div class="w-full">
-            <div class="h-1 mx-auto bg-white w-2/6 opacity-25 my-0 py-0 rounded-t"></div>
-          </div>
 
-          <section class="content-section bg-transparent pb-16 pt-5 px-4 lg:px-5">
-            <article class="container mx-auto">
-              <div class="grid grid-cols-1 gap-8">
-                <div class="overflow-x-scroll w-full rounded-xl">
-                  <div class="flex gap-4">
-                    <article class="service-card bg-white rounded-xl shadow-md transition hover:shadow-lg">
-                      <div class="p-6 w-80">
-                        <h3 class="text-2xl font-bold text-gray-800 mb-4">
-                          Transfers
-                        </h3>
-                        <p class="text-gray-600">
-                          Experience swift and seamless transfers to and from
-                          <strong>airports</strong>, <strong>cities</strong>,
-                          and <strong>destinations</strong>.
-                        </p>
-                        <p class="text-gray-600 my-3">
-                          Simplify your travel arrangements with our quick and
-                          efficient inquiry process.
-                        </p>
-                        <p class="text-gray-600 my-3">
-                          <strong>Scroll right</strong> to explore pricing
-                          options.
-                        </p>
-                      </div>
-                    </article>
-
-                    <article class="service-card bg-white rounded-xl shadow-md transition hover:shadow-lg">
-                      <div class="p-6 pb-0 w-80">
-                        <h3 class="text-2xl font-bold text-gray-800">
-                          Airport Transfers
-                        </h3>
-                      </div>
-
-                      <div class="p-6 pt-0">
-                        <h3 class="text-xl text-gray-900 mb-4">
-                          Choose an airport
-                        </h3>
-
-                        <div class="grid grid-cols-2 gap-4">
-                          <NuxtLink :to="transfer.address" v-for="transfer in transfersData"
-                            @click="selectedTransfer = transfer"
-                            class="whitespace-nowrap rounded-full bg-sky-100 px-2.5 py-0.5 text-base text-center text-blue-600 cursor-pointer"
-                            :class="transfer.name === 'Custom' ? 'col-span-2' : ''">
-                            {{ transfer.name }}
-                          </NuxtLink>
-                        </div>
-                      </div>
-                    </article>
-
-                    <article class="service-card bg-white rounded-xl shadow-md transition hover:shadow-lg">
-                      <div class="p-6 pb-0 w-80">
-                        <h3 class="text-2xl font-bold text-gray-800">
-                          City Transfers
-                        </h3>
-                      </div>
-                      <div class="p-6 pt-0">
-                        <h3 class="text-xl text-gray-900 mb-4">
-                          Choose a city
-                        </h3>
-
-                        <div class="grid grid-cols-2 gap-4">
-                          <NuxtLink :to="transfer.address" v-for="transfer in cityTransfersData"
-                            @click="selectedTransfer = transfer"
-                            class="whitespace-nowrap rounded-full bg-sky-100 px-2.5 py-0.5 text-base text-center text-blue-600 cursor-pointer"
-                            :class="transfer.name === 'Custom' ? 'col-span-2' : ''
-          ">
-                            {{ transfer.name }}
-                          </NuxtLink>
-                        </div>
-                      </div>
-                    </article>
-
-                    <article class="service-card bg-white rounded-xl shadow-md transition hover:shadow-lg">
-                      <div class="p-6 pb-0 w-80">
-                        <h3 class="text-2xl font-bold text-gray-800">
-                          Excursions
-                        </h3>
-                      </div>
-                      <div class="p-6 pt-0">
-                        <h3 class="text-xl text-gray-900 mb-4">
-                          Choose an location
-                        </h3>
-
-                        <div class="grid grid-cols-2 gap-4">
-                          <NuxtLink :to="transfer.address" v-for="transfer in excursionTransfersData"
-                            @click="selectedTransfer = transfer"
-                            class="whitespace-nowrap rounded-full bg-sky-100 px-2.5 py-0.5 text-base text-center text-blue-600 cursor-pointer"
-                            :class="transfer.name === 'Custom' ? 'col-span-2' : ''
-          ">
-                            {{ transfer.name }}
-                          </NuxtLink>
-                        </div>
-                      </div>
-                    </article>
-                    <article class="service-card bg-white rounded-xl shadow-md transition hover:shadow-lg">
-                      <div class="p-6 pb-0 w-80">
-                        <h3 class="text-2xl font-bold text-gray-800">
-                          Special Offers
-                        </h3>
-                      </div>
-                      <div class="p-6 pt-0">
-                        <span class="text-base text-gray-900">24.05.2024 - 26.05.2024</span>
-                        <h4 class="text-xl text-gray-900 mb-4">
-                          Sea Star Festival
-                        </h4>
-
-                        <div class="grid grid-cols-1 gap-4">
-                          <NuxtLink :to="transfer.address" v-for="transfer in specialTransfersData"
-                            @click="selectedTransfer = transfer"
-                            class="whitespace-nowrap rounded-full bg-sky-100 px-2.5 py-0.5 text-base text-center text-blue-600 cursor-pointer">
-                            {{ transfer.name }}
-                          </NuxtLink>
-                        </div>
-                      </div>
-                      <div class="flex justify-center">
-                        <span class="text-sm font-bold text-white bg-sky-500 rounded-xl p-2 m-2 text-center w-full">15%
-                          discount</span>
-                      </div>
-                    </article>
-                  </div>
-                </div>
-              </div>
-            </article>
-          </section>
-        </article>
-        <Seperator />
-        <article class="py-10 pb-16 bg-sky-500" id="rent-a-van">
-          <h2 class="text-white my-3 font-bold drop-shadow-md text-5xl text-center">
-            <strong>{{ $t('vanRental') }} </strong>
-          </h2>
-          <div class="w-full mb-4">
-            <div class="h-1 mx-auto bg-white w-2/6 opacity-25 my-0 py-0 rounded-t"></div>
-          </div>
-          <div class="flex justify-center">
-            <div class="service-card bg-white rounded-xl mx-5 max-w-lg shadow-md transition hover:shadow-lg">
-              <NuxtLink :to="i18n.locale.value === 'en'
-          ? '/en/rent-a-van'
-          : '/najam-kombi-vozila'
-          ">
-                <div class="p-6">
-                  <h3 class="text-2xl font-bold text-gray-800 mb-4">
-                    {{ $t("rentVan") }}
-                  </h3>
-                  <p class="text-gray-600">{{ $t("rentVanDesc") }}</p>
-                </div>
-                <div class="flex items-center justify-between px-6 py-4 bg-gray-100 rounded-b-xl">
-                  <span class="text-blue-800 font-medium">{{
-          $t("pricingRentVan")
-        }}</span>
-                  <svg class="w-6 text-gray-800" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M9 6L15 12L9 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                      stroke-linejoin="round"></path>
-                  </svg>
-                </div>
-              </NuxtLink>
-            </div>
-          </div>
-        </article>
-
-        <Seperator />
-        <article class="py-10 bg-sky-500" id="rent-a-car">
-          <h2 class="text-white my-3 font-bold drop-shadow-md text-5xl text-center">
-            <strong>{{ $t('carRental') }}</strong>
-          </h2>
-          <div class="w-full mb-4">
-            <div class="h-1 mx-auto bg-white w-2/6 opacity-25 my-0 py-0 rounded-t"></div>
-          </div>
-          <div class="flex justify-center">
-            <div class="service-card bg-white rounded-xl mx-5 max-w-lg shadow-md mb-9 transition hover:shadow-lg">
-              <NuxtLink :to="i18n.locale.value === 'en'
-          ? '/en/rent-a-car'
-          : '/najam-automobila'
-          ">
-                <div class="p-6">
-                  <h3 class="text-2xl font-bold text-gray-800 mb-4">
-                    {{ $t("rentCar") }} (3+1)
-                  </h3>
-                  <p class="text-gray-600">{{ $t("rentCarDesc") }}</p>
-                </div>
-                <div class="flex items-center justify-between px-6 py-4 bg-gray-100 rounded-b-xl">
-                  <span class="text-blue-800 font-medium">{{
-          $t("pricingRentCar")
-        }}</span>
-                  <svg class="w-6 text-gray-800" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M9 6L15 12L9 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                      stroke-linejoin="round"></path>
-                  </svg>
-                </div>
-              </NuxtLink>
-            </div>
-          </div>
-        </article>
       </section>
 
       <!-- About us -->
@@ -982,8 +733,8 @@
             </li>
 
             <li class="mt-2 inline-block mr-2 md:block md:mr-0">
-              <NuxtLink :to="{ path: '/', hash: '#prices' }"
-                class="no-underline hover:underline text-gray-800 hover:text-pink-500">{{ $t("services") }}
+              <NuxtLink :to="{ path: '/', hash: '#taxi-price' }"
+                class="no-underline hover:underline text-gray-800 hover:text-pink-500">{{ $t("prices") }}
               </NuxtLink>
             </li>
             <li class="mt-2 inline-block mr-2 md:block md:mr-0">
@@ -994,31 +745,11 @@
           </ul>
         </div>
         <div class="flex-1">
-          <p class="uppercase text-gray-500 md:mb-6">{{ $t("services") }}</p>
+          <p class="uppercase text-gray-500 md:mb-6">{{ $t("pricing") }}</p>
           <ul class="list-reset mb-6">
             <li class="mt-2 inline-block mr-2 md:block md:mr-0">
               <NuxtLink :to="{ path: '/', hash: '#taxi-price' }"
                 class="no-underline hover:underline text-gray-800 hover:text-pink-500">{{ $t("servicesTaxi") }}
-              </NuxtLink>
-            </li>
-            <li class="mt-2 inline-block mr-2 md:block md:mr-0">
-              <NuxtLink :to="{ path: '/', hash: '#transfers' }"
-                class="no-underline hover:underline text-gray-800 hover:text-pink-500">{{ $t("servicesTransfers") }}
-              </NuxtLink>
-            </li>
-            <li class="mt-2 inline-block mr-2 md:block md:mr-0">
-              <NuxtLink :to="i18n.locale.value === 'en'
-          ? '/en/rent-a-van'
-          : '/najam-kombi-vozila'
-          " class="no-underline hover:underline text-gray-800 hover:text-pink-500">
-                {{ $t("servicesRentVan") }}
-              </NuxtLink>
-            </li>
-            <li class="mt-2 inline-block mr-2 md:block md:mr-0">
-              <NuxtLink :to="i18n.locale.value === 'en'
-          ? '/en/rent-a-car'
-          : '/najam-automobila'
-          " class="no-underline hover:underline text-gray-800 hover:text-pink-500">{{ $t("servicesRentCar") }}
               </NuxtLink>
             </li>
           </ul>
@@ -1078,115 +809,6 @@ function scrollToSection(hash) {
   }
 }
 
-const baseSubtitle =
-  "Fast and convenient transfers to and from the following airports: Krk, Pula, Zagreb, Trieste, Ljubljana, Split, Zadar, Venice.";
-
-const baseCitySubtitle =
-  "Fast and comfortable transfers to and from cities and places: Pula, Rovinj, Poreč, Plitvice Lakes, Postojna Cave, Ljubljana, Trieste, Venice.";
-
-const selectedTransfer = ref("");
-const selectedCityTransfer = ref("");
-
-const transfersData = ref([
-  {
-    name: "Rijeka (Krk)",
-    address: "/en/airport/transfer-opatija-rijeka",
-  },
-  {
-    name: "Pula",
-    address: "/en/airport/transfer-opatija-pula",
-  },
-  {
-    name: "Zagreb",
-    address: "/en/airport/transfer-opatija-zagreb",
-  },
-  {
-    name: "Trieste",
-    address: "/en/airport/transfer-opatija-trieste",
-  },
-  {
-    name: "Ljubljana",
-    address: "/en/airport/transfer-opatija-ljubljana",
-  },
-  {
-    name: "Split",
-    address: "/en/airport/transfer-opatija-split",
-  },
-  {
-    name: "Zadar",
-    address: "/en/airport/transfer-opatija-zadar",
-  },
-  {
-    name: "Venice",
-    address: "/en/airport/transfer-opatija-venice",
-  },
-  {
-    name: "Custom",
-    address: "tel:+38598491369",
-  },
-]);
-
-const cityTransfersData = ref([
-  {
-    name: "Poreč",
-    address: "/en/places/transfer-opatija-porec",
-  },
-  {
-    name: "Pula",
-    address: "/en/places/transfer-opatija-pula",
-  },
-  {
-    name: "Rovinj",
-    address: "/en/places/transfer-opatija-rovinj",
-  },
-  {
-    name: "Trst",
-    address: "/en/places/transfer-opatija-trieste",
-  },
-  {
-    name: "Ljubljana",
-    address: "/en/places/transfer-opatija-ljubljana",
-  },
-  {
-    name: "Venice",
-    address: "/en/places/transfer-opatija-venice",
-  },
-  {
-    name: "Custom",
-    address: "tel:+38598491369",
-  },
-]);
-
-const excursionTransfersData = ref([
-  {
-    name: "Plitvice lakes",
-    address: "/en/places/transfer-opatija-plitvice-lakes",
-  },
-  {
-    name: "Postojna cave",
-    address: "/en/places/transfer-opatija-postojna-cave",
-  },
-  {
-    name: "Custom",
-    address: "tel:+38598491369",
-  },
-]);
-
-const specialTransfersData = ref([
-  {
-    name: "Taxi in Umag",
-    address: "tel:+38598491369",
-  },
-  {
-    name: "Transfer to Umag",
-    address: "tel:+38598491369",
-  },
-  {
-    name: "Transfer from Umag",
-    address: "tel:+38598491369",
-  },
-]);
-
 const isDay = ref(true);
 
 const currentTime = ref(dayjs().format("HH:mm"));
@@ -1207,7 +829,7 @@ const getPeriodOfDay = () => {
 };
 
 useHead({
-  title: "🌍 Taxi Opatija | 24/7 - Need a taxi? 🌟 Here's your ride.",
+  title: "Taxi Opatija | 24/7 - Need a taxi? Here's your ride.",
   htmlAttrs: {
     lang: "en",
   },
@@ -1226,7 +848,7 @@ useHead({
     {
       hid: "og:title",
       property: "og:title",
-      content: "🌍 Taxi Opatija | 24/7 - Need a taxi? 🌟 Here's your ride.",
+      content: " Taxi Opatija | 24/7 - Need a taxi? Here's your ride.",
     },
     {
       hid: "og:description",
@@ -1344,8 +966,8 @@ useHead({
 });
 
 useSeoMeta({
-  title: "🌍 Taxi Opatija | 24/7 - Need a taxi? 🌟 Here's your ride.",
-  ogTitle: "🌍 Taxi Opatija | 24/7 - Need a taxi? 🌟 Here's your ride.",
+  title: " Taxi Opatija | 24/7 - Need a taxi? Here's your ride.",
+  ogTitle: " Taxi Opatija | 24/7 - Need a taxi? Here's your ride.",
   description:
     "Discover Taxi Opatija: Explore taxi prices, diverse transport services, and contact us effortlessly via phone, Viber, or WhatsApp!",
   ogDescription:
