@@ -5,6 +5,7 @@
     <Meta name="description"
       content="Discover Taxi Opatija: Explore taxi prices, diverse transport services, and contact us effortlessly via phone, Viber, or WhatsApp!" />
     <link rel="canonical" href="https://www.taxiopatija.hr/" />
+
   </Head>
   <header>
     <div class="bg-transparent backdrop-blur-[1px] fixed bottom-0 z-50 w-full">
@@ -80,8 +81,9 @@
               </NuxtLink>
             </li>
             <li class="px-4 w-full text-center border-gray-300">
-              <NuxtLink :to="{ path: '/', hash: '#taxi-price' }" class="hover:underline drop-shadow-md">{{ $t("prices")
-                }}
+              <NuxtLink :to="{ path: '/', hash: '#taxi-price' }" class="hover:underline drop-shadow-md">{{
+          $t("prices")
+        }}
               </NuxtLink>
             </li>
             <li class="border-s px-4 w-full text-center">

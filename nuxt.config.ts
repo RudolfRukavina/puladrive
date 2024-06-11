@@ -25,6 +25,12 @@ export default defineNuxtConfig({
         },
         { rel: "manifest", href: "/site.webmanifest" },
       ],
+      script: [
+        {
+          src: 'https://www.googletagmanager.com/gtm.js?id=GTM-TB2V93HK',
+          async: true,
+        },
+      ],
     },
   },
   modules: ["@nuxtjs/tailwindcss", "nuxt-swiper", "dayjs-nuxt", '@nuxtjs/i18n', "nuxt-marquee"],
@@ -47,5 +53,8 @@ export default defineNuxtConfig({
   },
     build: {
         transpile: ['@vuepic/vue-datepicker']
-    }
+    },
+      plugins: [
+    { src: '~/plugins/googleTagManagerPlugin.js', mode: 'client' }
+  ],
 });
