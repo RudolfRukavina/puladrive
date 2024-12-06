@@ -26,9 +26,9 @@
 
         <div class="flex items-center space-x-6 rtl:space-x-reverse">
           <a
-            href="tel:+385953660184"
+            href="tel:+385992053344"
             class="text-sm text-black text-bold underline underline-offset-2 hover:underline"
-            >+385 95 366 0184</a
+            >+385 99 205 3344</a
           >
           <div type="button" data-dropdown-toggle="language-dropdown-menu">
             <svg
@@ -512,7 +512,7 @@
           </a>
 
           <div class="mt-10 flex items-center justify-evenly gap-x-2">
-            <a href="viber://chat?number=%2B385953660184">
+            <a href="viber://chat?number=%2B385992053344">
               <svg
                 class="w-14 rounded-lg custom-shadow border border-white hover:border-none"
                 version="1.1"
@@ -566,7 +566,7 @@
             </a>
             <a
               id="callLink2"
-              href="tel:+385953660184"
+              href="tel:+385992053344"
               class="inline-block w-50"
             >
               <button
@@ -576,7 +576,7 @@
               </button>
             </a>
             <a
-              href="https://api.whatsapp.com/send?phone=385953660184"
+              href="https://api.whatsapp.com/send?phone=385992053344"
               target="_blank"
               rel="noopener"
             >
@@ -841,7 +841,7 @@
           <h3 class="my-4 text-3xl text-white leading-tight">
             {{ $t("openEveryDay") }}
           </h3>
-          <a href="tel:+385953660184">
+          <a href="tel:+385992053344">
             <button
               class="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out"
             >
@@ -1125,7 +1125,7 @@ useHead({
         description:
           "Taxi Rudolf is a renowned tourist agency company headquartered in Rudolf, Croatia. Taxi Rudolf offers top-notch transfer services both domestically and internationally with a mission to ensure comfortable, safe, and reliable travel for all clients, regardless of destination or travel time.",
         email: "anterukavina@yahoo.com.hr",
-        telephone: "+385953660184",
+        telephone: "+385992053344",
 
         address: {
           "@type": "PostalAddress",
@@ -1137,7 +1137,7 @@ useHead({
         },
         contactPoint: {
           "@type": "ContactPoint",
-          telephone: "+385953660184",
+          telephone: "+385992053344",
           email: "anterukavina@yahoo.com.hr",
         },
       }),
@@ -1162,7 +1162,7 @@ useHead({
           addressRegion: "Primorje-Gorski Kotar County",
           postalCode: "51410",
         },
-        telephone: "+385953660184",
+        telephone: "+385992053344",
         priceRange: "$$",
       }),
     },
@@ -1186,7 +1186,7 @@ useHead({
           "@type": "LocalBusiness",
           name: "Taxi Rudolf - taxiRudolf.hr",
           image: "https://www.taxiRudolf.hr/Rudolf.jpeg",
-          telephone: "+385953660184",
+          telephone: "+385992053344",
           priceRange: "$$",
           address: {
             "@type": "PostalAddress",
