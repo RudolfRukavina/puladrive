@@ -26,7 +26,7 @@
         <div class="flex items-center space-x-6 rtl:space-x-reverse">
           <a
             href="tel:5541251234"
-            class="text-sm text-gray-500 dark:text-white hover:underline"
+            class="text-sm text-black text-bold underline underline-offset-2 hover:underline"
             >+385 99 205 3344</a
           >
         </div>
@@ -55,7 +55,7 @@
       </div>
     </div>
     <img class="mx-auto max-w-40" src="../assets/imgs/test.jpg" />
-    <div class="px-6 lg:px-8 pb-32 bg-white">
+    <div class="px-6 lg:px-8 pb-14 bg-white">
       <div class="mx-auto max-w-2xl">
         <div class="text-center">
           <h1

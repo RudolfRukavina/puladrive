@@ -65,7 +65,7 @@ export default defineI18nConfig(() => ({
       callARide: "Pozovi taksi",
       home: "Naslovnica",
       airport: "Prijevoz do i od zračnih luka",
-      mostTrusted: "Najpouzdaniji taksi u Opatiji",
+      mostTrusted: "Najpouzdaniji taksi u Puli",
       simple: "Jednostavno, brzo, pouzdano",
       prices: "Cijene",
       taxiprice: "Taxi cijena",
