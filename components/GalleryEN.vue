@@ -197,9 +197,9 @@
                 {{ $t("whatIs") }}
               </p>
               <img
-                src="https://scontent.fzag3-1.fna.fbcdn.net/v/t39.30808-1/327551864_1227162628227515_5135664413449931067_n.jpg?stp=dst-jpg_s480x480_tt6&_nc_cat=108&ccb=1-7&_nc_sid=f4b9fd&_nc_ohc=WMvhHQxoIkAQ7kNvgFCEIQx&_nc_zt=24&_nc_ht=scontent.fzag3-1.fna&_nc_gid=AI1VK6CQ7YCjw6wkUysqgNa&oh=00_AYCESx7mRO4iby88KztPNQMaT2hvTJdiOIeAs23zcJnrQA&oe=675834A7"
-                title="Taxi PulaDrive's business image, Logo"
-                alt="Taxi PulaDrive, logo"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqA0CIw8IBFNs01WNnOmzzwPZc-R1TEUYlFw&s"
+                title="Taxi Rudolf's business image, Logo"
+                alt="Taxi Rudolf, logo"
                 class="w-8 h-8 inline-block me-3 rounded-full"
               />
             </div>
@@ -278,7 +278,7 @@
             <p
               class="text-xl text-start font-medium text-gray-700 drop-shadow-md"
             >
-              {{ $t("taxiPulaDriveIs") }}
+              {{ $t("taxiRudolfIs") }}
             </p>
             <p class="text-xl text-start my-2 font-medium text-gray-500">
               {{ $t("toDesc") }}
@@ -296,9 +296,9 @@
                 {{ $t("fleet") }}
               </p>
               <img
-                src="https://scontent.fzag3-1.fna.fbcdn.net/v/t39.30808-1/327551864_1227162628227515_5135664413449931067_n.jpg?stp=dst-jpg_s480x480_tt6&_nc_cat=108&ccb=1-7&_nc_sid=f4b9fd&_nc_ohc=WMvhHQxoIkAQ7kNvgFCEIQx&_nc_zt=24&_nc_ht=scontent.fzag3-1.fna&_nc_gid=AI1VK6CQ7YCjw6wkUysqgNa&oh=00_AYCESx7mRO4iby88KztPNQMaT2hvTJdiOIeAs23zcJnrQA&oe=675834A7"
-                title="Taxi PulaDrive's vehicle fleet, cars and vans"
-                alt="Taxi PulaDrive's vehicle fleet, cars and vans"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqA0CIw8IBFNs01WNnOmzzwPZc-R1TEUYlFw&s"
+                title="Taxi Rudolf's vehicle fleet, cars and vans"
+                alt="Taxi Rudolf's vehicle fleet, cars and vans"
                 class="w-8 h-8 inline-block me-3 rounded-full"
               />
             </div>
@@ -378,8 +378,8 @@
               <img
                 src="https://lh3.googleusercontent.com/p/AF1QipNqbhjTGjJ2S7X7-6Mu50-WeW--gp4fKSPa3LgG=s1360-w1360-h1020"
                 loading="lazy"
-                title="Taxi PulaDrive's business image, Logo"
-                alt="Taxi PulaDrive, logo"
+                title="Taxi Rudolf's business image, Logo"
+                alt="Taxi Rudolf, logo"
                 class="w-[80vw] min-w-md max-w-md inline-block me-3 rounded-xl"
               />
             </div>
@@ -399,9 +399,9 @@
                 {{ $t("best") }}
               </p>
               <img
-                src="https://scontent.fzag3-1.fna.fbcdn.net/v/t39.30808-1/327551864_1227162628227515_5135664413449931067_n.jpg?stp=dst-jpg_s480x480_tt6&_nc_cat=108&ccb=1-7&_nc_sid=f4b9fd&_nc_ohc=WMvhHQxoIkAQ7kNvgFCEIQx&_nc_zt=24&_nc_ht=scontent.fzag3-1.fna&_nc_gid=AI1VK6CQ7YCjw6wkUysqgNa&oh=00_AYCESx7mRO4iby88KztPNQMaT2hvTJdiOIeAs23zcJnrQA&oe=675834A7"
-                title="Taxi PulaDrive's business image, Logo"
-                alt="Taxi PulaDrive, logo"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqA0CIw8IBFNs01WNnOmzzwPZc-R1TEUYlFw&s"
+                title="Taxi Rudolf's business image, Logo"
+                alt="Taxi Rudolf, logo"
                 class="w-8 h-8 inline-block me-3 rounded-full"
               />
             </div>

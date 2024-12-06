@@ -3,9 +3,9 @@
     <title>24/7 Affordable Taxi Service in Pula | Call Now</title>
     <Meta
       name="description"
-      content="Discover Taxi PulaDrive: Explore taxi prices, diverse transport services, and contact us effortlessly via phone, Viber, or WhatsApp!"
+      content="Discover Taxi Rudolf: Explore taxi prices, diverse transport services, and contact us effortlessly via phone, Viber, or WhatsApp!"
     />
-    <link rel="canonical" href="https://www.taxiPulaDrive.hr/" />
+    <link rel="canonical" href="https://www.taxiRudolf.hr/" />
   </Head>
   <main id="home">
     <nav class="bg-white border-gray-200 dark:bg-gray-900">
@@ -20,7 +20,7 @@
           />
           <span
             class="self-center text-xl font-semibold whitespace-nowrap dark:text-white"
-            >PulaDrive</span
+            >Rudolf</span
           >
         </a>
 
@@ -398,7 +398,7 @@
       >
         <img
           class="object-cover object-center rounded-full bg-white border-4 border-black"
-          src="https://scontent.fzag3-1.fna.fbcdn.net/v/t39.30808-1/327551864_1227162628227515_5135664413449931067_n.jpg?stp=dst-jpg_s480x480_tt6&_nc_cat=108&ccb=1-7&_nc_sid=f4b9fd&_nc_ohc=WMvhHQxoIkAQ7kNvgFCEIQx&_nc_zt=24&_nc_ht=scontent.fzag3-1.fna&_nc_gid=AI1VK6CQ7YCjw6wkUysqgNa&oh=00_AYCESx7mRO4iby88KztPNQMaT2hvTJdiOIeAs23zcJnrQA&oe=675834A7"
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqA0CIw8IBFNs01WNnOmzzwPZc-R1TEUYlFw&s"
           alt="Woman looking front"
         />
       </div>
@@ -410,7 +410,7 @@
           <h1
             class="text-[42px] leading-none tracking-tight text-gray-900 drop-shadow-md"
           >
-            <strong>Taxi PulaDrive</strong>
+            <strong>Taxi Rudolf</strong>
           </h1>
 
           <div
@@ -900,15 +900,15 @@
             :to="{ path: '/', hash: '#home' }"
           >
             <img
-              src="https://scontent.fzag3-1.fna.fbcdn.net/v/t39.30808-1/327551864_1227162628227515_5135664413449931067_n.jpg?stp=dst-jpg_s480x480_tt6&_nc_cat=108&ccb=1-7&_nc_sid=f4b9fd&_nc_ohc=WMvhHQxoIkAQ7kNvgFCEIQx&_nc_zt=24&_nc_ht=scontent.fzag3-1.fna&_nc_gid=AI1VK6CQ7YCjw6wkUysqgNa&oh=00_AYCESx7mRO4iby88KztPNQMaT2hvTJdiOIeAs23zcJnrQA&oe=675834A7"
-              title="Taxi PulaDrive's business image, Logo"
-              alt="Taxi PulaDrive, logo"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqA0CIw8IBFNs01WNnOmzzwPZc-R1TEUYlFw&s"
+              title="Taxi Rudolf's business image, Logo"
+              alt="Taxi Rudolf, logo"
               class="w-20 w-20 inline-block me-3 rounded-full border border-black"
             />
           </NuxtLink>
         </div>
         <div class="flex-1">
-          <p class="uppercase text-gray-500 md:mb-6">Taxi PulaDrive</p>
+          <p class="uppercase text-gray-500 md:mb-6">Taxi Rudolf</p>
           <ul class="list-reset mb-6">
             <li class="mt-2 inline-block mr-2 md:block md:mr-0">
               <NuxtLink
@@ -940,7 +940,7 @@
           <ul class="list-reset mb-6">
             <li class="mt-2 inline-block mr-2 md:block md:mr-0">
               <a
-                href="https://www.facebook.com/taxiPulaDrive"
+                href="https://www.facebook.com/taxiRudolf"
                 target="_blank"
                 class="no-underline hover:underline text-gray-800 hover:text-orange-700"
                 >Facebook</a
@@ -948,7 +948,7 @@
             </li>
             <li class="mt-2 inline-block mr-2 md:block md:mr-0">
               <a
-                href="https://www.instagram.com/taxiPulaDrive.hr"
+                href="https://www.instagram.com/taxiRudolf.hr"
                 target="_blank"
                 class="no-underline hover:underline text-gray-800 hover:text-orange-700"
                 >Instagram</a
@@ -1066,7 +1066,7 @@ const getPeriodOfDay = () => {
 };
 
 useHead({
-  title: "24/7 Affordable Taxi Service in PulaDrive | Call Now",
+  title: "24/7 Affordable Taxi Service in Rudolf | Call Now",
   htmlAttrs: {
     lang: "en",
   },
@@ -1074,29 +1074,29 @@ useHead({
     {
       name: "description",
       content:
-        "Discover Taxi PulaDrive: Explore taxi prices, diverse transport services, and contact us effortlessly via phone, Viber, or WhatsApp!",
+        "Discover Taxi Rudolf: Explore taxi prices, diverse transport services, and contact us effortlessly via phone, Viber, or WhatsApp!",
     },
     {
       hid: "og:url",
       property: "og:url",
-      content: "https://www.taxiPulaDrive.hr",
+      content: "https://www.taxiRudolf.hr",
     },
     { hid: "og:type", property: "og:type", content: "website" },
     {
       hid: "og:title",
       property: "og:title",
-      content: "24/7 Affordable Taxi Service in PulaDrive | Call Now",
+      content: "24/7 Affordable Taxi Service in Rudolf | Call Now",
     },
     {
       hid: "og:description",
       property: "og:description",
       content:
-        "Discover Taxi PulaDrive: Explore taxi prices, diverse transport services, and contact us effortlessly via phone, Viber, or WhatsApp!",
+        "Discover Taxi Rudolf: Explore taxi prices, diverse transport services, and contact us effortlessly via phone, Viber, or WhatsApp!",
     },
     {
       hid: "og:image",
       property: "og:image",
-      content: "https://www.taxiPulaDrive.hr/PulaDrive.jpeg",
+      content: "https://www.taxiRudolf.hr/Rudolf.jpeg",
     },
   ],
   bodyAttrs: {
@@ -1109,7 +1109,7 @@ useHead({
         "@context": "https://schema.org",
         "@type": "WebSite",
         name: "The station for all transportation needs!",
-        url: "https://www.taxiPulaDrive.hr/",
+        url: "https://www.taxiRudolf.hr/",
       }),
     },
     {
@@ -1117,20 +1117,20 @@ useHead({
       innerHTML: JSON.stringify({
         "@context": "https://schema.org",
         "@type": "Organization",
-        image: "https://www.taxiPulaDrive.hr/PulaDrive.jpeg",
-        url: "https://www.taxiPulaDrive.hr",
-        sameAs: ["https://taxiPulaDrive.hr"],
-        logo: "https://www.taxiPulaDrive.hr/PulaDrive.jpeg",
-        name: "Taxi PulaDrive",
+        image: "https://www.taxiRudolf.hr/Rudolf.jpeg",
+        url: "https://www.taxiRudolf.hr",
+        sameAs: ["https://taxiRudolf.hr"],
+        logo: "https://www.taxiRudolf.hr/Rudolf.jpeg",
+        name: "Taxi Rudolf",
         description:
-          "Taxi PulaDrive is a renowned tourist agency company headquartered in PulaDrive, Croatia. Taxi PulaDrive offers top-notch transfer services both domestically and internationally with a mission to ensure comfortable, safe, and reliable travel for all clients, regardless of destination or travel time.",
+          "Taxi Rudolf is a renowned tourist agency company headquartered in Rudolf, Croatia. Taxi Rudolf offers top-notch transfer services both domestically and internationally with a mission to ensure comfortable, safe, and reliable travel for all clients, regardless of destination or travel time.",
         email: "anterukavina@yahoo.com.hr",
         telephone: "+385953660184",
 
         address: {
           "@type": "PostalAddress",
           streetAddress: "Ul. Dr. Ante Mandića 2",
-          addressLocality: "PulaDrive",
+          addressLocality: "Rudolf",
           addressCountry: "Croatia",
           addressRegion: "Primorje-Gorski Kotar County",
           postalCode: "51410",
@@ -1147,17 +1147,17 @@ useHead({
       innerHTML: JSON.stringify({
         "@context": "https://schema.org",
         "@type": "LocalBusiness",
-        image: "https://www.taxiPulaDrive.hr/PulaDrive.jpeg",
-        name: "Taxi PulaDrive",
+        image: "https://www.taxiRudolf.hr/Rudolf.jpeg",
+        name: "Taxi Rudolf",
         description:
-          "Taxi PulaDrive is a renowned tourist agency company headquartered in PulaDrive, Croatia. Taxi PulaDrive offers top-notch transfer services both domestically and internationally with a mission to ensure comfortable, safe, and reliable travel for all clients, regardless of destination or travel time.",
-        url: "https://www.taxiPulaDrive.hr",
-        logo: "https://www.taxiPulaDrive.hr/PulaDrive.jpeg",
+          "Taxi Rudolf is a renowned tourist agency company headquartered in Rudolf, Croatia. Taxi Rudolf offers top-notch transfer services both domestically and internationally with a mission to ensure comfortable, safe, and reliable travel for all clients, regardless of destination or travel time.",
+        url: "https://www.taxiRudolf.hr",
+        logo: "https://www.taxiRudolf.hr/Rudolf.jpeg",
         openingHours: "Mo,Tu,We,Th,Fr,Sa,Su 00:00-24:00",
         address: {
           "@type": "PostalAddress",
           streetAddress: "Ul. Dr. Ante Mandića 2",
-          addressLocality: "PulaDrive",
+          addressLocality: "Rudolf",
           addressCountry: "Croatia",
           addressRegion: "Primorje-Gorski Kotar County",
           postalCode: "51410",
@@ -1184,14 +1184,14 @@ useHead({
         description: "Vrhunska i brza usluga! Vozač vrlo pristojan i uljudan.",
         itemReviewed: {
           "@type": "LocalBusiness",
-          name: "Taxi PulaDrive - taxiPulaDrive.hr",
-          image: "https://www.taxiPulaDrive.hr/PulaDrive.jpeg",
+          name: "Taxi Rudolf - taxiRudolf.hr",
+          image: "https://www.taxiRudolf.hr/Rudolf.jpeg",
           telephone: "+385953660184",
           priceRange: "$$",
           address: {
             "@type": "PostalAddress",
             streetAddress: "Ul. Dr. Ante Mandića 2",
-            addressLocality: "PulaDrive",
+            addressLocality: "Rudolf",
             addressCountry: "Croatia",
             addressRegion: "Primorje-Gorski Kotar County",
             postalCode: "51410",
@@ -1203,14 +1203,14 @@ useHead({
 });
 
 useSeoMeta({
-  title: "24/7 Affordable Taxi Service in PulaDrive | Call Now",
-  ogTitle: "24/7 Affordable Taxi Service in PulaDrive | Call Now",
+  title: "24/7 Affordable Taxi Service in Rudolf | Call Now",
+  ogTitle: "24/7 Affordable Taxi Service in Rudolf | Call Now",
   description:
-    "Discover Taxi PulaDrive: Explore taxi prices, diverse transport services, and contact us effortlessly via phone, Viber, or WhatsApp!",
+    "Discover Taxi Rudolf: Explore taxi prices, diverse transport services, and contact us effortlessly via phone, Viber, or WhatsApp!",
   ogDescription:
-    "Discover Taxi PulaDrive: Explore taxi prices, diverse transport services, and contact us effortlessly via phone, Viber, or WhatsApp!",
-  ogImage: "https://www.taxiPulaDrive.hr/PulaDrive.jpeg",
-  twitterCard: "https://www.taxiPulaDrive.hr/PulaDrive.jpeg",
+    "Discover Taxi Rudolf: Explore taxi prices, diverse transport services, and contact us effortlessly via phone, Viber, or WhatsApp!",
+  ogImage: "https://www.taxiRudolf.hr/Rudolf.jpeg",
+  twitterCard: "https://www.taxiRudolf.hr/Rudolf.jpeg",
 });
 </script>
 
