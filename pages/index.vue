@@ -122,11 +122,6 @@
   </header>
 
   <main id="home">
-    <img
-      class="hero-photo h-[0.1px] sm:hidden rounded-none"
-      src="../assets/imgs/PulaDrivemainphoto.webp"
-      alt="PulaDrive taxi service, image of PulaDrive"
-    />
     <div
       class="overflow-x-auto text-nowrap whitespace-nowrap sticky top-0 w-full z-50 bg-white text-gray-800 shadow-sm"
       id="start"
