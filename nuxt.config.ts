@@ -35,11 +35,26 @@ export default defineNuxtConfig({
   },
   modules: ["@nuxtjs/tailwindcss", "nuxt-swiper", "dayjs-nuxt", '@nuxtjs/i18n', "nuxt-marquee"],
   i18n: {
+     strategy: 'no_prefix',
+    locales: [
+      {
+        code: 'en',
+        name: 'English',
+        iso: 'en-US',
+      },
+      {
+        code: 'hr',
+        name: 'Hrvatski',
+        iso: 'hr-HR',
+      },
+    ],
+
     vueI18n: './i18n.config.ts', // if you are using custom path, default
-       detectBrowserLanguage: {
-      useCookie: true, // Enable to persist the user's choice
+      detectBrowserLanguage: {
+      useCookie: false, // Enable to persist the user's choice
       cookieKey: 'i18n_redirected',
       alwaysRedirect: true, // Redirect the user to the preferred language
+      fallbackLocale: 'en',
     },
   },
   dayjs: {
